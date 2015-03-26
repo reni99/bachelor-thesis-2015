@@ -17,7 +17,7 @@ function LOVSearch(){
       		success: successHandler,
       		error: function(){
       			//TODO: Implement error handling...
-      			alert("error");
+      			alert("error with ajax call!");
       		}
     	});
 

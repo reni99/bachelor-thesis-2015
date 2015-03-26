@@ -56,9 +56,17 @@ function Suggestion (json){
 	"use strict";
 	var suggestedText, suggestionScore, frequency;
 
-	suggestedText = json.suggestion.text;
-	suggestionScore = json.suggestion.score;
-	frequency = json.suggestion.freq;
+	this.init = function(){
+		if(json.suggestions.length > 0){
+			suggestedText = json.suggestions[0].text;
+			suggestionScore = json.suggestions[0].score;
+			frequency = json.suggestions[0].freq;	
+		}else{
+			suggestionScore = null;
+			suggestedText = null;
+			frequency = null; 
+		}
+	};
 
 	this.getSuggestedText = function(){
 		return suggestedText;
@@ -71,6 +79,8 @@ function Suggestion (json){
 	this.getFrequency = function(){
 		return frequency;
 	};
+
+	this.init();
 }
 
 function Autocompletion (json){
@@ -89,6 +99,10 @@ function Autocompletion (json){
 		}
 	};
 
+	this.getNumberOfResults = function(){
+ 		return j.results.length;
+	};
+
 	this.getPrefixedName = function(){
 		return prefixedName;
 	};
@@ -96,4 +110,6 @@ function Autocompletion (json){
 	this.getURI = function(){
 		return uri; 
 	};
+
+	this.init();
 }

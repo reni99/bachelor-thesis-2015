@@ -47,16 +47,27 @@ function MetaEditorPresenter(viewDelegate){
 					//create resultview
 					if(jsonObject){
 						autocomplete = factory.createSearchResult(jsonObject, "autocomplete");
-						resultView = new ResultView(e.target);
-						resultView.toggleSearchResult();
-						resultView.addSearchResult();
 
-						$('.editable p:first').text("Autocompletion: " + autocomplete.getPrefixedName() + ", " + autocomplete.getURI());
-						if(jsonObject.results.length <= 0){
-							vocabularySearch.doGet("suggestion", e.target.value, "property", function(result){
-								//TODO implement autocompletion
+						if(autocomplete.getNumberOfResults() > 0){
+							resultView = new ResultView(e.target);
+							resultView.toggleSearchResult();
+							resultView.addSearchResult();
+							$('.editable p:first').text("Autocompletion: " + autocomplete.getPrefixedName() + ", " + autocomplete.getURI());
+						}
+
+						if(autocomplete.getNumberOfResults() <= 0){
+							vocabularySearch.doGet("suggest", e.target.value, "property", function(result){
+								var suggestion;
+
+								//parse
+								jsonString = JSON.stringify(result);
+								jsonObject = jQuery.parseJSON(jsonString);
+
+								suggestion = factory.createSearchResult(jsonObject, "suggestion");
+								$('.editable p:first').text("Suggestion: " + suggestion.getSuggestedText());
 							});
 						}
+
 					}
 				});
 			}
