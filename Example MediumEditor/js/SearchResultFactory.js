@@ -75,12 +75,22 @@ function Suggestion (json){
 
 function Autocompletion (json){
 	"use strict";
-	var name, uri;
-	name = json.results[0].prefixedName[0];
-	uri = json.results[0].uri[0];
+	var j = json,
+	prefixedName,
+	uri;
 
-	this.getName = function(){
-		return name;
+	this.init = function(){
+		if(json.results.length > 0){
+			prefixedName = j.results[0].prefixedName[0];
+			uri = j.results[0].uri[0];
+		} else {
+			prefixedName = null;
+			uri = null;
+		}
+	};
+
+	this.getPrefixedName = function(){
+		return prefixedName;
 	};
 
 	this.getURI = function(){

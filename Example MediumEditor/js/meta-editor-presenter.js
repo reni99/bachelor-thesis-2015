@@ -51,9 +51,9 @@ function MetaEditorPresenter(viewDelegate){
 						resultView.toggleSearchResult();
 						resultView.addSearchResult();
 
-						$('.editable p:first').text("Suggestion: " + autocomplete.getName() + ", " + autocomplete.getURI());
+						$('.editable p:first').text("Autocompletion: " + autocomplete.getPrefixedName() + ", " + autocomplete.getURI());
 						if(jsonObject.results.length <= 0){
-							vocabularySearch.doGet("autocomplete", e.target.value, "property", function(result){
+							vocabularySearch.doGet("suggestion", e.target.value, "property", function(result){
 								//TODO implement autocompletion
 							});
 						}
