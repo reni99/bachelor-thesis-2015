@@ -3,8 +3,7 @@
 
   function MetaEditorExtension() {
     "use strict";
-    var view = new MetaEditorView(),
-    presenter = new MetaEditorPresenter(view);
+    var view = new MetaEditorView();
 
     this.parent = true;
     this.button = document.createElement('button');
@@ -16,10 +15,6 @@
       return view;
     };
 
-    this.getPresenter = function(){
-      return presenter;
-    };
-
   }
 
   MetaEditorExtension.prototype.getButton = function() {
@@ -29,7 +24,10 @@
   
   MetaEditorExtension.prototype.onClick = function() {
     "use strict";
-    this.getView().toggle();
+    var view = this.getView(),
+    presenter;
+    view.toggle();
+    presenter = new MetaEditorPresenter(view);
   };
 
   var editor = new MediumEditor('.editable', {
