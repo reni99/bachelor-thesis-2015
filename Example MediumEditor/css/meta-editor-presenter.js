@@ -1,0 +1,67 @@
+/*jslint browser: true*/
+/*global $, jQuery, LOVSearch, SearchResultFactory, alert, ResultView*/
+
+function MetaEditorPresenter(viewDelegate){
+	"use strict";
+
+	var view, KEY_ENTER;
+
+	KEY_ENTER = 13;
+
+	function init(){
+		view = viewDelegate;
+
+		view.addSaveTripleHandler(function(){
+			alert("Saved!");
+		});
+
+		view.addPredicateInputHandler(function(e){
+			var vocabularySearch = new LOVSearch(),
+			factory = new SearchResultFactory(),
+			jsonString,
+			jsonObject,
+			resultView;
+
+			//TODO create Parser object --> separation of concern
+			if(e.keyCode === KEY_ENTER){
+				$('.editable p:first').text("Enter was pressed!");
+				vocabularySearch.doGet("search", e.target.value, "property", function(result){
+					var search;
+
+					//parse and create search result
+					jsonString = JSON.stringify(result);
+					jsonObject = jQuery.parseJSON(jsonString);
+					search = factory.createSearchResult(jsonObject, "search");
+
+					$('.editable p:first').text("Searched for: " + search.getPrefixedName() + " with URI " + search.getURI());
+				});
+
+			} else if(e.target.value){
+				vocabularySearch.doGet("autocomplete", e.target.value, "property", function(result){
+					var autocomplete;
+
+					//parse
+					jsonString = JSON.stringify(result);
+					jsonObject = jQuery.parseJSON(jsonString);
+
+					//create resultview
+					if(jsonObject){
+						autocomplete = factory.createSearchResult(jsonObject, "autocomplete");
+						resultView = new ResultView(e.target);
+						resultView.toggleSearchResult();
+						resultView.addSearchResult();
+
+						$('.editable p:first').text("Suggestion: " + autocomplete.getName() + ", " + autocomplete.getURI());
+						if(jsonObject.results.length <= 0){
+							vocabularySearch.doGet("autocomplete", e.target.value, "property", function(result){
+								//TODO implement autocompletion
+							});
+						}
+					}
+				});
+			}
+		});
+	}
+
+	init();
+}
