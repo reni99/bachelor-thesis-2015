@@ -1,0 +1,85 @@
+<html>
+    <head>
+        <script src="rangy-core.js"></script>
+        <script src="rangy-classapplier.js"></script>
+        <script src="undo.js"></script>
+        <script src="medium.js"></script>
+        <script src="js/meta-editor-view.js"></script>
+        <script src="js/meta-editor-presenter.js"></script>
+        <link rel="stylesheet" href="medium.css">
+        <link rel="stylesheet" href="css/meta-editor.css">
+        <script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
+    </head>
+    <body>
+    	<div class="wrapper">
+ <div class="toolbar-top">
+   <span class="toolbar">
+    <span class="bold" style="font-weight: bold; color: #66d9ef">B</span>
+    <span class="underline" style="text-decoration: underline; color: #a6e22e">U</span>
+    <span class="italic" style="font-style: italic; color: #f92672">I</span>
+    <span class="strike" style="text-decoration: line-through; color: #e6db74">S</span>
+    <span class="meta-editor">Meta Editor</span>
+   </span>
+  </div>
+  <div id="rich_with_invoke_element" class="article demo" contenteditable="true">
+  </div>
+  </div>
+        <script>
+(function(){
+	var article = document.getElementById('rich_with_invoke_element'),
+		container = article.parentNode,
+	    medium = new Medium({
+	        element: article,
+	        mode: Medium.richMode,
+	        placeholder: 'My Article comes here...'
+	    });
+
+		article.highlight = function() {
+		if (document.activeElement !== article) {
+			medium.select();
+		}
+	};
+			var view = new MetaEditorView(),
+		presenter = new MetaEditorPresenter(view);
+
+	container.querySelector('.bold').onmousedown = function() {
+		article.highlight();
+		medium.invokeElement('strong', {
+	    });
+		return false;
+	};
+
+	container.querySelector('.underline').onmousedown = function() {
+		article.highlight();
+		medium.invokeElement('u', {
+		});
+		return false;
+	};
+
+	container.querySelector('.italic').onmousedown = function() {
+		article.highlight();
+		medium.invokeElement('i', {
+		});
+		return false;
+	};
+
+	container.querySelector('.strike').onmousedown = function() {
+		article.highlight();
+		medium.invokeElement('strike', {
+		});
+		return false;
+	};
+
+	container.querySelector('.meta-editor').onmousedown = function() {
+		article.highlight();
+		if(view.getToggleState() === false){
+			view.toggle();
+				medium.invokeElement('strike', {
+		});
+		return false;
+	}
+};
+})();
+        </script>
+</body>
+</html>
