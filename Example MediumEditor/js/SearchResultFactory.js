@@ -29,10 +29,17 @@ function Search (json){
 	var j = json,
 	prefixedName,
 	uri;
-	
-	prefixedName = j.results[0].prefixedName[0];
-	uri = j.results[0].uri[0];
 
+	this.init = function(){
+		if(json.results.length > 0){
+			prefixedName = j.results[0].prefixedName[0];
+			uri = j.results[0].uri[0];
+		} else {
+			prefixedName = null;
+			uri = null;
+		}
+	};
+	
 	this.getPrefixedName = function(){
 		return prefixedName;
 	};
@@ -40,6 +47,8 @@ function Search (json){
 	this.getURI = function(){
 		return uri;
 	};
+
+	this.init();
 }
 
 
