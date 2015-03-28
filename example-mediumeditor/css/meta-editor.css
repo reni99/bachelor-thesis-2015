@@ -16,17 +16,15 @@ aside.metaEditor{
 }
 
 aside button {
-  border-radius: 50%;
   border-width: 1px;
   border-color: #CBBEB5;
   height: 20px;
-  width: 20px;
   color:gray;
   background-color: white;
 }
 
 aside button:hover{
-    background-color: gray;
+  background-color: gray;
   color:white;
 }
 
@@ -51,10 +49,6 @@ aside.metaEditor input{
 aside.metaEditor input:focus{
   outline-width: 1px;
   outline-color: red;
-}
-
-aside.metaEditor:hover{
- opacity: 1.0; 
 }
 
 aside.metaEditor *{
