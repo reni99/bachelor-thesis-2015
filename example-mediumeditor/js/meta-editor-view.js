@@ -21,7 +21,7 @@ function MetaEditorView(){
 
 	this.toggle = function(){
 		if(!this.getToggleState()){
-			$('body').append('<aside class="metaEditor"><h3>Meta Editor</h3><input type="text" placeholder="Subject"/><input type="text" id="predicateInput" placeholder="Predicate"/><button>i</button><input type="text" placeholder="Object"/><button id="saveTripleButton" type="button">Save</button></aside>');
+			$('body').append('<aside class="metaEditor"><h3>Meta Editor</h3><input type="text" placeholder="Subject"/><input type="text" id="predicateInput" placeholder="Predicate"/><input type="text" placeholder="Object"/><button id="saveTripleButton" type="button">Save</button></aside>');
 			this.setToggleState(true);
 		}else{
 			$('.metaEditor').detach();
