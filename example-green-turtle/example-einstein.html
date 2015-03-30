@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script type="text/javascript" src="js/RDFa.min.1.4.0.js"></script>
+    <script type="text/javascript" src="js/RDFaProcessor.1.4.0.js"></script>
+     <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" xml:space="preserve">
+document.addEventListener(
+      "rdfa.loaded",
+      function() {
+
+        //prefixes can be added with the setMapping() method
+        document.data.setMapping("foaf","http://xmlns.com/foaf/0.1/");
+
+        //get all the subjects of this page
+        var subjects = document.data.getSubjects();
+        console.log("The subjects here are: " + subjects); 
+
+        //Get all the elements with type = foaf:Person
+        var elements = document.getElementsByType("foaf:Person");
+        console.log(elements.length);
+
+        //loop all elements and output their name
+        for(var i = 0; i < elements.length; i++){
+          var name = elements[i].data.getValues("foaf:name")[0];
+          console.log("The name of this person is '" + name + "'");
+         }
+      },
+      false
+    );
+</script>
+</head>
+<body>
+<div about="http://dbpedia.org/resource/Albert_Einstein" typeof="foaf:Person">
+  <span property="foaf:name">Albert Einstein</span>
+  <span property="dbp:dateOfBirth" datatype="xsd:date">1879-03-14</span>
+  <div rel="dbp:birthPlace" resource="http://dbpedia.org/resource/German_Empire" />
+  <span about="http://dbpedia.org/resource/German_Empire"
+    property="dbp:conventionalLongName">the German Empire</span>
+</div>
+</body>
+</html>
