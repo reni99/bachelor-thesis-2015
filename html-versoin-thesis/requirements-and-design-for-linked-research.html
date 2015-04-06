@@ -1,0 +1,549 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xml:lang="en" lang="en">
+<head>
+	<meta name="description" property="dcterms:abstract" content="This website is about Renato Stauffer and his projects."/>
+	<meta name="keywords" content="Renato Stauffer, Stauffer, Renato"/>
+	<meta name="author" content="Renato Stauffer"/>
+	<title>Renato Stauffer</title>
+<link rel="stylesheet alternate" type="text/css" media="all" title="ACM" href="http://renatostauffer.ch/wp-content/themes/newTheme/media/css/acm.css"/>
+	<link rel='stylesheet' id='open-sans-css'  href='//fonts.googleapis.com/css?family=Open+Sans%3A300italic%2C400italic%2C600italic%2C300%2C400%2C600&#038;subset=latin%2Clatin-ext&#038;ver=4.0' type='text/css' media='all' />
+<link rel='stylesheet' id='dashicons-css'  href='http://renatostauffer.ch/wp-includes/css/dashicons.min.css?ver=4.0' type='text/css' media='all' />
+<link rel='stylesheet' id='admin-bar-css'  href='http://renatostauffer.ch/wp-includes/css/admin-bar.min.css?ver=4.0' type='text/css' media='all' />
+<link rel='stylesheet' id='crayon-css'  href='http://renatostauffer.ch/wp-content/plugins/crayon-syntax-highlighter/css/min/crayon.min.css?ver=2.6.9' type='text/css' media='all' />
+<link rel='stylesheet' id='crayon-theme-github-css'  href='http://renatostauffer.ch/wp-content/plugins/crayon-syntax-highlighter/themes/github/github.css?ver=2.6.9' type='text/css' media='all' />
+<link rel='stylesheet' id='crayon-font-monaco-css'  href='http://renatostauffer.ch/wp-content/plugins/crayon-syntax-highlighter/fonts/monaco.css?ver=2.6.9' type='text/css' media='all' />
+<link rel='stylesheet' id='lncs-css'  href='http://renatostauffer.ch/wp-content/themes/newTheme/media/css/lncs.css?ver=4.0' type='text/css' media='all' />
+<link rel='stylesheet' id='lr-css'  href='http://renatostauffer.ch/wp-content/themes/newTheme/media/css/lr.css?ver=4.0' type='text/css' media='all' />
+<link rel='stylesheet' id='textHighlighting-css'  href='http://renatostauffer.ch/wp-content/themes/newTheme/media/css/text-highlighting.css?ver=4.0' type='text/css' media='all' />
+<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var CrayonSyntaxSettings = {"version":"2.6.9","is_admin":"0","ajaxurl":"http:\/\/renatostauffer.ch\/wp-admin\/admin-ajax.php","prefix":"crayon-","setting":"crayon-setting","selected":"crayon-setting-selected","changed":"crayon-setting-changed","special":"crayon-setting-special","orig_value":"data-orig-value","debug":""};
+var CrayonSyntaxStrings = {"copy":"Press %s to Copy, %s to Paste","minimize":"Click To Expand Code"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://renatostauffer.ch/wp-content/plugins/crayon-syntax-highlighter/js/min/crayon.min.js?ver=2.6.9'></script>
+<script type='text/javascript' src='http://renatostauffer.ch/wp-content/themes/newTheme/js/lr.js?ver=4.0'></script>
+<script type='text/javascript' src='http://renatostauffer.ch/wp-content/themes/newTheme/js/html.sortable.min.js?ver=4.0'></script>
+<link rel='canonical' href='http://renatostauffer.ch/design-development-and-testing-of-a-stand-alone-tool-to-author-triple-statements/' />
+<link rel='shortlink' href='http://renatostauffer.ch/?p=131' />
+<style type="text/css" media="print">#wpadminbar { display:none; }</style>
+<style type="text/css" media="screen">
+	html { margin-top: 32px !important; }
+	* html body { margin-top: 32px !important; }
+	@media screen and ( max-width: 782px ) {
+		html { margin-top: 46px !important; }
+		* html body { margin-top: 46px !important; }
+	}
+</style>
+</head>
+
+<body about="[this:]" typeof="foaf:Document sioc:Post biblio:Paper prov:Entity" class="hfeed" prefix="rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns# rdfs: http://www.w3.org/2000/01/rdf-schema# owl: http://www.w3.org/2002/07/owl# xsd: http://www.w3.org/2001/XMLSchema# dcterms: http://purl.org/dc/terms/ foaf: http://xmlns.com/foaf/0.1/ v: http://www.w3.org/2006/vcard/ns# pimspace: http://www.w3.org/ns/pim/space# cc: http://creativecommons.org/ns# skos: http://www.w3.org/2004/02/skos/core# prov: http://www.w3.org/ns/prov# schema: http://schema.org/ rsa: http://www.w3.org/ns/auth/rsa# cert: http://www.w3.org/ns/auth/cert# cal: http://www.w3.org/2002/12/cal/ical# wgs: http://www.w3.org/2003/01/geo/wgs84_pos# org: http://www.w3.org/ns/org# biblio: http://purl.org/net/biblio# bibo: http://purl.org/ontology/bibo/ book: http://purl.org/NET/book/vocab# ov: http://open.vocab.org/terms/ doap: http://usefulinc.com/ns/doap# dbr: http://dbpedia.org/resource/ dbp: http://dbpedia.org/property/ sio: http://semanticscience.org/resource/ opmw: http://www.opmw.org/ontology/ deo: http://purl.org/spar/deo/ doco: http://purl.org/spar/doco/ cito: http://purl.org/spar/cito/ sro: http://salt.semanticauthoring.org/ontologies/sro# this: http://renatostauffer.ch/http://renatostauffer.ch/design-development-and-testing-of-a-stand-alone-tool-to-author-triple-statements/">
+<article class="hentry editable">
+<h1 class="entry-title">Requirements and Design of a Tool to Author Triple Statements</h1>
+<div id="authors"><dl id="author-name"><dt>Authors</dt><dd id="author-1"><a href="http://renatostauffer.ch/" rel="foaf:homepage">Renato Stauffer</a><sup><a href="#author-org-1">1</a></sup><sup><a href="#author-email-1"></a></sup></dd></dl>
+<ul id="author-org">
+	<li id="author-org-1"><sup>1</sup><a href="http://bfh.ch/" rel="foaf:homepage">Bern University of Applied Sciences</a>, Bern, Switzerland</li>
+</ul>
+<ul id="author-email">
+	<li id="author-email-1"><sup></sup><a href="mailto:renato.stauffer@students.bfh.ch" rel="foaf:mbox">renato.stauffer@students.bfh.ch</a></li>
+</ul>
+</div>
+<dl id="document-identifier"><dt>Document ID</dt><dd><a href="http://renatostauffer.ch/bachelor-thesis">http://renatostauffer.ch/bachelor-thesis</a></dd></dl><dl id="document-submitted"><dt>Published</dt><dd>2015-02-16</dd><dt>Modified</dt><dd>2015-02-16</dd></dl><dl id="document-license"><dt>License</dt><dd><a title="Creative Commons Attribution-ShareAlike 4.0 Unported" href="http://creativecommons.org/licenses/by-sa/4.0/" rel="license cc:license">CC BY-SA 4.0</a></dd></dl><dl id="document-purpose"><dt>Purpose</dt><dd>Purpose goes here&#8230;</dd></dl>
+<div id="content" class="entry-content"><section id="abstract">
+<h2>Abstract</h2>
+<p class="entry-summary">Abstract goes here&#8230;</p>
+
+</section><section id="keywords">
+<h2>Keywords</h2>
+<ul>
+	<li><a href="http://en.wikipedia.org/wiki/Requirements_engineering">Requirements Engineering</a></li>
+	<li><a href="http://en.wikipedia.org/wiki/Linked_Data">Linked Data</a></li>
+        <li><a href="http://en.wikipedia.org/wiki/Software_engineering">Software Engineering</a></li>
+	<li><a href="http://en.wikipedia.org/wiki/Thesis">Bachelor Thesis</a></li>
+</ul>
+</section>
+
+
+
+
+<section id="introduction">
+<h2>Introduction</h2>
+<div>
+<p id="prologue">
+<q cite="https://archive.org/stream/periclesandaspa03landgoog#page/n100/mode/2up">Nothing is pleasanter to me than exploring in a library.</q> [<a class="ref" href="#ref-1">1</a>]
+Many years have past by since this quote from <a href="http://en.wikipedia.org/wiki/Walter_Savage_Landor">Walter Savage Landor</a>. Meanwhile technology has evolved and brought the World Wide Web to life: A massive library full of data, where knowledge is often represented in an unstructured, machine-unfriendly manner. <i>more to come&#8230;</i>
+</p>
+
+
+<section id="problem-statement">
+<h3>Problem Statement</h3>
+<div>
+<p>
+Through movements like Open Access, data and research publications have become more accessible for the general public. But Sarven Capadisli et. all state in their publication Enabling Accessible Knowledge the following: <q cite="http://csarven.ca/enabling-accessible-knowledge#motivation">While there are notable efforts making research publications and data available for free with open access, there is a self-evident disconnect between research documents as far as machines are concerned.</q> [<a class="ref" href="#ref-1">2</a>] According to them, research documents are not as human and machine friendly as they could be, making it unpleasant to us &#8211; but also for the machines &#8211; to explore research documents on the Web.
+</p>
+<p>
+As reported by Frank van Harmelen and Dieter Fensel in their publication Practical Knowledge representation for the Web, the lack of semantic markup is a major barrier to develop more intelligent document processing on the web. [<a class="ref" href="#ref-1">3</a>]
+</p>
+<p>
+In order to close the disconnect between research documents, Sarven Capadisli is in progress to develop a tool to share and reuse research knowledge by employing the native Web technology stack. The project called Linked Research will enable researchers to take full control, ownership and responsibility of their own knowledge, making it possible to like-minded people as Walter Savage Landor to explore the giant library called “Web” in a user-friendly way. [<a class="ref" href="#ref-1">4</a>]
+</p>
+</div>
+</section>
+
+
+
+
+<section id="goal">
+<h3>Goal</h3>
+<div>
+<p>
+As part of a possible solution to make research knowledge more accessible and pleasanter for people and especially machines, Linked Research is going to implement a authoring tool to create and edit research papers directly within a browser. In addition it will enable the user to author triple statements to assign the document with markup.
+</p>
+<p>
+The objective of this thesis is to establish requirements for a user-friendly tool to create scholarly publications and the triple editing feature. The feature facilitates the enrichment of publications with metadata and enables scientists to make research knowledge more accessible to societies and more consumable for machines.
+</p>
+</div>
+</section>
+
+
+
+<section id="outline">
+<h3>Structure of this Document</h3>
+<div>
+<p>
+This thesis is structured as follows:
+</p>
+<dl>
+<dt>Chapter 2: Related Work</dt>
+<dd>This Chapter shows tools with similar objectives and features, which will be needed for the triple authoring tool.</dd>
+<dt>Chapter 3: Fundamentals</dt>
+<dd>In chapter 2, the fundamentals to understand this paper will be explained.</dd>
+<dt>Chapter 4 &#8211; 5 Requirements and Design</dt>
+<dd>The chapter 4 – 5 build the main part of this thesis and show how the requirements for the triple authoring tool got established.</dd>
+<dt>Chapter 7: Summary and Outlook</dt>
+<dd>The final chapter 7 summarizes the thesis and gives and outlook for future processing.</dd>
+</dl>
+</div>
+</section>
+
+</div>
+</section><!--End of #introduction-->
+
+
+
+
+<section id="related-work">
+<h2>Related Work</h2>
+<div>
+
+
+<section id="rdface">
+<h3>RDFaCe</h3>
+<div>
+<p>
+About RDFaCe&#8230;
+</p>
+</div>
+</section>
+
+
+<section id="wordlift">
+<h3>Wordlift</h3>
+<div>
+<p>
+About Wordlift&#8230;
+</p>
+</div>
+</section>
+
+
+</div>
+</section>
+
+
+<section id="fundamentals">
+<h2>Fundamentals</h2>
+<div>
+<p>
+This chapter is intended to provide background information and define terms to understand this thesis.
+</p>
+
+<section id="html">
+<h3>HTML</h3>
+<div>
+<p>
+The Hypertext Markup Language (HTML) is the core language of the World Wide Web (WWW) and currently released as version 5.0. The language is used to create web pages and is recommended by the main international standards organization for the WWW (W3C, World Wide Web Consortium).
+HTML specifies the structure of a website with tags (like  
+			<span id="crayon-55228a00de774184692824" class="crayon-syntax crayon-syntax-inline  crayon-theme-github crayon-theme-github-inline crayon-font-monaco" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-o">&lt;</span><span class="crayon-v">html</span><span class="crayon-o">&gt;</span></span></span> ). The following listing shows the basic structure of an HTML 5 document:
+ 
+</p><!-- Crayon Syntax Highlighter v2.6.9 -->
+
+		<div id="crayon-55228a00de785437071855" class="crayon-syntax crayon-theme-github crayon-font-monaco crayon-os-mac print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 15px !important;">
+		
+			<div class="crayon-toolbar" data-settings=" mouseover overlay hide delay" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><span class="crayon-title"></span>
+			<div class="crayon-tools" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><div class="crayon-button crayon-nums-button" title="Toggle Line Numbers"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-plain-button" title="Toggle Plain Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-wrap-button" title="Toggle Line Wrap"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-expand-button" title="Expand Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-copy-button" title="Copy"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-popup-button" title="Open Code In New Window"><div class="crayon-button-icon"></div></div><span class="crayon-language">XHTML</span></div></div>
+			<div class="crayon-info" style="min-height: 16.8px !important; line-height: 16.8px !important;"></div>
+			<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no" data-settings="dblclick" readonly style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 12px !important; line-height: 15px !important;">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;Title of the Web page&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;&lt;/body&gt;
+&lt;/html&gt;</textarea></div>
+			<div class="crayon-main" style="">
+				<table class="crayon-table">
+					<tr class="crayon-row">
+				<td class="crayon-nums " data-settings="show">
+					<div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-55228a00de785437071855-1">1</div><div class="crayon-num crayon-striped-num" data-line="crayon-55228a00de785437071855-2">2</div><div class="crayon-num" data-line="crayon-55228a00de785437071855-3">3</div><div class="crayon-num crayon-striped-num" data-line="crayon-55228a00de785437071855-4">4</div><div class="crayon-num" data-line="crayon-55228a00de785437071855-5">5</div><div class="crayon-num crayon-striped-num" data-line="crayon-55228a00de785437071855-6">6</div><div class="crayon-num" data-line="crayon-55228a00de785437071855-7">7</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-55228a00de785437071855-1"><span class="crayon-n">&lt;!DOCTYPE html&gt;</span></div><div class="crayon-line crayon-striped-line" id="crayon-55228a00de785437071855-2"><span class="crayon-r ">&lt;html&gt;</span></div><div class="crayon-line" id="crayon-55228a00de785437071855-3"><span class="crayon-r ">&lt;head&gt;</span></div><div class="crayon-line crayon-striped-line" id="crayon-55228a00de785437071855-4"><span class="crayon-r ">&lt;title&gt;</span><span class="crayon-i ">Title of the Web page</span><span class="crayon-r ">&lt;/title&gt;</span></div><div class="crayon-line" id="crayon-55228a00de785437071855-5"><span class="crayon-r ">&lt;/head&gt;</span></div><div class="crayon-line crayon-striped-line" id="crayon-55228a00de785437071855-6"><span class="crayon-r ">&lt;body&gt;</span><span class="crayon-r ">&lt;/body&gt;</span></div><div class="crayon-line" id="crayon-55228a00de785437071855-7"><span class="crayon-r ">&lt;/html&gt;</span></div></div></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+<!-- [Format Time: 0.0007 seconds] -->
+<p> 
+(http://www.w3.org/TR/html5/)
+</p>
+</div>
+</section>
+
+
+
+<section id="dom">
+<h3>The DOM (Document Object Model)</h3>
+<div>
+<p>
+The DOM is a language neutral interface, which allows scripts to dynamically access and change the structure of an (HTML)-document. With the DOM it is possible for scripting languages like JavaScript to access HTML elements and rearrange, delete or add new elements to the HTML-document. The DOM makes DHTML (Dynamic HTML) possible. (http://www.w3.org/DOM/)
+</p>
+</div>
+</section>
+
+
+
+
+<section id="web-browsers">
+<h3>Web Browsers</h3>
+<div>
+<p>
+Web browsers (or just browsers) are used to represent web pages on the World Wide Web. They provide the user interface for web applications. The current major browsers on the market are Firefox, Internet Explorer, Google Chrome, Opera and Safari with their corresponding web browser engines Blink (Google Chrome and Opera) Trident (Internet Explorer), Gecko (Firefox) and Webkit (Safari). The web browser engine is a software component that is responsible to display content on the screen. 
+</p>
+</div>
+</section>
+
+
+
+
+<section id="linked-data">
+<h3>Linked Data</h3>
+<div>
+<p>
+Linked Data is part of the Semantic Web and describes free available structured data reachable through Uniform Resource Identifiers (URI). It is published in a format (often RDF) so that it can be interlinked with other data, and through that, be more useful. (Ca-padisli 2013).
+</p>
+<p>
+Time Bernes-Lee published on 2006-07-27 an article called „Linked Data – Design Issues“. In this publication Bernes-Lee addresses four rules for Linked Data:
+</p>
+<ol>
+<li>Use URI as names for things.</li>
+<li>Use HTTP URIs so that people can look up those names.</li>
+<li>When someone looks up a URI, provide useful information, using the standards (RDF, SPARQL).</li>
+<li>Include links to other URIs. So that they can discover more things.</li>
+</ol>
+</div>
+</section>
+
+
+
+<section id="http-uri">
+<h3>HTTP URI</h3>
+<div>
+<p>
+As seen in Chapter 2.1, URIs help to refer to things and concepts on the web and build the basis of Linked Data. URIs are used to identify a name of a resource on the web. The HTTP scheme is the most common used form of URIs. They provide us a simple way to explore the web and its resources (Berners-Lee 2006).
+</p>
+</div>
+</section>
+
+
+
+<section id="rdf">
+<h3>RDF</h3>
+<div>
+<p>
+RDF is a family of World Wide Web Consortium (W3C) specifications. In essence it is an entity-relationship model that lets anyone make any statement about anything. A statement is composed of three atomic parts – the subject, predicate and object. These parts together are called a triple. The subject (line 1 of listing 2) says what the statement is about and the predicate (line 2 of listing 2) describes the relationship to its object (line 3 of listing 2) resource. Typically triples are represented by HTTP URIs. The following triple statement gives an example:
+</p>
+<!-- Crayon Syntax Highlighter v2.6.9 -->
+
+		<div id="crayon-55228a00de78f692530221" class="crayon-syntax crayon-theme-github crayon-font-monaco crayon-os-mac print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 15px !important;">
+		
+			<div class="crayon-toolbar" data-settings=" mouseover overlay hide delay" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><span class="crayon-title"></span>
+			<div class="crayon-tools" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><div class="crayon-button crayon-nums-button" title="Toggle Line Numbers"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-plain-button" title="Toggle Plain Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-wrap-button" title="Toggle Line Wrap"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-expand-button" title="Expand Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-copy-button" title="Copy"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-popup-button" title="Open Code In New Window"><div class="crayon-button-icon"></div></div></div></div>
+			<div class="crayon-info" style="min-height: 16.8px !important; line-height: 16.8px !important;"></div>
+			<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no" data-settings="dblclick" readonly style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 12px !important; line-height: 15px !important;">
+&lt;http://renatostauffer.ch/i#&gt;
+&lt;http://xmlns.com/foaf/0.1/knows&gt; 
+&lt;http://csarven.cs/#i&gt; </textarea></div>
+			<div class="crayon-main" style="">
+				<table class="crayon-table">
+					<tr class="crayon-row">
+				<td class="crayon-nums " data-settings="show">
+					<div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-55228a00de78f692530221-1">1</div><div class="crayon-num crayon-striped-num" data-line="crayon-55228a00de78f692530221-2">2</div><div class="crayon-num" data-line="crayon-55228a00de78f692530221-3">3</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-55228a00de78f692530221-1"><span class="crayon-o">&lt;</span><span class="crayon-v">http</span><span class="crayon-o">:</span><span class="crayon-c">//renatostauffer.ch/i#&gt;</span></div><div class="crayon-line crayon-striped-line" id="crayon-55228a00de78f692530221-2"><span class="crayon-o">&lt;</span><span class="crayon-v">http</span><span class="crayon-o">:</span><span class="crayon-c">//xmlns.com/foaf/0.1/knows&gt; </span></div><div class="crayon-line" id="crayon-55228a00de78f692530221-3"><span class="crayon-o">&lt;</span><span class="crayon-v">http</span><span class="crayon-o">:</span><span class="crayon-c">//csarven.cs/#i&gt; </span></div></div></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+<!-- [Format Time: 0.0006 seconds] -->
+ 
+<p>
+This statement says that the thing  
+			<span id="crayon-55228a00de795770555349" class="crayon-syntax crayon-syntax-inline  crayon-theme-github crayon-theme-github-inline crayon-font-monaco" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-o">&lt;</span><span class="crayon-v">http</span><span class="crayon-o">:</span><span class="crayon-c">//renatostauffer.ch/i#&gt;</span></span></span>  knows the thing  
+			<span id="crayon-55228a00de79b950020815" class="crayon-syntax crayon-syntax-inline  crayon-theme-github crayon-theme-github-inline crayon-font-monaco" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-o">&lt;</span><span class="crayon-v">http</span><span class="crayon-o">:</span><span class="crayon-c">//csarven.cs/#i&gt;</span></span></span> . Those things (resources) can now be further described with different RDF vocabularies. (RDF Working Group 2014). As the example from above shows, predicates are vocabulary terms that are used to relate the subject with an object. The predicate itself is an HTTP URI, which has a description for the term in use when dereferenced. (Capadisli 2012).
+
+</p>
+</div>
+</section>
+
+
+<section id="rdfa">
+<h3>RDFa</h3>
+<div>
+<p>
+Resource Description Framework in Attributes or simply RDFa is a W3C recommendation that enables authors of HTML, XHTML and other XML-based document types to enrich their documents with metadata. RDFa provides a set of attributes to describe elements in XML languages:
+</p>
+<dl>
+<dt>about</dt>
+<dd>What is the resource about (subject in a triple statement)</dd>
+<dt>rel / rev</dt>
+<dd>Relationships between resources (predicate in a triple statement)</dd>
+<dt>resource</dt>
+<dd>Specifies the context (To which URL does the markup apply?)</dd>
+<dt>src / href / resource</dt>
+<dd><i>More to come&#8230;</i></dd>
+</dl>
+</div>
+</section>
+
+
+
+
+<section id="rdfa-vocabularies">
+<h3>RDFa Vocabularies</h3>
+<div>
+<p>
+<i>More to come</i>
+</p>
+</div>
+</section>
+
+
+
+
+</div>
+</section><!--End of #fundamentals-->
+
+
+<section id="methodology">
+<h2>Methodology</h2>
+<div>
+<p>
+This chapter describes the tools and methods used for this thesis.
+</p>
+
+
+<section id="component-based-software-engineering">
+<h3>Component Based Software Engineering</h3>
+<div>
+<p>
+A component based software engineering approach according to Sommerville (2007) is applied (see also Chapter XXX). This approach tries to reuse existing software and frameworks as much as possible and thus reduces development time for a much faster delivery. Image XXXX shows the different stages of this reuse-oriented approach. (Sommerville, 2007) <i>More to come&#8230;</i>
+
+</p>
+</div>
+</section>
+
+
+<section id="literature-research">
+<h3>Literature Research</h3>
+<div>
+<p>
+<i>More to come&#8230;</i>
+</p>
+</div>
+</section>
+
+
+<section id="coding-examples">
+<h3>Coding Examples on Github</h3>
+<div>
+<p>
+<i>More to come&#8230;</i>
+</p>
+</div>
+</section>
+
+
+</div>
+</section><!--End of #methodology-->
+
+
+<section id="requirement-engineering">
+<h2>Requirement Engineering</h2>
+<div>
+<p>
+In this chapter, the requirements for the authoring tool will be established. For this propose parts of the requirements engineering framework according to Phol et. all are used as a reference. The used framework is structured as follows:
+</p>
+<figure class="figure">
+<a href="http://renatostauffer.ch/wp-content/uploads/2015/02/framework-pohl.png"><img src="http://renatostauffer.ch/wp-content/uploads/2015/02/framework-pohl-300x296.png" alt="framework-pohl" width="300" height="296" class="alignnone size-medium wp-image-621" /></a>
+<figcaption>
+<strong>Figure 1</strong>:Requirements Framework by Pohl.
+</figcaption>
+</figure>
+<p>
+Firstly the System Context will be described to identify important characteristics of the system and give the reader of this thesis an overview of the system’s context.
+Depending on the established context, goals are determined and scenarios to be implemented are worked out. 
+</p>
+
+
+
+<section id="system-context">
+<h3>System Context</h3>
+<div>
+<p>
+Each software-intensive system lies within a certain context and is through that influenced by the definition of the system requirements (Phol et all, 2012). This chapter describes the system context with its facets.
+</p>
+
+
+
+<section id="usage-facet">
+<h4>Usage Facet</h4>
+<div>
+<p>
+The Usage Facet describes how the user interacts with the system (Phol et all, 2012). In the case of the Meta-Editor the Usage Facet is described with the UML 2.0:
+</p>
+<figure class="figure">
+<a href="http://renatostauffer.ch/wp-content/uploads/2015/02/use-case.png"><img src="http://renatostauffer.ch/wp-content/uploads/2015/02/use-case-300x223.png" alt="use-case" width="300" height="223" class="alignnone size-medium wp-image-622" /></a>
+<figcaption>
+<strong>Figure 2</strong>:UML Use Case Diagram for the Meta-Editor
+</figcaption>
+</figure>
+</div>
+</section>
+
+
+
+<section id="subject-facet">
+<h4>Subject Facet</h4>
+<div>
+<p>
+Table XXX describes objects and events within the system context that are important for the system. This facet describes what must be represented by the system (Phol et all, 2012).
+</p>
+<table>
+<tbody>
+<tr>
+<th>Object</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>Fill table&#8230;</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+
+
+<section id="it-system-facet">
+<h4>IT System Facet</h4>
+<div>
+<p>
+Web broser&#8230;
+API call.. (LOV)&#8230;
+Medium Editor (or other editor)&#8230;
+Component-based software engineering (Sommerville, 2007, page 69)&#8230;
+</p>
+</div>
+</section>
+
+</div>
+</section><!--End of #system-context-->
+
+<section id="requirements-goals">
+<h3>Goals</h3>
+<div>
+<p>
+</p>
+</div>
+</section>
+
+
+<section id="requirements-scenarios">
+<h3>Scenarios</h3>
+<div>
+<p>
+</p>
+</div>
+</section>
+
+
+</div>
+</section><!--End of #requirements-->
+
+
+
+
+<section id="evaluation-editor">
+<h2>Evaluation Editor</h2>
+<div>
+<p>
+</p>
+</div>
+</section>
+
+
+
+<section id="evaluation-rdfa-library">
+<h2>Evaluation RDFa Library</h2>
+<div>
+<p>
+</p>
+</div>
+</section>
+
+
+
+<section id="summary-and-outlook">
+<h2>Summary and Outlook</h2>
+<div>
+<p>
+</p>
+</div>
+</section>
+
+
+
+<section id="references">
+<h2>References</h2>
+<ol>
+<li id="ref-1">Author.: title, year, <a href="link" rel="dcterms:references">Link</a></li>
+
+<li id="ref-2">Capadisli, S.: Enabling Accessible Knowledge, Bern University of Applied Sciences, E-Government-Institute, Bern, Switzerland (2014), <a href="http://csarven.ca/enabling-accessible-knowledge" rel="dcterms:references">http://csarven.ca/enabling-accessible-knowledge</a></li>
+
+<li id="ref-3">Harmelen, F. v., Fensel, D.: IJCAI, Workshop on Intelligent Information Integration (1999), <a href="http://www.cs.vu.nl/~frankh/postscript/IJCAI99-III.html" rel="dcterms:references">http://www.cs.vu.nl/~frankh/postscript/IJCAI99-III.html</a></li>
+
+<li id="ref-4">Capadisli, S.:Linked Research, (2013), <a href="http://csarven.ca/linked-research" rel="dcterms:references">http://csarven.ca/linked-research</a></li>
+</ol>
+</section>
+
+</div>
+</article><br />
+</body>
+</html>
