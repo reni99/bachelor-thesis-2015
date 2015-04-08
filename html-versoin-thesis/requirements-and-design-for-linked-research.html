@@ -1,5 +1,5 @@
 <article class="hentry editable">
-<h1 class="entry-title">Requirements and Design of a Tool to Author Triple Statements</h1>
+<h1 class="entry-title">Requirements and Design for a Tool to Author Triple Statements</h1>
 <div id="authors"><dl id="author-name"><dt>Authors</dt><dd id="author-1"><a href="http://renatostauffer.ch/" rel="foaf:homepage">Renato Stauffer</a><sup><a href="#author-org-1">1</a></sup><sup><a href="#author-email-1"></a></sup></dd></dl>
 <ul id="author-org">
 	<li id="author-org-1"><sup>1</sup><a href="http://bfh.ch/" rel="foaf:homepage">Bern University of Applied Sciences</a>, Bern, Switzerland</li>
@@ -57,7 +57,7 @@ In order to close the disconnect between research documents, Sarven Capadisli is
 <h3>Goal</h3>
 <div>
 <p>
-As part of a possible solution to make research knowledge more accessible and pleasanter for people and especially machines, Linked Research is going to implement a authoring tool to create and edit research papers directly within a browser. In addition it will enable the user to author triple statements to assign the document with markup.
+As part of a possible solution to make research knowledge more accessible and pleasanter for people and especially machines, Linked Research is going to implement a authoring tool to create and edit research papers directly within a browser. In addition it will enable the user to author triple statements to enrich the document with markup.
 </p>
 <p>
 The objective of this thesis is to establish requirements for a user-friendly tool to create scholarly publications and the triple editing feature. The feature facilitates the enrichment of publications with metadata and enables scientists to make research knowledge more accessible to societies and more consumable for machines.
@@ -264,12 +264,11 @@ This chapter describes the tools and methods used for this thesis.
 </p>
 
 
-<section id="component-based-software-engineering">
-<h3>Component Based Software Engineering</h3>
+<section id="comparison">
+<h3>Library and Editor Comparison</h3>
 <div>
 <p>
-A component based software engineering approach according to Sommerville (2007) is applied (see also Chapter XXX). This approach tries to reuse existing software and frameworks as much as possible and thus reduces development time for a much faster delivery. Image XXXX shows the different stages of this reuse-oriented approach. (Sommerville, 2007) <i>More to come...</i>
-
+Because of the applied component abased software engineering approach (see chapter XXX), libraries and tools for different components had to be compared and evaluated for Linked Research.
 </p>
 </div>
 </section>
@@ -279,7 +278,7 @@ A component based software engineering approach according to Sommerville (2007) 
 <h3>Literature Research</h3>
 <div>
 <p>
-<i>More to come...</i>
+Literature research provided a broad idea of the problem scope and <i>More to come...</i>
 </p>
 </div>
 </section>
@@ -289,7 +288,11 @@ A component based software engineering approach according to Sommerville (2007) 
 <h3>Coding Examples on Github</h3>
 <div>
 <p>
-<i>More to come...</i>
+Prototypes have been worked out to discuss features and functionality. They are available on Github.
+<ul>
+<li><i>More to come...</i></li>
+<li><i>More to come...</i></li>
+</ul>
 </p>
 </div>
 </section>
@@ -303,12 +306,12 @@ A component based software engineering approach according to Sommerville (2007) 
 <h2>Requirement Engineering</h2>
 <div>
 <p>
-In this chapter, the requirements for the authoring tool will be established. For this propose parts of the requirements engineering framework according to Phol et. all is used as a reference. The used framework is structured as follows:
+In this chapter, the requirements for the authoring tool will be established. For this propose parts of the requirements engineering framework according to Phol et. all is used as a reference. The used framework is structured as shown in fig. XXX.
 </p>
 <figure class="figure">
-<a href="http://renatostauffer.ch/wp-content/uploads/2015/02/framework-pohl.png"><img src="http://renatostauffer.ch/wp-content/uploads/2015/02/framework-pohl-300x296.png" alt="framework-pohl" width="300" height="296" class="alignnone size-medium wp-image-621" /></a>
+<a href="http://renatostauffer.ch/wp-content/uploads/2015/02/framework-pohl.png"><img src="http://renatostauffer.ch/wp-content/uploads/2015/02/framework-pohl.png" alt="framework-pohl" width="424" height="419" class="alignnone size-full wp-image-621" /></a>
 <figcaption>
-<strong>Figure 1</strong>:Requirements Framework by Pohl.
+Requirements Framework by Pohl.
 </figcaption>
 </figure>
 <p>
@@ -320,13 +323,14 @@ Depending on the established context, goals are determined and scenarios to be i
 <h3>System Context</h3>
 <div>
 <p>
-Each software-intensive system lies within a certain context and is through that influenced by the definition of the system requirements (Phol et all, 2012). This chapter describes the system context with its facets. The Usage Facet, Subject Facet, IT-System Facet and Development Facet each describe a certain aspect of the system and build the entry point for the systems requirements.
+Each software-intensive system lies within a certain context and is through that influenced by the definition of the system requirements (Phol et all, 2012). This chapter describes the system context with its facets for Linked Research. The Usage Facet, Subject Facet, IT-System Facet and Development Facet each describe a certain aspect of Linked Research and build the entry point for the systems requirements.
 </p>
 <p>The system context was established based on interviews with Mr. Sarven Capadisli and studying the following artifacts:</p>
 <ul>
 <li>A publication about Linked Research (<a href="http://linked-research.270a.info/linked-research.html">http://linked-research.270a.info/linked-research.html</a>)</li>
 <li>A publication about Enabling Accessible Knowledge (<a href="http://csarven.ca/enabling-accessible-knowledge">http://csarven.ca/enabling-accessible-knowledge</a>)</li>
 <li>Linked Research Github repository (<a href="https://github.com/csarven/linked-research">https://github.com/csarven/linked-research</a></li>
+<li>Documentation of Linked Research (<a href="http://linked-research.270a.info/linked-research.html">http://linked-research.270a.info/linked-research.html</a></li>
 </ul>
 <section id="usage-facet">
 <h4>Usage Facet</h4>
@@ -335,13 +339,13 @@ Each software-intensive system lies within a certain context and is through that
 The Usage Facet describes how the user interacts with the system (Phol et all, 2012). In the case of the Linked Research the Usage Facet is described with the UML 2.0:
 </p>
 <figure class="figure">
-<a href="http://renatostauffer.ch/wp-content/uploads/2015/02/Use-Case-Diagram12.png"><img src="http://renatostauffer.ch/wp-content/uploads/2015/02/Use-Case-Diagram12-300x197.png" alt="Use Case Diagram1" width="300" height="197" class="alignnone size-medium wp-image-657" /></a>
+<a href="http://renatostauffer.ch/wp-content/uploads/2015/02/Use-Case-Diagram12.png"><img src="http://renatostauffer.ch/wp-content/uploads/2015/02/Use-Case-Diagram12.png" alt="Use Case Diagram1" width="754" height="496" class="alignnone size-full wp-image-657" /></a>
 <figcaption>
 UML Use Case Diagram for Linked Research
 </figcaption>
 </figure>
 <p>
-As we can see on image XXX, the user interacts with the editor on several ways:
+Figure XXX describes the ways the user interacts with Linked Research. From a users perspective the following use cases arise:
 </p>
 <dl>
 <dt>Edit Text</dt>
@@ -351,14 +355,34 @@ As we can see on image XXX, the user interacts with the editor on several ways:
 <dt>Remove Triple Statement</dt>
 <dd>The user can remove added triple statements from the document.</dd>
 <dt>Automatic Markup</dt>
-<dd>A user usually does not have the time to enrich the whole publication with metadata by hand. Because of that, the use case Automatic Markup should provide the possibility to automatically markup the created text with metadata.</dd>
+<dd>A user does usually not have the time to enrich the whole publication with metadata by hand. Because of that, the use case Automatic Markup should provide the possibility to automatically markup the created text with metadata.</dd>
 <dt>Local Storage</dt>
 <dd>The text the user is editing gets stored locally. This way, off-line editing is possible.</dd>
 <dt>Export Document</dt>
 <dd>The user of Linked Research is able to export the document in HTML format or print the document (PDF format).</dd>
 <dt>Change View</dt>
 <dd>The user of Linked Research can apply different views for the document (LNCS ACM W3C-REC Native)</dd>
+<dt>Assign Subject</dt>
+<dd>In order to be able to create a triple statement, the user must have the ability to mark a text passage (a word, paragraph or the document itself) as an RDF subject. </dd>
+<dt>Assign Predicate</dt>
+<dd>A service should provide the user the ability to search for predicates in existing Linked Open vocabularies and assign a found predicate to a triple statement.</dd>
+<dt>Assign Object</dt>
+<dd>Finally the user needs functunality to assign a RDF object to a RDF triple statement</dd>
 </dl>
+<p>
+The use cases Change View, Local Storage and Export Document were already implemented into Linked Research by Sarven Carpadisli. The other use cases (Create Triple Statement, Remove Triple Statement and Automatic Markup) are open to be implemented.
+</p>
+<p>
+Based on the established Usage Facet a first scatch of Linked Research was drawn:
+<a href="http://renatostauffer.ch/wp-content/uploads/2015/02/scatch1.png"><img src="http://renatostauffer.ch/wp-content/uploads/2015/02/scatch1.png" alt="scatch" width="1137" height="474" class="alignnone size-full wp-image-692" /></a>
+</p>
+<ol>
+<li>The user edits or creates text with the editor. When the user selects a text passage or word a popup menu shows up. From there the user has the ability to assign styles to the text (bold text, italic, etc.).</li>
+<li>The user can also toggle in / out the meta editor to create triple statements.</li>
+<li>The triple store is held locally. The user can insert or delete triple statements.</li>
+<li>Triple statements can be fetched to e.g. visualize the current graph.</li>
+<li>The meta editor talks to a external service to retrieve suggestions for possible terms for when creating a triple statement.</li>
+</ol>
 </div>
 </section>
 
@@ -366,7 +390,7 @@ As we can see on image XXX, the user interacts with the editor on several ways:
 <h4>Subject Facet</h4>
 <div>
 <p>
-Table XXX describes objects and events within the system context that are important for the system. This facet describes what must be represented by the system (Phol et all, 2012).
+This facet describes what must be represented by the system (Phol et all, 2012). Table XXX describes objects and events within the system context that are important for the system. 
 </p>
 <table>
 <tbody>
@@ -384,11 +408,23 @@ Table XXX describes objects and events within the system context that are import
 </tr>
 <tr>
 <td>RDF Object</td>
-<td></td>
+<td>A Resource Description Framework (RDF) object is the third part of an RDF statement. Objects are frequently referred to as a property value that is mapped to a subject by the predicate. An object can be an RDF URI reference, an RDF literal, or a blank node. If the object is a blank node, it serves as a parent property to encapsulate a group of sub-properties.</td>
 </tr>
 <tr>
 <td>RDF Triple Statement</td>
-<td></td>
+<td>A triple statement is composed of a RDF Subject, RDF Predicate and RDF Object. Triple statements are stored within a RDF triple store (see next row)</td>
+</tr>
+<tr>
+<td>RDF Triple Store</td>
+<td>An RDF triple store, persists RDF statements. The triple store is responsible for querying, inserting or deleting a triple statement.</td>
+</tr>
+<tr>
+<td>Metadata object</td>
+<td>An object responsible to create new triple statements has to be provided.</td>
+</tr>
+<tr>
+<td>API Handler</td>
+<td>An object to handle API calls to a service that provides access to different RDF vocabularies must be available. This enables the author to search for existing vocabularies.</td>
 </tr>
 </tbody>
 </table>
@@ -400,10 +436,19 @@ Table XXX describes objects and events within the system context that are import
 <h4>IT System Facet</h4>
 <div>
 <p>
-Web broser...
-API call.. (LOV)...
-Medium Editor (or other editor)...
-Component-based software engineering (Sommerville, 2007, page 69)...
+The IT System Facet is held short: A Web browser is the only requirement to use Linked Research. There should be no installation or account creation before using the tool.
+</p>
+</div>
+</section>
+
+<section id="development-facet">
+<h4>Development Facet</h4>
+<div>
+<p>
+A component based software engineering approach according to Sommerville (2007) is applied. This approach tries to reuse existing software and frameworks as much as possible and thus reduces development time for a much faster delivery. Image XXXX shows the different stages of this reuse-oriented approach (Sommerville, 2007).
+</p>
+<p>
+
 </p>
 </div>
 </section>
