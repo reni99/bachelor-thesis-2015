@@ -1,6 +1,49 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xml:lang="en" lang="en">
+<head>
+	<meta name="description" property="dcterms:abstract" content="This website is about Renato Stauffer and his projects."/>
+	<meta name="keywords" content="Renato Stauffer, Stauffer, Renato"/>
+	<meta name="author" content="Renato Stauffer"/>
+	<title>Renato Stauffer</title>
+<link rel="stylesheet alternate" type="text/css" media="all" title="ACM" href="http://renatostauffer.ch/wp-content/themes/newTheme/media/css/acm.css"/>
+	<link rel='stylesheet' id='open-sans-css'  href='//fonts.googleapis.com/css?family=Open+Sans%3A300italic%2C400italic%2C600italic%2C300%2C400%2C600&#038;subset=latin%2Clatin-ext&#038;ver=4.0' type='text/css' media='all' />
+<link rel='stylesheet' id='dashicons-css'  href='http://renatostauffer.ch/wp-includes/css/dashicons.min.css?ver=4.0' type='text/css' media='all' />
+<link rel='stylesheet' id='admin-bar-css'  href='http://renatostauffer.ch/wp-includes/css/admin-bar.min.css?ver=4.0' type='text/css' media='all' />
+<link rel='stylesheet' id='crayon-css'  href='http://renatostauffer.ch/wp-content/plugins/crayon-syntax-highlighter/css/min/crayon.min.css?ver=2.6.9' type='text/css' media='all' />
+<link rel='stylesheet' id='crayon-theme-github-css'  href='http://renatostauffer.ch/wp-content/plugins/crayon-syntax-highlighter/themes/github/github.css?ver=2.6.9' type='text/css' media='all' />
+<link rel='stylesheet' id='crayon-font-monaco-css'  href='http://renatostauffer.ch/wp-content/plugins/crayon-syntax-highlighter/fonts/monaco.css?ver=2.6.9' type='text/css' media='all' />
+<link rel='stylesheet' id='lncs-css'  href='http://renatostauffer.ch/wp-content/themes/newTheme/media/css/lncs.css?ver=4.0' type='text/css' media='all' />
+<link rel='stylesheet' id='lr-css'  href='http://renatostauffer.ch/wp-content/themes/newTheme/media/css/lr.css?ver=4.0' type='text/css' media='all' />
+<link rel='stylesheet' id='textHighlighting-css'  href='http://renatostauffer.ch/wp-content/themes/newTheme/media/css/text-highlighting.css?ver=4.0' type='text/css' media='all' />
+<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var CrayonSyntaxSettings = {"version":"2.6.9","is_admin":"0","ajaxurl":"http:\/\/renatostauffer.ch\/wp-admin\/admin-ajax.php","prefix":"crayon-","setting":"crayon-setting","selected":"crayon-setting-selected","changed":"crayon-setting-changed","special":"crayon-setting-special","orig_value":"data-orig-value","debug":""};
+var CrayonSyntaxStrings = {"copy":"Press %s to Copy, %s to Paste","minimize":"Click To Expand Code"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://renatostauffer.ch/wp-content/plugins/crayon-syntax-highlighter/js/min/crayon.min.js?ver=2.6.9'></script>
+<script type='text/javascript' src='http://renatostauffer.ch/wp-content/themes/newTheme/js/lr.js?ver=4.0'></script>
+<script type='text/javascript' src='http://renatostauffer.ch/wp-content/themes/newTheme/js/html.sortable.min.js?ver=4.0'></script>
+<link rel='canonical' href='http://renatostauffer.ch/requirements-and-design-for-a-tool-to-author-triple-statements/' />
+<link rel='shortlink' href='http://renatostauffer.ch/?p=131' />
+<style type="text/css" media="print">#wpadminbar { display:none; }</style>
+<style type="text/css" media="screen">
+	html { margin-top: 32px !important; }
+	* html body { margin-top: 32px !important; }
+	@media screen and ( max-width: 782px ) {
+		html { margin-top: 46px !important; }
+		* html body { margin-top: 46px !important; }
+	}
+</style>
+</head>
+
+<body about="[this:]" typeof="foaf:Document sioc:Post biblio:Paper prov:Entity" class="hfeed" prefix="rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns# rdfs: http://www.w3.org/2000/01/rdf-schema# owl: http://www.w3.org/2002/07/owl# xsd: http://www.w3.org/2001/XMLSchema# dcterms: http://purl.org/dc/terms/ foaf: http://xmlns.com/foaf/0.1/ v: http://www.w3.org/2006/vcard/ns# pimspace: http://www.w3.org/ns/pim/space# cc: http://creativecommons.org/ns# skos: http://www.w3.org/2004/02/skos/core# prov: http://www.w3.org/ns/prov# schema: http://schema.org/ rsa: http://www.w3.org/ns/auth/rsa# cert: http://www.w3.org/ns/auth/cert# cal: http://www.w3.org/2002/12/cal/ical# wgs: http://www.w3.org/2003/01/geo/wgs84_pos# org: http://www.w3.org/ns/org# biblio: http://purl.org/net/biblio# bibo: http://purl.org/ontology/bibo/ book: http://purl.org/NET/book/vocab# ov: http://open.vocab.org/terms/ doap: http://usefulinc.com/ns/doap# dbr: http://dbpedia.org/resource/ dbp: http://dbpedia.org/property/ sio: http://semanticscience.org/resource/ opmw: http://www.opmw.org/ontology/ deo: http://purl.org/spar/deo/ doco: http://purl.org/spar/doco/ cito: http://purl.org/spar/cito/ sro: http://salt.semanticauthoring.org/ontologies/sro# this: http://renatostauffer.ch/http://renatostauffer.ch/requirements-and-design-for-a-tool-to-author-triple-statements/">
 <article class="hentry editable">
 <h1 class="entry-title">Requirements and Design for a Tool to Author Triple Statements</h1>
-<div id="authors"><dl id="author-name"><dt>Authors</dt><dd id="author-1"><a href="http://renatostauffer.ch/" rel="foaf:homepage">Renato Stauffer</a><sup><a href="#author-org-1">1</a></sup><sup><a href="#author-email-1"></a></sup></dd></dl>
+<div id="authors"><dl id="author-name"><dt>Authors</dt><dd id="author-1"><a href="http://renatostauffer.ch/#i" rel="foaf:homepage">Renato Stauffer</a><sup><a href="#author-org-1">1</a></sup><sup><a href="#author-email-1"></a></sup></dd></dl>
 <ul id="author-org">
 	<li id="author-org-1"><sup>1</sup><a href="http://bfh.ch/" rel="foaf:homepage">Bern University of Applied Sciences</a>, Bern, Switzerland</li>
 </ul>
@@ -8,10 +51,24 @@
 	<li id="author-email-1"><sup></sup><a href="mailto:renato.stauffer@students.bfh.ch" rel="foaf:mbox">renato.stauffer@students.bfh.ch</a></li>
 </ul>
 </div>
-<dl id="document-identifier"><dt>Document ID</dt><dd><a href="http://renatostauffer.ch/bachelor-thesis">http://renatostauffer.ch/bachelor-thesis</a></dd></dl><dl id="document-submitted"><dt>Published</dt><dd>2015-02-16</dd><dt>Modified</dt><dd>2015-02-16</dd></dl><dl id="document-license"><dt>License</dt><dd><a title="Creative Commons Attribution-ShareAlike 4.0 Unported" href="http://creativecommons.org/licenses/by-sa/4.0/" rel="license cc:license">CC BY-SA 4.0</a></dd></dl><dl id="document-purpose"><dt>Purpose</dt><dd>Purpose goes here...</dd></dl>
+<dl id="document-identifier"><dt>Document ID</dt><dd><a href="http://renatostauffer.ch/requirements-and-design-for-a-tool-to-author-triple-statements/">http://renatostauffer.ch/requirements-and-design-for-a-tool-to-author-triple-statements/</a></dd>
+</dl>
+
+
+            <dl id="document-published">
+                <dt>Published</dt>
+                <dd property="dcterms:published" content="2015-03-08T00:00:00Z">2015-02-20</dd>
+            </dl>
+
+            <dl id="document-modified">
+                <dt>Modified</dt>
+                <dd property="dcterms:modified" content="2015-03-08T00:00:00Z">2015-03-09</dd>
+            </dl>
+<dl id="document-license">
+<dt>License</dt><dd><a title="Creative Commons Attribution-ShareAlike 4.0 Unported" href="http://creativecommons.org/licenses/by-sa/4.0/" rel="license cc:license">CC BY-SA 4.0</a></dd></dl><dl id="document-purpose"><dt>Purpose</dt><dd>Purpose goes here&#8230;</dd></dl>
 <div id="content" class="entry-content"><section id="abstract">
 <h2>Abstract</h2>
-<p class="entry-summary">Abstract goes here...</p>
+<p class="entry-summary">Abstract goes here&#8230;</p>
 
 </section><section id="keywords">
 <h2>Keywords</h2>
@@ -31,7 +88,7 @@
 <div>
 <p id="prologue">
 <q cite="https://archive.org/stream/periclesandaspa03landgoog#page/n100/mode/2up">Nothing is pleasanter to me than exploring in a library.</q> [<a class="ref" href="#ref-1">1</a>]
-Many years have past by since this quote from <a href="http://en.wikipedia.org/wiki/Walter_Savage_Landor">Walter Savage Landor</a>. Meanwhile technology has evolved and brought the World Wide Web to life: A massive library full of data, where knowledge is often represented in an unstructured, machine-unfriendly manner. <i>more to come...</i>
+Many years have past by since this quote from <a href="http://en.wikipedia.org/wiki/Walter_Savage_Landor">Walter Savage Landor</a>. Meanwhile technology has evolved and brought the World Wide Web to life: A massive library full of data, where knowledge is often represented in an unstructured, machine-unfriendly manner. <i>more to come&#8230;</i>
 </p>
 
 
@@ -39,7 +96,7 @@ Many years have past by since this quote from <a href="http://en.wikipedia.org/w
 <h3>Problem Statement</h3>
 <div>
 <p>
-Through movements like Open Access, data and research publications have become more accessible for the general public. But Sarven Capadisli et. all state in their publication Enabling Accessible Knowledge the following: <q cite="http://csarven.ca/enabling-accessible-knowledge#motivation">While there are notable efforts making research publications and data available for free with open access, there is a self-evident disconnect between research documents as far as machines are concerned.</q> [<a class="ref" href="#ref-1">2</a>] According to them, research documents are not as human and machine friendly as they could be, making it unpleasant to us - but also for the machines - to explore research documents on the Web.
+Through movements like Open Access, data and research publications have become more accessible for the general public. But Sarven Capadisli et. all state in their publication Enabling Accessible Knowledge the following: <q cite="http://csarven.ca/enabling-accessible-knowledge#motivation">While there are notable efforts making research publications and data available for free with open access, there is a self-evident disconnect between research documents as far as machines are concerned.</q> [<a class="ref" href="#ref-1">2</a>] According to them, research documents are not as human and machine friendly as they could be, making it unpleasant to us &#8211; but also for the machines &#8211; to explore research documents on the Web.
 </p>
 <p>
 As reported by Frank van Harmelen and Dieter Fensel in their publication Practical Knowledge representation for the Web, the lack of semantic markup is a major barrier to develop more intelligent document processing on the web. [<a class="ref" href="#ref-1">3</a>]
@@ -78,7 +135,7 @@ This thesis is structured as follows:
 <dd>This Chapter shows already existing tools with similar objectives and features.</dd>
 <dt>Chapter 3: Fundamentals</dt>
 <dd>In chapter 2, the fundamentals to understand this paper will be explained.</dd>
-<dt>Chapter 4 - 5 Requirements and Design</dt>
+<dt>Chapter 4 &#8211; 5 Requirements and Design</dt>
 <dd>The chapter 4 – 5 build the main part of this thesis and show how the requirements for the editing tool got established.</dd>
 <dt>Chapter 7: Summary and Outlook</dt>
 <dd>The final chapter 7 summarizes the thesis and gives and outlook for future processing.</dd>
@@ -88,35 +145,6 @@ This thesis is structured as follows:
 
 </div>
 </section><!--End of #introduction-->
-
-
-<section id="related-work">
-<h2>Related Work</h2>
-<div>
-
-<section id="rdface">
-<h3>RDFaCe</h3>
-<div>
-<p>
-About RDFaCe...
-</p>
-</div>
-</section>
-
-
-<section id="wordlift">
-<h3>Wordlift</h3>
-<div>
-<p>
-About Wordlift...
-</p>
-</div>
-</section>
-
-
-</div>
-</section>
-
 
 <section id="fundamentals">
 <h2>Fundamentals</h2>
@@ -130,15 +158,37 @@ This chapter is intended to provide background information and define terms to u
 <div>
 <p>
 The Hypertext Markup Language (HTML) is the core language of the World Wide Web (WWW) and currently released as version 5.0. The language is used to create web pages and is recommended by the main international standards organization for the WWW (W3C, World Wide Web Consortium).
-HTML specifies the structure of a website with tags (like  <span class="lang:default decode:true  crayon-inline " >&lt;html&gt;</span> ). The following listing shows the basic structure of an HTML 5 document:
+HTML specifies the structure of a website with tags (like  
+			<span id="crayon-5527ee2812707702905654" class="crayon-syntax crayon-syntax-inline  crayon-theme-github crayon-theme-github-inline crayon-font-monaco" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-o">&lt;</span><span class="crayon-v">html</span><span class="crayon-o">&gt;</span></span></span> ). The following listing shows the basic structure of an HTML 5 document:
  
-<pre class="lang:xhtml decode:true " >&lt;!DOCTYPE html&gt;
+</p><!-- Crayon Syntax Highlighter v2.6.9 -->
+
+		<div id="crayon-5527ee2812717673185588" class="crayon-syntax crayon-theme-github crayon-font-monaco crayon-os-mac print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 15px !important;">
+		
+			<div class="crayon-toolbar" data-settings=" mouseover overlay hide delay" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><span class="crayon-title"></span>
+			<div class="crayon-tools" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><div class="crayon-button crayon-nums-button" title="Toggle Line Numbers"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-plain-button" title="Toggle Plain Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-wrap-button" title="Toggle Line Wrap"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-expand-button" title="Expand Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-copy-button" title="Copy"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-popup-button" title="Open Code In New Window"><div class="crayon-button-icon"></div></div><span class="crayon-language">XHTML</span></div></div>
+			<div class="crayon-info" style="min-height: 16.8px !important; line-height: 16.8px !important;"></div>
+			<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no" data-settings="dblclick" readonly style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 12px !important; line-height: 15px !important;">
+&lt;!DOCTYPE html&gt;
 &lt;html&gt;
 &lt;head&gt;
 &lt;title&gt;Title of the Web page&lt;/title&gt;
 &lt;/head&gt;
 &lt;body&gt;&lt;/body&gt;
-&lt;/html&gt;</pre> 
+&lt;/html&gt;</textarea></div>
+			<div class="crayon-main" style="">
+				<table class="crayon-table">
+					<tr class="crayon-row">
+				<td class="crayon-nums " data-settings="show">
+					<div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-5527ee2812717673185588-1">1</div><div class="crayon-num crayon-striped-num" data-line="crayon-5527ee2812717673185588-2">2</div><div class="crayon-num" data-line="crayon-5527ee2812717673185588-3">3</div><div class="crayon-num crayon-striped-num" data-line="crayon-5527ee2812717673185588-4">4</div><div class="crayon-num" data-line="crayon-5527ee2812717673185588-5">5</div><div class="crayon-num crayon-striped-num" data-line="crayon-5527ee2812717673185588-6">6</div><div class="crayon-num" data-line="crayon-5527ee2812717673185588-7">7</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5527ee2812717673185588-1"><span class="crayon-n">&lt;!DOCTYPE html&gt;</span></div><div class="crayon-line crayon-striped-line" id="crayon-5527ee2812717673185588-2"><span class="crayon-r ">&lt;html&gt;</span></div><div class="crayon-line" id="crayon-5527ee2812717673185588-3"><span class="crayon-r ">&lt;head&gt;</span></div><div class="crayon-line crayon-striped-line" id="crayon-5527ee2812717673185588-4"><span class="crayon-r ">&lt;title&gt;</span><span class="crayon-i ">Title of the Web page</span><span class="crayon-r ">&lt;/title&gt;</span></div><div class="crayon-line" id="crayon-5527ee2812717673185588-5"><span class="crayon-r ">&lt;/head&gt;</span></div><div class="crayon-line crayon-striped-line" id="crayon-5527ee2812717673185588-6"><span class="crayon-r ">&lt;body&gt;</span><span class="crayon-r ">&lt;/body&gt;</span></div><div class="crayon-line" id="crayon-5527ee2812717673185588-7"><span class="crayon-r ">&lt;/html&gt;</span></div></div></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+<!-- [Format Time: 0.0007 seconds] -->
+<p> 
 (http://www.w3.org/TR/html5/)
 </p>
 </div>
@@ -207,11 +257,34 @@ As seen in Chapter 2.1, URIs help to refer to things and concepts on the web and
 <p>
 RDF is a family of World Wide Web Consortium (W3C) specifications. In essence it is an entity-relationship model that lets anyone make any statement about anything. A statement is composed of three atomic parts – the subject, predicate and object. These parts together are called a triple. The subject (line 1 of listing 2) says what the statement is about and the predicate (line 2 of listing 2) describes the relationship to its object (line 3 of listing 2) resource. Typically triples are represented by HTTP URIs. The following triple statement gives an example:
 </p>
-<pre class="lang:default decode:true " >&lt;http://renatostauffer.ch/i#&gt;
+<!-- Crayon Syntax Highlighter v2.6.9 -->
+
+		<div id="crayon-5527ee2812722226707871" class="crayon-syntax crayon-theme-github crayon-font-monaco crayon-os-mac print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 15px !important;">
+		
+			<div class="crayon-toolbar" data-settings=" mouseover overlay hide delay" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><span class="crayon-title"></span>
+			<div class="crayon-tools" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><div class="crayon-button crayon-nums-button" title="Toggle Line Numbers"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-plain-button" title="Toggle Plain Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-wrap-button" title="Toggle Line Wrap"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-expand-button" title="Expand Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-copy-button" title="Copy"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-popup-button" title="Open Code In New Window"><div class="crayon-button-icon"></div></div></div></div>
+			<div class="crayon-info" style="min-height: 16.8px !important; line-height: 16.8px !important;"></div>
+			<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no" data-settings="dblclick" readonly style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 12px !important; line-height: 15px !important;">
+&lt;http://renatostauffer.ch/i#&gt;
 &lt;http://xmlns.com/foaf/0.1/knows&gt; 
-&lt;http://csarven.cs/#i&gt; </pre> 
+&lt;http://csarven.cs/#i&gt; </textarea></div>
+			<div class="crayon-main" style="">
+				<table class="crayon-table">
+					<tr class="crayon-row">
+				<td class="crayon-nums " data-settings="show">
+					<div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-5527ee2812722226707871-1">1</div><div class="crayon-num crayon-striped-num" data-line="crayon-5527ee2812722226707871-2">2</div><div class="crayon-num" data-line="crayon-5527ee2812722226707871-3">3</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5527ee2812722226707871-1"><span class="crayon-o">&lt;</span><span class="crayon-v">http</span><span class="crayon-o">:</span><span class="crayon-c">//renatostauffer.ch/i#&gt;</span></div><div class="crayon-line crayon-striped-line" id="crayon-5527ee2812722226707871-2"><span class="crayon-o">&lt;</span><span class="crayon-v">http</span><span class="crayon-o">:</span><span class="crayon-c">//xmlns.com/foaf/0.1/knows&gt; </span></div><div class="crayon-line" id="crayon-5527ee2812722226707871-3"><span class="crayon-o">&lt;</span><span class="crayon-v">http</span><span class="crayon-o">:</span><span class="crayon-c">//csarven.cs/#i&gt; </span></div></div></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+<!-- [Format Time: 0.0006 seconds] -->
+ 
 <p>
-This statement says that the thing  <span class="lang:default decode:true  crayon-inline " >&lt;http://renatostauffer.ch/i#&gt;</span>  knows the thing  <span class="lang:default decode:true  crayon-inline " >&lt;http://csarven.cs/#i&gt;</span> . Those things (resources) can now be further described with different RDF vocabularies. (RDF Working Group 2014). As the example from above shows, predicates are vocabulary terms that are used to relate the subject with an object. The predicate itself is an HTTP URI, which has a description for the term in use when dereferenced. (Capadisli 2012).
+This statement says that the thing  
+			<span id="crayon-5527ee281272b305727427" class="crayon-syntax crayon-syntax-inline  crayon-theme-github crayon-theme-github-inline crayon-font-monaco" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-o">&lt;</span><span class="crayon-v">http</span><span class="crayon-o">:</span><span class="crayon-c">//renatostauffer.ch/i#&gt;</span></span></span>  knows the thing  
+			<span id="crayon-5527ee2812730145195483" class="crayon-syntax crayon-syntax-inline  crayon-theme-github crayon-theme-github-inline crayon-font-monaco" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-o">&lt;</span><span class="crayon-v">http</span><span class="crayon-o">:</span><span class="crayon-c">//csarven.cs/#i&gt;</span></span></span> . Those things (resources) can now be further described with different RDF vocabularies. (RDF Working Group 2014). As the example from above shows, predicates are vocabulary terms that are used to relate the subject with an object. The predicate itself is an HTTP URI, which has a description for the term in use when dereferenced. (Capadisli 2012).
 
 </p>
 </div>
@@ -232,7 +305,7 @@ Resource Description Framework in Attributes or simply RDFa is a W3C recommendat
 <dt>resource</dt>
 <dd>Specifies the context (To which URL does the markup apply?)</dd>
 <dt>src / href / resource</dt>
-<dd><i>More to come...</i></dd>
+<dd><i>More to come&#8230;</i></dd>
 </dl>
 </div>
 </section>
@@ -268,7 +341,7 @@ This chapter describes the tools and methods used for this thesis.
 <h3>Library and Editor Comparison</h3>
 <div>
 <p>
-Because of the applied component abased software engineering approach (see chapter XXX), libraries and tools for different components had to be compared and evaluated for Linked Research.
+Because of the applied component abased software engineering approach (see chapter <a href="http://renatostauffer.ch/requirements-and-design-for-a-tool-to-author-triple-statements/#development-facet">Development Facet</a>), libraries and tools for different components had to be compared and evaluated for Linked Research.
 </p>
 </div>
 </section>
@@ -278,7 +351,7 @@ Because of the applied component abased software engineering approach (see chapt
 <h3>Literature Research</h3>
 <div>
 <p>
-Literature research provided a broad idea of the problem scope and <i>More to come...</i>
+Literature research provided a broad idea of the problem scope and <i>More to come&#8230;</i>
 </p>
 </div>
 </section>
@@ -290,23 +363,60 @@ Literature research provided a broad idea of the problem scope and <i>More to co
 <p>
 Prototypes have been worked out to discuss features and functionality. They are available on Github.
 <ul>
-<li><i>More to come...</i></li>
-<li><i>More to come...</i></li>
+<li><i>More to come&#8230;</i></li>
+<li><i>More to come&#8230;</i></li>
 </ul>
+</p>
+</div>
+</section>
+
+<section id="requirement-engineering-framework">
+<h3>Requirement Engineering Framework</h3>
+<div>
+<p>
+For the requirement engineering part of this thesis, the framework according to Pohl et. all. is applied (see <a href="http://renatostauffer.ch/requirements-and-design-for-a-tool-to-author-triple-statements/#requirement-engineering">5. Requirement Engineering</a> ).
+</p>
+</div>
+</section>
+
+</div>
+</section><!--End of #methodology-->
+
+
+
+<section id="related-work">
+<h2>Related Work</h2>
+<div>
+
+<section id="rdface">
+<h3>RDFaCe</h3>
+<div>
+<p>
+About RDFaCe&#8230;
+</p>
+</div>
+</section>
+
+
+<section id="wordlift">
+<h3>Wordlift</h3>
+<div>
+<p>
+About Wordlift&#8230;
 </p>
 </div>
 </section>
 
 
 </div>
-</section><!--End of #methodology-->
+</section><!--End of #related-work-->
 
 
 <section id="requirement-engineering">
 <h2>Requirement Engineering</h2>
 <div>
 <p>
-In this chapter, the requirements for the authoring tool will be established. For this propose parts of the requirements engineering framework according to Phol et. all is used as a reference. The used framework is structured as shown in fig. XXX.
+In this chapter, the requirements for the authoring tool will be established. For this propose parts of the requirements engineering framework according to Pohl et all is used as a reference. The used framework is structured as shown in figure 1 (Fig. 1).
 </p>
 <figure class="figure">
 <a href="http://renatostauffer.ch/wp-content/uploads/2015/02/framework-pohl.png"><img src="http://renatostauffer.ch/wp-content/uploads/2015/02/framework-pohl.png" alt="framework-pohl" width="424" height="419" class="alignnone size-full wp-image-621" /></a>
@@ -315,73 +425,81 @@ Requirements Framework by Pohl.
 </figcaption>
 </figure>
 <p>
+The framework is composed of three parts: The System Context, Core Activities and Requirements Artifact.
+</p>
+<p>
 Firstly the System Context will be described to identify important characteristics of the system and give the reader of this thesis an overview of the system’s context.
-Depending on the established context, goals are determined and scenarios to be implemented are worked out. 
+Depending on the established context, goals were determined and scenarios to be implemented are worked out. Those Requirement Artifacts are documented in the Chapters <a href="http://renatostauffer.ch/requirements-and-design-for-a-tool-to-author-triple-statements/#requirements-goals">5.3 Goals</a> as functional and non-functional requirements and <a href="http://renatostauffer.ch/requirements-and-design-for-a-tool-to-author-triple-statements/#requirements-scenarios">5.4 Scenarios</a>.
 </p>
 
 <section id="system-context">
 <h3>System Context</h3>
 <div>
 <p>
-Each software-intensive system lies within a certain context and is through that influenced by the definition of the system requirements (Phol et all, 2012). This chapter describes the system context with its facets for Linked Research. The Usage Facet, Subject Facet, IT-System Facet and Development Facet each describe a certain aspect of Linked Research and build the entry point for the systems requirements.
+Each software-intensive system lies within a certain context and is through that influenced by the definition of the system requirements (Pohl et all, 2012). This chapter describes the system context with its facets for Linked Research. The Usage Facet, Subject Facet, IT-System Facet and Development Facet each describe a certain aspect of Linked Research and build the entry point for the systems requirements.
 </p>
-<p>The system context was established based on interviews with Mr. Sarven Capadisli and studying the following artifacts:</p>
+<p>The system context was established based on meetings with Mr. Sarven Capadisli and studying the following artifacts:</p>
 <ul>
-<li>A publication about Linked Research (<a href="http://linked-research.270a.info/linked-research.html">http://linked-research.270a.info/linked-research.html</a>)</li>
 <li>A publication about Enabling Accessible Knowledge (<a href="http://csarven.ca/enabling-accessible-knowledge">http://csarven.ca/enabling-accessible-knowledge</a>)</li>
 <li>Linked Research Github repository (<a href="https://github.com/csarven/linked-research">https://github.com/csarven/linked-research</a></li>
-<li>Documentation of Linked Research (<a href="http://linked-research.270a.info/linked-research.html">http://linked-research.270a.info/linked-research.html</a></li>
+<li>Linked Research documentation (<a href="http://linked-research.270a.info/linked-research.html">http://linked-research.270a.info/linked-research.html</a>)</li>
+<li>Linked Research publication (<a href="http://csarven.ca/linked-research">http://csarven.ca/linked-research</a>)</li>
 </ul>
 <section id="usage-facet">
 <h4>Usage Facet</h4>
 <div>
 <p>
-The Usage Facet describes how the user interacts with the system (Phol et all, 2012). In the case of the Linked Research the Usage Facet is described with the UML 2.0:
+The Usage Facet describes how the user interacts with the system (Pohl et all, 2012). In the case of Linked Research the Usage Facet is described with the UML 2.0:
 </p>
 <figure class="figure">
-<a href="http://renatostauffer.ch/wp-content/uploads/2015/02/Use-Case-Diagram12.png"><img src="http://renatostauffer.ch/wp-content/uploads/2015/02/Use-Case-Diagram12.png" alt="Use Case Diagram1" width="754" height="496" class="alignnone size-full wp-image-657" /></a>
+<a href="http://renatostauffer.ch/wp-content/uploads/2015/02/use-case-lr.png"><img src="http://renatostauffer.ch/wp-content/uploads/2015/02/use-case-lr.png" alt="use-case-lr" width="857" height="526" class="alignnone size-full wp-image-749" /></a>
 <figcaption>
 UML Use Case Diagram for Linked Research
 </figcaption>
 </figure>
 <p>
-Figure XXX describes the ways the user interacts with Linked Research. From a users perspective the following use cases arise:
+Figure 2 (Fig. 2) describes the ways an author or a consumer of a publication interacts with Linked Research. From a authors perspective the following use cases arise:
 </p>
 <dl>
 <dt>Edit Text</dt>
-<dd>This is the most basic use case for Linked Research. The user creates or edits text directly in the browser.</dd>
+<dd>This is the most basic use case for Linked Research. The author creates or edits text directly in the browser.</dd>
 <dt>Create Triple Statement</dt>
-<dd>The user can provide triples to the written text via a triple authoring tool. For this to be working, the use cases Assign Subject, Assign Predicate and Assign Object need to be processed.</dd>
+<dd>The author can enrich the written text with RDF triples via a triple authoring tool. For this to be working, the use cases Assign Subject, Assign Predicate and Assign Object need to be processed.</dd>
 <dt>Remove Triple Statement</dt>
-<dd>The user can remove added triple statements from the document.</dd>
+<dd>The author can remove added triple statements from the document.</dd>
 <dt>Automatic Markup</dt>
-<dd>A user does usually not have the time to enrich the whole publication with metadata by hand. Because of that, the use case Automatic Markup should provide the possibility to automatically markup the created text with metadata.</dd>
+<dd>A author does usually not have the time to enrich the whole publication with metadata by hand. Because of that, the use case Automatic Markup should provide the possibility to automatically enrich sections of the publication.</dd>
 <dt>Local Storage</dt>
-<dd>The text the user is editing gets stored locally. This way, off-line editing is possible.</dd>
+<dd>The text the author is editing gets stored locally. This way, off-line editing is possible.</dd>
 <dt>Export Document</dt>
-<dd>The user of Linked Research is able to export the document in HTML format or print the document (PDF format).</dd>
+<dd>The author or consumer is able to export the document in HTML format or print the document (PDF format).</dd>
 <dt>Change View</dt>
-<dd>The user of Linked Research can apply different views for the document (LNCS ACM W3C-REC Native)</dd>
+<dd>The author or consumer can apply different views for the document (LNCS ACM W3C-REC Native) <i>Create an Abbreviation index at the und!</i></dd>
 <dt>Assign Subject</dt>
-<dd>In order to be able to create a triple statement, the user must have the ability to mark a text passage (a word, paragraph or the document itself) as an RDF subject. </dd>
+<dd>In order to be able to create a triple statement, the author must have the ability to mark a text passage (a word, paragraph or the document itself) as an RDF subject. </dd>
 <dt>Assign Predicate</dt>
-<dd>A service should provide the user the ability to search for predicates in existing Linked Open vocabularies and assign a found predicate to a triple statement.</dd>
+<dd>A service should provide the author the ability to search for predicates in existing Linked Open vocabularies and assign a found predicate to a triple statement.</dd>
 <dt>Assign Object</dt>
-<dd>Finally the user needs functunality to assign a RDF object to a RDF triple statement</dd>
+<dd>Finally the author needs functionality to assign a RDF object to a RDF triple statement</dd>
 </dl>
 <p>
-The use cases Change View, Local Storage and Export Document were already implemented into Linked Research by Sarven Carpadisli. The other use cases (Create Triple Statement, Remove Triple Statement and Automatic Markup) are open to be implemented.
+The use cases Change View, Local Storage and Export Document were already implemented into Linked Research by Sarven Carpadisli. The other use cases (Create Triple Statement, Remove Triple Statement and Automatic Markup, Edit Text, Assign Subject, Assign Predicate and Assign Object) are open to be implemented. The focus of the following chapters lies on the not yet implemented use cases from an author&#8217;s perspective.
 </p>
 <p>
-Based on the established Usage Facet a first scatch of Linked Research was drawn:
+Based on the established Usage Facet a first sketch of Linked Research was drawn:
+<figure class="figure">
 <a href="http://renatostauffer.ch/wp-content/uploads/2015/02/scatch1.png"><img src="http://renatostauffer.ch/wp-content/uploads/2015/02/scatch1.png" alt="scatch" width="1137" height="474" class="alignnone size-full wp-image-692" /></a>
+<figcaption>
+First sketch
+</figcaption>
+</figure>
 </p>
 <ol>
 <li>The user edits or creates text with the editor. When the user selects a text passage or word a popup menu shows up. From there the user has the ability to assign styles to the text (bold text, italic, etc.).</li>
 <li>The user can also toggle in / out the meta editor to create triple statements.</li>
 <li>The triple store is held locally. The user can insert or delete triple statements.</li>
 <li>Triple statements can be fetched to e.g. visualize the current graph.</li>
-<li>The meta editor talks to a external service to retrieve suggestions for possible terms for when creating a triple statement.</li>
+<li>The meta editor talks to a external service to retrieve suggestions for possible RDF vocabulary terms when creating a triple statement.</li>
 </ol>
 </div>
 </section>
@@ -390,13 +508,16 @@ Based on the established Usage Facet a first scatch of Linked Research was drawn
 <h4>Subject Facet</h4>
 <div>
 <p>
-This facet describes what must be represented by the system (Phol et all, 2012). Table XXX describes objects and events within the system context that are important for the system. 
+This facet describes what kind of objects must be represented by the system (Pohl et all, 2012). Table 3 describes objects and events within the system context that are important for the system. 
 </p>
 <table>
+<caption>
+Important objects and events within Linked Research
+</caption>
 <tbody>
 <tr>
-<th>Object</th>
-<th>Description</th>
+<th><strong>Object</strong></th>
+<th><strong>Description</strong></th>
 </tr>
 <tr>
 <td>RDF Subject</td>
@@ -419,7 +540,7 @@ This facet describes what must be represented by the system (Phol et all, 2012).
 <td>An RDF triple store, persists RDF statements. The triple store is responsible for querying, inserting or deleting a triple statement.</td>
 </tr>
 <tr>
-<td>Metadata object</td>
+<td>MetaEditor object</td>
 <td>An object responsible to create new triple statements has to be provided.</td>
 </tr>
 <tr>
@@ -436,8 +557,16 @@ This facet describes what must be represented by the system (Phol et all, 2012).
 <h4>IT System Facet</h4>
 <div>
 <p>
-The IT System Facet is held short: A Web browser is the only requirement to use Linked Research. There should be no installation or account creation before using the tool.
+The IT system facet contains all aspects concerning the operational and technical environment oft the system. This also includes restrictions or guidelines (Pohl, 2010). The <a href="http://linked-research.270a.info/linked-research.html">online documentation of Linked Research</a> defines some design principles, which need to be taken into account when defining the requirements of Linked Research. This includes: [source]
 </p>
+<ul>
+<li>Documents are human and machine friendly</li>
+<li>Using the plain old semantic HTML marking process, with further semantic annotations using microformats and RDF.</li>
+<li>No server required. Works on local machine.</li>
+<li>No installation. No account creation.</li>
+<li>A Web browser is the only requirement, whether it is a Line Mode Browser, or Firefox Nightly.</li>
+<li>Licenses and rights: Apache License and CC0.</li>
+</ul>
 </div>
 </section>
 
@@ -445,11 +574,31 @@ The IT System Facet is held short: A Web browser is the only requirement to use 
 <h4>Development Facet</h4>
 <div>
 <p>
-A component based software engineering approach according to Sommerville (2007) is applied. This approach tries to reuse existing software and frameworks as much as possible and thus reduces development time for a much faster delivery. Image XXXX shows the different stages of this reuse-oriented approach (Sommerville, 2007).
+The development facet contains all aspects regarding the development process of the system, including guidelines and constraints, development tools or quality assurance methods.
 </p>
 <p>
-
+For Linked Research a component based software engineering approach according to Sommerville (2007) is applied. This approach tries to reuse existing software and frameworks as much as possible and thus reduces development time for a much faster delivery. Figure 3 (Fig. 3) shows the different stages of this reuse-oriented approach (Sommerville, 2007).
 </p>
+<figure class="figure">
+<a href="http://renatostauffer.ch/wp-content/uploads/2015/02/Bildschirmfoto-2015-04-09-um-11.36.17.png"><img src="http://renatostauffer.ch/wp-content/uploads/2015/02/Bildschirmfoto-2015-04-09-um-11.36.17.png" alt="Bildschirmfoto 2015-04-09 um 11.36.17" width="860" height="157" class="alignnone size-full wp-image-729" /></a>
+<figcaption>
+Component based software engineering approach according to Sommerville (2007)
+</figcaption>
+</figure>
+<p>
+Especially the editor and the triple store are parts of Linked Research that do not have to be developed from ground. There are a lot of existing projects, which provide such functionality. Chapter XXX and XXX show how the two components (editor and RDF triple store) got evaluated for Linked Research.
+</p>
+<p>
+Github (a versioning tool) is used to manage the code base of Linked Research and prototypes.
+</p>
+<p>The publication <a href="http://csarven.ca/enabling-accessible-knowledge">Enabling Accessible Knowledge</a> defines in the chapter <a href="http://csarven.ca/enabling-accessible-knowledge#conceptual-design">Conceptual Design</a> design principles, to which Linked Research sticks to. Those are:
+</p>
+<dl>
+<dt>The Rule of Least Power</dt>
+<dd>This means that when developing for the Web, the least powerful language should be chosen [source]. Capadisli et all state in in Enabling Accessible Knowledge the following: <q cite="">By design, HTML fulfils the principle of least power. As far as computer languages and their environments go, HTML is the least common denominator; it can be used virtually from any device; from command-line terminals, desktop browsers, smartwatches to cars, whether on or offline. Together with HTTP, the undeniable penetration of HTML, both on a technological and social level makes it a clear winner for information distribution.</q></dd>
+<dt>RFC 1958</dt>
+<dd>This Request for Comments (RFC) says, that:<q cite="http://tools.ietf.org/html/rfc1958#section-1">the principle of constant change is perhaps the only principle of the Internet that should survive indefinitely</q></dd>
+</dl>
 </div>
 </section>
 
@@ -460,13 +609,977 @@ A component based software engineering approach according to Sommerville (2007) 
 <h3>Goals</h3>
 <div>
 <p>
+Based on the system&#8217;s context, goals for Linked Research are determined. It is distinguished between functional and non-functional goals according to I. Sommerville (2010)[source]. The terms goal and requirement are used as  synonyms here.
 </p>
+
+<section id="functional-requirements">
+<h4>Functional Requirements</h4>
+<div>
+<p>
+The functional and non-functional requirements follow a pattern stated as below:
+</p>
+
+<table id="requirements-pattern">
+<caption>Pattern for functional and non-functional requirements</caption>
+<tbody>
+<tr>
+<th><strong>Name</strong></th>
+<td>Name of the requirement</td>
+</tr>
+<tr>
+<th><strong>ID</strong></th>
+<td>Unique ID to avoid confusion when having similar sounding requirements</td>
+</tr>
+<tr>
+<th><strong>Description</strong></th>
+<td>Description of what the requirement is about.</td>
+</tr>
+<tr>
+<th><strong>Input</strong></th>
+<td>What kind of data is needed to fulfill the requirement</td>
+</tr>
+<tr>
+<th><strong>Output</strong></th>
+<td>What is the output data after the requirement has been fulfilled</td>
+</tr>
+<tr>
+<th><strong>Pre-condition</strong></th>
+<td>A condition, which must be given to fulfill the requirement</td>
+</tr>
+<tr>
+<th><strong>Post-condition</strong></th>
+<td>A condition, which must be given after the requirement has been fulfilled.</td>
+</tr>
+<tr>
+<th><strong>Source of Requirement</strong></th>
+<td>Where does the requirement come from?</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+<table id="f-1">
+<caption>Edit text</caption>
+<tbody>
+<tr>
+<th><strong>Name</strong></th>
+<td>Edit text</td>
+</tr>
+<tr>
+<th><strong>ID</strong></th>
+<td>F-1</td>
+</tr>
+<tr>
+<th><strong>Description</strong></th>
+<td>Linked Research must provide an author the possibility to edit text within the browser</td>
+</tr>
+<tr>
+<th><strong>Input</strong></th>
+<td>-</td>
+</tr>
+<tr>
+<th><strong>Output</strong></th>
+<td>Plain text</td>
+</tr>
+<tr>
+<th><strong>Pre-condition</strong></th>
+<td>An Editor instance must exist</td>
+</tr>
+<tr>
+<th><strong>Post-condition</strong></th>
+<td>Requirement <a href="http://renatostauffer.ch/requirements-and-design-for-a-tool-to-author-triple-statements/#f-14">F-14</a> must be fulfilled</td>
+</tr>
+<tr>
+<th><strong>Source of Requirement</strong></th>
+<td>Meeting with Mr. Capadisli</td>
+</tr>
+</tbody>
+</table>
+
+<table id="f-2">
+<caption>Show MetaEditor</caption>
+<tbody>
+<tr>
+<th><strong>Name</strong></th>
+<td>Show MetaEditor</td>
+</tr>
+<tr>
+<th><strong>ID</strong></th>
+<td>F-2</td>
+</tr>
+<tr>
+<th><strong>Description</strong></th>
+<td>Linked Research must provide an author the possibility to display the MetaEditor within the document</td>
+</tr>
+<tr>
+<th><strong>Input</strong></th>
+<td>Visibility of the MetaEditor instance</td>
+</tr>
+<tr>
+<th><strong>Output</strong></th>
+<td>Visible the MetaEditor</td>
+</tr>
+<tr>
+<th><strong>Pre-condition</strong></th>
+<td>An editor instance must exist</td>
+</tr>
+<tr>
+<th><strong>Post-condition</strong></th>
+<td>Visibility of the MetaEditor == true</td>
+</tr>
+<tr>
+<th><strong>Source of Requirement</strong></th>
+<td>[needs to be determined]</td>
+</tr>
+</tbody>
+</table>
+
+
+<table id="f-3">
+<caption>Hide MetaEditor</caption>
+<tbody>
+<tr>
+<th><strong>Name</strong></th>
+<td>Hide MetaEditor</td>
+</tr>
+<tr>
+<th><strong>ID</strong></th>
+<td>F-3</td>
+</tr>
+<tr>
+<th><strong>Description</strong></th>
+<td>Linked Research must provide an author the possibility to hide the MetaEditor from the document</td>
+</tr>
+<tr>
+<th><strong>Input</strong></th>
+<td>Visibility of the MetaEditor instance</td>
+</tr>
+<tr>
+<th><strong>Output</strong></th>
+<td>Hidden MetaEditor</td>
+</tr>
+<tr>
+<th><strong>Pre-condition</strong></th>
+<td>An editor instance must exist</td>
+</tr>
+<tr>
+<th><strong>Post-condition</strong></th>
+<td>Visibility of the MetaEditor == false</td>
+</tr>
+<tr>
+<th><strong>Source of Requirement</strong></th>
+<td>[needs to be determined]</td>
+</tr>
+</tbody>
+</table>
+
+
+<table id="f-4">
+<caption>Text formatting</caption>
+<tbody>
+<tr>
+<th><strong>Name</strong></th>
+<td>Text formatting</td>
+</tr>
+<tr>
+<th><strong>ID</strong></th>
+<td>F-4</td>
+</tr>
+<tr>
+<th><strong>Description</strong></th>
+<td>The editor of Linked Research must provide the author functionality to format text over one or multiple paragraphs. The following formatting should be possible:
+<ul>
+<li>Insert Table</li>
+<li>Insert ordered or unordered list</li>
+<li>Bold text</li>
+<li>Italic text</li>
+<li>Underlined text</li>
+<li>h1 &#8211; h4 headings</li>
+<li>quoting with the  
+			<span id="crayon-5527ee2812750436939041" class="crayon-syntax crayon-syntax-inline  crayon-theme-github crayon-theme-github-inline crayon-font-monaco" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-r ">&lt;q&gt;</span></span></span>-element</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th><strong>Input</strong></th>
+<td>Text</td>
+</tr>
+<tr>
+<th><strong>Output</strong></th>
+<td>Formatted text</td>
+</tr>
+<tr>
+<th><strong>Pre-condition</strong></th>
+<td>An Editor instance must exist</td>
+</tr>
+<tr>
+<th><strong>Post-condition</strong></th>
+<td>Requirement <a href="http://renatostauffer.ch/requirements-and-design-for-a-tool-to-author-triple-statements/#f-14">F-14</a> must be fulfilled</td>
+</tr>
+<tr>
+<th><strong>Source of Requirement</strong></th>
+<td>[needs to be determined]</td>
+</tr>
+</tbody>
+</table>
+
+<table id="f-5">
+<caption>Set Subject</caption>
+<tbody>
+<tr>
+<th><strong>Name</strong></th>
+<td>Set Subject</td>
+</tr>
+<tr>
+<th><strong>ID</strong></th>
+<td>F-5</td>
+</tr>
+<tr>
+<th><strong>Description</strong></th>
+<td>The MetaEditor of Linked Research must provide an author the possibility to set a word, phrase, paragraph or the document itself as the subject of an RDF triple statement.</td>
+</tr>
+<tr>
+<th><strong>Input</strong></th>
+<td>A word, phrase, paragraph of the text written by the author or the document itself</td>
+</tr>
+<tr>
+<th><strong>Output</strong></th>
+<td>-</td>
+</tr>
+<tr>
+<th><strong>Pre-condition</strong></th>
+<td>The author must select a word, phrase, paragraph of the text or the document itself.</td>
+</tr>
+<tr>
+<th><strong>Post-condition</strong></th>
+<td>Subject set</td>
+</tr>
+<tr>
+<th><strong>Source of Requirement</strong></th>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+
+<table id="f-6">
+<caption>Search predicate</caption>
+<tbody>
+<tr>
+<th><strong>Name</strong></th>
+<td>Search predicate</td>
+</tr>
+<tr>
+<th><strong>ID</strong></th>
+<td>F-6</td>
+</tr>
+<tr>
+<th><strong>Description</strong></th>
+<td>The MetaEditor should provide the author the possibility to search for a predicate via an external service to set the predicate for a RDF triple statement.</td>
+</tr>
+<tr>
+<th><strong>Input</strong></th>
+<td>Search term</td>
+</tr>
+<tr>
+<th><strong>Output</strong></th>
+<td>Suggestions for predicates</td>
+</tr>
+<tr>
+<th><strong>Pre-condition</strong></th>
+<td>Access to the external service</td>
+</tr>
+<tr>
+<th><strong>Post-condition</strong></th>
+<td>-</td>
+</tr>
+<tr>
+<th><strong>Source of Requirement</strong></th>
+<td>Meeting with Sarven Capadisli</td>
+</tr>
+</tbody>
+</table>
+
+
+
+<table id="f-6">
+<caption>Choose predicate</caption>
+<tbody>
+<tr>
+<th><strong>Name</strong></th>
+<td>Choose predicate</td>
+</tr>
+<tr>
+<th><strong>ID</strong></th>
+<td>F-6</td>
+</tr>
+<tr>
+<th><strong>Description</strong></th>
+<td>The MetaEditor should provide the author the possibility to choose one or more predicates after a search according to requirement XY has been made.</td>
+</tr>
+<tr>
+<th><strong>Input</strong></th>
+<td>-</td>
+</tr>
+<tr>
+<th><strong>Output</strong></th>
+<td>-</td>
+</tr>
+<tr>
+<th><strong>Pre-condition</strong></th>
+<td>A search according to requirement XY</td>
+</tr>
+<tr>
+<th><strong>Post-condition</strong></th>
+<td>RDF predicate is set</td>
+</tr>
+<tr>
+<th><strong>Source of Requirement</strong></th>
+<td>Meeting with Sarven Capadisli</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+<table id="f-10">
+<caption>Search object</caption>
+<tbody>
+<tr>
+<th><strong>Name</strong></th>
+<td>Search object</td>
+</tr>
+<tr>
+<th><strong>ID</strong></th>
+<td>F-7</td>
+</tr>
+<tr>
+<th><strong>Description</strong></th>
+<td>The MetaEditor has to provide the author the ability to search for an RDF object via an external service to set the object for an RDF triple statement.</td>
+</tr>
+<tr>
+<th><strong>Input</strong></th>
+<td>Search term</td>
+</tr>
+<tr>
+<th><strong>Output</strong></th>
+<td>Suggestions for an RDF object</td>
+</tr>
+<tr>
+<th><strong>Pre-condition</strong></th>
+<td>-</td>
+</tr>
+<tr>
+<th><strong>Post-condition</strong></th>
+<td>-</td>
+</tr>
+<tr>
+<th><strong>Source of Requirement</strong></th>
+<td>Meeting with Sarven Capadisli</td>
+</tr>
+</tbody>
+</table>
+
+
+<table id="f-7">
+<caption>Choose RDF object</caption>
+<tbody>
+<tr>
+<th><strong>Name</strong></th>
+<td>Choose RDF object</td>
+</tr>
+<tr>
+<th><strong>ID</strong></th>
+<td>F-7</td>
+</tr>
+<tr>
+<th><strong>Description</strong></th>
+<td>The MetaEditor should provide the author the possibility to choose one ore more RDF object after a search for RDF objects has been made.</td>
+</tr>
+<tr>
+<th><strong>Input</strong></th>
+<td>-</td>
+</tr>
+<tr>
+<th><strong>Output</strong></th>
+<td>-</td>
+</tr>
+<tr>
+<th><strong>Pre-condition</strong></th>
+<td>A search according to requirement ??? must be made in advance.</td>
+</tr>
+<tr>
+<th><strong>Post-condition</strong></th>
+<td>RDF Object set</td>
+</tr>
+<tr>
+<th><strong>Source of Requirement</strong></th>
+<td>Meeting with Sarven Capadisli</td>
+</tr>
+</tbody>
+</table>
+
+
+<table id="f-8">
+<caption>Set object as text literal</caption>
+<tbody>
+<tr>
+<th><strong>Name</strong></th>
+<td>Set object as text literal</td>
+</tr>
+<tr>
+<th><strong>ID</strong></th>
+<td>F-8</td>
+</tr>
+<tr>
+<th><strong>Description</strong></th>
+<td>The MetaEditor has to provide the ability to an author to set a word, passage, paragraph as the object literal of an RDF triple statement.</td>
+</tr>
+<tr>
+<th><strong>Input</strong></th>
+<td>Selected word, passage or paragraph</td>
+</tr>
+<tr>
+<th><strong>Output</strong></th>
+<td>-</td>
+</tr>
+<tr>
+<th><strong>Pre-condition</strong></th>
+<td>-</td>
+</tr>
+<tr>
+<th><strong>Post-condition</strong></th>
+<td>RDF Object set</td>
+</tr>
+<tr>
+<th><strong>Source of Requirement</strong></th>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<table id="f-9">
+<caption>Automatic Markup</caption>
+<tbody>
+<tr>
+<th><strong>Name</strong></th>
+<td>Automatic Markup</td>
+</tr>
+<tr>
+<th><strong>ID</strong></th>
+<td>F-9</td>
+</tr>
+<tr>
+<th><strong>Description</strong></th>
+<td>The MetaEditor of Linked Research could provide authors the functionality to automatically enrich sections with an id-attribute, which is composed of the title of the section and the parent section in case of identical titles.
+</td>
+</tr>
+<tr>
+<th><strong>Input</strong></th>
+<td>Title of the section and title of the parent section</td>
+</tr>
+<tr>
+<th><strong>Output</strong></th>
+<td>section element with an id attribute set</td>
+</tr>
+<tr>
+<th><strong>Pre-condition</strong></th>
+<td>Clean DOM</td>
+</tr>
+<tr>
+<th><strong>Post-condition</strong></th>
+<td>Requirement <a href="http://renatostauffer.ch/requirements-and-design-for-a-tool-to-author-triple-statements/#f-14">F-14</a> must be fulfilled</td>
+</tr>
+<tr>
+<th><strong>Source of Requirement</strong></th>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<table id="f-10">
+<caption>Add triple statement</caption>
+<tbody>
+<tr>
+<th><strong>Name</strong></th>
+<td>Add triple statement</td>
+</tr>
+<tr>
+<th><strong>ID</strong></th>
+<td>F-10</td>
+</tr>
+<tr>
+<th><strong>Description</strong></th>
+<td>
+The MetaEditor must provide the author the ability to add triple statements to the local triple store.
+</td>
+</tr>
+<tr>
+<th><strong>Input</strong></th>
+<td>Triple statement</td>
+</tr>
+<tr>
+<th><strong>Output</strong></th>
+<td>-</td>
+</tr>
+<tr>
+<th><strong>Pre-condition</strong></th>
+<td>A RDF subject, predicate and object has to be set according to requirement: XY, XY and XY</td>
+</tr>
+<tr>
+<th><strong>Post-condition</strong></th>
+<td>Triple has to be persisted in the triple store and the triple has to be inserted into the DOM according to requirement XY.</td>
+</tr>
+<tr>
+<th><strong>Source of Requirement</strong></th>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+
+<table id="f-10">
+<caption>Enrich DOM</caption>
+<tbody>
+<tr>
+<th><strong>Name</strong></th>
+<td>Enrich DOM</td>
+</tr>
+<tr>
+<th><strong>ID</strong></th>
+<td>F-10</td>
+</tr>
+<tr>
+<th><strong>Description</strong></th>
+<td>
+After a triple statement has been added to the triple store the corresponding elements in the DOM need to be enriched with RDFa.
+</td>
+</tr>
+<tr>
+<th><strong>Input</strong></th>
+<td>Elements, which need to be enriched</td>
+</tr>
+<tr>
+<th><strong>Output</strong></th>
+<td>Enriched elements</td>
+</tr>
+<tr>
+<th><strong>Pre-condition</strong></th>
+<td>A tripple has to be saved to the tripple store according to requirement XY.</td>
+</tr>
+<tr>
+<th><strong>Post-condition</strong></th>
+<td>The triple has to be persisted in the triple store and the corresponding passages in the DOM have to be enriched according to requirement XY.</td>
+</tr>
+<tr>
+<th><strong>Source of Requirement</strong></th>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+
+
+<table id="f-10">
+<caption>Remove triple statement</caption>
+<tbody>
+<tr>
+<th><strong>Name</strong></th>
+<td>Remove triple statement</td>
+</tr>
+<tr>
+<th><strong>ID</strong></th>
+<td>F-10</td>
+</tr>
+<tr>
+<th><strong>Description</strong></th>
+<td>
+The MetaEditor must provide the author the ability to remove triple statements from the local triple store.
+</td>
+</tr>
+<tr>
+<th><strong>Input</strong></th>
+<td>Triple statement</td>
+</tr>
+<tr>
+<th><strong>Output</strong></th>
+<td>-</td>
+</tr>
+<tr>
+<th><strong>Pre-condition</strong></th>
+<td>Triple statement must exist in the triple store</td>
+</tr>
+<tr>
+<th><strong>Post-condition</strong></th>
+<td>Triple has to be removed from the triple store</td>
+</tr>
+<tr>
+<th><strong>Source of Requirement</strong></th>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+
+<table id="f-11">
+<caption>Undo just added triple statement</caption>
+<tbody>
+<tr>
+<th><strong>Name</strong></th>
+<td>Undo just added triple statement</td>
+</tr>
+<tr>
+<th><strong>ID</strong></th>
+<td>F-11</td>
+</tr>
+<tr>
+<th><strong>Description</strong></th>
+<td>
+Linked Research should provide an author the ability to undo a just added triple statement.
+</td>
+</tr>
+<tr>
+<th><strong>Input</strong></th>
+<td>Just added triple statement</td>
+</tr>
+<tr>
+<th><strong>Output</strong></th>
+<td>-</td>
+</tr>
+<tr>
+<th><strong>Pre-condition</strong></th>
+<td>Triple statement must exist in the triple store</td>
+</tr>
+<tr>
+<th><strong>Post-condition</strong></th>
+<td>Triple has to be removed from the triple store</td>
+</tr>
+<tr>
+<th><strong>Source of Requirement</strong></th>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+
+<table id="f-12">
+<caption>Add new paragraph</caption>
+<tbody>
+<tr>
+<th><strong>Name</strong></th>
+<td>Add new paragraph</td>
+</tr>
+<tr>
+<th><strong>ID</strong></th>
+<td>F-12</td>
+</tr>
+<tr>
+<th><strong>Description</strong></th>
+<td>
+The Editor must insert  
+			<span id="crayon-5527ee281276f721759366" class="crayon-syntax crayon-syntax-inline  crayon-theme-github crayon-theme-github-inline crayon-font-monaco" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-r ">&lt;p&gt;</span></span></span>-tags when the author hits the enter key while writing text.
+</td>
+</tr>
+<tr>
+<th><strong>Input</strong></th>
+<td>-</td>
+</tr>
+<tr>
+<th><strong>Output</strong></th>
+<td>-</td>
+</tr>
+<tr>
+<th><strong>Pre-condition</strong></th>
+<td>-</td>
+</tr>
+<tr>
+<th><strong>Post-condition</strong></th>
+<td>Requirement <a href="http://renatostauffer.ch/requirements-and-design-for-a-tool-to-author-triple-statements/#f-14">F-14</a> must be fulfilled</td>
+</tr>
+<tr>
+<th><strong>Source of Requirement</strong></th>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+
+<table id="f-13">
+<caption>Add new section</caption>
+<tbody>
+<tr>
+<th><strong>Name</strong></th>
+<td>Add new section</td>
+</tr>
+<tr>
+<th><strong>ID</strong></th>
+<td>F-13</td>
+</tr>
+<tr>
+<th><strong>Description</strong></th>
+<td>
+The Editor must insert the following pattern when an author is inserting a new title for a new or already existing paragraph:
+ 
+<!-- Crayon Syntax Highlighter v2.6.9 -->
+
+		<div id="crayon-5527ee281277d314043959" class="crayon-syntax crayon-theme-github crayon-font-monaco crayon-os-mac print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 15px !important;">
+		
+			<div class="crayon-toolbar" data-settings=" mouseover overlay hide delay" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><span class="crayon-title"></span>
+			<div class="crayon-tools" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><div class="crayon-button crayon-nums-button" title="Toggle Line Numbers"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-plain-button" title="Toggle Plain Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-wrap-button" title="Toggle Line Wrap"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-expand-button" title="Expand Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-copy-button" title="Copy"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-popup-button" title="Open Code In New Window"><div class="crayon-button-icon"></div></div><span class="crayon-language">XHTML</span></div></div>
+			<div class="crayon-info" style="min-height: 16.8px !important; line-height: 16.8px !important;"></div>
+			<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no" data-settings="dblclick" readonly style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 12px !important; line-height: 15px !important;">
+&lt;section&gt;
+    &lt;h1-4&gt;
+        &lt;div&gt;</textarea></div>
+			<div class="crayon-main" style="">
+				<table class="crayon-table">
+					<tr class="crayon-row">
+				<td class="crayon-nums " data-settings="show">
+					<div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-5527ee281277d314043959-1">1</div><div class="crayon-num crayon-striped-num" data-line="crayon-5527ee281277d314043959-2">2</div><div class="crayon-num" data-line="crayon-5527ee281277d314043959-3">3</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5527ee281277d314043959-1"><span class="crayon-r ">&lt;section&gt;</span></div><div class="crayon-line crayon-striped-line" id="crayon-5527ee281277d314043959-2"><span class="crayon-i ">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-r ">&lt;h1-4&gt;</span></div><div class="crayon-line" id="crayon-5527ee281277d314043959-3"><span class="crayon-i ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-r ">&lt;div&gt;</span></div></div></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+<!-- [Format Time: 0.0004 seconds] -->
+ 
+
+</td>
+</tr>
+<tr>
+<th><strong>Input</strong></th>
+<td>All elements that follow the new added section in the document</td>
+</tr>
+<tr>
+<th><strong>Output</strong></th>
+<td>
+<!-- Crayon Syntax Highlighter v2.6.9 -->
+
+		<div id="crayon-5527ee2812783127364469" class="crayon-syntax crayon-theme-github crayon-font-monaco crayon-os-mac print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 15px !important;">
+		
+			<div class="crayon-toolbar" data-settings=" mouseover overlay hide delay" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><span class="crayon-title"></span>
+			<div class="crayon-tools" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><div class="crayon-button crayon-nums-button" title="Toggle Line Numbers"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-plain-button" title="Toggle Plain Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-wrap-button" title="Toggle Line Wrap"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-expand-button" title="Expand Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-copy-button" title="Copy"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-popup-button" title="Open Code In New Window"><div class="crayon-button-icon"></div></div><span class="crayon-language">XHTML</span></div></div>
+			<div class="crayon-info" style="min-height: 16.8px !important; line-height: 16.8px !important;"></div>
+			<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no" data-settings="dblclick" readonly style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 12px !important; line-height: 15px !important;">
+&lt;section&gt;
+    &lt;h1-4&gt;
+        &lt;div&gt;</textarea></div>
+			<div class="crayon-main" style="">
+				<table class="crayon-table">
+					<tr class="crayon-row">
+				<td class="crayon-nums " data-settings="show">
+					<div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-5527ee2812783127364469-1">1</div><div class="crayon-num crayon-striped-num" data-line="crayon-5527ee2812783127364469-2">2</div><div class="crayon-num" data-line="crayon-5527ee2812783127364469-3">3</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5527ee2812783127364469-1"><span class="crayon-r ">&lt;section&gt;</span></div><div class="crayon-line crayon-striped-line" id="crayon-5527ee2812783127364469-2"><span class="crayon-i ">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-r ">&lt;h1-4&gt;</span></div><div class="crayon-line" id="crayon-5527ee2812783127364469-3"><span class="crayon-i ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-r ">&lt;div&gt;</span></div></div></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+<!-- [Format Time: 0.0004 seconds] -->
+
+</td>
+</tr>
+<tr>
+<th><strong>Pre-condition</strong></th>
+<td>-</td>
+</tr>
+<tr>
+<th><strong>Post-condition</strong></th>
+<td>Requirement <a href="http://renatostauffer.ch/requirements-and-design-for-a-tool-to-author-triple-statements/#f-14">F-14</a> must be fulfilled</td>
+</tr>
+<tr>
+<th><strong>Source of Requirement</strong></th>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+
+
+<table id="f-14">
+<caption>The DOM needs to remain clean</caption>
+<tbody>
+<tr>
+<th><strong>Name</strong></th>
+<td>The DOM needs to remain clean</td>
+</tr>
+<tr>
+<th><strong>ID</strong></th>
+<td>F-14</td>
+</tr>
+<tr>
+<th><strong>Description</strong></th>
+<td>
+The DOM of the document needs to remain in the following shape:
+ 
+<!-- Crayon Syntax Highlighter v2.6.9 -->
+
+		<div id="crayon-5527ee281278a413834184" class="crayon-syntax crayon-theme-github crayon-font-monaco crayon-os-mac print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 15px !important;">
+		
+			<div class="crayon-toolbar" data-settings=" mouseover overlay hide delay" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><span class="crayon-title"></span>
+			<div class="crayon-tools" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><div class="crayon-button crayon-nums-button" title="Toggle Line Numbers"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-plain-button" title="Toggle Plain Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-wrap-button" title="Toggle Line Wrap"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-expand-button" title="Expand Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-copy-button" title="Copy"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-popup-button" title="Open Code In New Window"><div class="crayon-button-icon"></div></div></div></div>
+			<div class="crayon-info" style="min-height: 16.8px !important; line-height: 16.8px !important;"></div>
+			<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no" data-settings="dblclick" readonly style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 12px !important; line-height: 15px !important;">
+&lt;body&gt;
+    &lt;article&gt;
+        &lt;section&gt;
+            &lt;div&gt;
+                &lt;p&gt; or &lt;ul&gt; or &lt;ol&gt; or &lt;table&gt; or &lt;figure&gt; or &lt;caption&gt;</textarea></div>
+			<div class="crayon-main" style="">
+				<table class="crayon-table">
+					<tr class="crayon-row">
+				<td class="crayon-nums " data-settings="show">
+					<div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-5527ee281278a413834184-1">1</div><div class="crayon-num crayon-striped-num" data-line="crayon-5527ee281278a413834184-2">2</div><div class="crayon-num" data-line="crayon-5527ee281278a413834184-3">3</div><div class="crayon-num crayon-striped-num" data-line="crayon-5527ee281278a413834184-4">4</div><div class="crayon-num" data-line="crayon-5527ee281278a413834184-5">5</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5527ee281278a413834184-1"><span class="crayon-o">&lt;</span><span class="crayon-v">body</span><span class="crayon-o">&gt;</span></div><div class="crayon-line crayon-striped-line" id="crayon-5527ee281278a413834184-2"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-o">&lt;</span><span class="crayon-v">article</span><span class="crayon-o">&gt;</span></div><div class="crayon-line" id="crayon-5527ee281278a413834184-3"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-o">&lt;</span><span class="crayon-v">section</span><span class="crayon-o">&gt;</span></div><div class="crayon-line crayon-striped-line" id="crayon-5527ee281278a413834184-4"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-o">&lt;</span><span class="crayon-v">div</span><span class="crayon-o">&gt;</span></div><div class="crayon-line" id="crayon-5527ee281278a413834184-5"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-o">&lt;</span><span class="crayon-v">p</span><span class="crayon-o">&gt;</span><span class="crayon-h"> </span><span class="crayon-st">or</span><span class="crayon-h"> </span><span class="crayon-o">&lt;</span><span class="crayon-v">ul</span><span class="crayon-o">&gt;</span><span class="crayon-h"> </span><span class="crayon-st">or</span><span class="crayon-h"> </span><span class="crayon-o">&lt;</span><span class="crayon-v">ol</span><span class="crayon-o">&gt;</span><span class="crayon-h"> </span><span class="crayon-st">or</span><span class="crayon-h"> </span><span class="crayon-o">&lt;</span><span class="crayon-v">table</span><span class="crayon-o">&gt;</span><span class="crayon-h"> </span><span class="crayon-st">or</span><span class="crayon-h"> </span><span class="crayon-o">&lt;</span><span class="crayon-v">figure</span><span class="crayon-o">&gt;</span><span class="crayon-h"> </span><span class="crayon-st">or</span><span class="crayon-h"> </span><span class="crayon-o">&lt;</span><span class="crayon-v">caption</span><span class="crayon-o">&gt;</span></div></div></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+<!-- [Format Time: 0.0017 seconds] -->
+ 
+</td>
+</tr>
+<tr>
+<th><strong>Input</strong></th>
+<td>-</td>
+</tr>
+<tr>
+<th><strong>Output</strong></th>
+<td>-</td>
+</tr>
+<tr>
+<th><strong>Pre-condition</strong></th>
+<td>-</td>
+</tr>
+<tr>
+<th><strong>Post-condition</strong></th>
+<td>-</td>
+</tr>
+<tr>
+<th><strong>Source of Requirement</strong></th>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+
+
+<table id="f-15">
+<caption></caption>
+<tbody>
+<tr>
+<th><strong>Name</strong></th>
+<td></td>
+</tr>
+<tr>
+<th><strong>ID</strong></th>
+<td>F-15</td>
+</tr>
+<tr>
+<th><strong>Description</strong></th>
+<td>
+The DOM of the document needs to remain in the following shape:
+ 
+<!-- Crayon Syntax Highlighter v2.6.9 -->
+
+		<div id="crayon-5527ee2812790635215106" class="crayon-syntax crayon-theme-github crayon-font-monaco crayon-os-mac print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 15px !important;">
+		
+			<div class="crayon-toolbar" data-settings=" mouseover overlay hide delay" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><span class="crayon-title"></span>
+			<div class="crayon-tools" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><div class="crayon-button crayon-nums-button" title="Toggle Line Numbers"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-plain-button" title="Toggle Plain Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-wrap-button" title="Toggle Line Wrap"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-expand-button" title="Expand Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-copy-button" title="Copy"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-popup-button" title="Open Code In New Window"><div class="crayon-button-icon"></div></div></div></div>
+			<div class="crayon-info" style="min-height: 16.8px !important; line-height: 16.8px !important;"></div>
+			<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no" data-settings="dblclick" readonly style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 12px !important; line-height: 15px !important;">
+&lt;body&gt;
+    &lt;article&gt;
+        &lt;section&gt;
+            &lt;div&gt;
+                &lt;p&gt; or &lt;ul&gt; or &lt;ol&gt; or &lt;table&gt; or &lt;figure&gt; or &lt;caption&gt;</textarea></div>
+			<div class="crayon-main" style="">
+				<table class="crayon-table">
+					<tr class="crayon-row">
+				<td class="crayon-nums " data-settings="show">
+					<div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-5527ee2812790635215106-1">1</div><div class="crayon-num crayon-striped-num" data-line="crayon-5527ee2812790635215106-2">2</div><div class="crayon-num" data-line="crayon-5527ee2812790635215106-3">3</div><div class="crayon-num crayon-striped-num" data-line="crayon-5527ee2812790635215106-4">4</div><div class="crayon-num" data-line="crayon-5527ee2812790635215106-5">5</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5527ee2812790635215106-1"><span class="crayon-o">&lt;</span><span class="crayon-v">body</span><span class="crayon-o">&gt;</span></div><div class="crayon-line crayon-striped-line" id="crayon-5527ee2812790635215106-2"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-o">&lt;</span><span class="crayon-v">article</span><span class="crayon-o">&gt;</span></div><div class="crayon-line" id="crayon-5527ee2812790635215106-3"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-o">&lt;</span><span class="crayon-v">section</span><span class="crayon-o">&gt;</span></div><div class="crayon-line crayon-striped-line" id="crayon-5527ee2812790635215106-4"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-o">&lt;</span><span class="crayon-v">div</span><span class="crayon-o">&gt;</span></div><div class="crayon-line" id="crayon-5527ee2812790635215106-5"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-o">&lt;</span><span class="crayon-v">p</span><span class="crayon-o">&gt;</span><span class="crayon-h"> </span><span class="crayon-st">or</span><span class="crayon-h"> </span><span class="crayon-o">&lt;</span><span class="crayon-v">ul</span><span class="crayon-o">&gt;</span><span class="crayon-h"> </span><span class="crayon-st">or</span><span class="crayon-h"> </span><span class="crayon-o">&lt;</span><span class="crayon-v">ol</span><span class="crayon-o">&gt;</span><span class="crayon-h"> </span><span class="crayon-st">or</span><span class="crayon-h"> </span><span class="crayon-o">&lt;</span><span class="crayon-v">table</span><span class="crayon-o">&gt;</span><span class="crayon-h"> </span><span class="crayon-st">or</span><span class="crayon-h"> </span><span class="crayon-o">&lt;</span><span class="crayon-v">figure</span><span class="crayon-o">&gt;</span><span class="crayon-h"> </span><span class="crayon-st">or</span><span class="crayon-h"> </span><span class="crayon-o">&lt;</span><span class="crayon-v">caption</span><span class="crayon-o">&gt;</span></div></div></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+<!-- [Format Time: 0.0017 seconds] -->
+ 
+</td>
+</tr>
+<tr>
+<th><strong>Input</strong></th>
+<td>-</td>
+</tr>
+<tr>
+<th><strong>Output</strong></th>
+<td>-</td>
+</tr>
+<tr>
+<th><strong>Pre-condition</strong></th>
+<td>-</td>
+</tr>
+<tr>
+<th><strong>Post-condition</strong></th>
+<td>-</td>
+</tr>
+<tr>
+<th><strong>Source of Requirement</strong></th>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+
+
+
 </div>
 </section>
 
+<section id="non-functional-requirements">
+<h4>Non-Functional Requirements</h4>
+<div>
+<table>
+<tbody>
+<tr>
+<th>Name of requirement</th>
+<th>Description</th>
+<th>Source</th>
+<th>Priority</th>
+</tr>
+<tr>
+<td>Accessibility</td>
+<td>Browser compability here..</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Usability</td>
+<td>Measurable values&#8230;</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Evolvability</td>
+<td>&#8230;</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
 
 <section id="requirements-scenarios">
-<h3>Scenarios</h3>
+<h2>Scenarios</h2>
 <div>
 <p>
 </p>
@@ -519,9 +1632,14 @@ A component based software engineering approach according to Sommerville (2007) 
 
 <li id="ref-3">Harmelen, F. v., Fensel, D.: IJCAI, Workshop on Intelligent Information Integration (1999), <a href="http://www.cs.vu.nl/~frankh/postscript/IJCAI99-III.html" rel="dcterms:references">http://www.cs.vu.nl/~frankh/postscript/IJCAI99-III.html</a></li>
 
-<li id="ref-4">Capadisli, S.:Linked Research, (2013), <a href="http://csarven.ca/linked-research" rel="dcterms:references">http://csarven.ca/linked-research</a></li>
+<li id="ref-4">Capadisli, S.: Linked Research, (2013), <a href="http://csarven.ca/linked-research" rel="dcterms:references">http://csarven.ca/linked-research</a></li>
+
+<li id="ref-5">Pohl, K.: Requirements Engineering, (2010)</li>
+
 </ol>
 </section>
 
 </div>
-</article>
+</article><br />
+</body>
+</html>
