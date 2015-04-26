@@ -7,10 +7,7 @@
 	<meta name="keywords" content="Renato Stauffer, Stauffer, Renato"/>
 	<meta name="author" content="Renato Stauffer"/>
 	<title>Renato Stauffer</title>
-	<link rel='stylesheet' id='open-sans-css'  href='//fonts.googleapis.com/css?family=Open+Sans%3A300italic%2C400italic%2C600italic%2C300%2C400%2C600&#038;subset=latin%2Clatin-ext&#038;ver=4.0' type='text/css' media='all' />
-<link rel='stylesheet' id='dashicons-css'  href='http://renatostauffer.ch/wp-includes/css/dashicons.min.css?ver=4.0' type='text/css' media='all' />
-<link rel='stylesheet' id='admin-bar-css'  href='http://renatostauffer.ch/wp-includes/css/admin-bar.min.css?ver=4.0' type='text/css' media='all' />
-<link rel='stylesheet' id='lncs-css'  href='http://linked-research.270a.info/media/css/lncs.css?ver=4.0' type='text/css' media='all' />
+	<link rel='stylesheet' id='lncs-css'  href='http://linked-research.270a.info/media/css/lncs.css?ver=4.0' type='text/css' media='all' />
 <link rel='stylesheet' id='thesis-css'  href='http://linked-research.270a.info/media/css/thesis.css?ver=4.0' type='text/css' media='all' />
 <link rel='stylesheet' id='examples-css'  href='http://renatostauffer.ch/wp-content/themes/newTheme/examples.css?ver=4.0' type='text/css' media='all' />
 <link rel='stylesheet' id='textHighlighting-css'  href='http://renatostauffer.ch/wp-content/themes/newTheme/media/css/text-highlighting.css?ver=4.0' type='text/css' media='all' />
@@ -21,15 +18,6 @@
 <script type='text/javascript' src='http://linked-research.270a.info/scripts/html.sortable.min.js?ver=4.0'></script>
 <link rel='canonical' href='http://renatostauffer.ch/requirements-and-design-for-a-tool-to-author-triple-statements/' />
 <link rel='shortlink' href='http://renatostauffer.ch/?p=131' />
-<style type="text/css" media="print">#wpadminbar { display:none; }</style>
-<style type="text/css" media="screen">
-	html { margin-top: 32px !important; }
-	* html body { margin-top: 32px !important; }
-	@media screen and ( max-width: 782px ) {
-		html { margin-top: 46px !important; }
-		* html body { margin-top: 46px !important; }
-	}
-</style>
 </head>
 
 <body about="[this:]" typeof="foaf:Document sioc:Post biblio:Paper prov:Entity" class="hfeed" prefix="rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns# rdfs: http://www.w3.org/2000/01/rdf-schema# owl: http://www.w3.org/2002/07/owl# xsd: http://www.w3.org/2001/XMLSchema# dcterms: http://purl.org/dc/terms/ foaf: http://xmlns.com/foaf/0.1/ v: http://www.w3.org/2006/vcard/ns# pimspace: http://www.w3.org/ns/pim/space# cc: http://creativecommons.org/ns# skos: http://www.w3.org/2004/02/skos/core# prov: http://www.w3.org/ns/prov# schema: http://schema.org/ rsa: http://www.w3.org/ns/auth/rsa# cert: http://www.w3.org/ns/auth/cert# cal: http://www.w3.org/2002/12/cal/ical# wgs: http://www.w3.org/2003/01/geo/wgs84_pos# org: http://www.w3.org/ns/org# biblio: http://purl.org/net/biblio# bibo: http://purl.org/ontology/bibo/ book: http://purl.org/NET/book/vocab# ov: http://open.vocab.org/terms/ doap: http://usefulinc.com/ns/doap# dbr: http://dbpedia.org/resource/ dbp: http://dbpedia.org/property/ sio: http://semanticscience.org/resource/ opmw: http://www.opmw.org/ontology/ deo: http://purl.org/spar/deo/ doco: http://purl.org/spar/doco/ cito: http://purl.org/spar/cito/ sro: http://salt.semanticauthoring.org/ontologies/sro# this: http://renatostauffer.ch/http://renatostauffer.ch/requirements-and-design-for-a-tool-to-author-triple-statements/">
@@ -427,7 +415,7 @@ Each software-intensive system lies within a certain context and is through that
 The Usage Facet describes how the user interacts with the system (Pohl et all, 2012). In the case of Linked Research the Usage Facet is described with the UML 2.0:
 </p>
 <figure class="figure">
-<a href="http://renatostauffer.ch/wp-content/uploads/2015/02/use-case-lr.png"><img src="http://renatostauffer.ch/wp-content/uploads/2015/02/use-case-lr.png" alt="use-case-lr" width="857" height="526" class="alignnone size-full wp-image-749" /></a>
+<a href="http://renatostauffer.ch/wp-content/uploads/2015/02/use-case.svg"><img src="http://renatostauffer.ch/wp-content/uploads/2015/02/use-case.svg" alt="use-case" class="alignnone size-full wp-image-1004" /></a>
 <figcaption>
 UML Use Case Diagram for Linked Research
 </figcaption>
@@ -528,7 +516,7 @@ Important objects and events within Linked Research
 This description leads to the following class diagram:
 </p>
 <figure class="figure">
-<a href="http://renatostauffer.ch/wp-content/uploads/2015/02/classes.png"><img src="http://renatostauffer.ch/wp-content/uploads/2015/02/classes.png" alt="classes" width="2346" height="1707" class="alignnone size-full wp-image-802" /></a>
+<a href="http://renatostauffer.ch/wp-content/uploads/2015/02/class-diagram.svg"><img src="http://renatostauffer.ch/wp-content/uploads/2015/02/class-diagram.svg" alt="class-diagram" class="alignnone size-full wp-image-1005" /></a>
 <figcaption>
 Class diagram Linked Research
 </figcaption>
@@ -567,7 +555,7 @@ The development facet contains all aspects regarding the development process of 
 For Linked Research a component based software engineering approach according to Sommerville (2007) is applied. This approach tries to reuse existing software and frameworks as much as possible and thus reduces development time for a much faster delivery. Figure 3 (Fig. 3) shows the different stages of this reuse-oriented approach (Sommerville, 2007).
 </p>
 <figure class="figure">
-<a href="http://renatostauffer.ch/wp-content/uploads/2015/02/Bildschirmfoto-2015-04-09-um-11.36.17.png"><img src="http://renatostauffer.ch/wp-content/uploads/2015/02/Bildschirmfoto-2015-04-09-um-11.36.17.png" alt="Bildschirmfoto 2015-04-09 um 11.36.17" width="860" height="157" class="alignnone size-full wp-image-729" /></a>
+<a href="http://renatostauffer.ch/wp-content/uploads/2015/02/process.svg"><img src="http://renatostauffer.ch/wp-content/uploads/2015/02/process.svg" alt="process" class="alignnone size-full wp-image-1006" /></a>
 <figcaption>
 Component based software engineering approach according to Sommerville (2007)
 </figcaption>
@@ -817,14 +805,11 @@ This determines wether the requirement is already implemented (Implemented), is 
 <th><strong>Description</strong></th>
 <td>The editor of Linked Research must provide the author functionality to format text over one or multiple paragraphs. The following formatting should be possible:
 <ul>
-<li>Insert table</li>
-<li>Insert image</li>
-<li>Insert ordered or unordered list</li>
-<li>Bold text</li>
-<li>Italic text</li>
-<li>Underlined text</li>
-<li>h1 &#8211; h4 headings</li>
-<li>quoting with the  <code>&lt;q&gt;</code>-element</li>
+<li>Insertion of figures and media</li>
+<li>Insertion of listings (e.g. ordered or unordered lists)</li>
+<li>Emphasize text (this will include <samp>strong</samp>, <samp>em</samp>, <samp>b</samp> and <samp>i</samp>)</li>
+<li>Headings</li>
+<li>Quoting (this will include <code>&lt;q&gt;</code> and <code>&lt;blockquote&gt;</code>)</li>
 </ul>
 </td>
 </tr>
@@ -1627,6 +1612,7 @@ A consumer or author must have the ability to switch between different CSS views
 <li>LNCS</li>
 <li>ACM</li>
 <li>W3C-REC</li>
+<li>Slideshows</li>
 <li>Native</li>
 </ul>
 </td>
@@ -1784,6 +1770,7 @@ Linked Research must provide an author or consumer the possibility to view the d
 <li>Number of words in the document</li>
 <li>Number of lines of the document</li>
 <li>Number of A4 pages when printed</li>
+<li>US Letter</li>
 <li>Size of the document in Bytes</li>
 </ul>
 </td>
@@ -2385,17 +2372,17 @@ Linked Research should run in Gecko browser engines (Firefox) <i>More here..?</i
 </section><!--End of #goals-->
 
 <section id="final-ui">
-<h3>Final UI</h3>
+<h3>Possible UI</h3>
 <div>
-<p>Based on the requirements a possible interface for the MetaEditor was established:</p>
+<p>Based on the functional and non-functional requirements, we propose a user interface:</p>
 <figure class="figure">
 <a href="http://renatostauffer.ch/wp-content/uploads/2015/02/finale-ui2.png"><img src="http://renatostauffer.ch/wp-content/uploads/2015/02/finale-ui2.png" alt="finale-ui" width="1079" height="474" class="alignnone size-full wp-image-862" /></a>
 <figcaption>
-Possible interface for the MetaEditor
+Possible user interface for the MetaEditor
 </figcaption>
 </figure>
 <p>
-The possible interface is composed of two parts. The first part (blue bubble labeled &#8220;1&#8221; on Fig. 6) offers an author the possibility to create new triple statements and search for predicates or RDF objects from an external service. The second part (blue bubble labeled &#8220;2&#8221; on Fig. 6) serves as interface to delete existing triples from the document and triple store.
+The possible interface is composed of two parts. The first part (circle labeled <strong>1</strong> on Fig. 6) offers an author the possibility to create new triple statements and search for predicates or RDF objects from an external service. The second part (circle labeled <strong>2</strong> on Fig. 6) serves as interface to delete existing triples from the document and triple store.
 </p>
 </div>
 </section>
@@ -2634,7 +2621,7 @@ In contrast to the designMode, the contentEditable attribute makes just some par
 <p> 
 <pre>&lt;div contentEditable="true"&gt;
 &lt;/div&gt;</pre> 
-The <code>&lt;div&gt;</code>-element down below is now editable due to setting the <code>&lt;contentEditable&gt;</code>-element equal to true.
+The <code>&lt;div&gt;</code>-element down below is now editable due to setting the <code>&lt;contentEditable&gt;</code>-element equal to true (pleas visit <a href="http://renatostauffer.ch/requirements-and-design-for-a-tool-to-author-triple-statements/#text-editing">http://renatostauffer.ch/requirements-and-design-for-a-tool-to-author-triple-statements/#text-editing</a> if you read this thesis on paper).
 </p>
 <div class="test-editable" contentEditable="true">
 </div>
@@ -2700,9 +2687,9 @@ Table 45 &#8211; 49 compare all possible editors for Linked Research with its co
 
 <tr>
 <th>editor</th>
-<td>div</td>
+<td><code>article<code> tag</td>
 <td>contentEditable</td>
-<td>MIT</td>
+<td>No License</td>
 <td>None</td>
 </tr>
 
@@ -2711,7 +2698,7 @@ Table 45 &#8211; 49 compare all possible editors for Linked Research with its co
 <td>div</td>
 <td>contentEditable</td>
 <td>MIT</td>
-<td>None</td>
+<td>rangy-core.js, rangy-classapplier.js and undo.js</td>
 </tr>
 
 <tr>
@@ -2719,7 +2706,7 @@ Table 45 &#8211; 49 compare all possible editors for Linked Research with its co
 <td>div</td>
 <td>contentEditable</td>
 <td>MIT</td>
-<td>None</td>
+<td>jQuery, underscore and sanitize.js</td>
 </tr>
 
 <tr>
@@ -2727,23 +2714,23 @@ Table 45 &#8211; 49 compare all possible editors for Linked Research with its co
 <td>div</td>
 <td>contentEditable</td>
 <td>MIT</td>
-<td>None</td>
+<td>markdown.js</td>
 </tr>
 
 <tr>
 <th>grande.js</th>
-<td>div</td>
+<td>article</td>
 <td>contentEditable</td>
-<td>MIT</td>
+<td>No License</td>
 <td>None</td>
 </tr>
 
 <tr>
 <th>ZenPen</th>
-<td>div</td>
+<td>article</td>
 <td>contentEditable</td>
-<td>MIT</td>
-<td>None</td>
+<td>Apache License</td>
+<td>Blob.js, FileSaver.js, and screenfull.js</td>
 </tr>
 
 <tr>
@@ -2782,7 +2769,7 @@ Table 45 &#8211; 49 compare all possible editors for Linked Research with its co
 <th>Contributors</th>
 </tr>
 </thead>
-<tfoot>The attribute <samp>Documentation</samp> takes either the value <samp>No</samp> if no documentation for the editors API exists or <samp>Yes</samp> if API documentation is provided. To signify how much the community is evolved in the development process of the editor, the attributes <samp>Closed Pull Requests</samp> and <samp>Contributors</samp> are used. Both attributes take a number as its value ranging from 0 &#8211; &infin;.</tfoot>
+<tfoot>The attribute <samp>Documentation</samp> takes either the value <samp>No</samp> if no documentation for the editors API exists or <samp>Yes</samp> if API documentation is provided. To signify how much the community is evolved in the development process of the editor, the attributes <samp>Closed Pull Requests</samp> and <samp>Contributors</samp> are used. Both attributes take a number as its value ranging from 0 - &infin;.</tfoot>
 <tbody>
 <tr>
 <th>MediumEditor</th>
@@ -2800,37 +2787,37 @@ Table 45 &#8211; 49 compare all possible editors for Linked Research with its co
 
 <tr>
 <th>Medium.js</th>
-<td>div</td>
-<td>contentEditable</td>
-<td>MIT</td>
+<td>Yes</td>
+<td>58</td>
+<td>22</td>
 </tr>
 
 <tr>
 <th>Dante Editor</th>
-<td>div</td>
-<td>contentEditable</td>
-<td>MIT</td>
+<td>Yes</td>
+<td>22</td>
+<td>8</td>
 </tr>
 
 <tr>
 <th>Pen Editor</th>
-<td>div</td>
-<td>contentEditable</td>
-<td>MIT</td>
+<td>Yes</td>
+<td>24</td>
+<td>53</td>
 </tr>
 
 <tr>
 <th>grande.js</th>
-<td>div</td>
-<td>contentEditable</td>
-<td>MIT</td>
+<td>No</td>
+<td>27</td>
+<td>8</td>
 </tr>
 
 <tr>
 <th>ZenPen</th>
-<td>div</td>
-<td>contentEditable</td>
-<td>MIT</td>
+<td>No</td>
+<td>45</td>
+<td>20</td>
 </tr>
 
 <tr>
@@ -2859,10 +2846,6 @@ Table 45 &#8211; 49 compare all possible editors for Linked Research with its co
 
 
 
-
-
-
-
 <table id="editor-requirement-fulfillment">
 <caption>Requirement Fulfillment</caption>
 <thead>
@@ -2873,7 +2856,6 @@ Table 45 &#8211; 49 compare all possible editors for Linked Research with its co
 <th>Requirement F-16</th>
 <th>Requirement F-17</th>
 <th>Requirement F-18</th>
-<th>Requirement F-19</th>
 </tr>
 </thead>
 <tfoot>Table XXX shows how well each editor fulfills the requirements established in chapter XXX. If an editor fulfills a requirement the value <samp>Yes</samp> is inserted into the corresponding column. If the editor does not satisfy the requirement, the value <samp>No</samp> is used.</tfoot>
@@ -2885,16 +2867,14 @@ Table 45 &#8211; 49 compare all possible editors for Linked Research with its co
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
-<td>Yes</td>
 </tr>
 
 <tr>
 <th>editor</th>
 <td>Yes</td>
 <td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
+<td>No</td>
+<td>No</td>
 <td>Yes</td>
 </tr>
 
@@ -2902,20 +2882,18 @@ Table 45 &#8211; 49 compare all possible editors for Linked Research with its co
 <th>Medium.js</th>
 <td>Yes</td>
 <td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
+<td>No</td>
+<td>No</td>
+<td>No</td>
 </tr>
 
 <tr>
 <th>Dante Editor</th>
 <td>Yes</td>
 <td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
+<td>No</td>
+<td>No</td>
+<td>No</td>
 </tr>
 
 <tr>
@@ -2923,34 +2901,30 @@ Table 45 &#8211; 49 compare all possible editors for Linked Research with its co
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
+<td>No</td>
+<td>No</td>
 </tr>
 
 <tr>
 <th>grande.js</th>
 <td>Yes</td>
 <td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
+<td>No</td>
+<td>No</td>
+<td>No</td>
 </tr>
 
 <tr>
 <th>ZenPen</th>
 <td>Yes</td>
 <td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
+<td>No</td>
+<td>No</td>
+<td>No</td>
 </tr>
 
 <tr>
 <th>Tinymce</th>
-<td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
@@ -2965,12 +2939,10 @@ Table 45 &#8211; 49 compare all possible editors for Linked Research with its co
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
-<td>Yes</td>
 </tr>
 
 <tr>
 <th>Aloha Eidtor</th>
-<td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
@@ -3001,38 +2973,38 @@ Table 45 &#8211; 49 compare all possible editors for Linked Research with its co
 
 <tr>
 <th>editor</th>
-<td>Yes</td>
-<td>Yes</td>
+<td>No</td>
+<td>No</td>
 </tr>
 
 <tr>
 <th>Medium.js</th>
 <td>Yes</td>
-<td>Yes</td>
+<td>No</td>
 </tr>
 
 <tr>
 <th>Dante Editor</th>
-<td>Yes</td>
-<td>Yes</td>
+<td>No</td>
+<td>No</td>
 </tr>
 
 <tr>
 <th>Pen Editor</th>
 <td>Yes</td>
-<td>Yes</td>
+<td>No</td>
 </tr>
 
 <tr>
 <th>grande.js</th>
-<td>Yes</td>
-<td>Yes</td>
+<td>No</td>
+<td>No</td>
 </tr>
 
 <tr>
 <th>ZenPen</th>
-<td>Yes</td>
-<td>Yes</td>
+<td>No</td>
+<td>No</td>
 </tr>
 
 <tr>
@@ -3074,58 +3046,58 @@ Table XXX shows how compatible the editors are with the browsers <samp>Internet 
 <tbody>
 <tr>
 <th>MediumEditor</th>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
+<td>9+</td>
+<td>8+</td>
+<td>41+</td>
+<td>36+</td>
 </tr>
 
 <tr>
 <th>editor</th>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
+<td>9+</td>
+<td>8+</td>
+<td>-</td>
+<td>-</td>
 </tr>
 
 <tr>
 <th>Medium.js</th>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
+<td>8+</td>
+<td>8+</td>
+<td>41+</td>
+<td>36+</td>
 </tr>
 
 <tr>
 <th>Dante Editor</th>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
+<td>9+</td>
+<td>8+</td>
+<td>41+</td>
+<td>36+</td>
 </tr>
 
 <tr>
 <th>Pen Editor</th>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
+<td>9+</td>
+<td>8+</td>
+<td>41+</td>
+<td>36+</td>
 </tr>
 
 <tr>
 <th>grande.js</th>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
+<td>9+</td>
+<td>8+</td>
+<td>41+</td>
+<td>36+</td>
 </tr>
 
 <tr>
 <th>ZenPen</th>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
+<td>9+</td>
+<td>8+</td>
+<td>41+</td>
+<td>36+</td>
 </tr>
 
 <tr>
@@ -3177,8 +3149,6 @@ Table XXX shows how compatible the editors are with the browsers <samp>Internet 
 </p>
 </div>
 </section>
-
-
 
 <section id="references">
 <h2>References</h2>
