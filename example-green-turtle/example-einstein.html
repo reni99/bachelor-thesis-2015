@@ -25,13 +25,42 @@ document.addEventListener(
           var name = elements[i].data.getValues("foaf:name")[0];
           console.log("The name of this person is '" + name + "'");
          }
+
+         CallbackProcessor.prototype = new RDFaProcessor();
+         CallbackProcessor.prototype.constructor=RDFaProcessor;
+         function CallbackProcessor() {
+            RDFaProcessor.call(this);
+         }
+
+         CallbackProcessor.prototype.addTriple = function(origin,subject,predicate,object) {
+             console.log("New triple: "+subject+", predicate "+predicate+", object "+object.value+", "+object.language+", "+object.type);
+             // call the handler here...
+         }
+
+         CallbackProcessor.prototype.newSubjectOrigin = function(origin,subject){
+          console.log("New Subject from "+ origin + "was created: " + subject); 
+         }
+
+         CallbackProcessor.prototype.init = function(){
+          console.log("Finished init!");
+         }
+
+         var processor = new CallbackProcessor();
+         processor.finishedHandlers.push(
+         function(node){
+          console.log("finished..." + node);
+         }
+         );
+
+        processor.process(document);
+
       },
       false
     );
 </script>
 </head>
 <body>
-<div about="http://dbpedia.org/resource/Albert_Einstein" typeof="foaf:Person">
+<div id="main" about="http://dbpedia.org/resource/Albert_Einstein" typeof="foaf:Person">
   <span property="foaf:name">Albert Einstein</span>
   <span property="dbp:dateOfBirth" datatype="xsd:date">1879-03-14</span>
   <div rel="dbp:birthPlace" resource="http://dbpedia.org/resource/German_Empire" />
