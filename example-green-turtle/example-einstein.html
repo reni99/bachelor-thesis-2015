@@ -57,6 +57,10 @@ document.addEventListener(
       },
       false
     );
+
+function reloadGraph(){
+  GreenTurtle.attach(document)
+}
 </script>
 </head>
 <body>
@@ -66,6 +70,7 @@ document.addEventListener(
   <div rel="dbp:birthPlace" resource="http://dbpedia.org/resource/German_Empire" />
   <span about="http://dbpedia.org/resource/German_Empire"
     property="dbp:conventionalLongName">the German Empire</span>
+    <button onclick="reloadGraph()">Reload</button>
 </div>
 </body>
 </html>
