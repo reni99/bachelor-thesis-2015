@@ -5,8 +5,8 @@
   <script type="text/javascript" src="dist/RDFaProcessor.1.4.0.js"></script>
   <script type="text/javascript" src="dist/rdflib.js"></script>
   <script type="text/javascript" src="dist/rdflib-rdfa.js"></script>
-     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"> </script>
-<script type="text/javascript">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"> </script>
+  <script type="text/javascript">
 
 //For quick namespace access
 var FOAF = $rdf.Namespace("http://xmlns.com/foaf/0.1/");
@@ -17,19 +17,34 @@ var DC = $rdf.Namespace("http://purl.org/dc/elements/1.1/");
 var uri = "file:///Users/renatostauffer/Desktop/school/6-Semester/Bachelor%20Thesis/Repository/example-rdflib/example-einstein.html";
 var kb = $rdf.graph();
 
+//add triple to store
 var renato = kb.sym("http://renatostauffer.ch/#i");
-console.log(renato);
+console.log("Subject will be: " + renato);
+
 var knows = FOAF("knows");
-kb.add(renato, knows, "Sarven Capadisli");
-console.log(kb);
-var r = kb.any(renato, FOAF('knows'));
-console.log(r);
+var literal = "Sarven Capadisli"; 
+console.log("With property; " + knows + " and literal; " + literal);
+
+kb.add(renato, knows, literal);
+console.log(kb.statements);
+console.log("Loop every statement in the current store:");
+for(var i = 0; i < kb.statements.length; i++){
+  console.log("Statement Nr. " + (i+ 1)); 
+  console.log("with subject: " + kb.statements[i].subject.value);
+  console.log("and predicate: " + kb.statements[i].predicate.value);
+  console.log("and object: " + kb.statements[i].object.value);
+}
+
+//Query all people http://renatostauffer.ch/#i knows
+var obj = kb.any(renato, FOAF('knows'));
+console.log("Query all people http://renatostauffer.ch/#i knows:"); 
+console.log(obj.value);
 
 console.log(parsed);
 function reloadGraph(){
-	console.log("load...");
-	var parsed = $rdf.parseDOM_RDFa(uri, kb, document, null);
-	console.log(parsed);
+  console.log("load...");
+  var parsed = $rdf.parseDOM_RDFa(uri, kb, document, null);
+  console.log(parsed);
 }
 
 </script>
