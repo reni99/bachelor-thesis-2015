@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>calli-rdfa example</title>
+  <script type="text/javascript" src="src/RDFXMLSerializer.js"></script>
+  <script type="text/javascript" src="src/RDFaParser.js"></script>
+     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"> </script>
+</head>
+<body>
+<div id="content" about="http://dbpedia.org/resource/Albert_Einstein" typeof="foaf:Person">
+  <span property="foaf:name">Albert Einstein</span>
+  <span property="dbp:dateOfBirth" datatype="xsd:date">1879-03-14</span>
+  <div rel="dbp:birthPlace" resource="http://dbpedia.org/resource/German_Empire">
+  <span about="http://dbpedia.org/resource/German_Empire"
+    property="dbp:conventionalLongName">the German Empire</span>
+</div>
+</div>
+<script type="text/javascript">
+
+var callback = function(subject, property, value, datatype, lang) {
+    var isBlankSubject = subject.indexOf('_:') == 0;
+    var isLiteral = datatype != null;
+    var htmlElementCompletingThisTriple = this;
+    console.log(htmlElementCompletingThisTriple);
+}
+
+var node = document.documentElement;
+
+var parser = new RDFaParser();
+
+// start the parser with the two mandatory parameters "node" and "callback"
+if (!parser.parse(node, callback)) {
+    throw 'could not parse';
+}
+
+// parse a detached, in-memory node
+var el = document.createElement('div');
+el.innerHTML = '<a rel="ex:link" href="location.htm">a link</a>';
+var x = parser.parse(el, callback);
+
+
+
+
+
+</script>
+</body>
+</html>
