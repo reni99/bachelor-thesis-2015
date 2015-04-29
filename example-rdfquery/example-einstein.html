@@ -5,24 +5,25 @@
   <script type="text/javascript" src="dist/jquery.rdfquery.core-1.0.js"></script>
   <script type="text/javascript" src="dist/jquery.rdfquery.rules-1.0.js"></script>
   <script type="text/javascript" src="dist/jquery.rdfquery.rdfa-1.0.js"></script>
+  <title>Example rdf-query</title>
 </head>
 <body>
-	<p id="infor">This paper was written by <span rel="dc:creator" resource="#me"><span property="foaf:name">Ben Adida</span>.</span></p>
+	<p id="info">This example is written by <span rel="dc:creator" resource="#me"><span property="foaf:name">Renato Stauffer</span>.</span></p>
 <div id="content">
 <div id="albert" about="http://dbpedia.org/resource/Albert_Einstein" typeof="foaf:Person">
   <span property="foaf:name">Albert Einstein</span>
   <span property="dbp:dateOfBirth" datatype="xsd:date">1879-03-14</span>
-  <div rel="dbp:birthPlace" resource="http://dbpedia.org/resource/German_Empire" />
+  <div rel="dbp:birthPlace" resource="http://dbpedia.org/resource/German_Empire">
   <span about="http://dbpedia.org/resource/German_Empire"
     property="dbp:conventionalLongName">the German Empire</span>
 </div>
 </div>
-<p id="info">This paper was written by <span rel="dc:creator" resource="#me"><span property="foaf:name">Ben Adida</span>.</span></p>
-</body>
+</div>
 <script type="text/javascript">
 
 var store = $('#info').rdf();
-$('#content')
+
+$('#info')
   .rdf()
   .prefix('foaf', 'http://xmlns.com/foaf/0.1/')
   .where('?person a foaf:Person')
@@ -36,4 +37,5 @@ $('#content')
   });
   console.log(store);
 </script>
+</body>
 </html>
