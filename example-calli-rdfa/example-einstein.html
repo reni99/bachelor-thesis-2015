@@ -21,7 +21,12 @@ var callback = function(subject, property, value, datatype, lang) {
     var isBlankSubject = subject.indexOf('_:') == 0;
     var isLiteral = datatype != null;
     var htmlElementCompletingThisTriple = this;
-    console.log(htmlElementCompletingThisTriple);
+    console.log("Did parse element: " + htmlElementCompletingThisTriple);
+    console.log("containing subject: " + subject);
+    console.log("Property: " + property);
+    console.log("And value: " + value);
+    console.log("With dataype: " + datatype);
+    console.log("And language tag: " + lang);
 }
 
 var node = document.documentElement;
@@ -34,11 +39,7 @@ if (!parser.parse(node, callback)) {
 }
 
 // parse a detached, in-memory node
-var el = document.createElement('div');
-el.innerHTML = '<a rel="ex:link" href="location.htm">a link</a>';
-var x = parser.parse(el, callback);
-
-
+parser.parse(document.getElementById("content"),callback); 
 
 
 
