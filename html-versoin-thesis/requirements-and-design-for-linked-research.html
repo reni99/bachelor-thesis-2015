@@ -7,10 +7,16 @@
 	<meta name="keywords" content="Renato Stauffer, Stauffer, Renato"/>
 	<meta name="author" content="Renato Stauffer"/>
 	<title>Renato Stauffer</title>
-	<link rel='stylesheet' id='lncs-css'  href='http://linked-research.270a.info/media/css/lncs.css?ver=4.0' type='text/css' media='all' />
+        <link rel="stylesheet alternate" href="http://linked-research.270a.info/media/css/acm.css" media="all" title="ACM"/>
+        <link rel="stylesheet alternate" href="http://www.w3.org/StyleSheets/TR/W3C-REC.css" media="all" title="W3C-REC"/>
+	<link rel="stylesheet alternate" href="http://linked-research.270a.info/media/css/lncs.css" media="all" title="LNCS"/>
+	<link rel='stylesheet' id='open-sans-css'  href='//fonts.googleapis.com/css?family=Open+Sans%3A300italic%2C400italic%2C600italic%2C300%2C400%2C600&#038;subset=latin%2Clatin-ext&#038;ver=4.0' type='text/css' media='all' />
+<link rel='stylesheet' id='dashicons-css'  href='http://renatostauffer.ch/wp-includes/css/dashicons.min.css?ver=4.0' type='text/css' media='all' />
+<link rel='stylesheet' id='admin-bar-css'  href='http://renatostauffer.ch/wp-includes/css/admin-bar.min.css?ver=4.0' type='text/css' media='all' />
 <link rel='stylesheet' id='thesis-css'  href='http://linked-research.270a.info/media/css/thesis.css?ver=4.0' type='text/css' media='all' />
 <link rel='stylesheet' id='examples-css'  href='http://renatostauffer.ch/wp-content/themes/newTheme/examples.css?ver=4.0' type='text/css' media='all' />
 <link rel='stylesheet' id='textHighlighting-css'  href='http://renatostauffer.ch/wp-content/themes/newTheme/media/css/text-highlighting.css?ver=4.0' type='text/css' media='all' />
+<link rel='stylesheet' id='lncs-css'  href='http://linked-research.270a.info/media/css/lncs.css?ver=4.0' type='text/css' media='all' />
 <link rel='stylesheet' id='lr-css'  href='http://linked-research.270a.info/media/css/lr.css?ver=4.0' type='text/css' media='all' />
 <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js'></script>
 <script type='text/javascript' src='http://linked-research.270a.info/scripts/lr.js?ver=4.0'></script>
@@ -18,17 +24,63 @@
 <script type='text/javascript' src='http://linked-research.270a.info/scripts/html.sortable.min.js?ver=4.0'></script>
 <link rel='canonical' href='http://renatostauffer.ch/requirements-and-design-for-a-tool-to-author-triple-statements/' />
 <link rel='shortlink' href='http://renatostauffer.ch/?p=131' />
+<style type="text/css" media="print">#wpadminbar { display:none; }</style>
+<style type="text/css" media="screen">
+	html { margin-top: 32px !important; }
+	* html body { margin-top: 32px !important; }
+	@media screen and ( max-width: 782px ) {
+		html { margin-top: 46px !important; }
+		* html body { margin-top: 46px !important; }
+	}
+</style>
 </head>
 
-<body about="[this:]" typeof="foaf:Document sioc:Post biblio:Paper prov:Entity" class="hfeed" prefix="rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns# rdfs: http://www.w3.org/2000/01/rdf-schema# owl: http://www.w3.org/2002/07/owl# xsd: http://www.w3.org/2001/XMLSchema# dcterms: http://purl.org/dc/terms/ foaf: http://xmlns.com/foaf/0.1/ v: http://www.w3.org/2006/vcard/ns# pimspace: http://www.w3.org/ns/pim/space# cc: http://creativecommons.org/ns# skos: http://www.w3.org/2004/02/skos/core# prov: http://www.w3.org/ns/prov# schema: http://schema.org/ rsa: http://www.w3.org/ns/auth/rsa# cert: http://www.w3.org/ns/auth/cert# cal: http://www.w3.org/2002/12/cal/ical# wgs: http://www.w3.org/2003/01/geo/wgs84_pos# org: http://www.w3.org/ns/org# biblio: http://purl.org/net/biblio# bibo: http://purl.org/ontology/bibo/ book: http://purl.org/NET/book/vocab# ov: http://open.vocab.org/terms/ doap: http://usefulinc.com/ns/doap# dbr: http://dbpedia.org/resource/ dbp: http://dbpedia.org/property/ sio: http://semanticscience.org/resource/ opmw: http://www.opmw.org/ontology/ deo: http://purl.org/spar/deo/ doco: http://purl.org/spar/doco/ cito: http://purl.org/spar/cito/ sro: http://salt.semanticauthoring.org/ontologies/sro# this: http://renatostauffer.ch/http://renatostauffer.ch/requirements-and-design-for-a-tool-to-author-triple-statements/">
+<body about="[this:]" typeof="foaf:Document sioc:Post biblio:Paper prov:Entity" class="hfeed" prefix="rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns# rdfs: http://www.w3.org/2000/01/rdf-schema# owl: http://www.w3.org/2002/07/owl# xsd: http://www.w3.org/2001/XMLSchema# dcterms: http://purl.org/dc/terms/ foaf: http://xmlns.com/foaf/0.1/ v: http://www.w3.org/2006/vcard/ns# pimspace: http://www.w3.org/ns/pim/space# cc: http://creativecommons.org/ns# skos: http://www.w3.org/2004/02/skos/core# prov: http://www.w3.org/ns/prov# schema: http://schema.org/ rsa: http://www.w3.org/ns/auth/rsa# cert: http://www.w3.org/ns/auth/cert# cal: http://www.w3.org/2002/12/cal/ical# wgs: http://www.w3.org/2003/01/geo/wgs84_pos# org: http://www.w3.org/ns/org# biblio: http://purl.org/net/biblio# bibo: http://purl.org/ontology/bibo/ book: http://purl.org/NET/book/vocab# ov: http://open.vocab.org/terms/ doap: http://usefulinc.com/ns/doap# dbr: http://dbpedia.org/resource/ dbp: http://dbpedia.org/property/ sio: http://semanticscience.org/resource/ opmw: http://www.opmw.org/ontology/ deo: http://purl.org/spar/deo/ doco: http://purl.org/spar/doco/ cito: http://purl.org/spar/cito/ sro: http://salt.semanticauthoring.org/ontologies/sro# this: http://renatostauffer.ch/requirements-and-design-for-a-tool-to-author-triple-statements/">
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xml:lang="en" lang="en">
+<head>
+  <meta name="description" property="dcterms:abstract" content="This website is about Renato Stauffer and his projects."/>
+  <meta name="keywords" content="Renato Stauffer, Stauffer, Renato"/>
+  <meta name="author" content="Renato Stauffer"/>
+  
+        <link rel="stylesheet alternate" href="http://linked-research.270a.info/media/css/acm.css" media="all" title="ACM"/>
+        <link rel="stylesheet alternate" href="http://www.w3.org/StyleSheets/TR/W3C-REC.css" media="all" title="W3C-REC"/>
+  <link rel="stylesheet alternate" href="http://linked-research.270a.info/media/css/lncs.css" media="all" title="LNCS"/>
+  <link rel='stylesheet' id='open-sans-css'  href='//fonts.googleapis.com/css?family=Open+Sans%3A300italic%2C400italic%2C600italic%2C300%2C400%2C600&#038;subset=latin%2Clatin-ext&#038;ver=4.0' type='text/css' media='all' />
+<link rel='stylesheet' id='dashicons-css'  href='http://renatostauffer.ch/wp-includes/css/dashicons.min.css?ver=4.0' type='text/css' media='all' />
+<link rel='stylesheet' id='admin-bar-css'  href='http://renatostauffer.ch/wp-includes/css/admin-bar.min.css?ver=4.0' type='text/css' media='all' />
+<link rel='stylesheet' id='thesis-css'  href='http://linked-research.270a.info/media/css/thesis.css?ver=4.0' type='text/css' media='all' />
+<link rel='stylesheet' id='examples-css'  href='http://renatostauffer.ch/wp-content/themes/newTheme/examples.css?ver=4.0' type='text/css' media='all' />
+<link rel='stylesheet' id='textHighlighting-css'  href='http://renatostauffer.ch/wp-content/themes/newTheme/media/css/text-highlighting.css?ver=4.0' type='text/css' media='all' />
+<link rel='stylesheet' id='lncs-css'  href='http://linked-research.270a.info/media/css/lncs.css?ver=4.0' type='text/css' media='all' />
+<link rel='stylesheet' id='lr-css'  href='http://linked-research.270a.info/media/css/lr.css?ver=4.0' type='text/css' media='all' />
+<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js'></script>
+<script type='text/javascript' src='http://linked-research.270a.info/scripts/lr.js?ver=4.0'></script>
+<script type='text/javascript' src='http://linked-research.270a.info/scripts/shower.min.js?ver=4.0'></script>
+<script type='text/javascript' src='http://linked-research.270a.info/scripts/html.sortable.min.js?ver=4.0'></script>
+<link rel='canonical' href='http://renatostauffer.ch/requirements-and-design-for-a-tool-to-author-triple-statements/' />
+<link rel='shortlink' href='http://renatostauffer.ch/?p=131' />
+<style type="text/css" media="print">#wpadminbar { display:none; }</style>
+<style type="text/css" media="screen">
+  html { margin-top: 32px !important; }
+  * html body { margin-top: 32px !important; }
+  @media screen and ( max-width: 782px ) {
+    html { margin-top: 46px !important; }
+    * html body { margin-top: 46px !important; }
+  }
+</style>
+</head>
+
+<body about="[this:]" typeof="foaf:Document sioc:Post biblio:Paper prov:Entity" class="hfeed" prefix="rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns# rdfs: http://www.w3.org/2000/01/rdf-schema# owl: http://www.w3.org/2002/07/owl# xsd: http://www.w3.org/2001/XMLSchema# dcterms: http://purl.org/dc/terms/ foaf: http://xmlns.com/foaf/0.1/ v: http://www.w3.org/2006/vcard/ns# pimspace: http://www.w3.org/ns/pim/space# cc: http://creativecommons.org/ns# skos: http://www.w3.org/2004/02/skos/core# prov: http://www.w3.org/ns/prov# schema: http://schema.org/ rsa: http://www.w3.org/ns/auth/rsa# cert: http://www.w3.org/ns/auth/cert# cal: http://www.w3.org/2002/12/cal/ical# wgs: http://www.w3.org/2003/01/geo/wgs84_pos# org: http://www.w3.org/ns/org# biblio: http://purl.org/net/biblio# bibo: http://purl.org/ontology/bibo/ book: http://purl.org/NET/book/vocab# ov: http://open.vocab.org/terms/ doap: http://usefulinc.com/ns/doap# dbr: http://dbpedia.org/resource/ dbp: http://dbpedia.org/property/ sio: http://semanticscience.org/resource/ opmw: http://www.opmw.org/ontology/ deo: http://purl.org/spar/deo/ doco: http://purl.org/spar/doco/ cito: http://purl.org/spar/cito/ sro: http://salt.semanticauthoring.org/ontologies/sro# this: http://renatostauffer.ch/requirements-and-design-for-a-tool-to-author-triple-statements/">
 <article class="hentry editable">
 <h1 class="entry-title">Requirements and Design for a Tool to Author Triple Statements</h1>
 <div id="authors"><dl id="author-name"><dt>Authors</dt><dd id="author-1"><a href="http://renatostauffer.ch/#i" rel="foaf:homepage">Renato Stauffer</a><sup><a href="#author-org-1">1</a></sup><sup><a href="#author-email-1"></a></sup></dd></dl>
 <ul id="author-org">
-	<li id="author-org-1"><sup>1</sup><a href="http://bfh.ch/" rel="foaf:homepage">Bern University of Applied Sciences</a>, Bern, Switzerland</li>
+  <li id="author-org-1"><sup>1</sup><a href="http://bfh.ch/" rel="foaf:homepage">Bern University of Applied Sciences</a>, Bern, Switzerland</li>
 </ul>
 <ul id="author-email">
-	<li id="author-email-1"><sup></sup><a href="mailto:renato.stauffer@students.bfh.ch" rel="foaf:mbox">renato.stauffer@students.bfh.ch</a></li>
+  <li id="author-email-1"><sup></sup><a href="mailto:renato.stauffer@students.bfh.ch" rel="foaf:mbox">renato.stauffer@students.bfh.ch</a></li>
 </ul>
 </div>
 <dl id="document-identifier"><dt>Document ID</dt><dd><a href="http://renatostauffer.ch/requirements-and-design-for-a-tool-to-author-triple-statements/">http://renatostauffer.ch/requirements-and-design-for-a-tool-to-author-triple-statements/</a></dd>
@@ -53,49 +105,58 @@
 </section><section id="keywords">
 <h2>Keywords</h2>
 <ul>
-	<li><a href="http://en.wikipedia.org/wiki/Requirements_engineering">Requirements Engineering</a></li>
-	<li><a href="http://en.wikipedia.org/wiki/Linked_Data">Linked Data</a></li>
+  <li><a href="http://en.wikipedia.org/wiki/Requirements_engineering">Requirements Engineering</a></li>
+  <li><a href="http://en.wikipedia.org/wiki/Linked_Data">Linked Data</a></li>
         <li><a href="http://en.wikipedia.org/wiki/Software_engineering">Software Engineering</a></li>
-	<li><a href="http://en.wikipedia.org/wiki/Thesis">Bachelor Thesis</a></li>
+  <li><a href="http://en.wikipedia.org/wiki/Thesis">Bachelor Thesis</a></li>
 </ul>
 </section>
 
-<section id="acknowledgements">
-<h2> Acknowledgements</h2>
-<div>
-</div>
-</section>
+<dl>
+<dt>Acknowledgements</dt>
+<dd>
+To those how have supported me..
+</dd>
+</dl>
 
 
-<section id="introduction">
-<h2>Introduction</h2>
-<div>
+<section id="introduction" about="[this:]" rel="dcterms:hasPart" resource="[this:#introduction]">
+<h2 about="[this:#introduction]" property="dcterms:title">Introduction</h2>
+<div about="[this:#introduction]" property="dcterms:description" typeof="deo:Introduction">
 <p id="prologue">
-<q cite="https://archive.org/stream/periclesandaspa03landgoog#page/n100/mode/2up">Nothing is pleasanter to me than exploring in a library.</q> [<a class="ref" href="#ref-1">1</a>]
-Many years have past by since this quote from <a href="http://en.wikipedia.org/wiki/Walter_Savage_Landor">Walter Savage Landor</a>. Meanwhile technology has evolved and brought the World Wide Web to life: A massive library full of data, where knowledge is often represented in an unstructured, machine-unfriendly manner. <i>more to come&#8230;</i>
+<q cite="http://xanadu.com.au/ted/XUsurvey/xuDation.html">For over two computer decades we have imitated paper on screens (extremes being Adobe Acrobat and the HTML page)</q> [http://xanadu.com.au/ted/XUsurvey/xuDation.html]. This citation from Ted Nelson&#8217;s paper &#8220;Xanalogical Structure, Needed Now More than Ever: 
+Parallel Documents, Deep Links to Content, 
+Deep Versioning and Deep Re-Use&#8221; from 2000-05-23 is still true for today.</p>
+<p id="xanadu-project">
+Nelson has the vision of a web that is much more ambitious than the World Wide Web known today. His project Xanadu, the original hypertext project, is described by him as follows: <q cite="http://xanadu.com.au/ted/XUsurvey/xuDation.html">It [the Xanadu project] has always been much more ambitious, proposing an entire form of literature where links do not break as versions change; where documents may be closely compared side by side and closely annotated; where it is possible to see the origins of every quotation; and in which there is a valid copyright system&#8211; a literary, legal and business arrangement&#8211; for frictionless, non-negotiated quotation at any time and in any amount[http://xanadu.com.au/ted/XUsurvey/xuDation.html].</q></p>
+<p>
+In contrast to this vision, todays World Wide Web contains interlinked hypertext documents as proposed in 1990 by Tim Berners-Lee and Robert Cailliau. Their idea of having only one-directional hyperlinks between documents and access information as a web of nodes [http://www.w3.org/Proposal.html], is a trivialized form of the original Xanadu model [http://xanadu.com.au/ted/XUsurvey/xuDation.html]. According to Nelson, todays model does contain <q cite="">fragile ever-breaking one-way links, with no recognition of change or copyright, and no support for multiple versions or principled re-use. Fonts and glitz, rather than content connective structure, prevail</q>[http://xanadu.com.au/ted/XUsurvey/xuDation.html]. This leads to an imitation of paper, whereas the World Wide Web described by Nelson would offer a new way of publishing and consuming documents.</p>
+
+<p>Nowadays the Xanadu project is considered as the longest-running vaporware project in the history of computing [http://archive.wired.com/wired/archive/3.06/xanadu.html] and the hypertext project from Tim Berners-Lee and Robert Cailliau has emerged as a large universe of documents, where ideas can be shared, <a href="https://www.youtube.com/watch?v=V3GJycgu-cs">cat videos watched</a> and knowledge is made accessible for our society.
 </p>
-
-
-<section id="problem-statement">
-<h3>Problem Statement</h3>
-<div>
+<p>
+However, this knowledge is often presented in a machine-unfriendly way and on top of that, is not provided to humans with the fullest possibilities the World Wide Web offers. This is even true for publications in the Web Science community as it <q cite="http://csarven.ca/enabling-accessible-knowledge#web-science-community">continues to conduct research tracks, workshops, and challenges, in a manner that even the call for papers of top-level Web conferences request research documents that are neither machine nor Web-friendly</q> [http://csarven.ca/enabling-accessible-knowledge#web-science-community]. Submissions are often solely demanded in Word or PDF formats, where it is challenging to extract information from within [http://csarven.ca/enabling-accessible-knowledge#web-science-community].
+</p>
+<section id="problem-statement" about="[this:#introduction]" rel="dcterms:hasPart" resource="[this:#problem-statement]">
+<h3 about="[this:#problem-statement]" property="dcterms:title">Problem Statement</h3>
+<div about="[this:#problem-statement]" property="dcterms:description">
 <p>
 Through movements like Open Access, data and research publications have become more accessible for the general public. But Sarven Capadisli et. all state in their publication Enabling Accessible Knowledge the following: <q cite="http://csarven.ca/enabling-accessible-knowledge#motivation">While there are notable efforts making research publications and data available for free with open access, there is a self-evident disconnect between research documents as far as machines are concerned.</q> [<a class="ref" href="#ref-1">2</a>] According to them, research documents are not as human and machine friendly as they could be, making it unpleasant to us &#8211; but also for the machines &#8211; to explore research documents on the Web.
 </p>
-<p>
+<p id="barrier-intelligent-document-processing">
 As reported by Frank van Harmelen and Dieter Fensel in their publication Practical Knowledge representation for the Web, the lack of semantic markup is a major barrier to develop more intelligent document processing on the web. [<a class="ref" href="#ref-1">3</a>]
 </p>
 <p>
-In order to close the disconnect between research documents, Sarven Capadisli is in progress to develop a tool to share and reuse research knowledge by employing the native Web technology stack. The project called Linked Research will enable researchers to take full control, ownership and responsibility of their own knowledge, making it possible to like-minded people as Walter Savage Landor to explore the giant library called “Web” in a user-friendly way. [<a class="ref" href="#ref-1">4</a>]
+In order to close the disconnect between research documents, Sarven Capadisli is in progress to develop a tool to share and reuse research knowledge by employing the native Web technology stack [http://csarven.ca/enabling-accessible-knowledge]. The project called Linked Research will enable researchers to take full control, ownership and responsibility of their own knowledge, making it possible to get away from the imitation of paper and use the Webs current possibilities to explore hypertext documents in a user-friendly way. [<a class="ref" href="#ref-1">4</a>]
 </p>
 </div>
 </section>
 
-<section id="goal">
-<h3>Goal</h3>
-<div>
+<section id="goal" about="[this:]" rel="dcterms:hasPart" resource="[this:#goal]">
+<h3 about="[this:#goal]" property="dcterms:title">Goal</h3>
+<div about="[this:#goal]" property="dcterms:description">
 <p>
-As part of a possible solution to make research knowledge more accessible and pleasanter for people and especially machines, Linked Research is going to implement a authoring tool to create and edit research papers directly within a browser. In addition it will enable the user to author triple statements to enrich the document with markup.
+As part of a possible solution to make research knowledge more accessible and more pleasant for people and machines, Linked Research is going to implement a authoring tool to create and edit research papers directly within a browser. In addition it will enable the user to author triple statements to enrich the document with markup.
 </p>
 <p>
 The objective of this thesis is to establish requirements for a user-friendly tool to create scholarly publications and the triple editing feature. The feature facilitates the enrichment of publications with metadata and enables scientists to make research knowledge more accessible to societies and more consumable for machines.
@@ -103,17 +164,31 @@ The objective of this thesis is to establish requirements for a user-friendly to
 </div>
 </section>
 
-
-<section id="contribution">
-<h3>Contribution</h3>
-<div>
+<section id="contributions" about="[this:]" rel="dcterms:hasPart" resource="[this:#contributions]">
+<h3 about="[this:#contributions]" property="dcterms:title">Contributions</h3>
+<div about="[this:#contributions]" property="dcterms:description">
+<p>
+The contributions are as follows:
+</p>
+<dl>
+<dt>Requirements for Linked Research</dt>
+<dd>Requirements for Linked Research, which can be reused and made publicly available on Github or the projects wiki / documentation. Additionally the established system context gives a contributor of Linked Research a nice overview of the cope of the project.</dd>
+<dt>Eitor comparison</dt>
+<dd>Different editors have been compared to set a base for an evaluation for a suitable editor component.</dd>
+<dt>RDFa Parser comparison</dt>
+<dd>RDFa parsers have been tested to find a solution for the RDFa parsing component of Linked Research.</dd>
+<dt>Coding examples</dt>
+<dd>Coding examples on Github showcase the different editors and RDFa libraries.</dd>
+<dt>http://renatostauffer.ch/requirements-and-design-for-a-tool-to-author-triple-statements/</dt>
+<dd>This thesis is published on the Web and acts as a demo for Linked Research.</dd>
+</dl>
 </div>
 </section>
 
 
-<section id="outline">
-<h3>Structure of this Document</h3>
-<div>
+<section id="outline" about="[this:]" rel="dcterms:hasPart" resource="[this:#outline]">
+<h3 about="[this:#outline]" property="dcterms:title">Structure of this Document</h3>
+<div about="[this:#outline]" property="dcterms:description">
 <p>
 This thesis is structured as follows:
 </p>
@@ -133,8 +208,8 @@ This thesis is structured as follows:
 </div>
 </section><!--End of #introduction-->
 
-<section id="fundamentals">
-<h2>Fundamentals</h2>
+<section id="background">
+<h2>Background</h2>
 <div>
 <p>
 This chapter is intended to provide background information and define terms to understand this thesis.
@@ -146,7 +221,7 @@ This chapter is intended to provide background information and define terms to u
 <p>
 The Hypertext Markup Language (HTML) is the core language of the World Wide Web (WWW) and currently released as version 5.0. The language is used to create web pages and is recommended by the main international standards organization for the WWW (W3C, World Wide Web Consortium).
 HTML specifies the structure of a website with tags (like  <code>html</code> ). The following listing shows the basic structure of an HTML 5 document:
- 
+</p> 
 <pre>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
 &lt;head&gt;
@@ -154,6 +229,7 @@ HTML specifies the structure of a website with tags (like  <code>html</code> ). 
 &lt;/head&gt;
 &lt;body&gt;&lt;/body&gt;
 &lt;/html&gt;</pre>
+<p>
 (http://www.w3.org/TR/html5/)
 </p>
 </div>
@@ -161,21 +237,31 @@ HTML specifies the structure of a website with tags (like  <code>html</code> ). 
 
 
 
+<section id="what-you-see-is-what-you">
+<h3>What you see is What you&#8230;</h3>
+<div>
+
 <section id="wysiwyg">
-<h3>WYSIWYG</h3>
+<h4>WYSIWYG</h4>
 <div>
 <p>
-WYSIWYG stands for &#8220;What-You-See-Is-What-You-Get&#8221; and describes an editing system, in which a users edited content is displayed  in a form close to the final representation of the text, while he is writing the text [http://svn.aksw.org/papers/2013/WWW_WYSIWYM/public.pdf].</p>
+WYSIWYG stands for &#8220;What-You-See-Is-What-You-Get&#8221; and describes an editing system, in which a users edited content is displayed  in a form close to the final representation of the text, while he is writing the text [http://svn.aksw.org/papers/2013/WWW_WYSIWYM/public.pdf].
+</p>
 </div>
 </section>
 
 
 <section id="wysiwym">
-<h3>WYSIWYM</h3>
+<h4>WYSIWYM</h4>
 <div>
 <p>
 WYSIWYM is an acronym for &#8220;What-You-See-Is-What-You-Mean&#8221;. a WYSIWYM editor tries to capture the separation of presentation and content when writing a document [http://svn.aksw.org/papers/2013/WWW_WYSIWYM/public.pdf]. The focus of a WYSIWYM-editor lies on the preservation of the meaning of an element within a text instead the presentation of the element in the document [http://svn.aksw.org/papers/2013/WWW_WYSIWYM/public.pdf].
 </p>
+</div>
+</section>
+
+
+
 </div>
 </section>
 
@@ -324,11 +410,11 @@ Literature research provided a broad idea of the problem scope and <i>More to co
 <div>
 <p>
 Prototypes have been worked out to discuss features and functionality. They are available on Github.
+</p>
 <ul>
 <li><i>More to come&#8230;</i></li>
 <li><i>More to come&#8230;</i></li>
 </ul>
-</p>
 </div>
 </section>
 
@@ -450,13 +536,13 @@ The use cases Change View, Local Storage and Export Document were already implem
 </p>
 <p>
 Based on the established Usage Facet a first sketch of Linked Research was drawn:
+</p>
 <figure class="figure">
 <a href="http://renatostauffer.ch/wp-content/uploads/2015/02/scatch1.png"><img src="http://renatostauffer.ch/wp-content/uploads/2015/02/scatch1.png" alt="scatch" width="1137" height="474" class="alignnone size-full wp-image-692" /></a>
 <figcaption>
 First sketch
 </figcaption>
 </figure>
-</p>
 <ol>
 <li>The user edits or creates text with the editor. When the user selects a text passage or word a popup menu shows up. From there the user has the ability to assign styles to the text (bold text, italic, etc.).</li>
 <li>The user can also toggle in / out the meta editor to create triple statements.</li>
@@ -2602,7 +2688,7 @@ The challenge is to find an editor that matches the established requirements fro
 <p>
 Before considering a particular editor, known approaches to edit text within the browser need to be determined.
 </p>
-<p>A search for the terms &#8220;How to write a wysiwyg editor&#8221;, &#8220;text editor approaches in browsers&#8221;, &#8220;contentEditable&#8221; and &#8220;alternatives for contentEditable&#8221; on <a href="https://www.google.ch/?gws_rd=ssl">Google.com</a> resulted in three possible approaches on how a author is able to edit text in the browser.
+<p>A search for the terms &#8220;How to write a wysiwyg editor&#8221;, &#8220;text editor approaches in browsers&#8221;, &#8220;contentEditable&#8221; and &#8220;alternatives for contentEditable&#8221; on <a href="https://www.google.ch/?gws_rd=ssl">Google.com</a> resulted in three possible approaches on how an author is able to edit text in the browser.
 </p>
 <dl>
 <dt>textarea</dt>
@@ -2618,9 +2704,9 @@ In the early days of the Web, users were limited to text boxes when it came to o
 In contrast to the designMode, the contentEditable attribute makes just some part of the document (like a  <code>div</code>-element) editable [http://www.w3.org/TR/html51/editing.html#contenteditable]. Example XY shows how the attribute can be used:
 </dd>
 </dl>
-<p> 
 <pre>&lt;div contentEditable="true"&gt;
-&lt;/div&gt;</pre> 
+&lt;/div&gt;</pre>
+<p>
 The <code>&lt;div&gt;</code>-element down below is now editable due to setting the <code>&lt;contentEditable&gt;</code>-element equal to true (pleas visit <a href="http://renatostauffer.ch/requirements-and-design-for-a-tool-to-author-triple-statements/#text-editing">http://renatostauffer.ch/requirements-and-design-for-a-tool-to-author-triple-statements/#text-editing</a> if you read this thesis on paper).
 </p>
 <div class="test-editable" contentEditable="true">
@@ -2662,11 +2748,6 @@ Table 45 &#8211; 49 compare all possible editors for Linked Research with its co
 
 <table id="editor-information">
 <caption>General information</caption>
-<tfoot>
-<p>Table XXX provides general information about the editors. The attribute <samp>Approach</samp> indicates what kind of approach is used to turn the container element into editable mode. One of the established approaches in chapter XXX is assigned to each editor for this attribute.</p>
-<p>The column <samp>Container Element</samp> accepts either the value <samp>div</samp> or <samp>iframe</samp> and describes how the editable content is included in the HTML page.</p>
-<p>The column <samp>License</samp> indicates what kind of license is used with the corresponding editor</p>
-<p><samp>External Dependencies</samp> takes a comma separated list for dependencies to external libraries or the value <samp>None</samp> if no dependency exists.</p></tfoot>
 <thead>
 <tr>
 <th>Editor Name</th>
@@ -2676,6 +2757,15 @@ Table 45 &#8211; 49 compare all possible editors for Linked Research with its co
 <th>External Dependencies</th>
 </tr>
 </thead>
+<tfoot>
+<tr>
+<td>Table XXX provides general information about the editors. The attribute <samp>Approach</samp> indicates what kind of approach is used to turn the container element into editable mode. One of the established approaches in chapter XXX is assigned to each editor for this attribute.
+The column <samp>Container Element</samp> accepts either the value <samp>div</samp> or <samp>iframe</samp> and describes how the editable content is included in the HTML page.
+The column <samp>License</samp> indicates what kind of license is used with the corresponding editor
+<samp>External Dependencies</samp> takes a comma separated list for dependencies to external libraries or the value <samp>None</samp> if no dependency exists.
+</td>
+</tr>
+</tfoot>
 <tbody>
 <tr>
 <th>MediumEditor</th>
@@ -2687,7 +2777,7 @@ Table 45 &#8211; 49 compare all possible editors for Linked Research with its co
 
 <tr>
 <th>editor</th>
-<td><code>article<code> tag</td>
+<td><code>article</code> tag</td>
 <td>contentEditable</td>
 <td>No License</td>
 <td>None</td>
@@ -2769,7 +2859,13 @@ Table 45 &#8211; 49 compare all possible editors for Linked Research with its co
 <th>Contributors</th>
 </tr>
 </thead>
-<tfoot>The attribute <samp>Documentation</samp> takes either the value <samp>No</samp> if no documentation for the editors API exists or <samp>Yes</samp> if API documentation is provided. To signify how much the community is evolved in the development process of the editor, the attributes <samp>Closed Pull Requests</samp> and <samp>Contributors</samp> are used. Both attributes take a number as its value ranging from 0 - &infin;.</tfoot>
+<tfoot>
+<tr>
+<td>
+The attribute <samp>Documentation</samp> takes either the value <samp>No</samp> if no documentation for the editors API exists or <samp>Yes</samp> if API documentation is provided. To signify how much the community is evolved in the development process of the editor, the attributes <samp>Closed Pull Requests</samp> and <samp>Contributors</samp> are used. Both attributes take a number as its value ranging from 0 &#8211; &infin;.
+</td>
+</tr>
+</tfoot>
 <tbody>
 <tr>
 <th>MediumEditor</th>
@@ -2822,23 +2918,23 @@ Table 45 &#8211; 49 compare all possible editors for Linked Research with its co
 
 <tr>
 <th>Tinymce</th>
-<td>div</td>
-<td>contentEditable</td>
-<td>MIT</td>
+<td>Yes</td>
+<td>482</td>
+<td>116</td>
 </tr>
 
 <tr>
 <th>CKEditor</th>
-<td>div</td>
-<td>contentEditable</td>
-<td>MIT</td>
+<td>Yes</td>
+<td>155</td>
+<td>52</td>
 </tr>
 
 <tr>
 <th>Aloha Eidtor</th>
-<td>div</td>
-<td>contentEditable</td>
-<td>MIT</td>
+<td>Yes</td>
+<td>738</td>
+<td>50</td>
 </tr>
 
 </tbody>
@@ -2858,7 +2954,13 @@ Table 45 &#8211; 49 compare all possible editors for Linked Research with its co
 <th>Requirement F-18</th>
 </tr>
 </thead>
-<tfoot>Table XXX shows how well each editor fulfills the requirements established in chapter XXX. If an editor fulfills a requirement the value <samp>Yes</samp> is inserted into the corresponding column. If the editor does not satisfy the requirement, the value <samp>No</samp> is used.</tfoot>
+<tfoot>
+<tr>
+<td>
+Table XXX shows how well each editor fulfills the requirements established in chapter XXX. If an editor fulfills a requirement the value <samp>Yes</samp> is inserted into the corresponding column. If the editor does not satisfy the requirement, the value <samp>No</samp> is used.
+</td>
+</tr>
+</tfoot>
 <tbody>
 <tr>
 <th>MediumEditor</th>
@@ -2963,7 +3065,13 @@ Table 45 &#8211; 49 compare all possible editors for Linked Research with its co
 <th>Custom Commands</th>
 </tr>
 </thead>
-<tfoot>Table XXX shows how extensible the different editors are. Do they provide an API to add custom buttons (<samp>Custom Buttons</samp>) and attach custom (<samp>Custom Commands</samp>) functionality to the buttons? A value of <samp>Yes</samp> indicates, that custom buttons and / or functionality is possible.</tfoot>
+<tfoot>
+<tr>
+<td>
+Table XXX shows how extensible the different editors are. Do they provide an API to add custom buttons (<samp>Custom Buttons</samp>) and attach custom (<samp>Custom Commands</samp>) functionality to the buttons? A value of <samp>Yes</samp> indicates, that custom buttons and / or functionality is possible.
+</td>
+</tr>
+</tfoot>
 <tbody>
 <tr>
 <th>MediumEditor</th>
@@ -3041,7 +3149,11 @@ Table 45 &#8211; 49 compare all possible editors for Linked Research with its co
 </tr>
 </thead>
 <tfoot>
+<tr>
+<td>
 Table XXX shows how compatible the editors are with the browsers <samp>Internet Explorer</samp>, <samp>Safari</samp>, <samp>Google Chrome</samp> and <samp>Firefox</samp>. The value in the columns refer to the version number of the corresponding browser (e.g. 9+ in column <samp>Internet Explorer</samp> means, that the editor should work in the Internet Explorer since version 9 or higher).
+</td>
+</tr>
 </tfoot>
 <tbody>
 <tr>
@@ -3127,7 +3239,6 @@ Table XXX shows how compatible the editors are with the browsers <samp>Internet 
 </tbody>
 </table>
 
-</p>
 </div>
 </section><!--End of #evaluation-editor-->
 
@@ -3135,11 +3246,107 @@ Table XXX shows how compatible the editors are with the browsers <samp>Internet 
 <section id="evaluation-rdfa-library">
 <h2>Evaluation RDFa Library</h2>
 <div>
-<p>
-</p>
-</div>
-</section>
 
+
+<table id="library-features">
+<caption>Features</caption>
+<thead>
+<tr>
+<th>Library Name</th>
+<th>SPARQL Endpoint</th>
+<th>RDFa Parser</th>
+<th>Storage</th>
+</tr>
+</thead>
+<tfoot></tfoot>
+<tbody>
+<tr>
+<th>Calli-RDFa</th>
+<td>No</td>
+<td>Yes</td>
+<td>No</td>
+</tr>
+<tr>
+<th>Green Turtle</th>
+<td>No</td>
+<td>Yes</td>
+<td>No</td>
+</tr>
+<tr>
+<th>rdflib</th>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+</tbody>
+</table>
+
+
+<table id="library-license-and-dependencies">
+<caption>License and Dependencies</caption>
+<thead>
+<tr>
+<th>Library Name</th>
+<th>License</th>
+<th>Dependencies</th>
+</tr>
+</thead>
+<tfoot></tfoot>
+<tbody>
+<tr>
+<th>Calli-RDFa</th>
+<td>BSD</td>
+<td>-</td>
+</tr>
+<tr>
+<th>Green Turtle</th>
+<td>BSD</td>
+<td>-</td>
+</tr>
+<tr>
+<th>rdflib</th>
+<td>MIT</td>
+<td>jQuery, Green Turtle</td>
+</tr>
+</tbody>
+</table>
+
+<table id="library-support">
+<caption>Support</caption>
+<thead>
+<tr>
+<th>Library Name</th>
+<th>Documentation</th>
+<th>Closed Pull Requests</th>
+<th>Contributors</th>
+</tr>
+</thead>
+<tfoot>
+</tfoot>
+<tbody>
+<tr>
+<th>Calli-RDFa</th>
+<td>Yes</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<th>Green Turtle</th>
+<td>Yes</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<th>rdflib</th>
+<td>No</td>
+<td>13</td>
+<td>21</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</section><!--End of #evaluation-library-->
 
 
 <section id="conclusions">
@@ -3168,5 +3375,7 @@ Table XXX shows how compatible the editors are with the browsers <samp>Internet 
 
 </div>
 </article><br />
+</body>
+</html><br />
 </body>
 </html>
