@@ -1,79 +1,5 @@
-
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml"
-    xml:lang="en" lang="en">
-<head>
-	<meta name="description" property="dcterms:abstract" content="This website is about Renato Stauffer and his projects."/>
-	<meta name="keywords" content="Renato Stauffer, Stauffer, Renato"/>
-	<meta name="author" content="Renato Stauffer"/>
-	<title>Renato Stauffer</title>
-        <link rel="stylesheet alternate" href="http://linked-research.270a.info/media/css/acm.css" media="all" title="ACM"/>
-        <link rel="stylesheet alternate" href="http://www.w3.org/StyleSheets/TR/W3C-REC.css" media="all" title="W3C-REC"/>
-	<link rel="stylesheet alternate" href="http://linked-research.270a.info/media/css/lncs.css" media="all" title="LNCS"/>
-	<link rel='stylesheet' id='open-sans-css'  href='//fonts.googleapis.com/css?family=Open+Sans%3A300italic%2C400italic%2C600italic%2C300%2C400%2C600&#038;subset=latin%2Clatin-ext&#038;ver=4.0' type='text/css' media='all' />
-<link rel='stylesheet' id='dashicons-css'  href='http://renatostauffer.ch/wp-includes/css/dashicons.min.css?ver=4.0' type='text/css' media='all' />
-<link rel='stylesheet' id='admin-bar-css'  href='http://renatostauffer.ch/wp-includes/css/admin-bar.min.css?ver=4.0' type='text/css' media='all' />
-<link rel='stylesheet' id='thesis-css'  href='http://linked-research.270a.info/media/css/thesis.css?ver=4.0' type='text/css' media='all' />
-<link rel='stylesheet' id='examples-css'  href='http://renatostauffer.ch/wp-content/themes/newTheme/examples.css?ver=4.0' type='text/css' media='all' />
-<link rel='stylesheet' id='textHighlighting-css'  href='http://renatostauffer.ch/wp-content/themes/newTheme/media/css/text-highlighting.css?ver=4.0' type='text/css' media='all' />
-<link rel='stylesheet' id='lncs-css'  href='http://linked-research.270a.info/media/css/lncs.css?ver=4.0' type='text/css' media='all' />
-<link rel='stylesheet' id='lr-css'  href='http://linked-research.270a.info/media/css/lr.css?ver=4.0' type='text/css' media='all' />
-<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js'></script>
-<script type='text/javascript' src='http://linked-research.270a.info/scripts/lr.js?ver=4.0'></script>
-<script type='text/javascript' src='http://linked-research.270a.info/scripts/shower.min.js?ver=4.0'></script>
-<script type='text/javascript' src='http://linked-research.270a.info/scripts/html.sortable.min.js?ver=4.0'></script>
-<link rel='canonical' href='http://renatostauffer.ch/requirements-and-design-for-a-tool-to-author-triple-statements/' />
-<link rel='shortlink' href='http://renatostauffer.ch/?p=131' />
-<style type="text/css" media="print">#wpadminbar { display:none; }</style>
-<style type="text/css" media="screen">
-	html { margin-top: 32px !important; }
-	* html body { margin-top: 32px !important; }
-	@media screen and ( max-width: 782px ) {
-		html { margin-top: 46px !important; }
-		* html body { margin-top: 46px !important; }
-	}
-</style>
-</head>
-
-<body about="[this:]" typeof="foaf:Document sioc:Post biblio:Paper prov:Entity" class="hfeed" prefix="rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns# rdfs: http://www.w3.org/2000/01/rdf-schema# owl: http://www.w3.org/2002/07/owl# xsd: http://www.w3.org/2001/XMLSchema# dcterms: http://purl.org/dc/terms/ foaf: http://xmlns.com/foaf/0.1/ v: http://www.w3.org/2006/vcard/ns# pimspace: http://www.w3.org/ns/pim/space# cc: http://creativecommons.org/ns# skos: http://www.w3.org/2004/02/skos/core# prov: http://www.w3.org/ns/prov# schema: http://schema.org/ rsa: http://www.w3.org/ns/auth/rsa# cert: http://www.w3.org/ns/auth/cert# cal: http://www.w3.org/2002/12/cal/ical# wgs: http://www.w3.org/2003/01/geo/wgs84_pos# org: http://www.w3.org/ns/org# biblio: http://purl.org/net/biblio# bibo: http://purl.org/ontology/bibo/ book: http://purl.org/NET/book/vocab# ov: http://open.vocab.org/terms/ doap: http://usefulinc.com/ns/doap# dbr: http://dbpedia.org/resource/ dbp: http://dbpedia.org/property/ sio: http://semanticscience.org/resource/ opmw: http://www.opmw.org/ontology/ deo: http://purl.org/spar/deo/ doco: http://purl.org/spar/doco/ cito: http://purl.org/spar/cito/ sro: http://salt.semanticauthoring.org/ontologies/sro# this: http://renatostauffer.ch/requirements-and-design-for-a-tool-to-author-triple-statements/">
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml"
-    xml:lang="en" lang="en">
-<head>
-  <meta name="description" property="dcterms:abstract" content="This website is about Renato Stauffer and his projects."/>
-  <meta name="keywords" content="Renato Stauffer, Stauffer, Renato"/>
-  <meta name="author" content="Renato Stauffer"/>
-  
-        <link rel="stylesheet alternate" href="http://linked-research.270a.info/media/css/acm.css" media="all" title="ACM"/>
-        <link rel="stylesheet alternate" href="http://www.w3.org/StyleSheets/TR/W3C-REC.css" media="all" title="W3C-REC"/>
-  <link rel="stylesheet alternate" href="http://linked-research.270a.info/media/css/lncs.css" media="all" title="LNCS"/>
-  <link rel='stylesheet' id='open-sans-css'  href='//fonts.googleapis.com/css?family=Open+Sans%3A300italic%2C400italic%2C600italic%2C300%2C400%2C600&#038;subset=latin%2Clatin-ext&#038;ver=4.0' type='text/css' media='all' />
-<link rel='stylesheet' id='dashicons-css'  href='http://renatostauffer.ch/wp-includes/css/dashicons.min.css?ver=4.0' type='text/css' media='all' />
-<link rel='stylesheet' id='admin-bar-css'  href='http://renatostauffer.ch/wp-includes/css/admin-bar.min.css?ver=4.0' type='text/css' media='all' />
-<link rel='stylesheet' id='thesis-css'  href='http://linked-research.270a.info/media/css/thesis.css?ver=4.0' type='text/css' media='all' />
-<link rel='stylesheet' id='examples-css'  href='http://renatostauffer.ch/wp-content/themes/newTheme/examples.css?ver=4.0' type='text/css' media='all' />
-<link rel='stylesheet' id='textHighlighting-css'  href='http://renatostauffer.ch/wp-content/themes/newTheme/media/css/text-highlighting.css?ver=4.0' type='text/css' media='all' />
-<link rel='stylesheet' id='lncs-css'  href='http://linked-research.270a.info/media/css/lncs.css?ver=4.0' type='text/css' media='all' />
-<link rel='stylesheet' id='lr-css'  href='http://linked-research.270a.info/media/css/lr.css?ver=4.0' type='text/css' media='all' />
-<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js'></script>
-<script type='text/javascript' src='http://linked-research.270a.info/scripts/lr.js?ver=4.0'></script>
-<script type='text/javascript' src='http://linked-research.270a.info/scripts/shower.min.js?ver=4.0'></script>
-<script type='text/javascript' src='http://linked-research.270a.info/scripts/html.sortable.min.js?ver=4.0'></script>
-<link rel='canonical' href='http://renatostauffer.ch/requirements-and-design-for-a-tool-to-author-triple-statements/' />
-<link rel='shortlink' href='http://renatostauffer.ch/?p=131' />
-<style type="text/css" media="print">#wpadminbar { display:none; }</style>
-<style type="text/css" media="screen">
-  html { margin-top: 32px !important; }
-  * html body { margin-top: 32px !important; }
-  @media screen and ( max-width: 782px ) {
-    html { margin-top: 46px !important; }
-    * html body { margin-top: 46px !important; }
-  }
-</style>
-</head>
-
-<body about="[this:]" typeof="foaf:Document sioc:Post biblio:Paper prov:Entity" class="hfeed" prefix="rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns# rdfs: http://www.w3.org/2000/01/rdf-schema# owl: http://www.w3.org/2002/07/owl# xsd: http://www.w3.org/2001/XMLSchema# dcterms: http://purl.org/dc/terms/ foaf: http://xmlns.com/foaf/0.1/ v: http://www.w3.org/2006/vcard/ns# pimspace: http://www.w3.org/ns/pim/space# cc: http://creativecommons.org/ns# skos: http://www.w3.org/2004/02/skos/core# prov: http://www.w3.org/ns/prov# schema: http://schema.org/ rsa: http://www.w3.org/ns/auth/rsa# cert: http://www.w3.org/ns/auth/cert# cal: http://www.w3.org/2002/12/cal/ical# wgs: http://www.w3.org/2003/01/geo/wgs84_pos# org: http://www.w3.org/ns/org# biblio: http://purl.org/net/biblio# bibo: http://purl.org/ontology/bibo/ book: http://purl.org/NET/book/vocab# ov: http://open.vocab.org/terms/ doap: http://usefulinc.com/ns/doap# dbr: http://dbpedia.org/resource/ dbp: http://dbpedia.org/property/ sio: http://semanticscience.org/resource/ opmw: http://www.opmw.org/ontology/ deo: http://purl.org/spar/deo/ doco: http://purl.org/spar/doco/ cito: http://purl.org/spar/cito/ sro: http://salt.semanticauthoring.org/ontologies/sro# this: http://renatostauffer.ch/requirements-and-design-for-a-tool-to-author-triple-statements/">
 <article class="hentry editable">
+<div>
 <h1 class="entry-title">Requirements and Design for a Tool to Author Triple Statements</h1>
 <div id="authors"><dl id="author-name"><dt>Authors</dt><dd id="author-1"><a href="http://renatostauffer.ch/#i" rel="foaf:homepage">Renato Stauffer</a><sup><a href="#author-org-1">1</a></sup><sup><a href="#author-email-1"></a></sup></dd></dl>
 <ul id="author-org">
@@ -97,8 +23,15 @@
                 <dd property="dcterms:modified" content="2015-03-08T00:00:00Z">2015-03-09</dd>
             </dl>
 <dl id="document-license">
-<dt>License</dt><dd><a title="Creative Commons Attribution-ShareAlike 4.0 Unported" href="http://creativecommons.org/licenses/by-sa/4.0/" rel="license cc:license">CC BY-SA 4.0</a></dd></dl><dl id="document-purpose"><dt>Purpose</dt><dd>Purpose goes here&#8230;</dd></dl>
-<div id="content" class="entry-content"><section id="abstract">
+<dt>License</dt><dd><a title="Creative Commons Attribution-ShareAlike 4.0 Unported" href="http://creativecommons.org/licenses/by-sa/4.0/" rel="license cc:license">CC BY-SA 4.0</a></dd>
+</dl>
+<dl id="document-purpose"><dt>Purpose</dt>
+<dd>Purpose goes here&#8230;</dd>
+</dl>
+
+<div id="content" class="e-content">
+
+<section id="abstract">
 <h2>Abstract</h2>
 <p class="entry-summary">Abstract goes here&#8230;</p>
 
@@ -152,7 +85,7 @@ In order to close the disconnect between research documents, Sarven Capadisli is
 </div>
 </section>
 
-<section id="goal" about="[this:]" rel="dcterms:hasPart" resource="[this:#goal]">
+<section id="goal" about="[this:#introduction]" rel="dcterms:hasPart" resource="[this:#goal]">
 <h3 about="[this:#goal]" property="dcterms:title">Goal</h3>
 <div about="[this:#goal]" property="dcterms:description">
 <p>
@@ -164,7 +97,7 @@ The objective of this thesis is to establish requirements for a user-friendly to
 </div>
 </section>
 
-<section id="contributions" about="[this:]" rel="dcterms:hasPart" resource="[this:#contributions]">
+<section id="contributions" about="[this:#introduction]" rel="dcterms:hasPart" resource="[this:#contributions]">
 <h3 about="[this:#contributions]" property="dcterms:title">Contributions</h3>
 <div about="[this:#contributions]" property="dcterms:description">
 <p>
@@ -186,7 +119,7 @@ The contributions are as follows:
 </section>
 
 
-<section id="outline" about="[this:]" rel="dcterms:hasPart" resource="[this:#outline]">
+<section id="outline" about="[this:#introduction]" rel="dcterms:hasPart" resource="[this:#outline]">
 <h3 about="[this:#outline]" property="dcterms:title">Structure of this Document</h3>
 <div about="[this:#outline]" property="dcterms:description">
 <p>
@@ -208,16 +141,16 @@ This thesis is structured as follows:
 </div>
 </section><!--End of #introduction-->
 
-<section id="background">
-<h2>Background</h2>
-<div>
+<section id="background" about="[this:]" rel="dcterms:hasPart" resource="[this:#background]">
+<h2 about="[this:#background]" property="dcterms:title">Background</h2>
+<div about="[this:#background]" property="dcterms:description">
 <p>
 This chapter is intended to provide background information and define terms to understand this thesis.
 </p>
 
-<section id="html">
-<h3>HTML</h3>
-<div>
+<section id="html" about="[this:#background]" rel="dcterms:hasPart" resource="[this:#html]">
+<h3 about="[this:#html]" property="dcterms:title">HTML</h3>
+<div about="[this:#html]" property="dcterms:description">
 <p>
 The Hypertext Markup Language (HTML) is the core language of the World Wide Web (WWW) and currently released as version 5.0. The language is used to create web pages and is recommended by the main international standards organization for the WWW (W3C, World Wide Web Consortium).
 HTML specifies the structure of a website with tags (like  <code>html</code> ). The following listing shows the basic structure of an HTML 5 document:
@@ -237,13 +170,13 @@ HTML specifies the structure of a website with tags (like  <code>html</code> ). 
 
 
 
-<section id="what-you-see-is-what-you">
-<h3>What you see is What you&#8230;</h3>
-<div>
+<section id="what-you-see-is-what-you" about="[this:#background]" rel="dcterms:hasPart" resource="[this:#what-you-see-is-what-you]">
+<h3 about="[this:#what-you-see-is-what-you]" property="dcterms:title">What you see is What you&#8230;</h3>
+<div about="[this:#what-you-see-is-what-you]" property="dcterms:description">
 
-<section id="wysiwyg">
-<h4>WYSIWYG</h4>
-<div>
+<section id="wysiwyg" about="[this:#what-you-see-is-what-you]" rel="dcterms:hasPart" resource="[this:#wysiwyg]">
+<h4 about="[this:#wysiwyg]" property="dcterms:title">WYSIWYG</h4>
+<div about="[this:#wysiwyg]" property="dcterms:description">
 <p>
 WYSIWYG stands for &#8220;What-You-See-Is-What-You-Get&#8221; and describes an editing system, in which a users edited content is displayed  in a form close to the final representation of the text, while he is writing the text [http://svn.aksw.org/papers/2013/WWW_WYSIWYM/public.pdf].
 </p>
@@ -251,9 +184,9 @@ WYSIWYG stands for &#8220;What-You-See-Is-What-You-Get&#8221; and describes an e
 </section>
 
 
-<section id="wysiwym">
-<h4>WYSIWYM</h4>
-<div>
+<section id="wysiwym" about="[this:#what-you-see-is-what-you]" rel="dcterms:hasPart" resource="[this:#wysiwym]">
+<h4 about="[this:#wysiwym]" property="dcterms:title">WYSIWYM</h4>
+<div about="[this:#wysiwym]" property="dcterms:description">
 <p>
 WYSIWYM is an acronym for &#8220;What-You-See-Is-What-You-Mean&#8221;. a WYSIWYM editor tries to capture the separation of presentation and content when writing a document [http://svn.aksw.org/papers/2013/WWW_WYSIWYM/public.pdf]. The focus of a WYSIWYM-editor lies on the preservation of the meaning of an element within a text instead the presentation of the element in the document [http://svn.aksw.org/papers/2013/WWW_WYSIWYM/public.pdf].
 </p>
@@ -261,15 +194,14 @@ WYSIWYM is an acronym for &#8220;What-You-See-Is-What-You-Mean&#8221;. a WYSIWYM
 </section>
 
 
-
 </div>
 </section>
 
 
 
-<section id="dom">
-<h3>The DOM (Document Object Model)</h3>
-<div>
+<section id="dom" about="[this:#background]" rel="dcterms:hasPart" resource="[this:#dom]">
+<h3 about="[this:#dom]" property="dcterms:title">The DOM (Document Object Model)</h3>
+<div about="[this:#dom]" property="dcterms:description">
 <p>
 The DOM is a language neutral interface, which allows scripts to dynamically access and change the structure of an (HTML)-document. With the DOM it is possible for scripting languages like JavaScript to access HTML elements and rearrange, delete or add new elements to the HTML-document. The DOM makes DHTML (Dynamic HTML) possible. (http://www.w3.org/DOM/)
 </p>
@@ -279,9 +211,9 @@ The DOM is a language neutral interface, which allows scripts to dynamically acc
 
 
 
-<section id="web-browsers">
-<h3>Web Browsers</h3>
-<div>
+<section id="web-browsers" about="[this:#background]" rel="dcterms:hasPart" resource="[this:#web-browsers]">
+<h3 about="[this:#web-browsers]" property="dcterms:title">Web Browsers</h3>
+<div about="[this:#web-browsers]" property="dcterms:description">
 <p>
 Web browsers (or just browsers) are used to represent web pages on the World Wide Web. They provide the user interface for web applications. The current major browsers on the market are Firefox, Internet Explorer, Google Chrome, Opera and Safari with their corresponding web browser engines Blink (Google Chrome and Opera) Trident (Internet Explorer), Gecko (Firefox) and Webkit (Safari). The web browser engine is a software component that is responsible to display content on the screen. 
 </p>
@@ -291,9 +223,9 @@ Web browsers (or just browsers) are used to represent web pages on the World Wid
 
 
 
-<section id="linked-data">
-<h3>Linked Data</h3>
-<div>
+<section id="linked-data" about="[this:#background]" rel="dcterms:hasPart" resource="[this:#linked-data]">
+<h3 about="[this:#linked-data]" property="dcterms:title">Linked Data</h3>
+<div about="[this:#linked-data]" property="dcterms:description">
 <p>
 Linked Data is part of the Semantic Web and describes free available structured data reachable through Uniform Resource Identifiers (URI). It is published in a format (often RDF) so that it can be interlinked with other data, and through that, be more useful. (Ca-padisli 2013).
 </p>
@@ -311,9 +243,9 @@ Time Bernes-Lee published on 2006-07-27 an article called „Linked Data – Des
 
 
 
-<section id="http-uri">
-<h3>HTTP URI</h3>
-<div>
+<section id="http-uri" about="[this:#background]" rel="dcterms:hasPart" resource="[this:#http-uri]">
+<h3 about="[this:#http-uri]" property="dcterms:title">HTTP URI</h3>
+<div about="[this:#http-uri]" property="dcterms:description">
 <p>
 As seen in Chapter 2.1, URIs help to refer to things and concepts on the web and build the basis of Linked Data. URIs are used to identify a name of a resource on the web. The HTTP scheme is the most common used form of URIs. They provide us a simple way to explore the web and its resources (Berners-Lee 2006).
 </p>
@@ -322,9 +254,9 @@ As seen in Chapter 2.1, URIs help to refer to things and concepts on the web and
 
 
 
-<section id="rdf">
-<h3>RDF</h3>
-<div>
+<section id="rdf" about="[this:#background]" rel="dcterms:hasPart" resource="[this:#rdf]">
+<h3 about="[this:#rdf]" property="dcterms:title">RDF</h3>
+<div about="[this:#rdf]" property="dcterms:description">
 <p>
 RDF is a family of World Wide Web Consortium (W3C) specifications. In essence it is an entity-relationship model that lets anyone make any statement about anything. A statement is composed of three atomic parts – the subject, predicate and object. These parts together are called a triple. The subject (line 1 of listing 2) says what the statement is about and the predicate (line 2 of listing 2) describes the relationship to its object (line 3 of listing 2) resource. Typically triples are represented by HTTP URIs. The following triple statement gives an example:
 </p>
@@ -339,9 +271,9 @@ This statement says that the thing  <code>&lt;http://renatostauffer.ch/i#&gt;</c
 </section>
 
 
-<section id="rdfa">
-<h3>RDFa</h3>
-<div>
+<section id="rdfa" about="[this:#background]" rel="dcterms:hasPart" resource="[this:#rdfa]">
+<h3 about="[this:#rdfa]" property="dcterms:title">RDFa</h3>
+<div about="[this:#rdfa]" property="dcterms:description">
 <p>
 Resource Description Framework in Attributes or simply RDFa is a W3C recommendation that enables authors of HTML, XHTML and other XML-based document types to enrich their documents with metadata. RDFa provides a set of attributes to describe elements in XML languages:
 </p>
@@ -359,35 +291,21 @@ Resource Description Framework in Attributes or simply RDFa is a W3C recommendat
 </section>
 
 
-
-
-<section id="rdfa-vocabularies">
-<h3>RDFa Vocabularies</h3>
-<div>
-<p>
-<i>More to come</i>
-</p>
-</div>
-</section>
-
-
-
-
 </div>
 </section><!--End of #fundamentals-->
 
 
-<section id="methodology">
-<h2>Methodology</h2>
-<div>
+<section id="methodology" about="[this:]" rel="dcterms:hasPart" resource="[this:#methodology]">
+<h2 about="[this:#methodology]" property="dcterms:title">Methodology</h2>
+<div about="[this:#methodology]" property="dcterms:description">
 <p>
 This chapter describes the tools and methods used for this thesis.
 </p>
 
 
-<section id="comparison">
-<h3>Library and Editor Comparison</h3>
-<div>
+<section id="comparison" about="[this:#methodology]" rel="dcterms:hasPart" resource="[this:#comparison]">
+<h3 about="[this:#comparison]" property="dcterms:title">Library and Editor Comparison</h3>
+<div about="[this:#comparison]" property="dcterms:description">
 <p>
 Because of the applied component abased software engineering approach (see chapter <a href="http://renatostauffer.ch/requirements-and-design-for-a-tool-to-author-triple-statements/#development-facet">Development Facet</a>), libraries and tools for different components had to be compared and evaluated for Linked Research.
 </p>
@@ -395,9 +313,9 @@ Because of the applied component abased software engineering approach (see chapt
 </section>
 
 
-<section id="literature-research">
-<h3>Literature Research</h3>
-<div>
+<section id="literature-research" about="[this:#methodology]" rel="dcterms:hasPart" resource="[this:#literature-research]">
+<h3 about="[this:#literature-research]" property="dcterms:title">Literature Research</h3>
+<div about="[this:#literature-research]" property="dcterms:description">
 <p>
 Literature research provided a broad idea of the problem scope and <i>More to come&#8230;</i>
 </p>
@@ -405,9 +323,9 @@ Literature research provided a broad idea of the problem scope and <i>More to co
 </section>
 
 
-<section id="coding-examples">
-<h3>Coding Examples on Github</h3>
-<div>
+<section id="coding-examples" about="[this:#methodology]" rel="dcterms:hasPart" resource="[this:#coding-examples]">
+<h3 about="[this:#coding-examples]" property="dcterms:title">Coding Examples on Github</h3>
+<div about="[this:#coding-examples]" property="dcterms:description">
 <p>
 Prototypes have been worked out to discuss features and functionality. They are available on Github.
 </p>
@@ -418,9 +336,9 @@ Prototypes have been worked out to discuss features and functionality. They are 
 </div>
 </section>
 
-<section id="requirement-engineering-framework">
-<h3>Requirement Engineering Framework</h3>
-<div>
+<section id="requirement-engineering-framework" about="[this:#methodology]" rel="dcterms:hasPart" resource="[this:#requirement-engineering-framework]">
+<h3 about="[this:#requirement-engineering-framework]" property="dcterms:title">Requirement Engineering Framework</h3>
+<div about="[this:#requirement-engineering-framework]" property="dcterms:description">
 <p>
 For the requirement engineering part of this thesis, the framework according to Pohl et. all. is applied (see <a href="http://renatostauffer.ch/requirements-and-design-for-a-tool-to-author-triple-statements/#requirement-engineering">5. Requirement Engineering</a> ).
 </p>
@@ -2862,7 +2780,7 @@ The column <samp>License</samp> indicates what kind of license is used with the 
 <tfoot>
 <tr>
 <td>
-The attribute <samp>Documentation</samp> takes either the value <samp>No</samp> if no documentation for the editors API exists or <samp>Yes</samp> if API documentation is provided. To signify how much the community is evolved in the development process of the editor, the attributes <samp>Closed Pull Requests</samp> and <samp>Contributors</samp> are used. Both attributes take a number as its value ranging from 0 &#8211; &infin;.
+The attribute <samp>Documentation</samp> takes either the value <samp>No</samp> if no documentation for the editors API exists or <samp>Yes</samp> if API documentation is provided. To signify how much the community is evolved in the development process of the editor, the attributes <samp>Closed Pull Requests</samp> and <samp>Contributors</samp> are used. Both attributes take a number as its value ranging from 0 - &infin;.
 </td>
 </tr>
 </tfoot>
@@ -3374,8 +3292,7 @@ Table XXX shows how compatible the editors are with the browsers <samp>Internet 
 </section>
 
 </div>
-</article><br />
-</body>
-</html><br />
+</div>
+</article>
 </body>
 </html>
