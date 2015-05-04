@@ -19,7 +19,6 @@
 <link rel='stylesheet' id='lr-css'  href='http://linked-research.270a.info/media/css/lr.css?ver=4.0' type='text/css' media='all' />
 <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js'></script>
 <script type='text/javascript' src='http://linked-research.270a.info/scripts/lr.js?ver=4.0'></script>
-<script type='text/javascript' src='http://linked-research.270a.info/scripts/shower.min.js?ver=4.0'></script>
 <script type='text/javascript' src='http://linked-research.270a.info/scripts/html.sortable.min.js?ver=4.0'></script>
 <link rel='canonical' href='http://renatostauffer.ch/requirements-and-design-for-a-tool-to-author-triple-statements/' />
 <link rel='shortlink' href='http://renatostauffer.ch/?p=131' />
@@ -100,10 +99,8 @@ Deep Versioning and Deep Re-Use&#8221; from 2000-05-23 is still true for today.<
 <p id="xanadu-project">
 Nelson has the vision of a web that is much more ambitious than the World Wide Web known today. His project Xanadu, the original hypertext project, is described by him as follows: <q cite="http://xanadu.com.au/ted/XUsurvey/xuDation.html">It [the Xanadu project] has always been much more ambitious, proposing an entire form of literature where links do not break as versions change; where documents may be closely compared side by side and closely annotated; where it is possible to see the origins of every quotation; and in which there is a valid copyright system&#8211; a literary, legal and business arrangement&#8211; for frictionless, non-negotiated quotation at any time and in any amount[http://xanadu.com.au/ted/XUsurvey/xuDation.html].</q></p>
 <p>
-In contrast to this vision, todays World Wide Web contains interlinked hypertext documents as proposed in 1990 by Tim Berners-Lee and Robert Cailliau. Their idea of having only one-directional hyperlinks between documents and access information as a web of nodes [http://www.w3.org/Proposal.html], is a trivialized form of the original Xanadu model [http://xanadu.com.au/ted/XUsurvey/xuDation.html]. According to Nelson, todays model does contain <q cite="">fragile ever-breaking one-way links, with no recognition of change or copyright, and no support for multiple versions or principled re-use. Fonts and glitz, rather than content connective structure, prevail</q>[http://xanadu.com.au/ted/XUsurvey/xuDation.html]. This leads to an imitation of paper, whereas the World Wide Web described by Nelson would offer a new way of publishing and consuming documents.</p>
+In contrast to this vision, todays World Wide Web contains interlinked hypertext documents as proposed in 1990 by Tim Berners-Lee and Robert Cailliau. Their idea of having only one-directional hyperlinks between documents and access information as a web of nodes [http://www.w3.org/Proposal.html], is a trivialized form of the original Xanadu model [http://xanadu.com.au/ted/XUsurvey/xuDation.html]. Tim Berners-Lee, working at CERN in 1990, needed an information system that would help scientists to create and discover each others documents across systems. In May of this year, he made a proposal for an information management system, todays World Wide Web [http://www.w3.org/History/1989/proposal.html].
 
-<p>Nowadays the Xanadu project is considered as the longest-running vaporware project in the history of computing [http://archive.wired.com/wired/archive/3.06/xanadu.html] and the hypertext project from Tim Berners-Lee and Robert Cailliau has emerged as a large universe of documents, where ideas can be shared, <a href="https://www.youtube.com/watch?v=V3GJycgu-cs">cat videos watched</a> and knowledge is made accessible for our society.
-</p>
 <p>
 However, this knowledge is often presented in a machine-unfriendly way and on top of that, is not provided to humans with the fullest possibilities the World Wide Web offers. This is even true for publications in the Web Science community as it <q cite="http://csarven.ca/enabling-accessible-knowledge#web-science-community">continues to conduct research tracks, workshops, and challenges, in a manner that even the call for papers of top-level Web conferences request research documents that are neither machine nor Web-friendly</q> [http://csarven.ca/enabling-accessible-knowledge#web-science-community]. Submissions are often solely demanded in Word or PDF formats, where it is challenging to extract information from within [http://csarven.ca/enabling-accessible-knowledge#web-science-community].
 </p>
@@ -219,6 +216,8 @@ WYSIWYG stands for &#8220;What-You-See-Is-What-You-Get&#8221; and describes an e
 </p>
 </div>
 </section>
+</div>
+</section>
 
 
 <section id="wysiwym" about="[this:#what-you-see-is-what-you]" rel="dcterms:hasPart" resource="[this:#wysiwym]">
@@ -230,12 +229,6 @@ WYSIWYM is an acronym for &#8220;What-You-See-Is-What-You-Mean&#8221;. a WYSIWYM
 </div>
 </section>
 
-
-</div>
-</section>
-
-
-
 <section id="dom" about="[this:#background]" rel="dcterms:hasPart" resource="[this:#dom]">
 <h3 about="[this:#dom]" property="dcterms:title">The DOM (Document Object Model)</h3>
 <div about="[this:#dom]" property="dcterms:description">
@@ -244,7 +237,6 @@ The DOM is a language neutral interface, which allows scripts to dynamically acc
 </p>
 </div>
 </section>
-
 
 
 
@@ -259,6 +251,15 @@ Web browsers (or just browsers) are used to represent web pages on the World Wid
 
 
 
+<section id="http-uri" about="[this:#background]" rel="dcterms:hasPart" resource="[this:#http-uri]">
+<h3 about="[this:#http-uri]" property="dcterms:title">HTTP URI</h3>
+<div about="[this:#http-uri]" property="dcterms:description">
+<p>
+As seen in Chapter 2.1, URIs help to refer to things and concepts on the web and build the basis of Linked Data. URIs are used to identify a name of a resource on the web. The HTTP scheme is the most common used form of URIs. They provide us a simple way to explore the web and its resources (Berners-Lee 2006).
+</p>
+</div>
+</section>
+
 
 <section id="linked-data" about="[this:#background]" rel="dcterms:hasPart" resource="[this:#linked-data]">
 <h3 about="[this:#linked-data]" property="dcterms:title">Linked Data</h3>
@@ -269,26 +270,16 @@ Linked Data is part of the Semantic Web and describes free available structured 
 <p>
 Time Bernes-Lee published on 2006-07-27 an article called „Linked Data – Design Issues“. In this publication Bernes-Lee addresses four rules for Linked Data:
 </p>
+<blockquote>
 <ol>
 <li>Use URI as names for things.</li>
 <li>Use HTTP URIs so that people can look up those names.</li>
 <li>When someone looks up a URI, provide useful information, using the standards (RDF, SPARQL).</li>
 <li>Include links to other URIs. So that they can discover more things.</li>
 </ol>
+</blockquote>
 </div>
 </section>
-
-
-
-<section id="http-uri" about="[this:#background]" rel="dcterms:hasPart" resource="[this:#http-uri]">
-<h3 about="[this:#http-uri]" property="dcterms:title">HTTP URI</h3>
-<div about="[this:#http-uri]" property="dcterms:description">
-<p>
-As seen in Chapter 2.1, URIs help to refer to things and concepts on the web and build the basis of Linked Data. URIs are used to identify a name of a resource on the web. The HTTP scheme is the most common used form of URIs. They provide us a simple way to explore the web and its resources (Berners-Lee 2006).
-</p>
-</div>
-</section>
-
 
 
 <section id="rdf" about="[this:#background]" rel="dcterms:hasPart" resource="[this:#rdf]">
@@ -327,63 +318,24 @@ Resource Description Framework in Attributes or simply RDFa is a W3C recommendat
 </div>
 </section>
 
-
-</div>
-</section><!--End of #fundamentals-->
-
-
-<section id="methodology" about="[this:]" rel="dcterms:hasPart" resource="[this:#methodology]">
-<h2 about="[this:#methodology]" property="dcterms:title">Methodology</h2>
-<div about="[this:#methodology]" property="dcterms:description">
+<section id="sparql" about="[this:#background]" rel="dcterms:hasPart" resource="[this:#sparql]">
+<h3 about="[this:#sparql]" property="dcterms:title">SPARQL</h3>
+<div about="[this:#sparql]" property="dcterms:description">
 <p>
-This chapter describes the tools and methods used for this thesis.
-</p>
-
-
-<section id="comparison" about="[this:#methodology]" rel="dcterms:hasPart" resource="[this:#comparison]">
-<h3 about="[this:#comparison]" property="dcterms:title">Library and Editor Comparison</h3>
-<div about="[this:#comparison]" property="dcterms:description">
-<p>
-Because of the applied component abased software engineering approach (see chapter <a href="http://renatostauffer.ch/requirements-and-design-for-a-tool-to-author-triple-statements/#development-facet">Development Facet</a>), libraries and tools for different components had to be compared and evaluated for Linked Research.
+Here sparql&#8230;
 </p>
 </div>
 </section>
 
-
-<section id="literature-research" about="[this:#methodology]" rel="dcterms:hasPart" resource="[this:#literature-research]">
-<h3 about="[this:#literature-research]" property="dcterms:title">Literature Research</h3>
-<div about="[this:#literature-research]" property="dcterms:description">
-<p>
-Literature research provided a broad idea of the problem scope and <i>More to come&#8230;</i>
-</p>
-</div>
-</section>
-
-
-<section id="coding-examples" about="[this:#methodology]" rel="dcterms:hasPart" resource="[this:#coding-examples]">
-<h3 about="[this:#coding-examples]" property="dcterms:title">Coding Examples on Github</h3>
-<div about="[this:#coding-examples]" property="dcterms:description">
-<p>
-Prototypes have been worked out to discuss features and functionality. They are available on Github.
-</p>
-<ul>
-<li><i>More to come&#8230;</i></li>
-<li><i>More to come&#8230;</i></li>
-</ul>
-</div>
-</section>
-
-<section id="requirement-engineering-framework" about="[this:#methodology]" rel="dcterms:hasPart" resource="[this:#requirement-engineering-framework]">
-<h3 about="[this:#requirement-engineering-framework]" property="dcterms:title">Requirement Engineering Framework</h3>
-<div about="[this:#requirement-engineering-framework]" property="dcterms:description">
-<p>
-For the requirement engineering part of this thesis, the framework according to Pohl et. all. is applied (see <a href="http://renatostauffer.ch/requirements-and-design-for-a-tool-to-author-triple-statements/#requirement-engineering">5. Requirement Engineering</a> ).
-</p>
+<section id="linked-research" about="[this:#background]" rel="dcterms:hasPart" resource="[this:#linked-research]">
+<h3 about="[this:#linked-research]" property="dcterms:title">Linked Research</h3>
+<div about="[this:#linked-research]" property="dcterms:description">
+<p>More to come&#8230;</p>
 </div>
 </section>
 
 </div>
-</section><!--End of #methodology-->
+</section><!--End of #background-->
 
 
 
@@ -413,6 +365,58 @@ About Wordlift&#8230;
 
 </div>
 </section><!--End of #related-work-->
+
+
+<section id="methodology" about="[this:]" rel="dcterms:hasPart" resource="[this:#methodology]">
+<h2 about="[this:#methodology]" property="dcterms:title">Methodology</h2>
+<div about="[this:#methodology]" property="dcterms:description">
+<p>
+This chapter describes the tools and methods used for this thesis.
+</p>
+
+<section id="literature-research" about="[this:#methodology]" rel="dcterms:hasPart" resource="[this:#literature-research]">
+<h3 about="[this:#literature-research]" property="dcterms:title">Literature Research</h3>
+<div about="[this:#literature-research]" property="dcterms:description">
+<p>
+Literature research provided a broad idea of the problem scope and <i>More to come&#8230;</i>
+</p>
+</div>
+</section>
+
+<section id="requirement-engineering-framework" about="[this:#methodology]" rel="dcterms:hasPart" resource="[this:#requirement-engineering-framework]">
+<h3 about="[this:#requirement-engineering-framework]" property="dcterms:title">Requirement Engineering Framework</h3>
+<div about="[this:#requirement-engineering-framework]" property="dcterms:description">
+<p>
+For the requirement engineering part of this thesis, the framework according to Pohl et. all. is applied (see <a href="http://renatostauffer.ch/requirements-and-design-for-a-tool-to-author-triple-statements/#requirement-engineering">5. Requirement Engineering</a> ).
+</p>
+</div>
+</section>
+
+<section id="comparison" about="[this:#methodology]" rel="dcterms:hasPart" resource="[this:#comparison]">
+<h3 about="[this:#comparison]" property="dcterms:title">Library and Editor Comparison</h3>
+<div about="[this:#comparison]" property="dcterms:description">
+<p>
+Because of the applied component abased software engineering approach (see chapter <a href="http://renatostauffer.ch/requirements-and-design-for-a-tool-to-author-triple-statements/#development-facet">Development Facet</a>), libraries and tools for different components had to be compared and evaluated for Linked Research.
+</p>
+</div>
+</section>
+
+
+<section id="coding-examples" about="[this:#methodology]" rel="dcterms:hasPart" resource="[this:#coding-examples]">
+<h3 about="[this:#coding-examples]" property="dcterms:title">Coding Examples on Github</h3>
+<div about="[this:#coding-examples]" property="dcterms:description">
+<p>
+Prototypes have been worked out to discuss features and functionality. They are available on Github.
+</p>
+<ul>
+<li><i>More to come&#8230;</i></li>
+<li><i>More to come&#8230;</i></li>
+</ul>
+</div>
+</section>
+
+</div>
+</section><!--End of #methodology-->
 
 
 <section id="requirement-engineering">
@@ -563,7 +567,7 @@ Class diagram Linked Research
 </figcaption>
 </figure>
 <p>
-The MetaEditor object uses the triple store to persist triple statements (Triple) and the SearchHandler object to talk to external services. The Editor object uses the MetaEditor when meta data is inserted. The U object composes o&#8230;
+The MetaEditor object uses the triple store to persist triple statements (Triple) and the SearchHandler object to talk to external services. The Editor object uses the MetaEditor when metadata is inserted. The U object composes o&#8230;
 </p>
 </div>
 </section>
@@ -700,7 +704,7 @@ This determines wether the requirement is already implemented (Implemented), is 
 </tr>
 <tr>
 <th><strong>Description</strong></th>
-<td>Linked Research must provide an author the possibility to edit text within the browser</td>
+<td>Linked Research must provide an author the possibility to edit text within the browser.</td>
 </tr>
 <tr>
 <th><strong>Components</strong></th>
@@ -716,15 +720,15 @@ This determines wether the requirement is already implemented (Implemented), is 
 </tr>
 <tr>
 <th><strong>Pre-condition</strong></th>
-<td>An Editor instance must exist</td>
+<td>An Editor instance must exist.</td>
 </tr>
 <tr>
 <th><strong>Post-condition</strong></th>
-<td>Requirement <a href="http://renatostauffer.ch/requirements-and-design-for-a-tool-to-author-triple-statements/#f-14">F-14</a> must be fulfilled</td>
+<td>Requirement <a href="http://renatostauffer.ch/requirements-and-design-for-a-tool-to-author-triple-statements/#f-14">F-14</a> must be fulfilled.</td>
 </tr>
 <tr>
 <th><strong>Source of Requirement</strong></th>
-<td>Meeting with Sarven Capadisli</td>
+<td><a href="http://linked-research.270a.info/linked-research.html">http://linked-research.270a.info/linked-research.html</a></td>
 </tr>
 <tr>
 <th><strong>State of Requirement</strong></th>
@@ -746,7 +750,7 @@ This determines wether the requirement is already implemented (Implemented), is 
 </tr>
 <tr>
 <th><strong>Description</strong></th>
-<td>Linked Research must provide an author the possibility to display the MetaEditor within the document</td>
+<td>Linked Research must provide an author the possibility to display the MetaEditor within the document.</td>
 </tr>
 <tr>
 <th><strong>Components</strong></th>
@@ -762,7 +766,7 @@ This determines wether the requirement is already implemented (Implemented), is 
 </tr>
 <tr>
 <th><strong>Pre-condition</strong></th>
-<td>An editor instance must exist</td>
+<td>An editor instance must exist.</td>
 </tr>
 <tr>
 <th><strong>Post-condition</strong></th>
@@ -770,7 +774,7 @@ This determines wether the requirement is already implemented (Implemented), is 
 </tr>
 <tr>
 <th><strong>Source of Requirement</strong></th>
-<td>Meeting with Sarven Capadisli</td>
+<td>(find source)</td>
 </tr>
 <tr>
 <th><strong>State of Requirement</strong></th>
@@ -793,7 +797,7 @@ This determines wether the requirement is already implemented (Implemented), is 
 </tr>
 <tr>
 <th><strong>Description</strong></th>
-<td>Linked Research must provide an author the possibility to hide the MetaEditor from the document</td>
+<td>Linked Research must provide an author the possibility to hide the MetaEditor from the document.</td>
 </tr>
 <tr>
 <th><strong>Components</strong></th>
@@ -809,7 +813,7 @@ This determines wether the requirement is already implemented (Implemented), is 
 </tr>
 <tr>
 <th><strong>Pre-condition</strong></th>
-<td>An editor instance must exist</td>
+<td>An editor instance must exist.</td>
 </tr>
 <tr>
 <th><strong>Post-condition</strong></th>
@@ -864,7 +868,7 @@ This determines wether the requirement is already implemented (Implemented), is 
 </tr>
 <tr>
 <th><strong>Pre-condition</strong></th>
-<td>An Editor instance must exist</td>
+<td>An Editor instance must exist.</td>
 </tr>
 <tr>
 <th><strong>Post-condition</strong></th>
@@ -902,7 +906,7 @@ This determines wether the requirement is already implemented (Implemented), is 
 </tr>
 <tr>
 <th><strong>Input</strong></th>
-<td>A word, phrase, paragraph of the text written by the author or the document itself</td>
+<td>A word, phrase, paragraph of the text written by the author or the document itself.</td>
 </tr>
 <tr>
 <th><strong>Output</strong></th>
@@ -918,7 +922,7 @@ This determines wether the requirement is already implemented (Implemented), is 
 </tr>
 <tr>
 <th><strong>Source of Requirement</strong></th>
-<td>Renato Stauffer</td>
+<td>(Source)</td>
 </tr>
 <tr>
 <th><strong>State of Requirement</strong></th>
@@ -945,7 +949,7 @@ This determines wether the requirement is already implemented (Implemented), is 
 </tr>
 <tr>
 <th><strong>Description</strong></th>
-<td>The MetaEditor should provide the author the possibility to search for a predicate via an external service to set the predicate for a RDF triple statement.</td>
+<td>The MetaEditor may provide the author the possibility to search for a predicate via an external service to set the predicate for a RDF triple statement.</td>
 </tr>
 <tr>
 <th><strong>Input</strong></th>
@@ -965,7 +969,7 @@ This determines wether the requirement is already implemented (Implemented), is 
 </tr>
 <tr>
 <th><strong>Source of Requirement</strong></th>
-<td>Meeting with Sarven Capadisli</td>
+<td>()</td>
 </tr>
 <tr>
 <th><strong>State of Requirement</strong></th>
@@ -1013,7 +1017,7 @@ This determines wether the requirement is already implemented (Implemented), is 
 </tr>
 <tr>
 <th><strong>Source of Requirement</strong></th>
-<td>Meeting with Sarven Capadisli</td>
+<td>()</td>
 </tr>
 <tr>
 <th><strong>State of Requirement</strong></th>
@@ -1043,7 +1047,7 @@ This determines wether the requirement is already implemented (Implemented), is 
 </tr>
 <tr>
 <th><strong>Description</strong></th>
-<td>The MetaEditor has to provide the author the ability to search for an RDF object via an external service to set the object for an RDF triple statement.</td>
+<td>The MetaEditor may provide the author the ability to search for an RDF object via an external service to set the object for an RDF triple statement.</td>
 </tr>
 <tr>
 <th><strong>Input</strong></th>
@@ -1204,7 +1208,7 @@ This determines wether the requirement is already implemented (Implemented), is 
 </tr>
 <tr>
 <th><strong>Source of Requirement</strong></th>
-<td>Renato Stauffer</td>
+<td>(source)</td>
 </tr>
 <tr>
 <th><strong>State of Requirement</strong></th>
@@ -1343,11 +1347,11 @@ The MetaEditor must provide the author the ability to remove triple statements f
 </tr>
 <tr>
 <th><strong>Pre-condition</strong></th>
-<td>Triple statement must exist in the triple store</td>
+<td>Triple statement must exist in the triple store.</td>
 </tr>
 <tr>
 <th><strong>Post-condition</strong></th>
-<td>Triple has to be removed from the triple store</td>
+<td>Triple has to be removed from the triple store.</td>
 </tr>
 <tr>
 <th><strong>Source of Requirement</strong></th>
@@ -1392,11 +1396,11 @@ Linked Research should provide an author the ability to undo a just added triple
 </tr>
 <tr>
 <th><strong>Pre-condition</strong></th>
-<td>Triple statement must exist in the triple store</td>
+<td>Triple statement must exist in the triple store.</td>
 </tr>
 <tr>
 <th><strong>Post-condition</strong></th>
-<td>Triple has to be removed from the triple store</td>
+<td>Triple has to be removed from the triple store.</td>
 </tr>
 <tr>
 <th><strong>Source of Requirement</strong></th>
@@ -1487,7 +1491,7 @@ The Editor must insert the following pattern when an author is inserting a new t
 </tr>
 <tr>
 <th><strong>Input</strong></th>
-<td>All elements that follow the new added section in the document</td>
+<td>All elements that follow the new added section in the document.</td>
 </tr>
 <tr>
 <th><strong>Output</strong></th>
@@ -1503,7 +1507,7 @@ The Editor must insert the following pattern when an author is inserting a new t
 </tr>
 <tr>
 <th><strong>Post-condition</strong></th>
-<td>Requirement <a href="http://renatostauffer.ch/requirements-and-design-for-a-tool-to-author-triple-statements/#f-14">F-14</a> must be fulfilled</td>
+<td>Requirement <a href="http://renatostauffer.ch/requirements-and-design-for-a-tool-to-author-triple-statements/#f-14">F-14</a> must be fulfilled.</td>
 </tr>
 <tr>
 <th><strong>Source of Requirement</strong></th>
@@ -1519,7 +1523,7 @@ The Editor must insert the following pattern when an author is inserting a new t
 
 
 <table id="f-18">
-<caption>The DOM needs to remain clean</caption>
+<caption>The DOM needs to keep its semantical representaiton</caption>
 <tbody>
 <tr>
 <th><strong>Name</strong></th>
@@ -1542,7 +1546,7 @@ The DOM of the document needs to remain in the following shape:
     &lt;article&gt;
         &lt;section&gt;
             &lt;div&gt;
-                &lt;p&gt; or &lt;ul&gt; or &lt;ol&gt; or &lt;table&gt; or &lt;figure&gt; or &lt;caption&gt;</pre> 
+</pre> 
 </td>
 </tr>
 <tr>
@@ -1574,7 +1578,7 @@ The DOM of the document needs to remain in the following shape:
 
 
 <table id="f-19">
-<caption>Make functionality accessible through a keyboard interface</caption>
+<caption> (Remove this requirement!!!) Make functionality accessible through a keyboard interface</caption>
 <tbody>
 <tr>
 <th><strong>Name</strong></th>
@@ -1804,7 +1808,7 @@ An author or consumer must have the ability to export the document to HTML by cl
 <tr>
 <th><strong>Description</strong></th>
 <td>
-Linked Research must provide an author or consumer the possibility to view the documents meta data. Those are:
+Linked Research must provide an author or consumer the possibility to view the documents metadata. Those are:
 <ul>
 <li>Authors</li>
 <li>Number of characters in the document</li>
@@ -2111,7 +2115,7 @@ Linked Research should provide authors instructions for functionality. This incl
 <tr>
 <th><strong>Description</strong></th>
 <td>
-The MetaEditor must provide suggestions for RDF predicates or RDF objects when the author is searching for them.
+The MetaEditor may provide suggestions for RDF predicates or RDF objects when the author is searching for them.
 </td>
 </tr>
 <tr>
@@ -2395,7 +2399,7 @@ Linked Research should provide an author or consumer infinite time to complete a
 <tr>
 <th><strong>Description</strong></th>
 <td>
-Linked Research should run in Gecko browser engines (Firefox) <i>More here..?</i>
+Linked Research should run in Gecko browser engines (Firefox) (LINE based browsers&#8230;)<i>More here..?</i>
 </td>
 </tr>
 <tr>
@@ -2412,8 +2416,8 @@ Linked Research should run in Gecko browser engines (Firefox) <i>More here..?</i
 </div>
 </section><!--End of #goals-->
 
-<section id="final-ui">
-<h3>Possible UI</h3>
+<section id="ui-proposal">
+<h3>User Interface Proposal</h3>
 <div>
 <p>Based on the functional and non-functional requirements, we propose a user interface:</p>
 <figure class="figure">
@@ -2628,8 +2632,8 @@ This would take the following steps:
 
 
 
-<section id="evaluation-editor">
-<h2>Evaluation Editor</h2>
+<section id="comparison-editor">
+<h2>Comparison Editor</h2>
 <div>
 <p>
 A search on Github for the term &#8220;WYSIWYG&#8221; resulted in over 1&#8217;200 repositories for WYSIWG-editors. This indicates, that the TextEditor component is a good candidate that can easily be reused from an existing project. As stated by ???, creating a WYSIWYG-editor on your own is time consuming and difficult[].
@@ -2684,7 +2688,7 @@ Beside having one of the mentioned approaches from above, it can be distinguishe
 </div>
 </section><!--End of #text-editing-->
 <p>
-After determining the different approaches, the following categories including different criteria for the evaluation were established:
+After determining the different approaches, the following categories including different criteria for the comparison were established:
 <dl>
 <dt>General information</dt>
 <dd>This category includes information about the editors.</dd>
@@ -3195,11 +3199,11 @@ Table XXX shows how compatible the editors are with the browsers <samp>Internet 
 </table>
 
 </div>
-</section><!--End of #evaluation-editor-->
+</section><!--End of #comparison-editor-->
 
 
-<section id="evaluation-rdfa-library">
-<h2>Evaluation RDFa Library</h2>
+<section id="comparison-rdfa-library">
+<h2>Comparison RDFa Library</h2>
 <div>
 
 
@@ -3301,7 +3305,7 @@ Table XXX shows how compatible the editors are with the browsers <samp>Internet 
 </table>
 
 </div>
-</section><!--End of #evaluation-library-->
+</section><!--End of #comparison-library-->
 
 
 <section id="conclusions">
