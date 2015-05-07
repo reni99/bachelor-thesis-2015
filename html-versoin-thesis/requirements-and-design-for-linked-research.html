@@ -97,7 +97,7 @@ To those who have supported me..
 Parallel Documents, Deep Links to Content, 
 Deep Versioning and Deep Re-Use&#8221; from 2000-05-23 is still true for today.</p>
 <p>
-PDF documents are familiar and easy to read for humans. But they are also <q cite="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2663789/">antithetical to the spirit of the Web, lacking user interactivity and being difficult for machines to read [http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2663789/][http://csarven.ca/enabling-accessible-knowledge#web-science-community]</q> according to &#8220;Adventures in Semantic Publishing: Exemplar Semantic Enhancements of a Research Article&#8221; by David Shotton et. all.
+PDF documents are familiar and easy to read for humans. But they are also <q cite="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2663789/">antithetical to the spirit of the Web, lacking user interactivity and being difficult for machines to read [http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2663789/]</q> according to &#8220;Adventures in Semantic Publishing: Exemplar Semantic Enhancements of a Research Article&#8221; by David Shotton et. all.
 </p>
 <p>
 Tim Berners-Lee, working at CERN in 1990, needed an information system that would help scientists to create and discover each others documents across systems. In May of this year, he made a proposal for an information management system; todays World Wide Web [http://www.w3.org/History/1989/proposal.html].
@@ -106,7 +106,7 @@ Tim Berners-Lee, working at CERN in 1990, needed an information system that woul
 The Web today contains interlinked hypertext documents as proposed in 1990 by him and Robert Cailliau. Their idea of having one-directional hyperlinks between documents and accessing information as a web of nodes [http://www.w3.org/Proposal.html] has emerged as a large universe of documents, where ideas can be exchanged, <a href="https://www.youtube.com/watch?v=V3GJycgu-cs">cat videos watched</a> and knowledge shared between people or institutions.
 </p>
 <p>
-However, most data and knowledge on the Web is represented in a unstructured machine-unfriendly way and on top of that, is not provided to humans with the fullest possibilities the World Wide Web offers. This is even true for publications in the Web Science community as it <q cite="http://csarven.ca/enabling-accessible-knowledge#web-science-community">continues to conduct research tracks, workshops, and challenges, in a manner that even the call for papers of top-level Web conferences request research documents that are neither machine nor Web-friendly</q> [http://csarven.ca/enabling-accessible-knowledge#web-science-community]. Submissions are often solely demanded in Word or PDF formats, where it is challenging to extract information from within [http://csarven.ca/enabling-accessible-knowledge#web-science-community].
+However, most data and knowledge on the Web is represented in a unstructured machine-unfriendly way and on top of that, is not provided to humans with the fullest possibilities the World Wide Web offers. This is also true for publications in the Web Science community as it <q cite="http://csarven.ca/enabling-accessible-knowledge#web-science-community">continues to conduct research tracks, workshops, and challenges, in a manner that even the call for papers of top-level Web conferences request research documents that are neither machine nor Web-friendly</q> [http://csarven.ca/enabling-accessible-knowledge#web-science-community]. Submissions are often solely demanded in Word or PDF formats, where it is challenging to extract information from within [http://csarven.ca/enabling-accessible-knowledge#web-science-community].
 </p>
 <p>
 The reason for having PDF or Word documents for publications in the Web Science area lies in the nature of the publication process. According to &#8220;Call for Linked Research&#8221;, this process is described as follows: <q>researchers need to have read and reuse access to other researchers work, and adopt archaic desktop-native publishing workflows. Publishers try to remain as the middleman for society’s knowledge acquisition</q>[http://csarven.ca/call-for-linked-research]. 
@@ -134,7 +134,7 @@ In order to close the disconnect between research documents, Sarven Capadisli is
 As part of a possible solution to make research knowledge more accessible and more pleasant for people and machines, Linked Research is going to implement a authoring tool to create and edit research papers directly within a browser. In addition it will enable the user to author triple statements to enrich the document with markup.
 </p>
 <p>
-The objective of this thesis is to establish requirements for a user-friendly tool to create scholarly publications and the triple editing feature. The feature facilitates the enrichment of publications with metadata and enables scientists to make research knowledge more accessible to societies and more consumable for machines.
+The objective of this thesis is to establish requirements for Linked Research, compare editing libraries and provide an overview of RDFa Tools available on the market.
 </p>
 </div>
 </section>
@@ -168,14 +168,16 @@ The contributions are as follows:
 This thesis is structured as follows:
 </p>
 <dl>
-<dt>Chapter 2: Related Work</dt>
-<dd>This Chapter shows already existing tools with similar objectives and features.</dd>
-<dt>Chapter 3: Fundamentals</dt>
-<dd>In chapter 2, the fundamentals to understand this paper will be explained.</dd>
-<dt>Chapter 4 &#8211; 5 Requirements and Design</dt>
-<dd>The chapter 4 – 5 build the main part of this thesis and show how the requirements for the editing tool got established.</dd>
-<dt>Chapter 7: Summary and Outlook</dt>
-<dd>The final chapter 7 summarizes the thesis and gives and outlook for future processing.</dd>
+<dt>Section 2: Background</dt>
+<dd>In section 2, the fundamentals to understand this paper will be explained.</dd>
+<dt>Section 3: Related Work</dt>
+<dd>This section shows already existing tools with similar objectives and features as Linked Research.</dd>
+<dt>Section 4: Methodology</dt>
+<dd>This section describes the methodology used for this thesis.</dd>
+<dt>Sections 5- 7</dt>
+<dd>The sections 5 – 7 build the main part of this thesis and show how the requirements for the editing tool got established, how the editors and RDFa libraries got compared.</dd>
+<dt>Section 8: Conclusions</dt>
+<dd>The final section summarizes the thesis and gives and outlook for future processing regarding Linked Research.</dd>
 </dl>
 </div>
 </section>
@@ -2726,7 +2728,7 @@ Table 45 &#8211; 49 compare all possible editors for Linked Research with its co
 </thead>
 <tfoot>
 <tr>
-<td>Table XXX provides general information about the editors. The attribute <samp>Approach</samp> indicates what kind of approach is used to turn the container element into editable mode. One of the established approaches in chapter XXX is assigned to each editor for this attribute.
+<td colspan="5">Table XXX provides general information about the editors. The attribute <samp>Approach</samp> indicates what kind of approach is used to turn the container element into editable mode. One of the established approaches in chapter XXX is assigned to each editor for this attribute.
 The column <samp>Container Element</samp> accepts either the value <samp>div</samp> or <samp>iframe</samp> and describes how the editable content is included in the HTML page.
 The column <samp>License</samp> indicates what kind of license is used with the corresponding editor
 <samp>External Dependencies</samp> takes a comma separated list for dependencies to external libraries or the value <samp>None</samp> if no dependency exists.
@@ -2828,7 +2830,7 @@ The column <samp>License</samp> indicates what kind of license is used with the 
 </thead>
 <tfoot>
 <tr>
-<td>
+<td colspan="4">
 The attribute <samp>Documentation</samp> takes either the value <samp>No</samp> if no documentation for the editors API exists or <samp>Yes</samp> if API documentation is provided. To signify how much the community is evolved in the development process of the editor, the attributes <samp>Closed Pull Requests</samp> and <samp>Contributors</samp> are used. Both attributes take a number as its value ranging from 0 &#8211; &infin;.
 </td>
 </tr>
@@ -2923,7 +2925,7 @@ The attribute <samp>Documentation</samp> takes either the value <samp>No</samp> 
 </thead>
 <tfoot>
 <tr>
-<td>
+<td colspan="6">
 Table XXX shows how well each editor fulfills the requirements established in chapter XXX. If an editor fulfills a requirement the value <samp>Yes</samp> is inserted into the corresponding column. If the editor does not satisfy the requirement, the value <samp>No</samp> is used.
 </td>
 </tr>
@@ -3034,7 +3036,7 @@ Table XXX shows how well each editor fulfills the requirements established in ch
 </thead>
 <tfoot>
 <tr>
-<td>
+<td colspan="3">
 Table XXX shows how extensible the different editors are. Do they provide an API to add custom buttons (<samp>Custom Buttons</samp>) and attach custom (<samp>Custom Commands</samp>) functionality to the buttons? A value of <samp>Yes</samp> indicates, that custom buttons and / or functionality is possible.
 </td>
 </tr>
@@ -3117,7 +3119,7 @@ Table XXX shows how extensible the different editors are. Do they provide an API
 </thead>
 <tfoot>
 <tr>
-<td>
+<td colspan="5">
 Table XXX shows how compatible the editors are with the browsers <samp>Internet Explorer</samp>, <samp>Safari</samp>, <samp>Google Chrome</samp> and <samp>Firefox</samp>. The value in the columns refer to the version number of the corresponding browser (e.g. 9+ in column <samp>Internet Explorer</samp> means, that the editor should work in the Internet Explorer since version 9 or higher).
 </td>
 </tr>
