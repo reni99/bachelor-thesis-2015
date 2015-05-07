@@ -84,10 +84,12 @@
 <dl>
 <dt>Acknowledgements</dt>
 <dd>
-To those who have supported me..
+To those who supported me&#8230;
 </dd>
 </dl>
-
+<p>
+I would like to thank Sarven for his unlimited support. Thank you for enriching my knowledge on understanding what the Web truly is about and enlarging my horizon in so many different ways. Working with you has always been a pleasure and I am thankful for your aspiring guidance. Your enthusiasm for technology is inspiring and I hope you continue to take students under your wings… <i>More to come&#8230;</i>
+</p>
 
 <section id="introduction" about="[this:]" rel="dcterms:hasPart" resource="[this:#introduction]">
 <h2 about="[this:#introduction]" property="dcterms:title">Introduction</h2>
@@ -175,7 +177,7 @@ This thesis is structured as follows:
 <dt>Section 4: Methodology</dt>
 <dd>This section describes the methodology used for this thesis.</dd>
 <dt>Sections 5- 7</dt>
-<dd>The sections 5 – 7 build the main part of this thesis and show how the requirements for the editing tool got established, how the editors and RDFa libraries got compared.</dd>
+<dd>The sections 5 – 7 build the main part of this thesis and show how the requirements for the editing tool got established and how the editors and RDFa libraries got compared respectively.</dd>
 <dt>Section 8: Conclusions</dt>
 <dd>The final section summarizes the thesis and gives and outlook for future processing regarding Linked Research.</dd>
 </dl>
@@ -207,7 +209,7 @@ HTML specifies the structure of a website with tags (like  <code>html</code> ). 
 &lt;body&gt;&lt;/body&gt;
 &lt;/html&gt;</pre>
 <p>
-(http://www.w3.org/TR/html5/)
+[http://www.w3.org/TR/html5/]
 </p>
 </div>
 </section>
@@ -316,14 +318,14 @@ This statement says that the thing  <code>&lt;http://renatostauffer.ch/i#&gt;</c
 Resource Description Framework in Attributes or simply RDFa is a W3C recommendation that enables authors of HTML, XHTML and other XML-based document types to enrich their documents with metadata. RDFa provides a set of attributes to describe elements in XML languages:
 </p>
 <dl>
-<dt>about</dt>
+<dt><a href="http://www.w3.org/TR/rdfa-core/#A-about">about</a></dt>
 <dd>What is the resource about (subject in a triple statement)</dd>
-<dt>rel / rev</dt>
+<dt><a href="http://www.w3.org/TR/rdfa-core/#A-rel">rel</a> / <a href="http://www.w3.org/TR/rdfa-core/#A-rev">rev</a></dt>
 <dd>Relationships between resources (predicate in a triple statement)</dd>
-<dt>resource</dt>
+<dt><a href="http://www.w3.org/TR/rdfa-core/#A-resource">resource</a></dt>
 <dd>Specifies the context (To which URL does the markup apply?)</dd>
-<dt>src / href / resource</dt>
-<dd><i>More to come&#8230;</i></dd>
+<dt><a href="http://www.w3.org/TR/rdfa-core/#A-src">src</a> / <a href="http://www.w3.org/TR/rdfa-core/#A-href">href</a> / <a href="http://www.w3.org/TR/rdfa-core/#A-resource">resource</a></dt>
+<dd>Those three attributes are used to state the object of a triple statement. While the <samp>resource</samp>-attribute is intended to state a non-navigable partner resource of a subject, the <samp>href</samp>-attribute is used in conjunction with navigable resources. The <samp>src</samp>-attribute is used, when a resource is embedded.</dd>
 </dl>
 </div>
 </section>
@@ -332,27 +334,22 @@ Resource Description Framework in Attributes or simply RDFa is a W3C recommendat
 <h3 about="[this:#sparql]" property="dcterms:title">SPARQL</h3>
 <div about="[this:#sparql]" property="dcterms:description">
 <p>
-Here sparql&#8230;
+<a href="http://en.wikipedia.org/wiki/SPARQL">SPARQL</a> is a <a href="http://en.wikipedia.org/wiki/Recursive_acronym">recursive acronym</a> and stands for <strong class="red-markup">SPARQL</strong> <strong class="red-markup">P</strong>rotocol <strong class="red-markup">a</strong>nd <strong class="red-markup">R</strong>DF <strong class="red-markup">Q</strong>uery <strong class="red-markup">L</strong>anguage.
+It is a query language for RDF data and can be used to query RDF triple statements across different data sources.
 </p>
 </div>
 </section>
 
-<section id="linked-research" about="[this:#background]" rel="dcterms:hasPart" resource="[this:#linked-research]">
-<h3 about="[this:#linked-research]" property="dcterms:title">Linked Research</h3>
-<div about="[this:#linked-research]" property="dcterms:description">
-<p>More to come&#8230;</p>
-</div>
-</section>
-
-</div>
-</section><!--End of #background-->
+<!--End of #background-->
 
 
 
 <section id="related-work">
 <h2>Related Work</h2>
 <div>
-
+<p>
+The idea of having a WYSIWYG-editor paired with a triple markup feature is nothing new. Different products, with different focuses have been emerged. Two of those products are ARFaCe and Wordlift, which will be introduced in the following sections. 
+</p>
 <section id="rdface">
 <h3>RDFaCe</h3>
 <div>
@@ -2679,6 +2676,7 @@ In contrast to the designMode, the contentEditable attribute makes just some par
 The <code>&lt;div&gt;</code>-element down below is now editable due to setting the <code>&lt;contentEditable&gt;</code>-element equal to true (pleas visit <a href="http://renatostauffer.ch/requirements-and-design-for-a-tool-to-author-triple-statements/#text-editing">http://renatostauffer.ch/requirements-and-design-for-a-tool-to-author-triple-statements/#text-editing</a> if you read this thesis on paper).
 </p>
 <div class="test-editable" contentEditable="true">
+You can edit this div element. Try it&#8230;
 </div>
 
 <section id="div-vs-iframe" about="[this:#comparison-editor]" rel="dcterms:hasPart" resource="[this:#div-vs-iframe]">
