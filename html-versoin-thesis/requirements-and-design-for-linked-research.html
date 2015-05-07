@@ -84,7 +84,7 @@
 <dl>
 <dt>Acknowledgements</dt>
 <dd>
-To those how have supported me..
+To those who have supported me..
 </dd>
 </dl>
 
@@ -96,14 +96,22 @@ To those how have supported me..
 <q cite="http://xanadu.com.au/ted/XUsurvey/xuDation.html">For over two computer decades we have imitated paper on screens (extremes being Adobe Acrobat and the HTML page)</q> [http://xanadu.com.au/ted/XUsurvey/xuDation.html]. This citation from Ted Nelson&#8217;s paper &#8220;Xanalogical Structure, Needed Now More than Ever: 
 Parallel Documents, Deep Links to Content, 
 Deep Versioning and Deep Re-Use&#8221; from 2000-05-23 is still true for today.</p>
-<p id="xanadu-project">
-Nelson has the vision of a web that is much more ambitious than the World Wide Web known today. His project Xanadu, the original hypertext project, is described by him as follows: <q cite="http://xanadu.com.au/ted/XUsurvey/xuDation.html">It [the Xanadu project] has always been much more ambitious, proposing an entire form of literature where links do not break as versions change; where documents may be closely compared side by side and closely annotated; where it is possible to see the origins of every quotation; and in which there is a valid copyright system&#8211; a literary, legal and business arrangement&#8211; for frictionless, non-negotiated quotation at any time and in any amount[http://xanadu.com.au/ted/XUsurvey/xuDation.html].</q></p>
 <p>
-In contrast to this vision, todays World Wide Web contains interlinked hypertext documents as proposed in 1990 by Tim Berners-Lee and Robert Cailliau. Their idea of having only one-directional hyperlinks between documents and access information as a web of nodes [http://www.w3.org/Proposal.html], is a trivialized form of the original Xanadu model [http://xanadu.com.au/ted/XUsurvey/xuDation.html]. Tim Berners-Lee, working at CERN in 1990, needed an information system that would help scientists to create and discover each others documents across systems. In May of this year, he made a proposal for an information management system, todays World Wide Web [http://www.w3.org/History/1989/proposal.html].
-
-<p>
-However, this knowledge is often presented in a machine-unfriendly way and on top of that, is not provided to humans with the fullest possibilities the World Wide Web offers. This is even true for publications in the Web Science community as it <q cite="http://csarven.ca/enabling-accessible-knowledge#web-science-community">continues to conduct research tracks, workshops, and challenges, in a manner that even the call for papers of top-level Web conferences request research documents that are neither machine nor Web-friendly</q> [http://csarven.ca/enabling-accessible-knowledge#web-science-community]. Submissions are often solely demanded in Word or PDF formats, where it is challenging to extract information from within [http://csarven.ca/enabling-accessible-knowledge#web-science-community].
+PDF documents are familiar and easy to read for humans. But they are also <q cite="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2663789/">antithetical to the spirit of the Web, lacking user interactivity and being difficult for machines to read [http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2663789/][http://csarven.ca/enabling-accessible-knowledge#web-science-community]</q> according to &#8220;Adventures in Semantic Publishing: Exemplar Semantic Enhancements of a Research Article&#8221; by David Shotton et. all.
 </p>
+<p>
+Tim Berners-Lee, working at CERN in 1990, needed an information system that would help scientists to create and discover each others documents across systems. In May of this year, he made a proposal for an information management system; todays World Wide Web [http://www.w3.org/History/1989/proposal.html].
+</p>
+<p>
+The Web today contains interlinked hypertext documents as proposed in 1990 by him and Robert Cailliau. Their idea of having one-directional hyperlinks between documents and accessing information as a web of nodes [http://www.w3.org/Proposal.html] has emerged as a large universe of documents, where ideas can be exchanged, <a href="https://www.youtube.com/watch?v=V3GJycgu-cs">cat videos watched</a> and knowledge shared between people or institutions.
+</p>
+<p>
+However, most data and knowledge on the Web is represented in a unstructured machine-unfriendly way and on top of that, is not provided to humans with the fullest possibilities the World Wide Web offers. This is even true for publications in the Web Science community as it <q cite="http://csarven.ca/enabling-accessible-knowledge#web-science-community">continues to conduct research tracks, workshops, and challenges, in a manner that even the call for papers of top-level Web conferences request research documents that are neither machine nor Web-friendly</q> [http://csarven.ca/enabling-accessible-knowledge#web-science-community]. Submissions are often solely demanded in Word or PDF formats, where it is challenging to extract information from within [http://csarven.ca/enabling-accessible-knowledge#web-science-community].
+</p>
+<p>
+The reason for having PDF or Word documents for publications in the Web Science area lies in the nature of the publication process. According to &#8220;Call for Linked Research&#8221;, this process is described as follows: <q>researchers need to have read and reuse access to other researchers work, and adopt archaic desktop-native publishing workflows. Publishers try to remain as the middleman for society’s knowledge acquisition</q>[http://csarven.ca/call-for-linked-research]. 
+</p>
+
 <section id="problem-statement" about="[this:#introduction]" rel="dcterms:hasPart" resource="[this:#problem-statement]">
 <h3 about="[this:#problem-statement]" property="dcterms:title">Problem Statement</h3>
 <div about="[this:#problem-statement]" property="dcterms:description">
@@ -139,7 +147,7 @@ The contributions are as follows:
 </p>
 <dl>
 <dt>Requirements for Linked Research</dt>
-<dd>Requirements for Linked Research, which can be reused and made publicly available on Github or the projects wiki / documentation. Additionally the established system context gives a contributor of Linked Research a nice overview of the cope of the project.</dd>
+<dd>Requirements for Linked Research, which can be reused and made publicly available on Github or the projects wiki / documentation. Additionally the established system context gives a contributor of Linked Research a nice overview of the projects scope.</dd>
 <dt>Eitor comparison</dt>
 <dd>Different editors have been compared to set a base for an evaluation for a suitable editor component.</dd>
 <dt>RDFa Parser comparison</dt>
@@ -419,9 +427,9 @@ Prototypes have been worked out to discuss features and functionality. They are 
 </section><!--End of #methodology-->
 
 
-<section id="requirement-engineering">
-<h2>Requirement Engineering</h2>
-<div>
+<section id="requirement-engineering" about="[this:]" rel="dcterms:hasPart" resource="[this:#requirement-engineering]">
+<h2 about="[this:#requirement-engineering]" property="dcterms:title">Requirement Engineering</h2>
+<div about="[this:#requirement-engineering]" property="dcterms:description">
 <p>
 In this section, we will derive functional and non-functional requirements for a Web based authoring tool intended to help researchers to create and consumers to read publications in a user friendly environment. For this propose parts of the requirements engineering framework according to Pohl et all is used as a reference. The used framework is structured as shown in figure 1 (Fig. 1).
 </p>
@@ -439,9 +447,9 @@ Firstly the System Context will be described to identify important characteristi
 Depending on the established context, goals were determined and scenarios to be implemented are worked out. Those Requirement Artifacts are documented in the Chapters <a href="http://renatostauffer.ch/requirements-and-design-for-a-tool-to-author-triple-statements/#requirements-goals">5.3 Goals</a> as functional and non-functional requirements and <a href="http://renatostauffer.ch/requirements-and-design-for-a-tool-to-author-triple-statements/#requirements-scenarios">5.4 Scenarios</a>.
 </p>
 
-<section id="system-context">
-<h3>System Context</h3>
-<div>
+<section id="system-context" about="[this:#requirement-engineering]" rel="dcterms:hasPart" resource="[this:#system-context]">
+<h3 about="[this:#system-context]" property="dcterms:title">System Context</h3>
+<div about="[this:#system-context]" property="dcterms:description">
 <p>
 Each software-intensive system lies within a certain context and is through that influenced by the definition of the system requirements (Pohl et all, 2012). This chapter describes the system context with its facets for Linked Research. The Usage Facet, Subject Facet, IT-System Facet and Development Facet each describe a certain aspect of Linked Research and build the entry point for the systems requirements.
 </p>
@@ -512,9 +520,9 @@ First sketch
 </div>
 </section>
 
-<section id="subject-facet">
-<h4>Subject Facet</h4>
-<div>
+<section id="subject-facet" about="[this:#system-context]" rel="dcterms:hasPart" resource="[this:#subject-facet]">
+<h4 about="[this:#subject-facet]" property="dcterms:title">Subject Facet</h4>
+<div about="[this:#subject-facet]" property="dcterms:description">
 <p>
 This facet describes what kind of objects must be represented by the system (Pohl et all, 2012). Table 3 describes objects and events within the system context that are important for the system. 
 </p>
@@ -573,9 +581,9 @@ The MetaEditor object uses the triple store to persist triple statements (Triple
 </section>
 
 
-<section id="it-system-facet">
-<h4>IT System Facet</h4>
-<div>
+<section id="it-system-facet" about="[this:#system-context]" rel="dcterms:hasPart" resource="[this:#it-system-facet]">
+<h4 about="[this:#it-system-facet]" property="dcterms:title">IT System Facet</h4>
+<div about="[this:#it-system-facet]" property="dcterms:title">
 <p>
 The IT system facet contains all aspects concerning the operational and technical environment oft the system. This also includes restrictions or guidelines (Pohl, 2010). The <a href="http://linked-research.270a.info/linked-research.html">online documentation of Linked Research</a> defines some design principles, which need to be taken into account when defining the requirements of Linked Research. This includes: [source]
 </p>
@@ -590,9 +598,9 @@ The IT system facet contains all aspects concerning the operational and technica
 </div>
 </section>
 
-<section id="development-facet">
-<h4>Development Facet</h4>
-<div>
+<section id="development-facet" about="[this:#system-context]" rel="dcterms:hasPart" resource="[this:#development-facet]">
+<h4 about="[this:#development-facet]" property="dcterms:title">Development Facet</h4>
+<div about="[this:#development-facet]" property="dcterms:description">
 <p>
 The development facet contains all aspects regarding the development process of the system, including guidelines and constraints, development tools or quality assurance methods.
 </p>
@@ -625,16 +633,16 @@ Github (a versioning tool) is used to manage the code base of Linked Research an
 </div>
 </section><!--End of #system-context-->
 
-<section id="requirements-goals">
-<h3>Goals</h3>
-<div>
+<section id="requirements-goals" about="[this:#requirement-engineering]" rel="dcterms:hasPart" resource="[this:#requirements-goals]">
+<h3 about="[this:#requirements-goals]" property="dcterms:title">Goals</h3>
+<div about="[this:#requirements-goals]" property="dcterms:description">
 <p>
 Based on the system&#8217;s context, goals for Linked Research are determined. It is distinguished between functional and non-functional goals according to I. Sommerville (2010)[source]. The terms goal and requirement are used as  synonyms here.
 </p>
 
-<section id="functional-requirements">
-<h4>Functional Requirements</h4>
-<div>
+<section id="functional-requirements" about="[this:#requirements-goals]" rel="dcterms:hasPart" resource="[this:#functional-requirements]">
+<h4 about="[this:#functional-requirements]" property="dcterms:title">Functional Requirements</h4>
+<div about="[this:#functional-requirements]" property="dcterms:description">
 <p>
 The functional requirements follow a pattern stated as below:
 </p>
@@ -2197,9 +2205,9 @@ The MetaEditor should prevent the author from typing wrong spelled search terms.
 </div>
 </section>
 
-<section id="non-functional-requirements">
-<h4>Non-Functional Requirements</h4>
-<div>
+<section id="non-functional-requirements" about="[this:#requirements-goals]" rel="dcterms:hasPart" resource="[this:#non-functional-requirements]">
+<h4 about="[this:#non-functional-requirements]" property="dcterms:title">Non-Functional Requirements</h4>
+<div about="[this:#non-functional-requirements]" property="dcterms:description">
 <p>
 This chapter describes the non-functional requirements of Linked Research. Sarven Capadisli et all stat in their publication Enabling Accessible Knowledge the following: <q cite="">The overall properties of the system as a whole that we seek should inherit best accessibility and usability practices, devise ubiquitous user experience designs, and be subject to evolvability.</q> Thus the main focus concerning non-functional requirements for Linked Research lies on accessibility, usability (user experience) and evolvability.
 </p>
@@ -2416,9 +2424,9 @@ Linked Research should run in Gecko browser engines (Firefox) (LINE based browse
 </div>
 </section><!--End of #goals-->
 
-<section id="ui-proposal">
-<h3>User Interface Proposal</h3>
-<div>
+<section id="ui-proposal" about="[this:#requirement-engineering]" rel="dcterms:hasPart" resource="[this:#ui-proposal]">
+<h3 about="[this:#ui-proposal]" property="dcterms:title">User Interface Proposal</h3>
+<div about="[this:#ui-proposal]" property="dcterms:description">
 <p>Based on the functional and non-functional requirements, we propose a user interface:</p>
 <figure class="figure">
 <a href="http://renatostauffer.ch/wp-content/uploads/2015/02/finale-ui2.png"><img src="http://renatostauffer.ch/wp-content/uploads/2015/02/finale-ui2.png" alt="finale-ui" width="1079" height="474" class="alignnone size-full wp-image-862" /></a>
@@ -2430,19 +2438,19 @@ Possible user interface for the MetaEditor
 The possible interface is composed of two parts. The first part (circle labeled <strong>1</strong> on Fig. 6) offers an author the possibility to create new triple statements and search for predicates or RDF objects from an external service. The second part (circle labeled <strong>2</strong> on Fig. 6) serves as interface to delete existing triples from the document and triple store.
 </p>
 </div>
-</section>
+</section><!--End of #ui-proposal-->
 
 
-<section id="requirements-scenarios">
-<h3>Scenarios</h3>
-<div>
+<section id="requirements-scenarios" about="[this:#requirement-engineering]" rel="dcterms:hasPart" resource="[this:#requirements-scenarios]">
+<h3 about="[this:#requirements-scenarios]" property="dcterms:title">Scenarios</h3>
+<div about="[this:#requirements-scenarios]" property="dcterms:description">
 <p>
 There are two requirements that need more detailed explanation. Thus these requirements are represented as scenarios.
 </p>
 
-<section id="add-triple-scenario">
-<h4>Scenario: Add triple statement (<a href="http://renatostauffer.ch/requirements-and-design-for-a-tool-to-author-triple-statements/#f-12">F-12</a>)</h4>
-<div>
+<section id="add-triple-scenario" about="[this:#requirements-scenarios]" rel="dcterms:hasPart" resource="[this:#add-triple-scenario]">
+<h4 about="[this:#add-triple-scenario]" property="dcterms:title">Scenario: Add triple statement (<a href="http://renatostauffer.ch/requirements-and-design-for-a-tool-to-author-triple-statements/#f-12">F-12</a>)</h4>
+<div about="[this:#add-triple-scenario]" property="dcterms:description">
 <p>The goal of this scenario is to concrete the requirement <a href="http://renatostauffer.ch/requirements-and-design-for-a-tool-to-author-triple-statements/#f-12">Add triple statement (F-12)</a> with its pre-conditions and post-conditions. The initial situation is made up as fallows:
 </p>
 <p>
@@ -2605,9 +2613,9 @@ Beside selecting words, Alice may also select a phrase or paragraph.
 </div>
 </section><!--End of #add-triple-scenario-->
 
-<section id="#remove-triple-scenario">
-<h4>Scenario: Remove triple statement</h4>
-<div>
+<section id="#remove-triple-scenario" about="[this:#requirements-scenarios]" rel="dcterms:hasPart" resource="[this:#remove-triple-scenario]">
+<h4 about="[this:#remove-triple-scenario]" property="dcterms:title">Scenario: Remove triple statement</h4>
+<div about="[this:#remove-triple-scenario]" property="dcterms:description">
 <p>The goal of this scenario is to concrete the requirement <a href="http://renatostauffer.ch/requirements-and-design-for-a-tool-to-author-triple-statements/#f-14">Remove triple statement (F-14)</a> with its pre-conditions and post-conditions. The initial situation is made up as fallows:
 </p>
 <p>
@@ -2632,33 +2640,33 @@ This would take the following steps:
 
 
 
-<section id="comparison-editor">
-<h2>Comparison Editor</h2>
-<div>
+<section id="comparison-editor" about="[this:]" rel="dcterms:hasPart" resource="[this:#comparison-editor]">
+<h2 about="[this:#comparison-editor]" property="dcterms:title">Comparison Editor</h2>
+<div about="[this:#comparison-editor]" property="dcterms:description">
 <p>
 A search on Github for the term &#8220;WYSIWYG&#8221; resulted in over 1&#8217;200 repositories for WYSIWG-editors. This indicates, that the TextEditor component is a good candidate that can easily be reused from an existing project. As stated by ???, creating a WYSIWYG-editor on your own is time consuming and difficult[].
 </p>
 <p>
 The challenge is to find an editor that matches the established requirements from <a href="http://renatostauffer.ch/requirements-and-design-for-a-tool-to-author-triple-statements/#requirements-goals">chapter 5.3</a>. Especially the requirements Edit text (F-1), Text formatting (F-4), Enrich DOM (F-13), Add new Paragraph (F-16), Add new Section (F-17), The DOM needs to remain clean (F-18) and Make functionality accessible through a keyboard interface (F-19) need to be considerer when evaluating a possible editor.
 </p>
-<section id="text-editing">
-<h3>Text Editing on the Web</h3>
-<div>
+<section id="text-editing" about="[this:#comparison-editor]" rel="dcterms:hasPart" resource="[this:#text-editing]">
+<h3 about="[this:#text-editing]" property="dcterms:title">Text Editing on the Web</h3>
+<div about="[this:#text-editing]" property="dcterms:description">
 <p>
 Before considering a particular editor, known approaches to edit text within the browser need to be determined.
 </p>
 <p>A search for the terms &#8220;How to write a wysiwyg editor&#8221;, &#8220;text editor approaches in browsers&#8221;, &#8220;contentEditable&#8221; and &#8220;alternatives for contentEditable&#8221; on <a href="https://www.google.ch/?gws_rd=ssl">Google.com</a> resulted in three possible approaches on how an author is able to edit text in the browser.
 </p>
 <dl>
-<dt>textarea</dt>
+<dt id="text-editing-textarea">textarea</dt>
 <dd>
 In the early days of the Web, users were limited to text boxes when it came to online editing. Text boxes (expressed with the  <code>&lt;textarea&gt;</code>-element) do not support multiple fonts and styles.
 </dd>
-<dt>designMode</dt>
+<dt id="text-editing-designmode">designMode</dt>
 <dd>The designMode attribute of the  <code>document</code>  object is able to make a whole HTML-page editable by just setting it to true [source http://www.w3.org/TR/html5/editing.html#editing-0].
 </dd>
 
-<dt>contentEditable</dt>
+<dt id="text-editing-contenteditable">contentEditable</dt>
 <dd>
 In contrast to the designMode, the contentEditable attribute makes just some part of the document (like a  <code>div</code>-element) editable [http://www.w3.org/TR/html51/editing.html#contenteditable]. Example XY shows how the attribute can be used:
 </dd>
@@ -2671,9 +2679,9 @@ The <code>&lt;div&gt;</code>-element down below is now editable due to setting t
 <div class="test-editable" contentEditable="true">
 </div>
 
-<section id="div-vs-iframe">
-<h4>div vs iframe</h4>
-<div>
+<section id="div-vs-iframe" about="[this:#comparison-editor]" rel="dcterms:hasPart" resource="[this:#div-vs-iframe]">
+<h4 about="[this:#div-vs-iframe]" property="dcterms:title">div vs iframe</h4>
+<div about="[this:#div-vs-iframe]" property="dcterms:description">
 <p>
 Beside having one of the mentioned approaches from above, it can be distinguished between two ways to include the editable content into an HTML-page.
 </p>
@@ -3202,9 +3210,9 @@ Table XXX shows how compatible the editors are with the browsers <samp>Internet 
 </section><!--End of #comparison-editor-->
 
 
-<section id="comparison-rdfa-library">
-<h2>Comparison RDFa Library</h2>
-<div>
+<section id="comparison-rdfa-library" about="[this:]" rel="dcterms:hasPart" resource="[this:#comparison-rdfa-library]">
+<h2 about="[this:#comparison-rdfa-library]" property="dcterms:title">Comparison RDFa Library</h2>
+<div about="[this:#comparison-rdfa-library]" property="dcterms:description">
 
 
 <table id="library-features">
@@ -3308,9 +3316,9 @@ Table XXX shows how compatible the editors are with the browsers <samp>Internet 
 </section><!--End of #comparison-library-->
 
 
-<section id="conclusions">
-<h2> Conclusions </h2>
-<div>
+<section id="conclusions" about="[this:]" rel="dcterms:hasPart" resource="[this:#conclusions]">
+<h2 about="[this:#conclusions]" property="dcterms:title"> Conclusions </h2>
+<div about="[this:#conclusions]" property="dcterms:description">
 <p>
 </p>
 </div>
@@ -3334,8 +3342,6 @@ Table XXX shows how compatible the editors are with the browsers <samp>Internet 
 
 </div>
 </div>
-</article>
-</body>
-</html><br />
+</article><br />
 </body>
 </html>
