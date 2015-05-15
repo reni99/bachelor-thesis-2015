@@ -10,7 +10,10 @@
         <link rel="stylesheet alternate" href="http://linked-research.270a.info/media/css/acm.css" media="all" title="ACM"/>
         <link rel="stylesheet alternate" href="http://www.w3.org/StyleSheets/TR/W3C-REC.css" media="all" title="W3C-REC"/>
   <link rel="stylesheet alternate" href="http://linked-research.270a.info/media/css/lncs.css" media="all" title="LNCS"/>
-  <link rel='stylesheet' id='examples-css'  href='http://renatostauffer.ch/wp-content/themes/newTheme/examples.css?ver=4.0' type='text/css' media='all' />
+  <link rel='stylesheet' id='open-sans-css'  href='//fonts.googleapis.com/css?family=Open+Sans%3A300italic%2C400italic%2C600italic%2C300%2C400%2C600&#038;subset=latin%2Clatin-ext&#038;ver=4.0' type='text/css' media='all' />
+<link rel='stylesheet' id='dashicons-css'  href='http://renatostauffer.ch/wp-includes/css/dashicons.min.css?ver=4.0' type='text/css' media='all' />
+<link rel='stylesheet' id='admin-bar-css'  href='http://renatostauffer.ch/wp-includes/css/admin-bar.min.css?ver=4.0' type='text/css' media='all' />
+<link rel='stylesheet' id='examples-css'  href='http://renatostauffer.ch/wp-content/themes/newTheme/examples.css?ver=4.0' type='text/css' media='all' />
 <link rel='stylesheet' id='textHighlighting-css'  href='http://renatostauffer.ch/wp-content/themes/newTheme/media/css/text-highlighting.css?ver=4.0' type='text/css' media='all' />
 <link rel='stylesheet' id='lncs-css'  href='http://linked-research.270a.info/media/css/lncs.css?ver=4.0' type='text/css' media='all' />
 <link rel='stylesheet' id='lr-css'  href='http://linked-research.270a.info/media/css/lr.css?ver=4.0' type='text/css' media='all' />
@@ -19,6 +22,15 @@
 <script type='text/javascript' src='http://linked-research.270a.info/scripts/html.sortable.min.js?ver=4.0'></script>
 <link rel='canonical' href='http://renatostauffer.ch/requirements-and-design-for-a-tool-to-author-triple-statements/' />
 <link rel='shortlink' href='http://renatostauffer.ch/?p=131' />
+<style type="text/css" media="print">#wpadminbar { display:none; }</style>
+<style type="text/css" media="screen">
+  html { margin-top: 32px !important; }
+  * html body { margin-top: 32px !important; }
+  @media screen and ( max-width: 782px ) {
+    html { margin-top: 46px !important; }
+    * html body { margin-top: 46px !important; }
+  }
+</style>
 </head>
 
 <body about="[this:]" typeof="foaf:Document sioc:Post biblio:Paper prov:Entity" class="hfeed" prefix="rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns# rdfs: http://www.w3.org/2000/01/rdf-schema# owl: http://www.w3.org/2002/07/owl# xsd: http://www.w3.org/2001/XMLSchema# dcterms: http://purl.org/dc/terms/ foaf: http://xmlns.com/foaf/0.1/ v: http://www.w3.org/2006/vcard/ns# pimspace: http://www.w3.org/ns/pim/space# cc: http://creativecommons.org/ns# skos: http://www.w3.org/2004/02/skos/core# prov: http://www.w3.org/ns/prov# schema: http://schema.org/ rsa: http://www.w3.org/ns/auth/rsa# cert: http://www.w3.org/ns/auth/cert# cal: http://www.w3.org/2002/12/cal/ical# wgs: http://www.w3.org/2003/01/geo/wgs84_pos# org: http://www.w3.org/ns/org# biblio: http://purl.org/net/biblio# bibo: http://purl.org/ontology/bibo/ book: http://purl.org/NET/book/vocab# ov: http://open.vocab.org/terms/ doap: http://usefulinc.com/ns/doap# dbr: http://dbpedia.org/resource/ dbp: http://dbpedia.org/property/ sio: http://semanticscience.org/resource/ opmw: http://www.opmw.org/ontology/ deo: http://purl.org/spar/deo/ doco: http://purl.org/spar/doco/ cito: http://purl.org/spar/cito/ sro: http://salt.semanticauthoring.org/ontologies/sro# this: http://renatostauffer.ch/requirements-and-design-for-a-tool-to-author-triple-statements/">
@@ -127,7 +139,7 @@ In order to close the disconnect between research documents, Sarven Capadisli is
 <h3 about="[this:#goal]" property="dcterms:title">Goal</h3>
 <div about="[this:#goal]" property="dcterms:description">
 <p>
-As part of a possible solution to make research knowledge more accessible and more pleasant for people and machines, Linked Research is going to implement a authoring tool to create and edit research papers directly within a browser. In addition it will enable the user to author triple statements to enrich the document with markup.
+As part of a possible solution to make research knowledge more accessible and more pleasant for people and machines, Linked Research is going to implement an authoring tool to create and edit research papers directly within a browser. In addition it will enable the user to author triple statements to enrich the document with markup.
 </p>
 <p>
 The objective of this thesis is to establish requirements for Linked Research, compare editing libraries and provide an overview of RDFa Tools available on the market.
@@ -503,7 +515,7 @@ Each software-intensive system lies within a certain context and is through that
 The Usage Facet describes how the user interacts with the system [<a class="ref" href="#ref-31">31</a>]. In the case of Linked Research the Usage Facet is described with the UML 2.0:
 </p>
 <figure class="figure">
-<a href="http://renatostauffer.ch/wp-content/uploads/2015/02/use-case.svg"><img src="http://renatostauffer.ch/wp-content/uploads/2015/02/use-case.svg" alt="use-case" class="alignnone size-full wp-image-1004" /></a>
+<a href="http://renatostauffer.ch/wp-content/uploads/2015/02/use-case1.svg"><img src="http://renatostauffer.ch/wp-content/uploads/2015/02/use-case1.svg" alt="use-case" class="alignnone size-full wp-image-1241" /></a>
 <figcaption>
 UML Use Case Diagram for Linked Research. Source: Author&#8217;s own work
 </figcaption>
@@ -519,19 +531,14 @@ Figure 2 (Fig. 2) describes the two stakeholders (author and consumer) and how t
 <dt>Remove Triple Statement</dt>
 <dd>The author can remove added triple statements from the document.</dd>
 <dt>Automatic Markup</dt>
-<dd>A author does usually not have the time to enrich the whole publication with metadata by hand. Because of that, the use case Automatic Markup should provide the possibility to automatically enrich sections of the publication.</dd>
+<dd>An author does usually not have the time to enrich the whole publication with metadata by hand. Because of that, the use case Automatic Markup should provide the possibility to automatically enrich sections of the publication.</dd>
 <dt>Local Storage</dt>
 <dd>The text the author is editing gets stored locally. This way, off-line editing is possible.</dd>
 <dt>Export Document</dt>
 <dd>The author or consumer is able to export the document in HTML format or print the document (PDF format).</dd>
 <dt>Change View</dt>
 <dd>The author or consumer can apply different views for the document (LNCS ACM W3C-REC Native) <i>Create an Abbreviation index at the und!</i></dd>
-<dt>Assign Subject</dt>
-<dd>In order to be able to create a triple statement, the author must have the ability to mark a text passage (a word, paragraph or the document itself) as an RDF subject. </dd>
-<dt>Assign Predicate</dt>
-<dd>A service should provide the author the ability to search for predicates in existing Linked Open vocabularies and assign a found predicate to a triple statement.</dd>
-<dt>Assign Object</dt>
-<dd>Finally the author needs functionality to assign a RDF object to a RDF triple statement</dd>
+
 </dl>
 <p>
 The use cases Change View, Local Storage and Export Document were already implemented into Linked Research by Sarven Carpadisli. The other use cases (Create Triple Statement, Remove Triple Statement and Automatic Markup, Edit Text, Assign Subject, Assign Predicate and Assign Object) are open to be implemented. The focus of the following chapters lies on the not yet implemented use cases from an author&#8217;s perspective.
