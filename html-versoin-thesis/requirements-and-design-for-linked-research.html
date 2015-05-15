@@ -378,7 +378,7 @@ RDFaCe is a semantic content authoring (SCA) tool which integrates four differen
 <section id="loomp" about="[this:#related-work]" rel="dcterms:hasPart" resource="[this:#loomp]">
 <h3 about="[this:#loomp]" property="dcterms:title">Loomp</h3>
 <div about="[this:#loomp]" property="dcterms:description">
-Loomp is a SCA with a one click annotation strategy (OCA) according to &#8220;<a href="http://www.loomp.org/tl_files/documents/2010%20One%20Click%20Annotator.pdf">One Click Annotation</a>&#8221; by Heese et al. [<a class="ref" href="#ref-28">28</a>]. Loomp addresses the issue for missing tools for creating semantic content by non-domain experts. The main focus lies on simplicity by providing an intuitive interface. the editor allows users to annotate words or phrases with references to ontologies and to create relationships between annotated phrases. Loomp relies on a server to handle and process the semantic content [<a class="ref" href="#ref-29">29</a>].
+Loomp is a SCA with a one click annotation strategy (OCA) according to &#8220;<a href="http://www.loomp.org/tl_files/documents/2010%20One%20Click%20Annotator.pdf">One Click Annotation</a>&#8221; by Heese et al. [<a class="ref" href="#ref-28">28</a>]. Loomp addresses the issue for missing tools for creating semantic content by non-domain experts. The main focus lies on simplicity by providing an intuitive interface. The editor allows users to annotate words or phrases with references to ontologies and to create relationships between annotated phrases. Loomp relies on a server to handle and process the semantic content [<a class="ref" href="#ref-29">29</a>].
 </div>
 </section>
 
@@ -526,23 +526,35 @@ Figure 2 (Fig. 2) describes the two stakeholders (author and consumer) and how t
 <dl>
 <dt>Edit Text</dt>
 <dd>This is the most basic use case for Linked Research. The author creates or edits text directly in the browser.</dd>
+<dt>Enable Editing Mode</dt>
+<dd>An author needs to have the possibility to enable the editing mode.</dd>
 <dt>Add Triple Statement</dt>
 <dd>The author can enrich the written text with RDF triples via a triple authoring tool. For this to be working, the user must be able to define a subject, predicate and object of a triple (see also section XXX).</dd>
+<dt>Triple Creation Support</dt>
+<dd>Linked Research supports authors to add triple statements by providing suggestions for predicates or objects in the triple creation process. This is useful for non-domain experts.</dd>
 <dt>Remove Triple Statement</dt>
 <dd>The author can remove added triple statements from the document.</dd>
-<dt>Automatic Markup</dt>
-<dd>An author does usually not have the time to enrich the whole publication with metadata by hand. Because of that, the use case Automatic Markup should provide the possibility to automatically enrich sections of the publication.</dd>
+<dt>View Document Graph</dt>
+<dd>An author or consumer can view the document and its triple statements as a graph. This enables the author to quickly review triple statements and their relation. Consumers obtain the possibility to explore the document in a visual way and figure out how sections of the document are related to each other or external resources</dd>
 <dt>Local Storage</dt>
 <dd>The text the author is editing gets stored locally. This way, off-line editing is possible.</dd>
 <dt>Export Document</dt>
 <dd>The author or consumer is able to export the document in HTML format or print the document (PDF format).</dd>
 <dt>Change View</dt>
 <dd>The author or consumer can apply different views for the document (LNCS ACM W3C-REC Native) <i>Create an Abbreviation index at the und!</i></dd>
-
 </dl>
 <p>
-The use cases Change View, Local Storage and Export Document were already implemented into Linked Research by Sarven Carpadisli. The other use cases (Create Triple Statement, Remove Triple Statement and Automatic Markup, Edit Text, Assign Subject, Assign Predicate and Assign Object) are open to be implemented. The focus of the following chapters lies on the not yet implemented use cases from an author&#8217;s perspective.
+The use cases <samp>Change View</samp>, <samp>Local Storage</samp>, <samp>Export Document</samp>, <samp>Rearrange Table of Content</samp> and <samp>Section Identification</samp> were already implemented into Linked Research by Sarven Carpadisli. The other use cases are open to be implemented. The focus of the following chapters lies on the not yet implemented use cases
 </p>
+<ul>
+<li><samp>Add Triple Statement</samp>,</li>
+<li><samp>Triple Creation Support</samp>,</li>
+<li><samp>Remove Triple Statement</samp>,</li>
+<li><samp>View Document Graph</samp>,</li>
+<li><samp>Enable Editing Mode</samp>,</li>
+<li><samp>Auto Saving</samp>,</li>
+<li>and <samp>Edit Text</samp>.</li>
+</ul>
 <p>
 Based on the established Usage Facet a first sketch of Linked Research was drawn:
 </p>
