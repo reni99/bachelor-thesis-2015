@@ -2,7 +2,7 @@
 This document contains links and code for my bachelor thesis.
 
 # Topic of the Thesis
-Design, Development and Testing of a Stand-Alone Tool to author Triple Statements
+Requirements and Design for a Tool to Author Triple Statements
 
 # Goal
 Establish requirements for <a href="https://github.com/csarven/linked-research">Linked Research</a>, compare RDFa libraries and WYSIWYG editors.
