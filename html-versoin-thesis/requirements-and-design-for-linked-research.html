@@ -20,6 +20,7 @@
 <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js'></script>
 <script type='text/javascript' src='http://linked-research.270a.info/scripts/lr.js?ver=4.0'></script>
 <script type='text/javascript' src='http://linked-research.270a.info/scripts/html.sortable.min.js?ver=4.0'></script>
+<script type='text/javascript' src='http://renatostauffer.ch/wp-content/themes/newTheme/js/create-table-of-stuff.js?ver=4.0'></script>
 <link rel='canonical' href='http://renatostauffer.ch/requirements-and-design-for-a-tool-to-author-triple-statements/' />
 <link rel='shortlink' href='http://renatostauffer.ch/?p=131' />
 <style type="text/css" media="print">#wpadminbar { display:none; }</style>
@@ -67,7 +68,6 @@
 
 <div id="content" class="e-content">
 
-
 <section id="keywords">
 <h2>Keywords</h2>
 <ul>
@@ -81,11 +81,23 @@
 <dl>
 <dt>Acknowledgements</dt>
 <dd>
-To those who supported me&#8230;
+To those who supported me.
 </dd>
 </dl>
 <p>
-I would like to thank Sarven for his unlimited support. Thank you for enriching my knowledge on understanding what the Web truly is about and enlarging my horizon in so many different ways. Working with you has always been a pleasure and I am thankful for your aspiring guidance. Your enthusiasm for technology is inspiring and I hope you continue to take students under your wings… <i>More to come&#8230;</i>
+I would like to thank <a href="http://csarven.ca/#i">http://csarven.ca/#i</a> for his unlimited support. Thank you for enriching my knowledge on understanding what the Web truly is about and enlarging my horizon in so many different ways. Working with you has always been a pleasure and I am thankful for your aspiring guidance. Your enthusiasm for technology is inspiring and I hope you continue to take students under your wings.
+</p>
+<p>
+In Addition I would like to express my gratitude towards my supervisors, Prof. Dr. Eduard Klein and Prof. Dr. Jud for taking their time to support and examine my thesis, despite their full schedules.
+</p>
+<p>
+Thank you Prof. Dr. Eduard Klein for sitting down with me when advice was needed, whether in person at the BFH or from abroad via Skype.
+</p>
+<p>
+I would also like to thank Beatrice Stauffer, who has always supported me in everything I did and encouraged me with her best wishes.
+</p>
+<p>
+Last but not the least, I thank my dear teammates from the TC Münsingen, who bent my thoughts on other things than my bachelor thesis.
 </p>
 
 <dl>
@@ -101,23 +113,22 @@ It goes here&#8230;
 <h2 about="[this:#introduction]" property="dcterms:title">Introduction</h2>
 <div about="[this:#introduction]" property="dcterms:description" typeof="deo:Introduction">
 <p id="prologue">
-<q cite="http://xanadu.com.au/ted/XUsurvey/xuDation.html">For over two computer decades we have imitated paper on screens (extremes being Adobe Acrobat and the HTML page)</q> [<a class="ref" href="#ref-1">1</a>]. This citation from Ted Nelson&#8217;s paper &#8220;Xanalogical Structure, Needed Now More than Ever: 
-Parallel Documents, Deep Links to Content, 
-Deep Versioning and Deep Re-Use&#8221; from 2000-05-23 is still true for today.</p>
-<p>
 PDF documents are familiar and easy to read for humans. But they are also <q cite="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2663789/">antithetical to the spirit of the Web, lacking user interactivity and being difficult for machines to read</q> [<a class="ref" href="#ref-2">2</a>] according to &#8220;Adventures in Semantic Publishing: Exemplar Semantic Enhancements of a Research Article&#8221; by David Shotton et. all.
 </p>
 <p>
-Tim Berners-Lee, working at CERN in 1989, needed an information system that would help scientists to create and discover each others documents across systems. In May of this year, he made a proposal for an information management system; todays World Wide Web [<a class="ref" href="#ref-3">3</a>].
+While there have been many efforts in making research publications more accessible and machine friendly through semantic publishing, scholarly communication is predominantly held in data silos like PDF documents or in conventional HTML Web pages with little semantical markup [<a class="ref" href="#ref-1">1</a>]. Here is a brief look at some points in history.</p>
+<p>
+<p>
+Tim Berners-Lee, working at CERN in 1989, needed an information system that would help scientists to create and discover each others documents across systems. In the same year he made a proposal for an information management system; todays World Wide Web [<a class="ref" href="#ref-3">3</a>].
 </p>
 <p>
-The Web today contains interlinked hypertext documents as proposed in 1990 by him and Robert Cailliau. Their idea of having one-directional hyperlinks between documents and accessing information as a web of nodes [<a class="ref" href="#ref-4">4</a>] has emerged as a large universe of documents, where ideas can be exchanged, <a href="https://www.youtube.com/watch?v=V3GJycgu-cs">cat videos watched</a> and knowledge shared between people or institutions.
+The Web today contains interlinked hypertext documents as proposed in 1990 by him and Robert Cailliau. Their idea of having one-directional hyperlinks between documents and accessing information as a web of nodes [<a class="ref" href="#ref-4">4</a>] has emerged as a large universe of documents, where ideas can be exchanged and knowledge shared between people or institutions.
 </p>
 <p>
-However, most data and knowledge on the Web is represented in a unstructured machine-unfriendly way and on top of that, is not provided to humans with the fullest possibilities the World Wide Web offers. This is also true for publications in the Web Science community as it <q cite="http://csarven.ca/enabling-accessible-knowledge#web-science-community">continues to conduct research tracks, workshops, and challenges, in a manner that even the call for papers of top-level Web conferences request research documents that are neither machine nor Web-friendly</q> [<a class="ref" href="#ref-5">5</a>]. Submissions are often solely demanded in Word or PDF formats, where it is challenging to extract information from within [<a class="ref" href="#ref-5">5</a>].
+In 1991 the Camelot Project was launched with the vision to <q cite="https://acrobat.adobe.com/us/en/products/about-adobe-pdf.html">capture documents from any application, send electronic versions of these documents anywhere, and view and print these documents on any machines</q>[https://acrobat.adobe.com/us/en/products/about-adobe-pdf.html]. By 1992 The Camelot Project eventually developed into PDF, today&#8217;s de facto standard when it comes to document formats [http://duff-johnson.com/2014/02/17/the-8-most-popular-document-formats-on-the-web/].
 </p>
 <p>
-The reason for having PDF or Word documents for publications in the Web Science area lies in the nature of the publication process. According to &#8220;Call for Linked Research&#8221;, this process is described as follows: <q>researchers need to have read and reuse access to other researchers work, and adopt archaic desktop-native publishing workflows. Publishers try to remain as the middleman for society’s knowledge acquisition</q> [<a class="ref" href="#ref-6">6</a>]. 
+PDF and other machine unfriendly formats even dominate in the Web Science community as the community <q cite="http://csarven.ca/enabling-accessible-knowledge#web-science-community">continues to conduct research tracks, workshops, and challenges, in a manner that even the call for papers of top-level Web conferences request research documents that are neither machine nor Web-friendly</q> [<a class="ref" href="#ref-5">5</a>]. Submissions are often solely demanded in Word or PDF formats, where it is challenging to extract information from within [<a class="ref" href="#ref-5">5</a>].
 </p>
 
 <section id="problem-statement" about="[this:#introduction]" rel="dcterms:hasPart" resource="[this:#problem-statement]">
@@ -130,8 +141,10 @@ Through movements like Open Access, data and research publications have become m
 As reported by Frank van Harmelen and Dieter Fensel in their publication Practical Knowledge representation for the Web, the lack of semantic markup is a major barrier to develop more intelligent document processing on the web. [<a class="ref" href="#ref-7">7</a>]
 </p>
 <p>
-In order to close the disconnect between research documents, Sarven Capadisli is in progress to develop a tool to share and reuse research knowledge by employing the native Web technology stack. The project called Linked Research will enable researchers to take full control, ownership and responsibility of their own knowledge, making it possible to get away from the imitation of paper and use the Webs current possibilities to explore hypertext documents in a user-friendly way [<a class="ref" href="#ref-5">5</a>].
+The open source project called Linked Research, developed by Sarven Capadisli, will enable researchers to take full control, ownership and responsibility of their own knowledge, making it possible to get away from machine unfriendly formats by exploiting the Webs current possibilities to explore hypertext documents in a user-friendly way [<a class="ref" href="#ref-5">5</a>].
 </p>
+<p>
+Linked Research has not established concrete requirements yet, so that developers can easily contribute to the project. Additionally an editor component and RDFa parsing library need to be evaluated to push the project further.</p>
 </div>
 </section>
 
@@ -139,7 +152,7 @@ In order to close the disconnect between research documents, Sarven Capadisli is
 <h3 about="[this:#goal]" property="dcterms:title">Goal</h3>
 <div about="[this:#goal]" property="dcterms:description">
 <p>
-As part of a possible solution to make research knowledge more accessible and more pleasant for people and machines, Linked Research is going to implement an authoring tool to create and edit research papers directly within a browser. In addition it will enable the user to author triple statements to enrich the document with markup.
+Linked Research is a semantic content authoring tool (SCA), which makes research knowledge more accessible and more pleasant to read for people and machines. It enables authors to edit research papers directly from a Web browser and to enrich the document with semantic annotations. Consumers of these papers benefit from more interactive and enjoyable publications while machines can extract more information about those.
 </p>
 <p>
 The objective of this thesis is to establish requirements for Linked Research, compare editing libraries and provide an overview of RDFa Tools available on the market.
@@ -156,7 +169,7 @@ The contributions are as follows:
 <dl>
 <dt>Requirements for Linked Research</dt>
 <dd>Requirements for Linked Research, which can be reused and made publicly available on Github or the projects wiki / documentation. Additionally the established system context gives a contributor of Linked Research an overview of the projects scope.</dd>
-<dt>Eitor comparison</dt>
+<dt>Editor comparison</dt>
 <dd>Different editors have been compared to set a base for an evaluation for a suitable editor component.</dd>
 <dt>RDFa Parser comparison</dt>
 <dd>RDFa parsers have been tested to find a solution for the RDFa parsing component of Linked Research.</dd>
@@ -165,7 +178,7 @@ The contributions are as follows:
 <dt>http://renatostauffer.ch/requirements-and-design-for-a-tool-to-author-triple-statements/</dt>
 <dd>This thesis is published on the Web and acts as a demo for Linked Research.</dd>
 <dt>User Interface Proposal</dt>
-<dd>A possible User Interface for Linked Research is proposed.</dd>
+<dd>A possible user interface for Linked Research&#8217;s annotation management is proposed.</dd>
 </dl>
 </div>
 </section>
@@ -209,13 +222,20 @@ This chapter is intended to provide background information and define terms to u
 The Hypertext Markup Language (HTML) is the core language of the World Wide Web (WWW) and currently released as version 5.0. The language is used to create web pages and is recommended by the main international standards organization for the WWW (W3C, World Wide Web Consortium) [<a class="ref" href="#ref-8">8</a>].
 HTML specifies the structure of a website with tags (like  <code>html</code> ). The following listing shows the basic structure of an HTML 5 document:
 </p>
-<pre>&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-&lt;head&gt;
-&lt;title&gt;Title of the Web page&lt;/title&gt;
-&lt;/head&gt;
-&lt;body&gt;&lt;/body&gt;
-&lt;/html&gt;</pre> [<a class="ref" href="#ref-9">9</a>]
+<figure id="html-example" class="listing">
+<pre>
+<code>&lt;!DOCTYPE html&gt;</code>
+<code>&lt;html&gt;</code>
+<code>&lt;head&gt;</code>
+<code>&lt;title&gt;Title of the Web page&lt;/title&gt;</code>
+<code>&lt;/head&gt;</code>
+<code>&lt;body&gt;&lt;/body&gt;</code>
+<code>&lt;/html&gt;</code>
+</pre>
+<figcaption>
+Basic structure of an HTML 5 document. Source: [<a class="ref" href="#ref-9">9</a>]
+</figcaption>
+</figure>
 </div>
 </section>
 
@@ -273,10 +293,10 @@ WYSIWYM is an acronym for &#8220;What-You-See-Is-What-You-Mean&#8221;. a WYSIWYM
 <h3 about="[this:#linked-data]" property="dcterms:title">Linked Data</h3>
 <div about="[this:#linked-data]" property="dcterms:description">
 <p>
-Linked Data is part of the Semantic Web and describes free available structured data reachable through Uniform Resource Identifiers (URI). It is published in a format (often RDF) so that it can be interlinked with other data, and through that, be more useful. [<a class="ref" href="#ref-13">13</a>].
+Linked Data is part of the Semantic Web and describes free available structured data reachable through Uniform Resource Identifiers (URI). It is published in a format (often RDF) so that it can be interlinked with other data, and through that, be more useful [<a class="ref" href="#ref-13">13</a>].
 </p>
 <p>
-Time Bernes-Lee published on 2006-07-27 an article called „Linked Data – Design Issues“. In this publication Bernes-Lee addresses four rules for Linked Data:
+Time Berners-Lee published on 2006-07-27 an article called „Linked Data – Design Issues“. In this publication Berners-Lee addresses four rules for Linked Data [<a class="ref" href="#ref-13">13</a>]:
 </p>
 <blockquote cite="http://www.w3.org/DesignIssues/LinkedData">
 <ol>
@@ -285,7 +305,7 @@ Time Bernes-Lee published on 2006-07-27 an article called „Linked Data – Des
 <li>When someone looks up a URI, provide useful information, using the standards (RDF, SPARQL).</li>
 <li>Include links to other URIs. So that they can discover more things.</li>
 </ol>
-</blockquote> [<a class="ref" href="#ref-13">13</a>]
+</blockquote>
 </div>
 </section>
 
@@ -306,9 +326,16 @@ URIs build the basis of Linked Data and are used as names for things [<a class="
 <p>
 RDF is a resource description framework to express information about resources. The framework is specified by the World Wide Web Consortium (W3C) and lets anyone make any statement about anything [<a class="ref" href="#ref-16">16</a>]. A statement is composed of three atomic parts (subject, predicate and object). Those three parts together are called a triple. The subject (line 1 of listing 2) says what the statement is about and the predicate (line 2 of listing 2) describes the relationship to its object (line 3 of listing 2) resource. Typically triples are described by HTTP URIs [<a class="ref" href="#ref-17">17</a>]. The following triple statement gives an example:
 </p>
-<pre>&lt;http://renatostauffer.ch/i#&gt;
-&lt;http://xmlns.com/foaf/0.1/knows&gt; 
-&lt;http://csarven.cs/#i&gt; </pre> 
+<figure id="triple-statement-example" class="listing">
+<pre>
+<code>&lt;http://renatostauffer.ch/i#&gt;</code>
+<code>&lt;http://xmlns.com/foaf/0.1/knows&gt;</code>
+<code>&lt;http://csarven.cs/#i&gt;</code>
+</pre> 
+<figcaption>
+Triple statement example. Source: Author&#8217;s own work
+</figcaption>
+<figure>
 <p>
 The statement from above says that the thing <code>&lt;http://renatostauffer.ch/i#&gt;</code>  knows the thing  <code>&lt;http://csarven.cs/#i&gt;</code> . Those resources (things) can now be further described through RDF vocabularies, which provide semantic information about these resources [<a class="ref" href="#ref-18">18</a>]. As the example from above shows, predicates are vocabulary terms that are used to relate the subject with an object. The predicate itself is an HTTP URI, which has a description for the term in use when dereferenced.
 
@@ -338,8 +365,7 @@ Resource Description Framework in Attributes or simply RDFa is a W3C recommendat
 <h3 about="[this:#sparql]" property="dcterms:title">SPARQL</h3>
 <div about="[this:#sparql]" property="dcterms:description">
 <p>
-<a href="http://www.w3.org/TR/rdf-sparql-query/">SPARQL</a> is a <a href="http://en.wikipedia.org/wiki/Recursive_acronym">recursive acronym</a> and stands for <strong class="red-markup">SPARQL</strong> <strong class="red-markup">P</strong>rotocol <strong class="red-markup">a</strong>nd <strong class="red-markup">R</strong>DF <strong class="red-markup">Q</strong>uery <strong class="red-markup">L</strong>anguage [<a class="ref" href="#ref-25">25</a>].
-It is a query language for RDF data and can be used to query RDF triple statements across different data sources [<a class="ref" href="#ref-26">26</a>].
+<dfn><abbr title="SPARQL Protocol and RDF Query Language">SPARQL</abbr></dfn> (SPARQL Protocol and RDF Query Language) is a query language for RDF data and can be used to query RDF triple statements across different data sources [<a class="ref" href="#ref-26">26</a>].
 </p>
 </div>
 </section>
@@ -352,15 +378,15 @@ It is a query language for RDF data and can be used to query RDF triple statemen
 <h2 about="[this:#realated-work]" property="dcterms:title">Related Work</h2>
 <div about="[this:#related-work]" property="dcterms:description">
 <p>
-The idea of having a publishing tool paired with a triple markup feature is nothing new. Different products, with different focuses have emerged. Three of those products are RDFaCe, Loomp and Wordlift, which will be introduced in the following sections. 
+The idea of having a publishing tool paired with a triple markup feature is nothing new. Different products, with different focuses have emerged. Three of those products are <a href="http://renatostauffer.ch/requirements-and-design-for-a-tool-to-author-triple-statements/#rdface">RDFaCE</a>, <a href="http://renatostauffer.ch/requirements-and-design-for-a-tool-to-author-triple-statements/#loomp">Loomp</a> and <a href="http://renatostauffer.ch/requirements-and-design-for-a-tool-to-author-triple-statements/#wordlift">Wordlift</a>, which will be introduced in the following sections. 
 </p>
 <section id="rdface" about="[this:#related-work]" rel="dcterms:hasPart" resource="[this:#rdface]">
-<h3 about="[this:#rdface]" property="dcterms:title">RDFaCe</h3>
+<h3 about="[this:#rdface]" property="dcterms:title">RDFaCE</h3>
 <div about="[this:#rdface]" property="dcterms:description">
 <p>
-RDFaCe is a semantic content authoring (SCA) tool which integrates four different views on the semantically annotated content. Those views are synchronized, which means that when a change in a view happens, the other views apply the change. The focus of RDFaCe lies on usability by implementing the four views for different personas involved in the content creation life-cycle.
+RDFaCE is a semantic content authoring (SCA) tool which integrates four different views on the semantically annotated content. Those views are synchronized, which means that when a change in a view happens, the other views apply the change. The focus of RDFaCE lies on usability by implementing the four views for different personas involved in the content creation life-cycle.
 </p>
-<p>The four views RDFaCe implements are [<a class="ref" href="#ref-27">27</a>]:</p>
+<p>The four views RDFaCE implements are [<a class="ref" href="#ref-27">27</a>]:</p>
 <dl>
 <dt>WYSIWYG View</dt>
 <dd>Used to create text by authors, journalists etc.</dd
@@ -478,7 +504,10 @@ The package-plan and time-plan for this thesis are available under the following
 <h2 about="[this:#requirement-engineering]" property="dcterms:title">Requirement Engineering</h2>
 <div about="[this:#requirement-engineering]" property="dcterms:description">
 <p>
-In this section, we will derive functional and non-functional requirements for a Web based authoring tool intended to help researchers to create and consumers to read publications in a user friendly environment. For this propose parts of the requirements engineering framework according to Pohl et al. [<a class="ref" href="#ref-31">31</a>] is used as a reference. The used framework is structured as shown in figure 1 (Fig. 1).
+In this section, we will derive functional and non-functional requirements for a Web based authoring tool intended to help researchers to create and consumers to read publications in a user friendly environment. According to Sommerville, functional requirements are services the system should provide. They determine how the system should react to inputs and how it should behave in certain situations [<a class="ref" href="#ref-33">33</a>, p. 119]. On the other hand, non-functional requirements define constraints on the functionality offered by the system. They often apply to the whole system and relate to system properties such as usability, reliability or portability [<a class="ref" href="#ref-33">33</a>, p. 119 -122].
+</p>
+<p>
+In this thesis the requirements engineering framework according to Pohl et al. [<a class="ref" href="#ref-31">31</a>] is used as a reference to establish the requirements. The used framework is structured as shown in figure 1 (Fig. 1).
 </p>
 <figure class="figure">
 <a href="http://renatostauffer.ch/wp-content/uploads/2015/02/framework-pohl.png"><img src="http://renatostauffer.ch/wp-content/uploads/2015/02/framework-pohl.png" alt="framework-pohl" width="424" height="419" class="alignnone size-full wp-image-621" /></a>
@@ -487,10 +516,10 @@ Requirements Framework by Pohl. Source: [<a class="ref" href="#ref-32">32</a>]
 </figcaption>
 </figure>
 <p>
-The framework is composed of three parts: The System Context, Core Activities and Requirements Artifact.
+The framework is composed of three parts: The System context, Core activities and Requirements artifact.
 </p>
 <p>
-Firstly the System Context will be described to identify important characteristics of the system and give the reader of this thesis an overview of the system’s context.
+Firstly the System Context with its four facets (subject, usage, IT system and development facet) will be described to identify important characteristics of the system and give the reader of this thesis an overview of the system’s context.
 Depending on the established context, goals were determined and scenarios to be implemented are worked out. Those requirement artifacts are documented in the Chapters <a href="http://renatostauffer.ch/requirements-and-design-for-a-tool-to-author-triple-statements/#requirements-goals">5.3 Goals</a> as functional and non-functional requirements and <a href="http://renatostauffer.ch/requirements-and-design-for-a-tool-to-author-triple-statements/#requirements-scenarios">5.4 Scenarios</a>.
 </p>
 
@@ -521,7 +550,7 @@ UML Use Case Diagram for Linked Research. Source: Author&#8217;s own work
 </figcaption>
 </figure>
 <p>
-Figure 2 (Fig. 2) describes the two stakeholders (author and consumer) and how they interact with Linked Research. From an authors perspective the following use cases arise:
+Figure 2 (Fig. 2) describes the two stakeholders (author and consumer) and how they interact with Linked Research. If the term <samp>user</samp> or <samp>users</samp> is used in this thesis, both stakeholders (author and user) are addressed. From a user&#8217;s perspective the following use cases arise:
 </p>
 <dl>
 <dt>Edit Text</dt>
@@ -531,17 +560,19 @@ Figure 2 (Fig. 2) describes the two stakeholders (author and consumer) and how t
 <dt>Add Triple Statement</dt>
 <dd>The author can enrich the written text with RDF triples via a triple authoring tool. For this to be working, the user must be able to define a subject, predicate and object of a triple.</dd>
 <dt>Triple Creation Support</dt>
-<dd>Linked Research supports authors to add triple statements by providing suggestions for predicates or objects in the triple creation process. This is useful for non-domain experts.</dd>
+<dd>Linked Research may support authors to add triple statements by providing suggestions for predicates or objects in the triple creation process. This is useful for non-domain experts and used by other SCA tools like RDFaCE.</dd>
 <dt>Remove Triple Statement</dt>
 <dd>The author can remove added triple statements from the document.</dd>
 <dt>View Document Graph</dt>
-<dd>An author or consumer can view the document and its triple statements as a graph. This enables the author to quickly review triple statements and their relation. Consumers obtain the possibility to explore the document in a visual way and figure out how sections of the document are related to each other or external resources</dd>
+<dd>A user can view the document and its triple statements as a graph. This enables the author to quickly review triple statements and their relation. Consumers obtain the possibility to explore the document in a visual way and figure out how sections of the document are related to each other or external resources.</dd>
+<dt>Rearrange Table of Content</dt>
+<dd>A user can rearrange the table of content. This will automatically update the sections of the document.</dd>
 <dt>Local Storage</dt>
 <dd>The text the author is editing gets stored locally. This way, off-line editing is possible.</dd>
 <dt>Export Document</dt>
-<dd>The author or consumer is able to export the document in HTML format or print the document (PDF format).</dd>
+<dd>The user is able to export the document in HTML format or print the document (PDF format).</dd>
 <dt>Change View</dt>
-<dd>The author or consumer can apply different views for the document (LNCS ACM W3C-REC Native) <i>Create an Abbreviation index at the und!</i></dd>
+<dd>The user can apply different views for the document (LNCS ACM W3C-REC Native) <i>Create an Abbreviation index at the und!</i></dd>
 </dl>
 <p>
 The use cases <samp>Change View</samp>, <samp>Local Storage</samp>, <samp>Export Document</samp>, <samp>Rearrange Table of Content</samp> and <samp>Section Identification</samp> were already implemented into Linked Research by Sarven Carpadisli. The other use cases are open to be implemented. The focus of the following chapters lies on the not yet implemented use cases
@@ -556,21 +587,39 @@ The use cases <samp>Change View</samp>, <samp>Local Storage</samp>, <samp>Export
 <li>and <samp>Edit Text</samp>.</li>
 </ul>
 <p>
-Based on the established Usage Facet a first sketch of Linked Research was drawn:
+Based on the already existing user interface and the not yet implemented use cases of Linked Research, the mockups in figure XXX and XXX were drawn. Figure XXX shows Linked Research&#8217;s user interface after clicking on the menu button (see figure XXX, 1). 
 </p>
-<figure class="figure">
-<a href="http://renatostauffer.ch/wp-content/uploads/2015/02/scatch1.png"><img src="http://renatostauffer.ch/wp-content/uploads/2015/02/scatch1.png" alt="scatch" width="1137" height="474" class="alignnone size-full wp-image-692" /></a>
+<figure id="linked-research-menu" class="figure">
+<a href="http://renatostauffer.ch/wp-content/uploads/2015/02/menu-lr1.png"><img src="http://renatostauffer.ch/wp-content/uploads/2015/02/menu-lr1.png" alt="menu-lr" width="786" height="478" class="alignnone size-full wp-image-1289" /></a>
+<figcaption>
+User interface after clicking on the menu button. Source: Author&#8217;s own work
+</figcaption>
+</figure>
+<p>This user interface is mainly implemented already and offers an author or consumer the following possibilities (the numbers from the list below correspond to the numbers in figure XXX):</p>
+<ol>
+<li>With this button an author or consumer can toggle-in or -out the menu of Linked Research.</li>
+<li>The table of content provides an overview of the document. Authors and consumers can rearrange the sections or click on a section to jump to the corresponding position in the document.</li>
+<li>Users can switch between different views for the document.</li>
+<li>Users can print the current view.</li>
+<li>Turtle or JSON-LD data can be embedded into the document</li>
+<li>Authors are able to enable local storage. This offers the opportunity to edit documents offline.</li>
+<li>The document can be exported to HTML.</li>
+</ol>
+<p></p>
+<figure id="first-sketch" class="figure">
+<a href="http://renatostauffer.ch/wp-content/uploads/2015/02/scatch3.png"><img src="http://renatostauffer.ch/wp-content/uploads/2015/02/scatch3.png" alt="scatch" width="1137" height="474" class="alignnone size-full wp-image-1296" /></a>
 <figcaption>
 First sketch. Source: Author&#8217;s own work
 </figcaption>
 </figure>
 <ol>
-<li>The user edits or creates text with the editor. When the user selects a text passage or word a popup menu shows up. From there the user has the ability to assign styles to the text (bold text, italic, etc.).</li>
+<li>The user edits or creates text with the editor. When the user selects a text passage or word, a popup menu shows up. From there the user has the ability to assign styles to the text (bold text, italic, etc.).</li>
 <li>The user can also toggle in / out the meta editor to create triple statements.</li>
 <li>The triple store is held locally. The user can insert or delete triple statements.</li>
 <li>Triple statements can be fetched to e.g. visualize the current graph.</li>
 <li>The meta editor talks to a external service to retrieve suggestions for possible RDF vocabulary terms when creating a triple statement.</li>
 </ol>
+
 </div>
 </section>
 
@@ -578,7 +627,7 @@ First sketch. Source: Author&#8217;s own work
 <h4 about="[this:#subject-facet]" property="dcterms:title">Subject Facet</h4>
 <div about="[this:#subject-facet]" property="dcterms:description">
 <p>
-This facet describes what kind of objects must be represented by the system [<a class="ref" href="#ref-31">31</a>]. Table 3 describes objects and events within the system context that are important for the system. 
+This facet describes what kind of objects must be represented by the system [<a class="ref" href="#ref-31">31</a>]. Table 3 describes objects and events within the system context that are important for Linked Research. 
 </p>
 <table>
 <caption>
@@ -595,7 +644,7 @@ Important objects and events within Linked Research
 </tr>
 <tr>
 <td>RDF Predicate</td>
-<td>A RDF predicate is the second part of a triple statement and defines the property for the RDF Subject. A predicate must always be a Uniform Resource Identifier.</td>
+<td>An RDF predicate is the second part of a triple statement and defines the property for the RDF Subject. A predicate must always be a Uniform Resource Identifier.</td>
 </tr>
 <tr>
 <td>RDF Object</td>
@@ -603,19 +652,28 @@ Important objects and events within Linked Research
 </tr>
 <tr>
 <td>RDF Triple Statement</td>
-<td>A triple statement is composed of a RDF Subject, RDF Predicate and RDF Object. Triple statements are stored within a RDF triple store (see next row)</td>
+<td>A triple statement is composed of an RDF Subject, RDF Predicate and RDF Object. Triple statements are stored within an RDF triple store (see next row)</td>
 </tr>
 <tr>
 <td>RDF Triple Store</td>
 <td>An RDF triple store, persists RDF statements. The triple store is responsible for querying, inserting or deleting a triple statement.</td>
 </tr>
 <tr>
-<td>MetaEditor object</td>
-<td>An object responsible to create new triple statements has to be provided.</td>
+<td>TripleEditor object</td>
+<td>An object responsible to create or remove triple statements has to be provided.</td>
+</tr>
+<tr>
+<tr>
+<td>DOMManipulator</td>
+<td>If a new triple statement gets created, this change needs to be reflected in the DOM with RDFa. The DOMManipulator is responsible to add or remove RDFa from elements within the DOM</td>
 </tr>
 <tr>
 <td>API Handler</td>
 <td>An object to handle API calls to a service that provides access to different RDF vocabularies must be available. This enables the author to search for existing vocabularies.</td>
+</tr>
+<tr>
+<td>Editor</td>
+<td>An editor object to handle text authoring must be provided. This object may also be responsible to show the UI for the TripleEditor.</td>
 </tr>
 </tbody>
 </table>
@@ -623,13 +681,13 @@ Important objects and events within Linked Research
 This description leads to the following class diagram:
 </p>
 <figure class="figure">
-<a href="http://renatostauffer.ch/wp-content/uploads/2015/02/class-diagram.svg"><img src="http://renatostauffer.ch/wp-content/uploads/2015/02/class-diagram.svg" alt="class-diagram" class="alignnone size-full wp-image-1005" /></a>
+<a href="http://renatostauffer.ch/wp-content/uploads/2015/02/class-diagram3.svg"><img src="http://renatostauffer.ch/wp-content/uploads/2015/02/class-diagram3.svg" alt="class-diagram" class="alignnone size-full wp-image-1280" /></a>
 <figcaption>
-Class diagram Linked Research
+Class diagram Linked Research. Source: Author&#8217;s own work
 </figcaption>
 </figure>
 <p>
-The MetaEditor object uses the triple store to persist triple statements (Triple) and the SearchHandler object to talk to external services. The Editor object uses the MetaEditor when metadata is inserted. The U object composes o&#8230;
+The TripleEditor object uses the triple store to persist triple statements (Triples) and the SearchHandler object to talk to external services. The Editor object uses the TripleEditor when metadata is inserted. The objects LR, U and C are already implemented in Linked Research. The LR object belongs to the core and contains two object itself (U and C). The U object is responsible the display or hide UI related things like the menu or the table of content as shown in figure XXX. C contains helper functionality / attributes.
 </p>
 </div>
 </section>
@@ -800,11 +858,11 @@ This determines wether the requirement is already implemented (Implemented), is 
 </table>
 
 <table id="f-2">
-<caption>Show MetaEditor</caption>
+<caption>Show TripleEditor</caption>
 <tbody>
 <tr>
 <th><strong>Name</strong></th>
-<td>Show MetaEditor</td>
+<td>Show TripleEditor</td>
 </tr>
 <tr>
 <th><strong>ID</strong></th>
@@ -812,19 +870,19 @@ This determines wether the requirement is already implemented (Implemented), is 
 </tr>
 <tr>
 <th><strong>Description</strong></th>
-<td>Linked Research must provide an author the possibility to display the MetaEditor within the document.</td>
+<td>Linked Research must provide an author the possibility to display the TripleEditor within the document.</td>
 </tr>
 <tr>
 <th><strong>Components</strong></th>
-<td>MetaEditor</td>
+<td>TripleEditor</td>
 </tr>
 <tr>
 <th><strong>Input</strong></th>
-<td>Visibility of the MetaEditor instance</td>
+<td>Visibility of the TripleEditor instance</td>
 </tr>
 <tr>
 <th><strong>Output</strong></th>
-<td>Visible the MetaEditor</td>
+<td>Visible the TripleEditor</td>
 </tr>
 <tr>
 <th><strong>Pre-condition</strong></th>
@@ -832,7 +890,7 @@ This determines wether the requirement is already implemented (Implemented), is 
 </tr>
 <tr>
 <th><strong>Post-condition</strong></th>
-<td>Visibility of the MetaEditor == true</td>
+<td>Visibility of the TripleEditor == true</td>
 </tr>
 <tr>
 <th><strong>Source of Requirement</strong></th>
@@ -847,11 +905,11 @@ This determines wether the requirement is already implemented (Implemented), is 
 
 
 <table id="f-3">
-<caption>Hide MetaEditor</caption>
+<caption>Hide TripleEditor</caption>
 <tbody>
 <tr>
 <th><strong>Name</strong></th>
-<td>Hide MetaEditor</td>
+<td>Hide TripleEditor</td>
 </tr>
 <tr>
 <th><strong>ID</strong></th>
@@ -859,19 +917,19 @@ This determines wether the requirement is already implemented (Implemented), is 
 </tr>
 <tr>
 <th><strong>Description</strong></th>
-<td>Linked Research must provide an author the possibility to hide the MetaEditor from the document.</td>
+<td>Linked Research must provide an author the possibility to hide the TripleEditor from the document.</td>
 </tr>
 <tr>
 <th><strong>Components</strong></th>
-<td>MetaEditor</td>
+<td>TripleEditor</td>
 </tr>
 <tr>
 <th><strong>Input</strong></th>
-<td>Visibility of the MetaEditor instance</td>
+<td>Visibility of the TripleEditor instance</td>
 </tr>
 <tr>
 <th><strong>Output</strong></th>
-<td>Hidden MetaEditor</td>
+<td>Hidden TripleEditor</td>
 </tr>
 <tr>
 <th><strong>Pre-condition</strong></th>
@@ -879,7 +937,7 @@ This determines wether the requirement is already implemented (Implemented), is 
 </tr>
 <tr>
 <th><strong>Post-condition</strong></th>
-<td>Visibility of the MetaEditor == false</td>
+<td>Visibility of the TripleEditor == false</td>
 </tr>
 <tr>
 <th><strong>Source of Requirement</strong></th>
@@ -960,11 +1018,11 @@ This determines wether the requirement is already implemented (Implemented), is 
 </tr>
 <tr>
 <th><strong>Components</strong></th>
-<td>MetaEditor, Triple</td>
+<td>TripleEditor, Triple</td>
 </tr>
 <tr>
 <th><strong>Description</strong></th>
-<td>The MetaEditor of Linked Research must provide an author the possibility to set a word, phrase, paragraph or the document itself as the subject of an RDF triple statement.</td>
+<td>The TripleEditor of Linked Research must provide an author the possibility to set a word, phrase, paragraph or the document itself as the subject of an RDF triple statement.</td>
 </tr>
 <tr>
 <th><strong>Input</strong></th>
@@ -1007,11 +1065,11 @@ This determines wether the requirement is already implemented (Implemented), is 
 </tr>
 <tr>
 <th><strong>Components</strong></th>
-<td>MetaEditor, SearchHandler</td>
+<td>TripleEditor, SearchHandler</td>
 </tr>
 <tr>
 <th><strong>Description</strong></th>
-<td>The MetaEditor may provide the author the possibility to search for a predicate via an external service to set the predicate for a RDF triple statement.</td>
+<td>The TripleEditor may provide the author the possibility to search for a predicate via an external service to set the predicate for an RDF triple statement.</td>
 </tr>
 <tr>
 <th><strong>Input</strong></th>
@@ -1055,11 +1113,11 @@ This determines wether the requirement is already implemented (Implemented), is 
 </tr>
 <tr>
 <th><strong>Components</strong></th>
-<td>MetaEditor, Triple</td>
+<td>TripleEditor, Triple</td>
 </tr>
 <tr>
 <th><strong>Description</strong></th>
-<td>The MetaEditor should provide the author the possibility to choose one or more predicates after a search according to requirement <a href="http://renatostauffer.ch/requirements-and-design-for-a-tool-to-author-triple-statements/#f-6">F-6</a> has been made.</td>
+<td>The TripleEditor should provide the author the possibility to choose one or more predicates after a search according to requirement <a href="http://renatostauffer.ch/requirements-and-design-for-a-tool-to-author-triple-statements/#f-6">F-6</a> has been made.</td>
 </tr>
 <tr>
 <th><strong>Input</strong></th>
@@ -1105,11 +1163,11 @@ This determines wether the requirement is already implemented (Implemented), is 
 </tr>
 <tr>
 <th><strong>Components</strong></th>
-<td>MetaEditor, SearchHandler</td>
+<td>TripleEditor, SearchHandler</td>
 </tr>
 <tr>
 <th><strong>Description</strong></th>
-<td>The MetaEditor may provide the author the ability to search for an RDF object via an external service to set the object for an RDF triple statement.</td>
+<td>The TripleEditor may provide the author the ability to search for an RDF object via an external service to set the object for an RDF triple statement.</td>
 </tr>
 <tr>
 <th><strong>Input</strong></th>
@@ -1152,11 +1210,11 @@ This determines wether the requirement is already implemented (Implemented), is 
 </tr>
 <tr>
 <th><strong>Components</strong></th>
-<td>MetaEditor, Triple</td>
+<td>TripleEditor, Triple</td>
 </tr>
 <tr>
 <th><strong>Description</strong></th>
-<td>The MetaEditor should provide the author the possibility to choose one ore more RDF object after a search for RDF objects has been made.</td>
+<td>The TripleEditor should provide the author the possibility to choose one ore more RDF object after a search for RDF objects has been made.</td>
 </tr>
 <tr>
 <th><strong>Input</strong></th>
@@ -1199,11 +1257,11 @@ This determines wether the requirement is already implemented (Implemented), is 
 </tr>
 <tr>
 <th><strong>Components</strong></th>
-<td>MetaEditor, Triple</td>
+<td>TripleEditor, Triple</td>
 </tr>
 <tr>
 <th><strong>Description</strong></th>
-<td>The MetaEditor has to provide the ability to an author to set a word, passage, paragraph as the object literal of an RDF triple statement.</td>
+<td>The TripleEditor has to provide the ability to an author to set a word, passage, paragraph as the object literal of an RDF triple statement.</td>
 </tr>
 <tr>
 <th><strong>Input</strong></th>
@@ -1245,11 +1303,11 @@ This determines wether the requirement is already implemented (Implemented), is 
 </tr>
 <tr>
 <th><strong>Components</strong></th>
-<td>MetaEditor, Triple, TripleStore</td>
+<td>TripleEditor, Triple, TripleStore</td>
 </tr>
 <tr>
 <th><strong>Description</strong></th>
-<td>The MetaEditor of Linked Research could provide authors the functionality to automatically enrich sections with an id-attribute, which is composed of the title of the section and the parent section in case of identical titles.
+<td>The TripleEditor of Linked Research could provide authors the functionality to automatically enrich sections with an id-attribute, which is composed of the title of the section and the parent section in case of identical titles.
 </td>
 </tr>
 <tr>
@@ -1292,12 +1350,12 @@ This determines wether the requirement is already implemented (Implemented), is 
 </tr>
 <tr>
 <th><strong>Components</strong></th>
-<td>MetaEditor, Triple, TripleStore</td>
+<td>TripleEditor, Triple, TripleStore</td>
 </tr>
 <tr>
 <th><strong>Description</strong></th>
 <td>
-The MetaEditor must provide the author the ability to add triple statements to the local triple store.
+The TripleEditor must provide the author the ability to add triple statements to the local triple store.
 </td>
 </tr>
 <tr>
@@ -1310,7 +1368,7 @@ The MetaEditor must provide the author the ability to add triple statements to t
 </tr>
 <tr>
 <th><strong>Pre-condition</strong></th>
-<td>A RDF subject, predicate and object has to be set according to requirement: <a href="http://renatostauffer.ch/requirements-and-design-for-a-tool-to-author-triple-statements/#f-5">subject (F-5)</a>, <a href="http://renatostauffer.ch/requirements-and-design-for-a-tool-to-author-triple-statements/#f-7">predicate (F-7)</a> and object (<a href="http://renatostauffer.ch/requirements-and-design-for-a-tool-to-author-triple-statements/#f-9">F-9</a> or <a href="http://renatostauffer.ch/requirements-and-design-for-a-tool-to-author-triple-statements/#f-10">F-10</a>)</td>
+<td>An RDF subject, predicate and object has to be set according to requirement: <a href="http://renatostauffer.ch/requirements-and-design-for-a-tool-to-author-triple-statements/#f-5">subject (F-5)</a>, <a href="http://renatostauffer.ch/requirements-and-design-for-a-tool-to-author-triple-statements/#f-7">predicate (F-7)</a> and object (<a href="http://renatostauffer.ch/requirements-and-design-for-a-tool-to-author-triple-statements/#f-9">F-9</a> or <a href="http://renatostauffer.ch/requirements-and-design-for-a-tool-to-author-triple-statements/#f-10">F-10</a>)</td>
 </tr>
 <tr>
 <th><strong>Post-condition</strong></th>
@@ -1396,7 +1454,7 @@ After a triple statement has been added to the triple store the corresponding el
 <tr>
 <th><strong>Description</strong></th>
 <td>
-The MetaEditor must provide the author the ability to remove triple statements from the local triple store.
+The TripleEditor must provide the author the ability to remove triple statements from the local triple store.
 </td>
 </tr>
 <tr>
@@ -1440,7 +1498,7 @@ The MetaEditor must provide the author the ability to remove triple statements f
 </tr>
 <tr>
 <th><strong>Components</strong></th>
-<td>TripleStore, Triple, MetaEditor, TextEditor</td>
+<td>TripleStore, Triple, TripleEditor, TextEditor</td>
 </tr>
 <tr>
 <th><strong>Description</strong></th>
@@ -1652,14 +1710,14 @@ The DOM of the document needs to remain in the following shape:
 </tr>
 <tr>
 <th><strong>Components</strong></th>
-<td>MetaEditor, TextEditor, U</td>
+<td>TripleEditor, TextEditor, U</td>
 </tr>
 <tr>
 <th><strong>Description</strong></th>
 <td>
 <q cite="http://www.w3.org/WAI/WCAG20/quickref/Overview.php#keyboard-operation">All functionality of the content is operable through a keyboard interface without requiring specific timings for individual keystrokes, except where the underlying function requires input that depends on the path of the user&#8217;s movement and not just the endpoints</q>. For Linked Research this means that the following operations should be executable through a keyboard:
 <ul>
-<li>Show (<a href="http://renatostauffer.ch/requirements-and-design-for-a-tool-to-author-triple-statements/#f-2">F-2</a>) and hide (<a href="http://renatostauffer.ch/requirements-and-design-for-a-tool-to-author-triple-statements/#f-3">F-3</a>) the MetaEditor</li>
+<li>Show (<a href="http://renatostauffer.ch/requirements-and-design-for-a-tool-to-author-triple-statements/#f-2">F-2</a>) and hide (<a href="http://renatostauffer.ch/requirements-and-design-for-a-tool-to-author-triple-statements/#f-3">F-3</a>) the TripleEditor</li>
 <li>Requirement Set subject (<a href="http://renatostauffer.ch/requirements-and-design-for-a-tool-to-author-triple-statements/#f-5">F-5</a>), Choose predicate (<a href="http://renatostauffer.ch/requirements-and-design-for-a-tool-to-author-triple-statements/#f-7">F-7</a>), Search predicate (<a href="http://renatostauffer.ch/requirements-and-design-for-a-tool-to-author-triple-statements/#f-6">F-6</a>), Choose object (<a href="http://renatostauffer.ch/requirements-and-design-for-a-tool-to-author-triple-statements/#f-9">F-9</a>), Search object (<a href="http://renatostauffer.ch/requirements-and-design-for-a-tool-to-author-triple-statements/#f-8">F-8</a>), Set object as text literal (<a href="http://renatostauffer.ch/requirements-and-design-for-a-tool-to-author-triple-statements/#f-10">F-10</a>)</li>
 <li>Automatic Markup (<a href="http://renatostauffer.ch/requirements-and-design-for-a-tool-to-author-triple-statements/#f-11">F-11</a>)</li>
 <li>Add triple statement (<a href="http://renatostauffer.ch/requirements-and-design-for-a-tool-to-author-triple-statements/#f-12">F-12</a>)</li>
@@ -2118,7 +2176,7 @@ Linked Research must provide authors and consumers functionality to embed Turtle
 </tr>
 <tr>
 <th><strong>Components</strong></th>
-<td>MetaEditor</td>
+<td>TripleEditor</td>
 </tr>
 <tr>
 <th><strong>Description</strong></th>
@@ -2172,12 +2230,12 @@ Linked Research should provide authors instructions for functionality. This incl
 </tr>
 <tr>
 <th><strong>Components</strong></th>
-<td>MetaEditor, SearchHandler</td>
+<td>TripleEditor, SearchHandler</td>
 </tr>
 <tr>
 <th><strong>Description</strong></th>
 <td>
-The MetaEditor may provide suggestions for RDF predicates or RDF objects when the author is searching for them.
+The TripleEditor may provide suggestions for RDF predicates or RDF objects when the author is searching for them.
 </td>
 </tr>
 <tr>
@@ -2221,12 +2279,12 @@ The MetaEditor may provide suggestions for RDF predicates or RDF objects when th
 </tr>
 <tr>
 <th><strong>Components</strong></th>
-<td>SearchHandler, MetaEditor</td>
+<td>SearchHandler, TripleEditor</td>
 </tr>
 <tr>
 <th><strong>Description</strong></th>
 <td>
-The MetaEditor should prevent the author from typing wrong spelled search terms. For example: When the author types in &#8220;persnon&#8221;, the MetaEditor should recognize the typing error and suggest alternatives like &#8220;Person&#8221; in this example.
+The TripleEditor should prevent the author from typing wrong spelled search terms. For example: When the author types in &#8220;persnon&#8221;, the TripleEditor should recognize the typing error and suggest alternatives like &#8220;Person&#8221; in this example.
 </td>
 </tr>
 <tr>
@@ -2481,11 +2539,11 @@ Linked Research should run in Gecko browser engines (Firefox) (LINE based browse
 <section id="ui-proposal" about="[this:#requirement-engineering]" rel="dcterms:hasPart" resource="[this:#ui-proposal]">
 <h3 about="[this:#ui-proposal]" property="dcterms:title">User Interface Proposal</h3>
 <div about="[this:#ui-proposal]" property="dcterms:description">
-<p>Based on the functional and non-functional requirements, we propose a user interface:</p>
+<p>Based on the functional and non-functional requirements, a user interface is proposed:</p>
 <figure class="figure">
 <a href="http://renatostauffer.ch/wp-content/uploads/2015/02/finale-ui2.png"><img src="http://renatostauffer.ch/wp-content/uploads/2015/02/finale-ui2.png" alt="finale-ui" width="1079" height="474" class="alignnone size-full wp-image-862" /></a>
 <figcaption>
-Possible user interface for the MetaEditor
+Possible user interface for the TripleEditor
 </figcaption>
 </figure>
 <p>
@@ -2553,12 +2611,12 @@ Beside selecting words, Alice may also select a phrase or paragraph.
 <td>
 <ul>
 <li>Alice</li>
-<li>MetaEditor</li>
+<li>TripleEditor</li>
 </ul>
 </td>
 <td>
 <ol>
-<li>Alice clicks on the button labeled „MetaEditor“</li>
+<li>Alice clicks on the button labeled „TripleEditor“</li>
 </ol>
 </td>
 <td>-</td>
@@ -2569,12 +2627,12 @@ Beside selecting words, Alice may also select a phrase or paragraph.
 <td>3</td>
 <td>
 <ul>
-<li>MetaEditor</li>
+<li>TripleEditor</li>
 </ul>
 </td>
 <td>
 <ol>
-<li>The MetaEditor toggles in.</li>
+<li>The TripleEditor toggles in.</li>
 <li>The label &#8220;Selected Word&#8221; will show up.</li>
 </ol>
 </td>
@@ -2588,7 +2646,7 @@ Beside selecting words, Alice may also select a phrase or paragraph.
 <td>
 <ul>
 <li>Author</li>
-<li>MetaEditor</li>
+<li>TripleEditor</li>
 <li>SearchHandler</li>
 </ul>
 </td>
@@ -2596,7 +2654,7 @@ Beside selecting words, Alice may also select a phrase or paragraph.
 <ol>
 <li>Alice types in &#8220;typ&#8221; into the textbox labeled &#8220;Predicate&#8221;</li>
 <li>After Alice typed in two or more characters, a search request will get sent with every new key stroke.</li>
-<li>The MetaEditor shows the suggestion &#8220;rdf:type&#8221;</li>
+<li>The TripleEditor shows the suggestion &#8220;rdf:type&#8221;</li>
 <li>Alice selects the suggestion &#8220;rdf:type&#8221;</li>
 </ol>
 </td>
@@ -2609,7 +2667,7 @@ Beside selecting words, Alice may also select a phrase or paragraph.
 <td>
 <ul>
 <li>Author</li>
-<li>MetaEditor</li>
+<li>TripleEditor</li>
 <li>SearchHandler</li>
 </ul>
 </td>
@@ -2617,7 +2675,7 @@ Beside selecting words, Alice may also select a phrase or paragraph.
 <ol>
 <li>Alice types in &#8220;pers&#8221; into the textbox labeled &#8220;Object&#8221;</li>
 <li>After Alice typed in two or more characters, a search request will get sent with every new key stroke.</li>
-<li>The MetaEditor shows the suggestion &#8220;foaf:Person&#8221;</li>
+<li>The TripleEditor shows the suggestion &#8220;foaf:Person&#8221;</li>
 <li>Alice selects the suggestion &#8220;foaf:Person&#8221;</li>
 </ol>
 </td>
@@ -2631,7 +2689,7 @@ Beside selecting words, Alice may also select a phrase or paragraph.
 <td>
 <ul>
 <li>Author</li>
-<li>MetaEditor</li>
+<li>TripleEditor</li>
 <li>Triple</li>
 <li>TripleStore</li>
 </ul>
@@ -2639,7 +2697,7 @@ Beside selecting words, Alice may also select a phrase or paragraph.
 <td>
 <ol>
 <li>Alice clicks on the button &#8220;Save&#8221;</li>
-<li>The MetaEditor creates a Triple and passes it to the TripleStore</li>
+<li>The TripleEditor creates a Triple and passes it to the TripleStore</li>
 <li>The TripleStore persists the Triple statement</li>
 </ol>
 </td>
@@ -2652,12 +2710,12 @@ Beside selecting words, Alice may also select a phrase or paragraph.
 <td>7</td>
 <td>
 <ul>
-<li>MetaEditor</li>
+<li>TripleEditor</li>
 </ul>
 </td>
 <td>
 <ol>
-<li>The MetaEditor creates a new cell and displays it on the right side of the screen.</li>
+<li>The TripleEditor creates a new cell and displays it on the right side of the screen.</li>
 </ol>
 </td>
 <td>-</td>
@@ -2722,11 +2780,18 @@ In the early days of the Web, users were limited to text boxes when it came to o
 
 <dt id="text-editing-contenteditable">contentEditable</dt>
 <dd>
-In contrast to the designMode, the contentEditable attribute makes just some part of the document (like a  <code>div</code>-element) editable [http://www.w3.org/TR/html51/editing.html#contenteditable]. Example XY shows how the attribute can be used:
+In contrast to the designMode, the contentEditable attribute makes just some part of the document (like a  <code>div</code>-element) editable [http://www.w3.org/TR/html51/editing.html#contenteditable]. Listing 3 shows how the attribute can be used:
 </dd>
 </dl>
-<pre>&lt;div contentEditable="true"&gt;
-&lt;/div&gt;</pre>
+<figure id="contentEditable-example" class="listing">
+<pre>
+<code>&lt;div contentEditable="true"&gt;</code>
+<code>&lt;/div&gt;</code>
+</pre>
+<figcaption>
+Example contentEditable. Source: Author&#8217;s own work
+</figcaption>
+</figure>
 <p>
 The <code>&lt;div&gt;</code>-element down below is now editable due to setting the <code>&lt;contentEditable&gt;</code>-element equal to true (pleas visit <a href="http://renatostauffer.ch/requirements-and-design-for-a-tool-to-author-triple-statements/#text-editing">http://renatostauffer.ch/requirements-and-design-for-a-tool-to-author-triple-statements/#text-editing</a> if you read this thesis on paper).
 </p>
@@ -2762,7 +2827,7 @@ After determining the different approaches, the following categories including d
 <dt>Extensibility</dt>
 <dd>To make it possible for Linked Research to work, new functionality has to be added to the editor. This category looks if the editor can easily be extended with custom buttons and events attached to it.</dd>
 <dt>Compatibility</dt>
-<dd>This checks how well an editor handles older browser versions.</dd>
+<dd>This checks how well an editor handles different browser versions.</dd>
 </dl>
 <p>
 Table 45 &#8211; 49 compare all possible editors for Linked Research with its corresponding criteria. Those editors were determined by doing search on <a href="https://www.google.ch/?gws_rd=ssl">Google.com</a> (used search terms: <samp>wysiwyg</samp> <samp>clean html</samp>, <samp>wysiwyg comparison</samp>, <samp>inline HTML editors</samp>, <samp>rich text editors comparison</samp>, <samp>rte comparison</samp>, <samp>medium.com clone</samp>) and <a href="https://github.com/">Github.com</a> (used search terms: <samp>inline browser editor</samp>, <samp>html editor browser</samp>, <samp>inline html editor</samp>, <samp>medium.com clone</samp>, <samp>medium.com</samp>, <samp>wysiwyg</samp>, <samp>wysiwyg inline editor</samp>). 
@@ -3371,10 +3436,17 @@ Table XXX shows how compatible the editors are with the browsers <samp>Internet 
 </section><!--End of #comparison-library-->
 
 
-<section id="conclusions" about="[this:]" rel="dcterms:hasPart" resource="[this:#conclusions]">
-<h2 about="[this:#conclusions]" property="dcterms:title"> Conclusions </h2>
-<div about="[this:#conclusions]" property="dcterms:description">
+<section id="summary-and-outlook" about="[this:]" rel="dcterms:hasPart" resource="[this:#summary-and-outlook]">
+<h2 about="[this:#summary-and-outlook]" property="dcterms:title">Summary and Outlook</h2>
+<div about="[this:#summary-and-outlook]" property="dcterms:description">
 <p>
+Through the study of the existing Linked Research documentation, meetings with Sarven Capadisli and research on requirements for SCA tools, suitable functional and non-functional requirements were established. Important objects for the implementation have been discovered and a possible user interface for Linked Research&#8217;s triple editor has been proposed using mockups. Thus the goals to design the triple editor as well as to record functional and non-functional requirements have been reached.
+</p>
+<p>
+Editors and RDFa parser libraries have been compared. The tables in section XXX show the result and can be used for a later evaluation of these components. The small code examples on github serve as showcases for the different libraries and can be used as a starter point when implementing the components.
+</p>
+<p>
+
 </p>
 </div>
 </section>
@@ -3382,7 +3454,7 @@ Table XXX shows how compatible the editors are with the browsers <samp>Internet 
 <section id="references">
 <h2>References</h2>
 <ol>
-<li id="ref-1">Nelson T., 2000. Xanalogical Structure, Needed Now More than Ever: Parallel Documents, Deep Links to Content, Deep Versioning and Deep Re-Use, Online: <a href="http://xanadu.com.au/ted/XUsurvey/xuDation.html" rel="dcterms:references">http://xanadu.com.au/ted/XUsurvey/xuDation.html</a> (2015-05-12).</li>
+<li id="ref-1">Shotten D., 2009. Semantic publishing: the coming revolution in scientific journal publishing, Online: <a href="http://www.ingentaconnect.com/content/alpsp/lp/2009/00000022/00000002/art00002?token=004710b3383a4b3b25702e7b6d7a6c382d2c7463732a726e2d58464340592f3f3b57dd2" rel="dcterms:references">http://www.ingentaconnect.com/content/alpsp/lp/2009/00000022/00000002/art00002?token=004710b3383a4b3b25702e7b6d7a6c382d2c7463732a726e2d58464340592f3f3b57dd2</a> (2015-05-12).</li>
 
 <li id="ref-2">Shotton D., 2009. Adventures in Semantic Publishing: Exemplar Semantic Enhancements of a Research Article, Online: <a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2663789/" rel="dcterms:references">http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2663789/</a> (2015-05-12)</li>
 
