@@ -2584,7 +2584,6 @@ Depiction of scenario &#8220;Add triple statement&#8221;
 <th>Step</th>
 <th>Involved components / Stakeholder</th>
 <th>Description</th>
-<th>Alternative</th>
 </tr>
 <tr>
 <td>1</td>
@@ -2599,9 +2598,7 @@ Depiction of scenario &#8220;Add triple statement&#8221;
 <li>Alice selects the word &#8220;Bob&#8221; in the document</li>
 <li>The TextEditor toggles in.</li>
 </ol>
-</td>
-<td>
-Beside selecting words, Alice may also select a phrase or paragraph.  
+<strong>Alternative</strong>: Beside selecting words, Alice may also select a phrase or paragraph.  
 </td>
 </tr>
 
@@ -2619,7 +2616,6 @@ Beside selecting words, Alice may also select a phrase or paragraph.
 <li>Alice clicks on the button labeled „TripleEditor“</li>
 </ol>
 </td>
-<td>-</td>
 </tr>
 
 
@@ -2635,8 +2631,8 @@ Beside selecting words, Alice may also select a phrase or paragraph.
 <li>The TripleEditor toggles in.</li>
 <li>The label &#8220;Selected Word&#8221; will show up.</li>
 </ol>
+<strong>Alternative</strong>: If Alice selected a phrase or paragraph instead of a word, the corresponding label would be set as &#8220;Selected phrase&#8221; or &#8220;Selected paragraph&#8221;
 </td>
-<td>If Alice selected a phrase or paragraph instead of a word, the corresponding label would be set as &#8220;Selected phrase&#8221; or &#8220;Selected paragraph&#8221;</td>
 </tr>
 
 
@@ -2678,8 +2674,7 @@ Beside selecting words, Alice may also select a phrase or paragraph.
 <li>The TripleEditor shows the suggestion &#8220;foaf:Person&#8221;</li>
 <li>Alice selects the suggestion &#8220;foaf:Person&#8221;</li>
 </ol>
-</td>
-<td>Alice may also check the checkbox &#8220;Object as literal&#8221;. In this case The SearchHandler does not send any request. Instead the author can type in text into the textinput &#8220;Object&#8221;.</td>
+<strong>Alternative</strong>: Alice may also check the checkbox &#8220;Object as literal&#8221;. In this case The SearchHandler does not send any request. Instead the author can type in text into the textinput &#8220;Object&#8221;.
 </tr>
 
 
@@ -2692,6 +2687,7 @@ Beside selecting words, Alice may also select a phrase or paragraph.
 <li>TripleEditor</li>
 <li>Triple</li>
 <li>TripleStore</li>
+<li>DOMManipulator</li>
 </ul>
 </td>
 <td>
@@ -2699,9 +2695,9 @@ Beside selecting words, Alice may also select a phrase or paragraph.
 <li>Alice clicks on the button &#8220;Save&#8221;</li>
 <li>The TripleEditor creates a Triple and passes it to the TripleStore</li>
 <li>The TripleStore persists the Triple statement</li>
+<li>The DOMManipulator applies the changes to the DOM</li>
 </ol>
 </td>
-<td>-</td>
 </tr>
 
 
@@ -2718,7 +2714,6 @@ Beside selecting words, Alice may also select a phrase or paragraph.
 <li>The TripleEditor creates a new cell and displays it on the right side of the screen.</li>
 </ol>
 </td>
-<td>-</td>
 </tr>
 </tbody>
 </table>
