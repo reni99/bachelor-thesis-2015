@@ -124,14 +124,122 @@ Looking forward, this thesis offers the project leader of Linked Research a basi
 </dd>
 </dl>
 
+<dl id="table-of-abbreviations">
+<dt>Table of Abbreviations</dt>
+<dd>
+<table>
+<caption>Table of Abbreviations</caption>
+<thead>
+<tr>
+<th>Abbreviation</th>
+<th>Full name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>ACM</th>
+<td>Association for Computing Machinery</td>
+</tr>
+<tr>
+<th>CERN</th>
+<td>European Organization for Nuclear Research</td>
+</tr>
+<tr>
+<th>CMS</th>
+<td>Content Management System</td>
+</tr>
+<tr>
+<th>DOM</th>
+<td>Document Oject Model</td>
+</tr>
+<tr>
+<th>HTML</th>
+<td>Hypertext Markup Language</td>
+</tr>
+<tr>
+<th>HTTP</th>
+<td>Hypertext Transfer Protocol</td>
+</tr>
+<tr>
+<th>JSON-LD</th>
+<td>JavaScript Object Notation for Linked Data</td>
+</tr>
+<tr>
+<th>LNCS</th>
+<td>Lecture Notes in Computer Science</td>
+</tr>
+<tr>
+<th>OCA</th>
+<td>One Click Annotation</td>
+</tr>
+<tr>
+<th>PDF</th>
+<td>Portable Document Format</td>
+</tr>
+<tr>
+<th>RDF</th>
+<td>Resource Description Framework</td>
+</tr>
+<tr>
+<th>RDFa</th>
+<td>Resource Description Framework in Attributes</td>
+</tr>
+<tr>
+<th>RFC</th>
+<td>Request for Comments</td>
+</tr>
+<tr>
+<th>SCA</th>
+<td>Semantic Content Authoring</td>
+</tr>
+<tr>
+<th>SPARQL</th>
+<td>SPARQL Protocol and RDF Query Language</td>
+</tr>
+<tr>
+<th>URI</th>
+<td>Uniform Resource Identifiers</td>
+</tr>
+<tr>
+<th>W3C</th>
+<td>World Wide Web Consortium</td>
+</tr>
+<tr>
+<th>W3C-REC</th>
+<td>World Wide Web Consortium Recommendation</td>
+</tr>
+<tr>
+<th>WCAG 2.0</th>
+<td>Web Content Accessibility Guidelines 2.0</td>
+</tr>
+<tr>
+<th>WYSIWYG</th>
+<td>What you see is what you get</td>
+</tr>
+<tr>
+<th>WYSIWYM</th>
+<td>What you see is what you mean</td>
+</tr>
+<tr>
+<th>XHTML</th>
+<td>Extensible Hypertext Markup Language</td>
+</tr>
+<tr>
+<th>XML</th>
+<td>Extensible Markup Language</td>
+</tr>
+</tbody>
+</table>
+</dd>
+</dl>
 <section id="introduction" about="[this:]" rel="dcterms:hasPart" resource="[this:#introduction]">
 <h2 about="[this:#introduction]" property="dcterms:title">Introduction</h2>
 <div about="[this:#introduction]" property="dcterms:description" typeof="deo:Introduction">
 <p id="prologue">
-PDF documents are familiar and easy to read for humans. But they are also <q cite="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2663789/">antithetical to the spirit of the Web, lacking user interactivity and being difficult for machines to read</q> [<a class="ref" href="#ref-2">2</a>] according to &#8220;Adventures in Semantic Publishing: Exemplar Semantic Enhancements of a Research Article&#8221; by David Shotton et al.
+PDF documents are familiar and easy to read for humans. But they are also <q cite="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2663789/">antithetical to the spirit of the Web, lacking user interactivity and being difficult for machines to read</q> [<a class="ref" href="#ref-1">1</a>] according to &#8220;Adventures in Semantic Publishing: Exemplar Semantic Enhancements of a Research Article&#8221; by David Shotton et al.
 </p>
 <p>
-While there have been many efforts in making research publications more accessible and machine friendly through semantic publishing, scholarly communication is predominantly held in data silos like PDF documents or in conventional HTML Web pages with little semantical markup [<a class="ref" href="#ref-1">1</a>]. Here is a brief look at some points in history.</p>
+While there have been many efforts in making research publications more accessible and machine friendly through semantic publishing, scholarly communication is predominantly held in data silos like PDF documents or in conventional HTML Web pages with little semantical markup [<a class="ref" href="#ref-2">2</a>]. Here is a brief look at some points in history.</p>
 <p>
 <p>
 Tim Berners-Lee, working at CERN in 1989, needed an information system that would help scientists to create and discover each other&#8217;s documents across systems. In the same year he made a proposal for an information management system; todays World Wide Web [<a class="ref" href="#ref-3">3</a>].
@@ -140,7 +248,7 @@ Tim Berners-Lee, working at CERN in 1989, needed an information system that woul
 The Web today contains interlinked hypertext documents as proposed in 1990 by him and Robert Cailliau. Their idea of having one-directional hyperlinks between documents and accessing information as a web of nodes [<a class="ref" href="#ref-4">4</a>] has emerged as a large universe of documents, where ideas can be exchanged and knowledge shared between people or institutions.
 </p>
 <p>
-In 1991 the Camelot Project was launched with the vision to <q cite="https://acrobat.adobe.com/us/en/products/about-adobe-pdf.html">capture documents from any application, send electronic versions of these documents anywhere, and view and print these documents on any machines</q>[https://acrobat.adobe.com/us/en/products/about-adobe-pdf.html]. By 1992 The Camelot Project eventually developed into PDF, today&#8217;s de facto standard when it comes to document formats [http://duff-johnson.com/2014/02/17/the-8-most-popular-document-formats-on-the-web/].
+In 1991 the Camelot Project was launched with the vision to <q cite="https://acrobat.adobe.com/us/en/products/about-adobe-pdf.html">capture documents from any application, send electronic versions of these documents anywhere, and view and print these documents on any machines</q> [<a class="ref" href="#ref-35">35</a>]. By 1992 The Camelot Project eventually developed into PDF, today&#8217;s de facto standard when it comes to document formats [<a class="ref" href="#ref-36">36</a>].
 </p>
 <p>
 PDF and other machine unfriendly formats even dominate in the Web Science community as the community <q cite="http://csarven.ca/enabling-accessible-knowledge#web-science-community">continues to conduct research tracks, workshops, and challenges, in a manner that even the call for papers of top-level Web conferences request research documents that are neither machine nor Web-friendly</q> [<a class="ref" href="#ref-5">5</a>]. Submissions are often solely demanded in Word or PDF formats, where it is challenging to extract information from within [<a class="ref" href="#ref-5">5</a>].
@@ -2393,7 +2501,7 @@ Depiction of scenario &#8220;Add triple statement&#8221;. Source: Author&#8217;s
 </td>
 <td>
 <ol>
-<li>Alice selects the word &#8220;Bob&#8221; in the document</li>
+<li>Alice selects the word &#8220;Bob&#8221; in the document.</li>
 <li>The TextEditor toggles in.</li>
 </ol>
 <strong>Alternative</strong>: Beside selecting words, Alice may also select a phrase or paragraph.  
@@ -2411,7 +2519,7 @@ Depiction of scenario &#8220;Add triple statement&#8221;. Source: Author&#8217;s
 </td>
 <td>
 <ol>
-<li>Alice clicks on the button labeled „TripleEditor“</li>
+<li>Alice clicks on the button labeled „TripleEditor“.</li>
 </ol>
 </td>
 </tr>
@@ -2422,15 +2530,19 @@ Depiction of scenario &#8220;Add triple statement&#8221;. Source: Author&#8217;s
 <td>
 <ul>
 <li>TripleEditor</li>
+<li>DOMManipulator</li>
 </ul>
 </td>
 <td>
 <ol>
 <li>The TripleEditor toggles in.</li>
 <li>The label &#8220;Selected Word: Bob&#8221; will show up.</li>
-<li>Alice enters the URL, that describes the &#8220;thing&#8221; Bob: http://bob.com#i</li>
+<li>Alice enters the URL, that describes the &#8220;thing&#8221; Bob: http://bob.com#i.</li>
 </ol>
+<p>
 <strong>Alternative</strong>: If Alice selected a phrase or paragraph instead of a word, the corresponding label of step 2 would be set as &#8220;Selected phrase&#8221; or &#8220;Selected paragraph&#8221;
+</p>
+<strong>Alternative</strong>: Instead of typing a URL, Alice may enter a casual text string. I this case, a URL gets created in the form of: http://foo-document#casual-string. After creating the string, the DOMManipulator would insert a corresponding <samp>id</samp>-attribute into the DOM.
 </td>
 </tr>
 
@@ -2658,14 +2770,14 @@ Depiction of scenario &#8220;Remove triple statement&#8221;. Source: Author&#821
 <h2 about="[this:#comparison-editor]" property="dcterms:title">Comparison Editor</h2>
 <div about="[this:#comparison-editor]" property="dcterms:description">
 <p>
-This section describes, how different WYSIWYG editors got compared to build a basis for a later evaluation.</p>
+This section describes, how different WYSIWYG editors got compared to build a basis for a later evaluation for the editor component.</p>
 <section id="text-editing" about="[this:#comparison-editor]" rel="dcterms:hasPart" resource="[this:#text-editing]">
 <h3 about="[this:#text-editing]" property="dcterms:title">Text Editing on the Web</h3>
 <div about="[this:#text-editing]" property="dcterms:description">
 <p>
 Before considering a particular editor, known approaches to edit text within the browser need to be determined.
 </p>
-<p>A search for the terms <samp>approaches wysiwyg editors</samp> and <samp>text editing approaches on web</samp>, led to the following Wikipedia page: <a href="http://en.wikipedia.org/wiki/Online_rich-text_editor">http://en.wikipedia.org/wiki/Online_rich-text_editor</a>. This source is not scientific enough for the thesis, but offers new insights on what kind of search terms could be used to get more relevant material. The consultation of the page led to the following new search terms: <samp>contentEditable</samp>, <samp>alternatives for contentEditable</samp>, <samp>designMode</samp>, <samp>textarea</samp>, <samp>inline editing wysiwyg</samp>.  
+<p>A search for the terms <samp>approaches wysiwyg editors</samp> and <samp>text editing approaches on web</samp>, led to the following Wikipedia page: <a href="http://en.wikipedia.org/wiki/Online_rich-text_editor">http://en.wikipedia.org/wiki/Online_rich-text_editor</a>. This source is not scientific enough for the thesis, but offers new insights on what kind of search terms could be used to get more relevant material. The consultation of the page led to the following new search terms: <samp>contentEditable</samp>, <samp>alternatives for contentEditable</samp>, <samp>designMode</samp>, <samp>textarea</samp>, <samp>inline editing wysiwyg</samp>, <samp>iframe wysiwyg editor</samp>.  
 Searches on <a href="https://www.google.ch/?gws_rd=ssl">Google.com</a> for these terms resulted in the following approaches to edit text on the Web:
 </>
 <dl>
@@ -2736,7 +2848,7 @@ Other services like <a href="http://medium.com">Medium.com</a> claim to be the b
 <p>
 For Linked Research, the inline editing approach is a suitable option too, as its formatting is also very focused (see requirement XXX). This enables the author to concentrate on the actual content of his / her publication.
 <p>
-The challenge is to find an inline WYSIWYG editor that matches the established requirements from <a href="http://renatostauffer.ch/requirements-and-design-for-a-tool-to-author-triple-statements/#requirements-goals">section 5.3</a>. Especially the requirements Edit text (F-1), Text formatting (F-4), Enrich DOM (F-13), Add new Paragraph (F-16), Add new Section (F-17) and The DOM needs to keep it&#8217;s semantical representation (F-18) and need to be considerer when evaluating a possible editor.
+The challenge is to find an inline WYSIWYG editor that matches the established requirements from <a href="http://renatostauffer.ch/requirements-and-design-for-a-tool-to-author-triple-statements/#requirements-goals">section 5.3</a>. Especially the requirements Edit text (F-1), Text formatting (F-4), Enrich DOM (F-13), Add new Paragraph (F-16), Add new Section (F-17) and The DOM needs to keep it&#8217;s semantical representation (F-18) need to be considered when evaluating a possible editor.
 </p>
 The following categories including different criteria for the comparison were established:
 <dl>
@@ -3418,9 +3530,11 @@ Renato Stauffer
 <section id="references">
 <h2>References</h2>
 <ol>
-<li id="ref-1">Shotten D., 2009. Semantic publishing: the coming revolution in scientific journal publishing, Online: <a href="http://www.ingentaconnect.com/content/alpsp/lp/2009/00000022/00000002/art00002?token=004710b3383a4b3b25702e7b6d7a6c382d2c7463732a726e2d58464340592f3f3b57dd2" rel="dcterms:references">http://www.ingentaconnect.com/content/alpsp/lp/2009/00000022/00000002/art00002?token=004710b3383a4b3b25702e7b6d7a6c382d2c7463732a726e2d58464340592f3f3b57dd2</a> (2015-05-12).</li>
 
-<li id="ref-2">Shotton D., 2009. Adventures in Semantic Publishing: Exemplar Semantic Enhancements of a Research Article, Online: <a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2663789/" rel="dcterms:references">http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2663789/</a> (2015-05-12)</li>
+<li id="ref-1">Shotton D., 2009. Adventures in Semantic Publishing: Exemplar Semantic Enhancements of a Research Article, Online: <a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2663789/" rel="dcterms:references">http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2663789/</a> (2015-05-12)</li>
+
+
+<li id="ref-2">Shotton D., 2009. Semantic publishing: the coming revolution in scientific journal publishing, Online: <a href="http://www.ingentaconnect.com/content/alpsp/lp/2009/00000022/00000002/art00002?token=004710b3383a4b3b25702e7b6d7a6c382d2c7463732a726e2d58464340592f3f3b57dd2" rel="dcterms:references">http://www.ingentaconnect.com/content/alpsp/lp/2009/00000022/00000002/art00002?token=004710b3383a4b3b25702e7b6d7a6c382d2c7463732a726e2d58464340592f3f3b57dd2</a> (2015-05-12).</li>
 
 <li id="ref-3">Berners-Lee T., 1989. Information Management: A Proposal, Online: <a href="http://www.w3.org/History/1989/proposal.html" rel="dcterms:references">http://www.w3.org/History/1989/proposal.html</a> (2015-05-12)</li>
 
@@ -3478,8 +3592,6 @@ Renato Stauffer
 <li id="ref-23">Adida B. et al., 2015. RDFa Core 1.1 &#8211; Third Edition, Online: <a href="http://www.w3.org/TR/rdfa-core/#A-href" rel="dcterms:references">http://www.w3.org/TR/rdfa-core/#A-href</a> (2015-05-12)</li>
 
 <li id="ref-24">Adida B. et al., 2015. RDFa Core 1.1 &#8211; Third Edition, Online: <a href="http://www.w3.org/TR/rdfa-core/#A-src" rel="dcterms:references">http://www.w3.org/TR/rdfa-core/#A-src</a> (2015-05-12)</li>
-
-<li id="ref-25">Wikipedia, 2015. SPARQL, Online: <a href="http://en.wikipedia.org/wiki/Recursive_acronym" rel="dcterms:references">http://en.wikipedia.org/wiki/Recursive_acronym</a> (2015-05-12)</li>
 
 <li id="ref-26">Prud&#8217;hommeaux E., Seaborne A., 2008. SPARQL Query Language for RDF, Online: <a href="http://www.w3.org/TR/rdf-sparql-query/" rel="dcterms:references">http://www.w3.org/TR/rdf-sparql-query/</a> (2015-05-12)</li>
 
