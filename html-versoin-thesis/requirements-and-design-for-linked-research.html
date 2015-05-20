@@ -21,7 +21,7 @@
 <script type='text/javascript' src='http://linked-research.270a.info/scripts/lr.js?ver=4.0'></script>
 <script type='text/javascript' src='http://linked-research.270a.info/scripts/html.sortable.min.js?ver=4.0'></script>
 <script type='text/javascript' src='http://renatostauffer.ch/wp-content/themes/newTheme/js/create-table-of-stuff.js?ver=4.0'></script>
-<link rel='canonical' href='http://renatostauffer.ch/requirements-and-design-for-a-tool-to-author-triple-statements/' />
+<link rel='canonical' href='http://renatostauffer.ch/requirements-engineering-for-linked-research/' />
 <link rel='shortlink' href='http://renatostauffer.ch/?p=131' />
 <style type="text/css" media="print">#wpadminbar { display:none; }</style>
 <style type="text/css" media="screen">
@@ -34,10 +34,10 @@
 </style>
 </head>
 
-<body about="[this:]" typeof="foaf:Document sioc:Post biblio:Paper prov:Entity" class="hfeed" prefix="rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns# rdfs: http://www.w3.org/2000/01/rdf-schema# owl: http://www.w3.org/2002/07/owl# xsd: http://www.w3.org/2001/XMLSchema# dcterms: http://purl.org/dc/terms/ foaf: http://xmlns.com/foaf/0.1/ v: http://www.w3.org/2006/vcard/ns# pimspace: http://www.w3.org/ns/pim/space# cc: http://creativecommons.org/ns# skos: http://www.w3.org/2004/02/skos/core# prov: http://www.w3.org/ns/prov# schema: http://schema.org/ rsa: http://www.w3.org/ns/auth/rsa# cert: http://www.w3.org/ns/auth/cert# cal: http://www.w3.org/2002/12/cal/ical# wgs: http://www.w3.org/2003/01/geo/wgs84_pos# org: http://www.w3.org/ns/org# biblio: http://purl.org/net/biblio# bibo: http://purl.org/ontology/bibo/ book: http://purl.org/NET/book/vocab# ov: http://open.vocab.org/terms/ doap: http://usefulinc.com/ns/doap# dbr: http://dbpedia.org/resource/ dbp: http://dbpedia.org/property/ sio: http://semanticscience.org/resource/ opmw: http://www.opmw.org/ontology/ deo: http://purl.org/spar/deo/ doco: http://purl.org/spar/doco/ cito: http://purl.org/spar/cito/ sro: http://salt.semanticauthoring.org/ontologies/sro# this: http://renatostauffer.ch/requirements-and-design-for-a-tool-to-author-triple-statements/">
+<body about="[this:]" typeof="foaf:Document sioc:Post biblio:Paper prov:Entity" class="hfeed" prefix="rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns# rdfs: http://www.w3.org/2000/01/rdf-schema# owl: http://www.w3.org/2002/07/owl# xsd: http://www.w3.org/2001/XMLSchema# dcterms: http://purl.org/dc/terms/ foaf: http://xmlns.com/foaf/0.1/ v: http://www.w3.org/2006/vcard/ns# pimspace: http://www.w3.org/ns/pim/space# cc: http://creativecommons.org/ns# skos: http://www.w3.org/2004/02/skos/core# prov: http://www.w3.org/ns/prov# schema: http://schema.org/ rsa: http://www.w3.org/ns/auth/rsa# cert: http://www.w3.org/ns/auth/cert# cal: http://www.w3.org/2002/12/cal/ical# wgs: http://www.w3.org/2003/01/geo/wgs84_pos# org: http://www.w3.org/ns/org# biblio: http://purl.org/net/biblio# bibo: http://purl.org/ontology/bibo/ book: http://purl.org/NET/book/vocab# ov: http://open.vocab.org/terms/ doap: http://usefulinc.com/ns/doap# dbr: http://dbpedia.org/resource/ dbp: http://dbpedia.org/property/ sio: http://semanticscience.org/resource/ opmw: http://www.opmw.org/ontology/ deo: http://purl.org/spar/deo/ doco: http://purl.org/spar/doco/ cito: http://purl.org/spar/cito/ sro: http://salt.semanticauthoring.org/ontologies/sro# this: http://renatostauffer.ch/requirements-engineering-for-linked-research/">
 <article class="hentry editable">
 <div>
-<h1 class="entry-title">Requirements and Design for a Tool to Author Triple Statements</h1>
+<h1 class="entry-title">Requirements Engineering for Linked Research</h1>
 <div id="authors"><dl id="author-name"><dt>Authors</dt><dd id="author-1"><a href="http://renatostauffer.ch/#i" rel="foaf:homepage">Renato Stauffer</a><sup><a href="#author-org-1">1</a></sup><sup><a href="#author-email-1"></a></sup></dd></dl>
 <ul id="author-org">
   <li id="author-org-1"><sup>1</sup><a href="http://bfh.ch/" rel="foaf:homepage">Bern University of Applied Sciences</a>, Bern, Switzerland</li>
@@ -46,7 +46,7 @@
   <li id="author-email-1"><sup></sup><a href="mailto:renato.stauffer@students.bfh.ch" rel="foaf:mbox">renato.stauffer@students.bfh.ch</a></li>
 </ul>
 </div>
-<dl id="document-identifier"><dt>Document ID</dt><dd> <a href="http://renatostauffer.ch/requirements-and-design-for-a-tool-to-author-triple-statements/">http://renatostauffer.ch/requirements-and-design-for-a-tool-to-author-triple-statements/</a></dd>
+<dl id="document-identifier"><dt>Document ID</dt><dd> <a href="http://renatostauffer.ch/requirements-engineering-for-linked-research/">http://renatostauffer.ch/requirements-engineering-for-linked-research</a></dd>
 </dl>
 
 
@@ -72,26 +72,24 @@
 <h2>Keywords</h2>
 <ul>
   <li><a href="http://en.wikipedia.org/wiki/Requirements_engineering">Requirements Engineering</a></li>
+  <li><a href="https://github.com/csarven/linked-research">Linked Research</a></li>
   <li><a href="http://en.wikipedia.org/wiki/Linked_Data">Linked Data</a></li>
+        <li><a href="http://en.wikipedia.org/wiki/Semantic_publishing">Semantic Publishing</a></li>
         <li><a href="http://en.wikipedia.org/wiki/Software_engineering">Software Engineering</a></li>
-  <li><a href="http://en.wikipedia.org/wiki/Thesis">Bachelor Thesis</a></li>
 </ul>
 </section>
 
-<dl>
+<dl id="acknowledgements" style="page-break-after: always;">
 <dt>Acknowledgements</dt>
 <dd>
-To those who supported me.
-</dd>
-</dl>
 <p>
 I would like to thank <a href="http://csarven.ca/#i">http://csarven.ca/#i</a> for his unlimited support. Thank you for enriching my knowledge on understanding what the Web truly is about and enlarging my horizon in so many different ways. Working with you has always been a pleasure and I am thankful for your aspiring guidance. Your enthusiasm for technology is inspiring and I hope you continue to take students under your wings.
 </p>
 <p>
-In Addition I would like to express my gratitude towards my supervisors, Prof. Dr. Eduard Klein and Prof. Dr. Jud for taking their time to support and examine my thesis, despite their full schedules.
+In Addition I would like to express my gratitude towards my supervisors, Prof. Dr. Eduard Klein and Prof. Reto Jud for taking their time to support and examine my thesis, despite their full schedules.
 </p>
 <p>
-Thank you Prof. Dr. Eduard Klein for sitting down with me when advice was needed, whether in person at the BFH or from abroad via Skype.
+Thank you Prof. Dr. Eduard Klein for sitting down with me when advice was needed, whether in person at Bern University of Applied Sciences or from abroad via Skype.
 </p>
 <p>
 I would also like to thank Beatrice Stauffer, who has always supported me in everything I did and encouraged me with her best wishes.
@@ -99,27 +97,44 @@ I would also like to thank Beatrice Stauffer, who has always supported me in eve
 <p>
 Last but not the least, I thank my dear teammates from the TC Münsingen, who bent my thoughts on other things than my bachelor thesis.
 </p>
-
-<dl>
-<dt>Management Summary</dt>
-<dd>
 </dd>
 </dl>
+
+<dl id="abstract" style="page-break-after: always;">
+<dt>Management Summary</dt>
+<dd>
 <p>
-It goes here&#8230;
+Research documents on the Web are not as human and machine friendly as they could be. They lack of semantic markup and do not use today&#8217;s capabilities offered by the World Wide Web, to make them more enjoyable and interesting for consumers. Linked Research is an open source project for a semantic content authoring tool, which addresses this problem.
 </p>
+<p>
+The goal of this thesis is to establish requirements for Linked Research, propose a user interface for the semantic authoring and compare WYSIWYG editors as well as RDFa parsing libraries to evaluate them respectively.
+</p>
+<p>
+The lack of semantic markup is a major barrier to develop more intelligent document processing on the web. Semantically enriched documents enable more sophisticated ways to flexibly visualize information and create more efficient and effective search interfaces. The question this thesis tries to answer is, what kind of user interface is most suitable for Linked Research&#8217;s triple authoring feature regarding, the established requirements? Additionally the thesis tries to answer the following question: What kind of WYSIWYG editors as well as RDFa parsing libraries are available on the market to implement Linked Research&#8217;s triple authoring feature?
+</p>
+<p>
+The functional and non-functional requirements for Linked Research were established by applying the requirements engineering framework according to Pohl et al. These requirements combined with related work, literature research and meetings with the project leader of Linked Research, built the basis to propose the user interface. Relevant WYSIWYG editors and RDFa parsing libraries were gathered and compared based on established criteria, to build the basis for a later evaluation.
+</p>
+<p>
+This thesis resulted in having functional and non-functional requirements for Linked Research, proposes a user interface for the triple authoring feature and provides a comparison of WYSIWYG editors as well as RDFa parsing libraries.
+</p>
+<p>
+Looking forward, this thesis offers the project leader of Linked Research a basis to evaluate a suitable WYSIWYG editor and RDFa library. The established requirements will be integrated into the project&#8217;s repository / documentation to facilitate it for other developers to join the open source project.
+</p>
+</dd>
+</dl>
 
 <section id="introduction" about="[this:]" rel="dcterms:hasPart" resource="[this:#introduction]">
 <h2 about="[this:#introduction]" property="dcterms:title">Introduction</h2>
 <div about="[this:#introduction]" property="dcterms:description" typeof="deo:Introduction">
 <p id="prologue">
-PDF documents are familiar and easy to read for humans. But they are also <q cite="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2663789/">antithetical to the spirit of the Web, lacking user interactivity and being difficult for machines to read</q> [<a class="ref" href="#ref-2">2</a>] according to &#8220;Adventures in Semantic Publishing: Exemplar Semantic Enhancements of a Research Article&#8221; by David Shotton et. all.
+PDF documents are familiar and easy to read for humans. But they are also <q cite="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2663789/">antithetical to the spirit of the Web, lacking user interactivity and being difficult for machines to read</q> [<a class="ref" href="#ref-2">2</a>] according to &#8220;Adventures in Semantic Publishing: Exemplar Semantic Enhancements of a Research Article&#8221; by David Shotton et al.
 </p>
 <p>
 While there have been many efforts in making research publications more accessible and machine friendly through semantic publishing, scholarly communication is predominantly held in data silos like PDF documents or in conventional HTML Web pages with little semantical markup [<a class="ref" href="#ref-1">1</a>]. Here is a brief look at some points in history.</p>
 <p>
 <p>
-Tim Berners-Lee, working at CERN in 1989, needed an information system that would help scientists to create and discover each others documents across systems. In the same year he made a proposal for an information management system; todays World Wide Web [<a class="ref" href="#ref-3">3</a>].
+Tim Berners-Lee, working at CERN in 1989, needed an information system that would help scientists to create and discover each other&#8217;s documents across systems. In the same year he made a proposal for an information management system; todays World Wide Web [<a class="ref" href="#ref-3">3</a>].
 </p>
 <p>
 The Web today contains interlinked hypertext documents as proposed in 1990 by him and Robert Cailliau. Their idea of having one-directional hyperlinks between documents and accessing information as a web of nodes [<a class="ref" href="#ref-4">4</a>] has emerged as a large universe of documents, where ideas can be exchanged and knowledge shared between people or institutions.
@@ -135,10 +150,10 @@ PDF and other machine unfriendly formats even dominate in the Web Science commun
 <h3 about="[this:#problem-statement]" property="dcterms:title">Problem Statement</h3>
 <div about="[this:#problem-statement]" property="dcterms:description">
 <p>
-Through movements like Open Access, data and research publications have become more accessible for the general public. But Sarven Capadisli et. all state in their publication Enabling Accessible Knowledge the following: <q cite="http://csarven.ca/enabling-accessible-knowledge#motivation">While there are notable efforts making research publications and data available for free with open access, there is a self-evident disconnect between research documents as far as machines are concerned</q> [<a class="ref" href="#ref-5">5</a>]. According to them, research documents are not as human and machine friendly as they could be, making it unpleasant to us &#8211; but also for the machines &#8211; to explore research documents on the Web.
+Through movements like Open Access, data and research publications have become more accessible for the general public. But Sarven Capadisli et al. state in their publication Enabling Accessible Knowledge the following: <q cite="http://csarven.ca/enabling-accessible-knowledge#motivation">While there are notable efforts making research publications and data available for free with open access, there is a self-evident disconnect between research documents as far as machines are concerned</q> [<a class="ref" href="#ref-5">5</a>]. According to them, research documents are not as human and machine friendly as they could be, making it unpleasant to us &#8211; but also for the machines &#8211; to explore research documents on the Web.
 </p>
 <p id="barrier-intelligent-document-processing">
-As reported by Frank van Harmelen and Dieter Fensel in their publication Practical Knowledge representation for the Web, the lack of semantic markup is a major barrier to develop more intelligent document processing on the web. [<a class="ref" href="#ref-7">7</a>]
+As reported by Frank van Harmelen and Dieter Fensel in their publication &#8220;Practical Knowledge representation for the Web&#8221;, the lack of semantic markup is a major barrier to develop more intelligent document processing on the web [<a class="ref" href="#ref-7">7</a>].
 </p>
 <p>
 The open source project called Linked Research, developed by Sarven Capadisli, will enable researchers to take full control, ownership and responsibility of their own knowledge, making it possible to get away from machine unfriendly formats by exploiting the Webs current possibilities to explore hypertext documents in a user-friendly way [<a class="ref" href="#ref-5">5</a>].
@@ -168,14 +183,14 @@ The contributions are as follows:
 </p>
 <dl>
 <dt>Requirements for Linked Research</dt>
-<dd>Requirements for Linked Research, which can be reused and made publicly available on Github or the projects wiki / documentation. Additionally the established system context gives a contributor of Linked Research an overview of the projects scope.</dd>
+<dd>Requirements for Linked Research, which can be reused and made publicly available on Github or the project wiki / documentation, were established. Additionally the established system context gives a contributor of Linked Research an overview of the project scope. This facilitates the first steps for a new contributor.</dd>
 <dt>Editor comparison</dt>
 <dd>Different editors have been compared to set a base for an evaluation for a suitable editor component.</dd>
 <dt>RDFa Parser comparison</dt>
 <dd>RDFa parsers have been tested to find a solution for the RDFa parsing component of Linked Research.</dd>
 <dt>Coding examples</dt>
 <dd>Coding examples on Github showcase the different editors and RDFa libraries.</dd>
-<dt>http://renatostauffer.ch/requirements-and-design-for-a-tool-to-author-triple-statements/</dt>
+<dt>http://renatostauffer.ch/requirements-engineering-for-linked-research#wordlift-video</dt>
 <dd>This thesis is published on the Web and acts as a demo for Linked Research.</dd>
 <dt>User Interface Proposal</dt>
 <dd>A possible user interface for Linked Research&#8217;s annotation management is proposed.</dd>
@@ -199,7 +214,7 @@ This thesis is structured as follows:
 <dd>This section describes the methodology used for this thesis.</dd>
 <dt>Sections 5- 7</dt>
 <dd>The sections 5 – 7 build the main part of this thesis and show how the requirements for the editing tool got established and how the editors and RDFa libraries got compared respectively.</dd>
-<dt>Section 8: Conclusions</dt>
+<dt>Section 8: Summary and Outlook</dt>
 <dd>The final section summarizes the thesis and gives and outlook for future processing regarding Linked Research.</dd>
 </dl>
 </div>
@@ -212,14 +227,14 @@ This thesis is structured as follows:
 <h2 about="[this:#background]" property="dcterms:title">Background</h2>
 <div about="[this:#background]" property="dcterms:description">
 <p>
-This chapter is intended to provide background information and define terms to understand this thesis.
+This section is intended to provide background information and define terms to understand this thesis.
 </p>
 
 <section id="html" about="[this:#background]" rel="dcterms:hasPart" resource="[this:#html]">
 <h3 about="[this:#html]" property="dcterms:title">HTML</h3>
 <div about="[this:#html]" property="dcterms:description">
 <p>
-The Hypertext Markup Language (HTML) is the core language of the World Wide Web (WWW) and currently released as version 5.0. The language is used to create web pages and is recommended by the main international standards organization for the WWW (W3C, World Wide Web Consortium) [<a class="ref" href="#ref-8">8</a>].
+The Hypertext Markup Language (HTML) is the core language of the World Wide Web and currently released as version 5.0. The language is used to create web pages and is recommended by the main international standards organization for the World Wide Web, the W3C (World Wide Web Consortium) [<a class="ref" href="#ref-8">8</a>].
 HTML specifies the structure of a website with tags (like  <code>html</code> ). The following listing shows the basic structure of an HTML 5 document:
 </p>
 <figure id="html-example" class="listing">
@@ -324,7 +339,7 @@ URIs build the basis of Linked Data and are used as names for things [<a class="
 <h3 about="[this:#rdf]" property="dcterms:title">RDF</h3>
 <div about="[this:#rdf]" property="dcterms:description">
 <p>
-RDF is a resource description framework to express information about resources. The framework is specified by the World Wide Web Consortium (W3C) and lets anyone make any statement about anything [<a class="ref" href="#ref-16">16</a>]. A statement is composed of three atomic parts (subject, predicate and object). Those three parts together are called a triple. The subject (line 1 of listing 2) says what the statement is about and the predicate (line 2 of listing 2) describes the relationship to its object (line 3 of listing 2) resource. Typically triples are described by HTTP URIs [<a class="ref" href="#ref-17">17</a>]. The following triple statement gives an example:
+RDF is a resource description framework to express information about resources. The framework is specified by the World Wide Web Consortium (W3C) and lets anyone make any statement about anything [<a class="ref" href="#ref-16">16</a>]. A statement is composed of three atomic parts (subject, predicate and object). Those three parts together are called a triple. The subject (line 1 of listing 2) says what the statement is about and the predicate (line 2 of listing 2) describes the relationship to its object (line 3 of listing 2) resource. Typically, triples are described by HTTP URIs [<a class="ref" href="#ref-17">17</a>]. The following triple statement gives an example:
 </p>
 <figure id="triple-statement-example" class="listing">
 <pre>
@@ -378,20 +393,20 @@ Resource Description Framework in Attributes or simply RDFa is a W3C recommendat
 <h2 about="[this:#realated-work]" property="dcterms:title">Related Work</h2>
 <div about="[this:#related-work]" property="dcterms:description">
 <p>
-The idea of having a publishing tool paired with a triple markup feature is nothing new. Different products, with different focuses have emerged. Three of those products are <a href="http://renatostauffer.ch/requirements-and-design-for-a-tool-to-author-triple-statements/#rdface">RDFaCE</a>, <a href="http://renatostauffer.ch/requirements-and-design-for-a-tool-to-author-triple-statements/#loomp">Loomp</a> and <a href="http://renatostauffer.ch/requirements-and-design-for-a-tool-to-author-triple-statements/#wordlift">Wordlift</a>, which will be introduced in the following sections. 
+The idea of having a publishing tool paired with a triple markup feature is nothing new. Different products, with different focuses have emerged. Three of those products are <a href="http://renatostauffer.ch/requirements-engineering-for-linked-research/#rdface">RDFaCE</a>, <a href="http://renatostauffer.ch/requirements-engineering-for-linked-research/#loomp">Loomp</a> and <a href="http://renatostauffer.ch/requirements-engineering-for-linked-research/#wordlift">Wordlift</a>, which will be introduced in the following sections. RDFaCE has been chosen because the focus of this product lies on usability, which is a major requirement of Linked Research (see section XXX). The other two tool&#8217;s main focus lies on simple solutions concerning the semantic enrichment of documents by non-domain experts. Linked Research focuses also on accessibility, (see section XXX) which make loomp and Wordlift good candidates to showcase related work.
 </p>
 <section id="rdface" about="[this:#related-work]" rel="dcterms:hasPart" resource="[this:#rdface]">
 <h3 about="[this:#rdface]" property="dcterms:title">RDFaCE</h3>
 <div about="[this:#rdface]" property="dcterms:description">
 <p>
-RDFaCE is a semantic content authoring (SCA) tool which integrates four different views on the semantically annotated content. Those views are synchronized, which means that when a change in a view happens, the other views apply the change. The focus of RDFaCE lies on usability by implementing the four views for different personas involved in the content creation life-cycle.
+RDFaCE is a semantic content authoring (SCA) tool, which integrates four different views on the semantically annotated content. Those views are synchronized, which means that when a change in a view happens, the other views apply the change. The focus of RDFaCE lies on usability by implementing the four views for different personas involved in the content creation life-cycle.
 </p>
 <p>The four views RDFaCE implements are [<a class="ref" href="#ref-27">27</a>]:</p>
 <dl>
 <dt>WYSIWYG View</dt>
-<dd>Used to create text by authors, journalists etc.</dd
+<dd>Used to create text by authors, journalists etc.</dd>
 <dt>WYSIWYM View</dt>
-<dd>Extension for the WYSIWYG View.</dd>
+<dd>Extends the WYSIWYG View.</dd>
 <dt>RDF Triple View</dt>
 <dd>Useful for curators and authors for verifying that entities and facts were correctly annotated.</dd>
 <dt>Source Code View</dt>
@@ -416,7 +431,7 @@ Loomp is a SCA with a one click annotation strategy (OCA) according to &#8220;<a
 Wordlift is a semantic web plugin for the content management system (CMS) WordPress. The user is able to run a semantic web analysis on an authored text to find entities from the Linked Open Data Cloud, that do match words or phrases within the text. After an entity has been found, the user can bind it to the text. It is also possible to manually create entities, which do not exist in the Linked Open Data Cloud yet [<a class="ref" href="#ref-30">30</a>].
 </p>
 <p>
-If you view this thesis on paper, feel free to visit the following URL to see Wordlift in action on video: <a href="http://renatostauffer.ch/requirements-and-design-for-a-tool-to-author-triple-statements/#wordlift-video">http://renatostauffer.ch/requirements-and-design-for-a-tool-to-author-triple-statements/#wordlift-video</a>
+If you view this thesis on paper, feel free to visit the following URL to see Wordlift in action on video: <a href="http://renatostauffer.ch/requirements-engineering-for-linked-research/#wordlift-video">http://renatostauffer.ch/requirements-engineering-for-linked-research/#wordlift-video</a>
 </p>
 <figure id="wordlift-video">
 <object width="600" height="400" data="https://www.youtube.com/embed/eIKB-tc3a44?autoplay=0?controls=2">
@@ -437,24 +452,24 @@ If you view this thesis on paper, feel free to visit the following URL to see Wo
 <h2 about="[this:#methodology]" property="dcterms:title">Methodology</h2>
 <div about="[this:#methodology]" property="dcterms:description">
 <p>
-This chapter describes the tools and methods used for this thesis.
+This section describes the tools and methods used for this thesis.
 </p>
 
 <section id="literature-research" about="[this:#methodology]" rel="dcterms:hasPart" resource="[this:#literature-research]">
 <h3 about="[this:#literature-research]" property="dcterms:title">Literature and Web Research</h3>
 <div about="[this:#literature-research]" property="dcterms:description">
 <p>
-Literature and Web research provided a broad idea of the problem scope, showed existing semantic content editing solutions, approaches to gather requirements and possible solutions for editors and RDFa tooling.
+Literature and Web research provided a broad idea of the problem scope, showed existing semantic content editing solutions, approaches to gather requirements and possible solutions for editors and RDFa tooling. 
 </p>
 </div>
 </section>
 
 
 <section id="meetings" about="[this:#methodology]" rel="dcterms:hasPart" resource="[this:#meetings]">
-<h3 about="[this:#meetings]" property="dcterms:title">Meetings with Sarven Capadisli</h3>
+<h3 about="[this:#meetings]" property="dcterms:title">Meetings with the project leader</h3>
 <div about="[this:#meetings]" property="dcterms:description">
 <p>
-Regular meetings with Sarven Capadisli were held to discuss requirements, interfaces or components (e.g. editors or RDFa libraries).
+Regular meetings with Sarven Capadisli (project leader) were held to discuss requirements, interfaces or components.
 </p>
 </div>
 </section>
@@ -473,7 +488,7 @@ For the requirement engineering part of this thesis, the framework according to 
 <h3 about="[this:#comparison]" property="dcterms:title">Library and Editor Comparison</h3>
 <div about="[this:#comparison]" property="dcterms:description">
 <p>
-Because of the applied component based software engineering approach (see chapter <a href="http://renatostauffer.ch/requirements-and-design-for-a-tool-to-author-triple-statements/#development-facet">Development Facet</a>), libraries and tools for different components had to be compared for Linked Research.
+Because of the applied component based software engineering approach (see section <a href="http://renatostauffer.ch/requirements-and-design-for-a-tool-to-author-triple-statements/#development-facet">Development Facet</a>), libraries and tools for different components had to be compared for Linked Research.
 </p>
 </div>
 </section>
@@ -504,10 +519,10 @@ The package-plan and time-plan for this thesis are available under the following
 <h2 about="[this:#requirement-engineering]" property="dcterms:title">Requirement Engineering</h2>
 <div about="[this:#requirement-engineering]" property="dcterms:description">
 <p>
-In this section, we will derive functional and non-functional requirements for a Web based authoring tool intended to help researchers to create and consumers to read publications in a user friendly environment. According to Sommerville, functional requirements are services the system should provide. They determine how the system should react to inputs and how it should behave in certain situations [<a class="ref" href="#ref-33">33</a>, p. 119]. On the other hand, non-functional requirements define constraints on the functionality offered by the system. They often apply to the whole system and relate to system properties such as usability, reliability or portability [<a class="ref" href="#ref-33">33</a>, p. 119 -122].
+In this section, we will derive functional and non-functional requirements for Linked Research. According to Sommerville, functional requirements are services the system should provide. They determine how the system should react to inputs and how it should behave in certain situations [<a class="ref" href="#ref-33">33</a>, p. 119]. On the other hand, non-functional requirements define constraints on the functionality offered by the system. They often apply to the whole system and relate to system properties such as usability, reliability or portability [<a class="ref" href="#ref-33">33</a>, p. 119 -122].
 </p>
 <p>
-In this thesis the requirements engineering framework according to Pohl et al. [<a class="ref" href="#ref-31">31</a>] is used as a reference to establish the requirements. The used framework is structured as shown in figure 1 (Fig. 1).
+In this thesis the requirements engineering framework according to Pohl et al. [<a class="ref" href="#ref-31">31</a>] is used as a reference to establish the requirements. The used framework is structured as shown in figure 3 (Fig. 3).
 </p>
 <figure class="figure">
 <a href="http://renatostauffer.ch/wp-content/uploads/2015/02/framework-pohl.png"><img src="http://renatostauffer.ch/wp-content/uploads/2015/02/framework-pohl.png" alt="framework-pohl" width="424" height="419" class="alignnone size-full wp-image-621" /></a>
@@ -520,16 +535,18 @@ The framework is composed of three parts: The System context, Core activities an
 </p>
 <p>
 Firstly the System Context with its four facets (subject, usage, IT system and development facet) will be described to identify important characteristics of the system and give the reader of this thesis an overview of the system’s context.
-Depending on the established context, goals were determined and scenarios to be implemented are worked out. Those requirement artifacts are documented in the Chapters <a href="http://renatostauffer.ch/requirements-and-design-for-a-tool-to-author-triple-statements/#requirements-goals">5.3 Goals</a> as functional and non-functional requirements and <a href="http://renatostauffer.ch/requirements-and-design-for-a-tool-to-author-triple-statements/#requirements-scenarios">5.4 Scenarios</a>.
+Depending on the established context, goals were determined and scenarios to be implemented are worked out. Those requirement artifacts are documented in the section <a href="http://renatostauffer.ch/requirements-and-design-for-a-tool-to-author-triple-statements/#requirements-goals">5.3 Goals</a> as functional and non-functional requirements and <a href="http://renatostauffer.ch/requirements-and-design-for-a-tool-to-author-triple-statements/#requirements-scenarios">5.4 Scenarios</a>.
 </p>
-
+<p>
+The management and validation of the requirements are not addressed in this thesis.
+</p>
 <section id="system-context" about="[this:#requirement-engineering]" rel="dcterms:hasPart" resource="[this:#system-context]">
 <h3 about="[this:#system-context]" property="dcterms:title">System Context</h3>
 <div about="[this:#system-context]" property="dcterms:description">
 <p>
-Each software-intensive system lies within a certain context and is through that influenced by the definition of the system requirements [<a class="ref" href="#ref-31">31</a>]. This chapter describes the system context with its facets for Linked Research. The Usage Facet, Subject Facet, IT-System Facet and Development Facet each describe a certain aspect of Linked Research and build the entry point for the systems requirements.
+Each software-intensive system lies within a certain context and is through that influenced by the definition of the system requirements [<a class="ref" href="#ref-31">31</a>]. This section describes the system context with its facets for Linked Research. The Usage Facet, Subject Facet, IT-System Facet and Development Facet each describe a certain aspect of Linked Research and build the entry point for the systems requirements.
 </p>
-<p>The system context was established based on meetings with Sarven Capadisli and studying the following artifacts:</p>
+<p>The system context was established based on meetings with Sarven Capadisli, studying the already existing tools in section (XXX) and consulting the following artifacts:</p>
 <ul>
 <li>A publication about Enabling Accessible Knowledge (<a href="http://csarven.ca/enabling-accessible-knowledge">http://csarven.ca/enabling-accessible-knowledge</a>)</li>
 <li>Linked Research Github repository (<a href="https://github.com/csarven/linked-research">https://github.com/csarven/linked-research</a></li>
@@ -544,7 +561,7 @@ Each software-intensive system lies within a certain context and is through that
 The Usage Facet describes how the user interacts with the system [<a class="ref" href="#ref-31">31</a>]. In the case of Linked Research the Usage Facet is described with the UML 2.0:
 </p>
 <figure class="figure">
-<a href="http://renatostauffer.ch/wp-content/uploads/2015/02/use-case2.svg"><img src="http://renatostauffer.ch/wp-content/uploads/2015/02/use-case2.svg" alt="use-case" class="alignnone size-full wp-image-1250" /></a>
+<a href="http://renatostauffer.ch/wp-content/uploads/2015/02/use-case3.svg"><img src="http://renatostauffer.ch/wp-content/uploads/2015/02/use-case3.svg" alt="use-case" class="alignnone size-full wp-image-1354" /></a>
 <figcaption>
 UML Use Case Diagram for Linked Research. Source: Author&#8217;s own work
 </figcaption>
@@ -552,11 +569,10 @@ UML Use Case Diagram for Linked Research. Source: Author&#8217;s own work
 <p>
 Figure 2 (Fig. 2) describes the two stakeholders (author and consumer) and how they interact with Linked Research. If the term <samp>user</samp> or <samp>users</samp> is used in this thesis, both stakeholders (author and user) are addressed. From a user&#8217;s perspective the following use cases arise:
 </p>
+
 <dl>
 <dt>Edit Text</dt>
 <dd>This is the most basic use case for Linked Research. The author creates or edits text directly in the browser.</dd>
-<dt>Enable Editing Mode</dt>
-<dd>An author needs to have the possibility to enable the editing mode.</dd>
 <dt>Add Triple Statement</dt>
 <dd>The author can enrich the written text with RDF triples via a triple authoring tool. For this to be working, the user must be able to define a subject, predicate and object of a triple.</dd>
 <dt>Triple Creation Support</dt>
@@ -564,7 +580,7 @@ Figure 2 (Fig. 2) describes the two stakeholders (author and consumer) and how t
 <dt>Remove Triple Statement</dt>
 <dd>The author can remove added triple statements from the document.</dd>
 <dt>View Document Graph</dt>
-<dd>A user can view the document and its triple statements as a graph. This enables the author to quickly review triple statements and their relation. Consumers obtain the possibility to explore the document in a visual way and figure out how sections of the document are related to each other or external resources.</dd>
+<dd>A user can view the document and its triple statements as a visualized graph. This enables the author to quickly review triple statements and their relation. Consumers obtain the possibility to explore the document in a visual way and figure out how sections of the document are related to each other or external resources.</dd>
 <dt>Rearrange Table of Content</dt>
 <dd>A user can rearrange the table of content. This will automatically update the sections of the document.</dd>
 <dt>Local Storage</dt>
@@ -572,10 +588,10 @@ Figure 2 (Fig. 2) describes the two stakeholders (author and consumer) and how t
 <dt>Export Document</dt>
 <dd>The user is able to export the document in HTML format or print the document (PDF format).</dd>
 <dt>Change View</dt>
-<dd>The user can apply different views for the document (LNCS ACM W3C-REC Native) <i>Create an Abbreviation index at the und!</i></dd>
+<dd>The user can apply different views for the document without changing the underlaying structure of the DOM. The following views are provided: <samp>LNCS</samp>, <samp>ACM</samp>, <samp>W3C-REC</samp> and <samp>Native</samp>.
 </dl>
 <p>
-The use cases <samp>Change View</samp>, <samp>Local Storage</samp>, <samp>Export Document</samp>, <samp>Rearrange Table of Content</samp> and <samp>Section Identification</samp> were already implemented into Linked Research by Sarven Carpadisli. The other use cases are open to be implemented. The focus of the following chapters lies on the not yet implemented use cases
+The use cases <samp>Change View</samp>, <samp>Local Storage</samp>, <samp>Export Document</samp>, <samp>Rearrange Table of Content</samp> and <samp>Section Identification</samp> have already been implemented into Linked Research by Sarven Carpadisli. The other use cases are open to be implemented. The focus of the following sections lies on the not yet implemented use cases
 </p>
 <ul>
 <li><samp>Add Triple Statement</samp>,</li>
@@ -587,7 +603,7 @@ The use cases <samp>Change View</samp>, <samp>Local Storage</samp>, <samp>Export
 <li>and <samp>Edit Text</samp>.</li>
 </ul>
 <p>
-Based on the already existing user interface and the not yet implemented use cases of Linked Research, the mockups in figure XXX and XXX were drawn. Figure XXX shows Linked Research&#8217;s user interface after clicking on the menu button (see figure XXX, 1). 
+Based on the already existing user interface and the not yet implemented use cases of Linked Research, the mockups in figure XXX and XXX were drawn. Mockups build a nice way to illustrate a system in color and shape, without its functionality. They can be used to gather requirements concerning the look of a system [XXX]. Figure XXX shows Linked Research&#8217;s user interface after clicking on the menu button (see figure XXX, 1). 
 </p>
 <figure id="linked-research-menu" class="figure">
 <a href="http://renatostauffer.ch/wp-content/uploads/2015/02/menu-lr1.png"><img src="http://renatostauffer.ch/wp-content/uploads/2015/02/menu-lr1.png" alt="menu-lr" width="786" height="478" class="alignnone size-full wp-image-1289" /></a>
@@ -601,7 +617,7 @@ User interface after clicking on the menu button. Source: Author&#8217;s own wor
 <li>The table of content provides an overview of the document. Authors and consumers can rearrange the sections or click on a section to jump to the corresponding position in the document.</li>
 <li>Users can switch between different views for the document.</li>
 <li>Users can print the current view.</li>
-<li>Turtle or JSON-LD data can be embedded into the document</li>
+<li>Turtle or JSON-LD (both languages to express data in the RDF data model) data can be embedded into the document</li>
 <li>Authors are able to enable local storage. This offers the opportunity to edit documents offline.</li>
 <li>The document can be exported to HTML.</li>
 </ol>
@@ -614,10 +630,10 @@ First sketch. Source: Author&#8217;s own work
 </figure>
 <ol>
 <li>The user edits or creates text with the editor. When the user selects a text passage or word, a popup menu shows up. From there the user has the ability to assign styles to the text (bold text, italic, etc.).</li>
-<li>The user can also toggle in / out the meta editor to create triple statements.</li>
+<li>The user can also toggle in / out the triple editor to create triple statements.</li>
 <li>The triple store is held locally. The user can insert or delete triple statements.</li>
 <li>Triple statements can be fetched to e.g. visualize the current graph.</li>
-<li>The meta editor talks to a external service to retrieve suggestions for possible RDF vocabulary terms when creating a triple statement.</li>
+<li>The triple editor talks to a external service to retrieve suggestions for possible RDF vocabulary terms when creating a triple statement.</li>
 </ol>
 
 </div>
@@ -627,11 +643,11 @@ First sketch. Source: Author&#8217;s own work
 <h4 about="[this:#subject-facet]" property="dcterms:title">Subject Facet</h4>
 <div about="[this:#subject-facet]" property="dcterms:description">
 <p>
-This facet describes what kind of objects must be represented by the system [<a class="ref" href="#ref-31">31</a>]. Table 3 describes objects and events within the system context that are important for Linked Research. 
+This facet describes what kind of objects must be represented by the system [<a class="ref" href="#ref-31">31</a>]. Table 3 describes objects within the system context that are important for Linked Research. 
 </p>
 <table>
 <caption>
-Important objects and events within Linked Research
+Important objects within Linked Research
 </caption>
 <tbody>
 <tr>
@@ -648,15 +664,15 @@ Important objects and events within Linked Research
 </tr>
 <tr>
 <td>RDF Object</td>
-<td>A Resource Description Framework (RDF) object is the third part of an RDF statement. Objects are frequently referred to as a property value that is mapped to a subject by the predicate. An object can be an RDF URI reference, an RDF literal, or a blank node. If the object is a blank node, it serves as a parent property to encapsulate a group of sub-properties.</td>
+<td>A RDF object is the third part of an RDF statement an author creates. An object can either be an URI or a text literal.</td>
 </tr>
 <tr>
 <td>RDF Triple Statement</td>
-<td>A triple statement is composed of an RDF Subject, RDF Predicate and RDF Object. Triple statements are stored within an RDF triple store (see next row)</td>
+<td>A triple statement is composed of an RDF Subject, RDF Predicate and RDF Object. Triple statements are stored within an RDF triple store (see next row).≈</td>
 </tr>
 <tr>
-<td>RDF Triple Store</td>
-<td>An RDF triple store, persists RDF statements. The triple store is responsible for querying, inserting or deleting a triple statement.</td>
+<td>TripleStore</td>
+<td>An RDF triple store, persists RDF statements. Triple statements can be queried, inserted or deleted using the TripleStore object.</td>
 </tr>
 <tr>
 <td>TripleEditor object</td>
@@ -668,7 +684,7 @@ Important objects and events within Linked Research
 <td>If a new triple statement gets created, this change needs to be reflected in the DOM with RDFa. The DOMManipulator is responsible to add or remove RDFa from elements within the DOM</td>
 </tr>
 <tr>
-<td>API Handler</td>
+<td>SearchHandler</td>
 <td>An object to handle API calls to a service that provides access to different RDF vocabularies must be available. This enables the author to search for existing vocabularies.</td>
 </tr>
 <tr>
@@ -722,22 +738,22 @@ For Linked Research a component based software engineering approach according to
 <figure class="figure">
 <a href="http://renatostauffer.ch/wp-content/uploads/2015/02/process.svg"><img src="http://renatostauffer.ch/wp-content/uploads/2015/02/process.svg" alt="process" class="alignnone size-full wp-image-1006" /></a>
 <figcaption>
-Component based software engineering approach. Adapted from Sommerville [<a class="ref" href="#ref-33">33</a>], p. 70
+Component based software engineering approach. Adapted from Sommerville [<a class="ref" href="#ref-33">33</a>, p. 70].
 </figcaption>
 </figure>
 <p>
-Especially the editor and the triple store are parts of Linked Research that do not have to be developed from ground. There are a lot of existing projects, which provide such functionality. Chapter XXX and XXX show how the two components (editor and RDF triple store) got evaluated for Linked Research.
+Especially the editor and the triple store are parts of Linked Research that do not have to be developed from ground. There are a lot of existing projects, which provide such functionality. Section XXX and XXX show how the two components (editor and RDF triple store) got evaluated for Linked Research.
 </p>
 <p>
 Github (a versioning tool) is used to manage the code base of Linked Research and prototypes.
 </p>
-<p>The publication <a href="http://csarven.ca/enabling-accessible-knowledge">Enabling Accessible Knowledge</a> defines in the chapter <a href="http://csarven.ca/enabling-accessible-knowledge#conceptual-design">Conceptual Design</a> design principles, to which Linked Research sticks to. Those are:
+<p>The publication <a href="http://csarven.ca/enabling-accessible-knowledge">Enabling Accessible Knowledge</a> defines in the section <a href="http://csarven.ca/enabling-accessible-knowledge#conceptual-design">Conceptual Design</a> design principles, to which Linked Research sticks to. Those are:
 </p>
 <dl>
 <dt>The Rule of Least Power</dt>
-<dd>This means that when developing for the Web, the least powerful language should be chosen [source]. Capadisli et al. state in Enabling Accessible Knowledge the following: <q cite="">By design, HTML fulfils the principle of least power. As far as computer languages and their environments go, HTML is the least common denominator; it can be used virtually from any device; from command-line terminals, desktop browsers, smartwatches to cars, whether on or offline. Together with HTTP, the undeniable penetration of HTML, both on a technological and social level makes it a clear winner for information distribution.</q></dd>
+<dd>This means that when developing for the Web, the least powerful language should be chosen [XXX]. Capadisli et al. state in Enabling Accessible Knowledge the following: <q cite="http://csarven.ca/enabling-accessible-knowledge#conceptual-design">By design, HTML fulfils the principle of least power. As far as computer languages and their environments go, HTML is the least common denominator; it can be used virtually from any device; from command-line terminals, desktop browsers, smartwatches to cars, whether on or offline. Together with HTTP, the undeniable penetration of HTML, both on a technological and social level makes it a clear winner for information distribution</q> [http://csarven.ca/enabling-accessible-knowledge#conceptual-design].</dd>
 <dt>RFC 1958</dt>
-<dd>This Request for Comments (RFC) says, that:<q cite="http://tools.ietf.org/html/rfc1958#section-1">the principle of constant change is perhaps the only principle of the Internet that should survive indefinitely</q></dd>
+<dd>This Request for Comments (RFC) says, that:<q cite="http://tools.ietf.org/html/rfc1958#section-1">the principle of constant change is perhaps the only principle of the Internet that should survive indefinitely</q> [http://tools.ietf.org/html/rfc1958#section-1].</dd>
 </dl>
 </div>
 </section>
@@ -749,14 +765,14 @@ Github (a versioning tool) is used to manage the code base of Linked Research an
 <h3 about="[this:#requirements-goals]" property="dcterms:title">Goals</h3>
 <div about="[this:#requirements-goals]" property="dcterms:description">
 <p>
-Based on the system&#8217;s context, goals for Linked Research are determined. It is distinguished between functional and non-functional goals according to I. Sommerville [<a class="ref" href="#ref-33">33</a>]. The terms goal and requirement are used as  synonyms here.
+Based on the system&#8217;s context, goals for Linked Research are determined. It is distinguished between functional and non-functional goals according to I. Sommerville [<a class="ref" href="#ref-33">33</a>]. The terms goal and requirement are used as  synonyms in this thesis.
 </p>
 
 <section id="functional-requirements" about="[this:#requirements-goals]" rel="dcterms:hasPart" resource="[this:#functional-requirements]">
 <h4 about="[this:#functional-requirements]" property="dcterms:title">Functional Requirements</h4>
 <div about="[this:#functional-requirements]" property="dcterms:description">
 <p>
-The functional requirements follow a pattern stated as below:
+The functional requirements follow the pattern stated below:
 </p>
 
 <table id="requirements-pattern">
@@ -804,13 +820,12 @@ The functional requirements follow a pattern stated as below:
 </ul>
 This determines wether the requirement is already implemented (Implemented), is in progress to be developed (In progress) or is not yet implemented (Not implemented yet).</td>
 </tr>
+<tr>
+<th><strong>Author</strong></th>
+<td>Who wrote this requirement?</td>
+</tr>
 </tbody>
 </table>
-
-
-
-
-
 <table id="f-1">
 <caption>Edit text</caption>
 <tbody>
@@ -854,102 +869,8 @@ This determines wether the requirement is already implemented (Implemented), is 
 <th><strong>State of Requirement</strong></th>
 <td>Not implemented yet</td>
 </tr>
-</tbody>
+<tr><th><strong>Author</strong></th><td><a href="http://renatostauffer.ch#i">Renato Stuaffer</a></td></tr></tbody>
 </table>
-
-<table id="f-2">
-<caption>Show TripleEditor</caption>
-<tbody>
-<tr>
-<th><strong>Name</strong></th>
-<td>Show TripleEditor</td>
-</tr>
-<tr>
-<th><strong>ID</strong></th>
-<td>F-2</td>
-</tr>
-<tr>
-<th><strong>Description</strong></th>
-<td>Linked Research must provide an author the possibility to display the TripleEditor within the document.</td>
-</tr>
-<tr>
-<th><strong>Components</strong></th>
-<td>TripleEditor</td>
-</tr>
-<tr>
-<th><strong>Input</strong></th>
-<td>Visibility of the TripleEditor instance</td>
-</tr>
-<tr>
-<th><strong>Output</strong></th>
-<td>Visible the TripleEditor</td>
-</tr>
-<tr>
-<th><strong>Pre-condition</strong></th>
-<td>An editor instance must exist.</td>
-</tr>
-<tr>
-<th><strong>Post-condition</strong></th>
-<td>Visibility of the TripleEditor == true</td>
-</tr>
-<tr>
-<th><strong>Source of Requirement</strong></th>
-<td>(find source)</td>
-</tr>
-<tr>
-<th><strong>State of Requirement</strong></th>
-<td>Not implemented yet</td>
-</tr>
-</tbody>
-</table>
-
-
-<table id="f-3">
-<caption>Hide TripleEditor</caption>
-<tbody>
-<tr>
-<th><strong>Name</strong></th>
-<td>Hide TripleEditor</td>
-</tr>
-<tr>
-<th><strong>ID</strong></th>
-<td>F-3</td>
-</tr>
-<tr>
-<th><strong>Description</strong></th>
-<td>Linked Research must provide an author the possibility to hide the TripleEditor from the document.</td>
-</tr>
-<tr>
-<th><strong>Components</strong></th>
-<td>TripleEditor</td>
-</tr>
-<tr>
-<th><strong>Input</strong></th>
-<td>Visibility of the TripleEditor instance</td>
-</tr>
-<tr>
-<th><strong>Output</strong></th>
-<td>Hidden TripleEditor</td>
-</tr>
-<tr>
-<th><strong>Pre-condition</strong></th>
-<td>An editor instance must exist.</td>
-</tr>
-<tr>
-<th><strong>Post-condition</strong></th>
-<td>Visibility of the TripleEditor == false</td>
-</tr>
-<tr>
-<th><strong>Source of Requirement</strong></th>
-<td>Meeting with Sarven Capadisli</td>
-</tr>
-<tr>
-<th><strong>State of Requirement</strong></th>
-<td>Not implemented yet</td>
-</tr>
-</tbody>
-</table>
-
 
 <table id="f-4">
 <caption>Text formatting</caption>
@@ -972,7 +893,7 @@ This determines wether the requirement is already implemented (Implemented), is 
 <ul>
 <li>Insertion of figures and media</li>
 <li>Insertion of listings (e.g. ordered or unordered lists)</li>
-<li>Emphasize text (this will include <samp>strong</samp>, <samp>em</samp>, <samp>b</samp> and <samp>i</samp>)</li>
+<li>Emphasize text (this will include <code>&lt;strong&gt;</code>, <code>&lt;em&gt;</code>, <code>&lt;b&gt;</code> and <code>&lt;i&gt;</code>)</li>
 <li>Headings</li>
 <li>Quoting (this will include <code>&lt;q&gt;</code> and <code>&lt;blockquote&gt;</code>)</li>
 </ul>
@@ -992,17 +913,17 @@ This determines wether the requirement is already implemented (Implemented), is 
 </tr>
 <tr>
 <th><strong>Post-condition</strong></th>
-<td>Requirement <a href="http://renatostauffer.ch/requirements-and-design-for-a-tool-to-author-triple-statements/#f-14">F-14</a> must be fulfilled</td>
+<td>Requirement <a href="http://renatostauffer.ch/requirements-and-design-for-a-tool-to-author-triple-statements/#f-14">F-14</a> must be fulfilled.</td>
 </tr>
 <tr>
 <th><strong>Source of Requirement</strong></th>
-<td>Sarven Capadisli</td>
+<td><a href="http://linked-research.270a.info/linked-research.html">http://linked-research.270a.info/linked-research.html</a></td>
 </tr>
 <tr>
 <th><strong>State of Requirement</strong></th>
 <td>Not implemented yet</td>
 </tr>
-</tbody>
+<tr><th><strong>Author</strong></th><td><a href="http://renatostauffer.ch#i">Renato Stuaffer</a></td></tr></tbody>
 </table>
 
 <table id="f-5">
@@ -1042,13 +963,13 @@ This determines wether the requirement is already implemented (Implemented), is 
 </tr>
 <tr>
 <th><strong>Source of Requirement</strong></th>
-<td>(Source)</td>
+<td><a href="http://linked-research.270a.info/linked-research.html">http://linked-research.270a.info/linked-research.html</a></td>
 </tr>
 <tr>
 <th><strong>State of Requirement</strong></th>
 <td>Not implemented yet</td>
 </tr>
-</tbody>
+<tr><th><strong>Author</strong></th><td><a href="http://renatostauffer.ch#i">Renato Stuaffer</a></td></tr></tbody>
 </table>
 
 
@@ -1089,13 +1010,13 @@ This determines wether the requirement is already implemented (Implemented), is 
 </tr>
 <tr>
 <th><strong>Source of Requirement</strong></th>
-<td>()</td>
+<td><a href="http://linked-research.270a.info/linked-research.html">http://linked-research.270a.info/linked-research.html</a></td>
 </tr>
 <tr>
 <th><strong>State of Requirement</strong></th>
 <td>Not implemented yet</td>
 </tr>
-</tbody>
+<tr><th><strong>Author</strong></th><td><a href="http://renatostauffer.ch#i">Renato Stuaffer</a></td></tr></tbody>
 </table>
 
 
@@ -1137,13 +1058,13 @@ This determines wether the requirement is already implemented (Implemented), is 
 </tr>
 <tr>
 <th><strong>Source of Requirement</strong></th>
-<td>()</td>
+<td><a href="http://linked-research.270a.info/linked-research.html">http://linked-research.270a.info/linked-research.html</a></td>
 </tr>
 <tr>
 <th><strong>State of Requirement</strong></th>
 <td>Not implemented yet</td>
 </tr>
-</tbody>
+<tr><th><strong>Author</strong></th><td><a href="http://renatostauffer.ch#i">Renato Stuaffer</a></td></tr></tbody>
 </table>
 
 
@@ -1187,13 +1108,13 @@ This determines wether the requirement is already implemented (Implemented), is 
 </tr>
 <tr>
 <th><strong>Source of Requirement</strong></th>
-<td>Meeting with Sarven Capadisli</td>
+<td><a href="http://linked-research.270a.info/linked-research.html">http://linked-research.270a.info/linked-research.html</a></td>
 </tr>
 <tr>
 <th><strong>State of Requirement</strong></th>
 <td>Not implemented yet</td>
 </tr>
-</tbody>
+<tr><th><strong>Author</strong></th><td><a href="http://renatostauffer.ch#i">Renato Stuaffer</a></td></tr></tbody>
 </table>
 
 
@@ -1234,13 +1155,13 @@ This determines wether the requirement is already implemented (Implemented), is 
 </tr>
 <tr>
 <th><strong>Source of Requirement</strong></th>
-<td>Meeting with Sarven Capadisli</td>
+<td><a href="http://linked-research.270a.info/linked-research.html">http://linked-research.270a.info/linked-research.html</a></td>
 </tr>
 <tr>
 <th><strong>State of Requirement</strong></th>
 <td>Not implemented yet</td>
 </tr>
-</tbody>
+<tr><th><strong>Author</strong></th><td><a href="http://renatostauffer.ch#i">Renato Stuaffer</a></td></tr></tbody>
 </table>
 
 
@@ -1281,21 +1202,21 @@ This determines wether the requirement is already implemented (Implemented), is 
 </tr>
 <tr>
 <th><strong>Source of Requirement</strong></th>
-<td>Renat Stauffer</td>
+<td><a href="http://linked-research.270a.info/linked-research.html">http://linked-research.270a.info/linked-research.html</a></td>
 </tr>
 <tr>
 <th><strong>State of Requirement</strong></th>
 <td>Not implemented yet</td>
 </tr>
-</tbody>
+<tr><th><strong>Author</strong></th><td><a href="http://renatostauffer.ch#i">Renato Stuaffer</a></td></tr></tbody>
 </table>
 
 <table id="f-11">
-<caption>Automatic Markup</caption>
+<caption>Rearrange Table of Content</caption>
 <tbody>
 <tr>
 <th><strong>Name</strong></th>
-<td>Automatic Markup</td>
+<td>Rearrange Table of Content</td>
 </tr>
 <tr>
 <th><strong>ID</strong></th>
@@ -1303,24 +1224,24 @@ This determines wether the requirement is already implemented (Implemented), is 
 </tr>
 <tr>
 <th><strong>Components</strong></th>
-<td>TripleEditor, Triple, TripleStore</td>
+<td>LR, U</td>
 </tr>
 <tr>
 <th><strong>Description</strong></th>
-<td>The TripleEditor of Linked Research could provide authors the functionality to automatically enrich sections with an id-attribute, which is composed of the title of the section and the parent section in case of identical titles.
+<td>
 </td>
 </tr>
 <tr>
 <th><strong>Input</strong></th>
-<td>Title of the section and title of the parent section</td>
+<td>Table,table element to be moved</td>
 </tr>
 <tr>
 <th><strong>Output</strong></th>
-<td>section element with an id attribute set</td>
+<td>Rearanged table</td>
 </tr>
 <tr>
 <th><strong>Pre-condition</strong></th>
-<td>Clean DOM</td>
+<td>Requirement XXX must be fulfilled.</td>
 </tr>
 <tr>
 <th><strong>Post-condition</strong></th>
@@ -1328,13 +1249,13 @@ This determines wether the requirement is already implemented (Implemented), is 
 </tr>
 <tr>
 <th><strong>Source of Requirement</strong></th>
-<td>(source)</td>
+<td><a href="https://github.com/csarven/linked-research">https://github.com/csarven/linked-research</a></td>
 </tr>
 <tr>
 <th><strong>State of Requirement</strong></th>
 <td>Not implemented yet</td>
 </tr>
-</tbody>
+<tr><th><strong>Author</strong></th><td><a href="http://renatostauffer.ch#i">Renato Stuaffer</a></td></tr></tbody>
 </table>
 
 <table id="f-12">
@@ -1376,13 +1297,13 @@ The TripleEditor must provide the author the ability to add triple statements to
 </tr>
 <tr>
 <th><strong>Source of Requirement</strong></th>
-<td></td>
+<td><a href="http://linked-research.270a.info/linked-research.html">http://linked-research.270a.info/linked-research.html</a></td>
 </tr>
 <tr>
 <th><strong>State of Requirement</strong></th>
 <td>Not implemented yet</td>
 </tr>
-</tbody>
+<tr><th><strong>Author</strong></th><td><a href="http://renatostauffer.ch#i">Renato Stuaffer</a></td></tr></tbody>
 </table>
 
 
@@ -1399,7 +1320,7 @@ The TripleEditor must provide the author the ability to add triple statements to
 </tr>
 <tr>
 <th><strong>Components</strong></th>
-<td>TextEditor, TripleStore</td>
+<td>TextEditor, TripleStore, DOMManipulator</td>
 </tr>
 <tr>
 <th><strong>Description</strong></th>
@@ -1421,17 +1342,17 @@ After a triple statement has been added to the triple store the corresponding el
 </tr>
 <tr>
 <th><strong>Post-condition</strong></th>
-<td>The DOM needs to remain clean according to requirement <a href="http://renatostauffer.ch/requirements-and-design-for-a-tool-to-author-triple-statements/#f-18">F-18</a>.</td>
+<td>The DOM needs to keep it&#8217;s semantical representation according to requirement <a href="http://renatostauffer.ch/requirements-and-design-for-a-tool-to-author-triple-statements/#f-18">F-18</a>.</td>
 </tr>
 <tr>
 <th><strong>Source of Requirement</strong></th>
-<td></td>
+<td><a href="http://linked-research.270a.info/linked-research.html">http://linked-research.270a.info/linked-research.html</a></td>
 </tr>
 <tr>
 <th><strong>State of Requirement</strong></th>
 <td>Not implemented yet</td>
 </tr>
-</tbody>
+<tr><th><strong>Author</strong></th><td><a href="http://renatostauffer.ch#i">Renato Stuaffer</a></td></tr></tbody>
 </table>
 
 
@@ -1471,26 +1392,26 @@ The TripleEditor must provide the author the ability to remove triple statements
 </tr>
 <tr>
 <th><strong>Post-condition</strong></th>
-<td>Triple has to be removed from the triple store.</td>
+<td>Triple was removed from the triple store.</td>
 </tr>
 <tr>
 <th><strong>Source of Requirement</strong></th>
-<td></td>
+<td><a href="http://linked-research.270a.info/linked-research.html">http://linked-research.270a.info/linked-research.html</a></td>
 </tr>
 <tr>
 <th><strong>State of Requirement</strong></th>
 <td>Not implemented yet</td>
 </tr>
-</tbody>
+<tr><th><strong>Author</strong></th><td><a href="http://renatostauffer.ch#i">Renato Stuaffer</a></td></tr></tbody>
 </table>
 
 
 <table id="f-15">
-<caption>Undo just added triple statement</caption>
+<caption>Undo added triple statement</caption>
 <tbody>
 <tr>
 <th><strong>Name</strong></th>
-<td>Undo just added triple statement</td>
+<td>Undo added triple statement</td>
 </tr>
 <tr>
 <th><strong>ID</strong></th>
@@ -1503,12 +1424,12 @@ The TripleEditor must provide the author the ability to remove triple statements
 <tr>
 <th><strong>Description</strong></th>
 <td>
-Linked Research should provide an author the ability to undo a just added triple statement.
+Linked Research should provide an author the ability to undo a added triple statement.
 </td>
 </tr>
 <tr>
 <th><strong>Input</strong></th>
-<td>Just added triple statement</td>
+<td>Added triple statement</td>
 </tr>
 <tr>
 <th><strong>Output</strong></th>
@@ -1520,17 +1441,17 @@ Linked Research should provide an author the ability to undo a just added triple
 </tr>
 <tr>
 <th><strong>Post-condition</strong></th>
-<td>Triple has to be removed from the triple store.</td>
+<td>Triple was removed from the triple store.</td>
 </tr>
 <tr>
 <th><strong>Source of Requirement</strong></th>
-<td></td>
+<td><a href="http://linked-research.270a.info/linked-research.html">http://linked-research.270a.info/linked-research.html</a></td>
 </tr>
 <tr>
 <th><strong>State of Requirement</strong></th>
 <td>Not implemented yet</td>
 </tr>
-</tbody>
+<tr><th><strong>Author</strong></th><td><a href="http://renatostauffer.ch#i">Renato Stuaffer</a></td></tr></tbody>
 </table>
 
 
@@ -1569,17 +1490,17 @@ The Editor must insert  <code>&lt;p&gt;</code>-tags when the author hits the ent
 </tr>
 <tr>
 <th><strong>Post-condition</strong></th>
-<td>Requirement <a href="http://renatostauffer.ch/requirements-and-design-for-a-tool-to-author-triple-statements/#f-18">F-18</a> must remain fulfilled</td>
+<td>Requirement <a href="http://renatostauffer.ch/requirements-and-design-for-a-tool-to-author-triple-statements/#f-18">F-18</a> must remain fulfilled.</td>
 </tr>
 <tr>
 <th><strong>Source of Requirement</strong></th>
-<td></td>
+<td><a href="http://linked-research.270a.info/linked-research.html">http://linked-research.270a.info/linked-research.html</a></td>
 </tr>
 <tr>
 <th><strong>State of Requirement</strong></th>
 <td>Not implemented yet</td>
 </tr>
-</tbody>
+<tr><th><strong>Author</strong></th><td><a href="http://renatostauffer.ch#i">Renato Stuaffer</a></td></tr></tbody>
 </table>
 
 
@@ -1631,23 +1552,23 @@ The Editor must insert the following pattern when an author is inserting a new t
 </tr>
 <tr>
 <th><strong>Source of Requirement</strong></th>
-<td></td>
+<td><a href="http://linked-research.270a.info/linked-research.html">http://linked-research.270a.info/linked-research.html</a></td>
 </tr>
 <tr>
 <th><strong>State of Requirement</strong></th>
 <td>Not implemented yet</td>
 </tr>
-</tbody>
+<tr><th><strong>Author</strong></th><td><a href="http://renatostauffer.ch#i">Renato Stuaffer</a></td></tr></tbody>
 </table>
 
 
 
 <table id="f-18">
-<caption>The DOM needs to keep its semantical representaiton</caption>
+<caption>The DOM needs to keep it&#8217;s semantical representation</caption>
 <tbody>
 <tr>
 <th><strong>Name</strong></th>
-<td>The DOM needs to remain clean</td>
+<td>The DOM needs to keep it&#8217;s semantical representation</td>
 </tr>
 <tr>
 <th><strong>ID</strong></th>
@@ -1687,70 +1608,13 @@ The DOM of the document needs to remain in the following shape:
 </tr>
 <tr>
 <th><strong>Source of Requirement</strong></th>
-<td></td>
+<td><a href="http://linked-research.270a.info/linked-research.html">http://linked-research.270a.info/linked-research.html</a></td>
 </tr>
 <tr>
 <th><strong>State of Requirement</strong></th>
 <td>Not implemented yet</td>
 </tr>
-</tbody>
-</table>
-
-
-<table id="f-19">
-<caption> (Remove this requirement!!!) Make functionality accessible through a keyboard interface</caption>
-<tbody>
-<tr>
-<th><strong>Name</strong></th>
-<td>Make functionality accessible through a keyboard interface</td>
-</tr>
-<tr>
-<th><strong>ID</strong></th>
-<td>F-19</td>
-</tr>
-<tr>
-<th><strong>Components</strong></th>
-<td>TripleEditor, TextEditor, U</td>
-</tr>
-<tr>
-<th><strong>Description</strong></th>
-<td>
-<q cite="http://www.w3.org/WAI/WCAG20/quickref/Overview.php#keyboard-operation">All functionality of the content is operable through a keyboard interface without requiring specific timings for individual keystrokes, except where the underlying function requires input that depends on the path of the user&#8217;s movement and not just the endpoints</q>. For Linked Research this means that the following operations should be executable through a keyboard:
-<ul>
-<li>Show (<a href="http://renatostauffer.ch/requirements-and-design-for-a-tool-to-author-triple-statements/#f-2">F-2</a>) and hide (<a href="http://renatostauffer.ch/requirements-and-design-for-a-tool-to-author-triple-statements/#f-3">F-3</a>) the TripleEditor</li>
-<li>Requirement Set subject (<a href="http://renatostauffer.ch/requirements-and-design-for-a-tool-to-author-triple-statements/#f-5">F-5</a>), Choose predicate (<a href="http://renatostauffer.ch/requirements-and-design-for-a-tool-to-author-triple-statements/#f-7">F-7</a>), Search predicate (<a href="http://renatostauffer.ch/requirements-and-design-for-a-tool-to-author-triple-statements/#f-6">F-6</a>), Choose object (<a href="http://renatostauffer.ch/requirements-and-design-for-a-tool-to-author-triple-statements/#f-9">F-9</a>), Search object (<a href="http://renatostauffer.ch/requirements-and-design-for-a-tool-to-author-triple-statements/#f-8">F-8</a>), Set object as text literal (<a href="http://renatostauffer.ch/requirements-and-design-for-a-tool-to-author-triple-statements/#f-10">F-10</a>)</li>
-<li>Automatic Markup (<a href="http://renatostauffer.ch/requirements-and-design-for-a-tool-to-author-triple-statements/#f-11">F-11</a>)</li>
-<li>Add triple statement (<a href="http://renatostauffer.ch/requirements-and-design-for-a-tool-to-author-triple-statements/#f-12">F-12</a>)</li>
-<li>Remove triple Statement (<a href="http://renatostauffer.ch/requirements-and-design-for-a-tool-to-author-triple-statements/#f-14">F-14</a>)</li>
-<li>Undo add triple statement (<a href="http://renatostauffer.ch/requirements-and-design-for-a-tool-to-author-triple-statements/#f-15">F-15</a>)</li>
-</ul>
-</td>
-</tr>
-<tr>
-<th><strong>Input</strong></th>
-<td>Key combination</td>
-</tr>
-<tr>
-<th><strong>Output</strong></th>
-<td>-</td>
-</tr>
-<tr>
-<th><strong>Pre-condition</strong></th>
-<td>-</td>
-</tr>
-<tr>
-<th><strong>Post-condition</strong></th>
-<td>-</td>
-</tr>
-<tr>
-<th><strong>Source of Requirement</strong></th>
-<td>http://csarven.ca/enabling-accessible-knowledge#accessibility, http://www.w3.org/WAI/WCAG20/quickref/Overview.php#keyboard-operation</td>
-</tr>
-<tr>
-<th><strong>State of Requirement</strong></th>
-<td>Not implemented yet</td>
-</tr>
-</tbody>
+<tr><th><strong>Author</strong></th><td><a href="http://renatostauffer.ch#i">Renato Stuaffer</a></td></tr></tbody>
 </table>
 
 
@@ -1800,13 +1664,13 @@ A consumer or author must have the ability to switch between different CSS views
 </tr>
 <tr>
 <th><strong>Source of Requirement</strong></th>
-<td>http://linked-research.270a.info/linked-research.html</td>
+<td><a href="<td><a href="http://linked-research.270a.info/linked-research.html">http://linked-research.270a.info/linked-research.html</a></td>&#8220;>http://linked-research.270a.info/linked-research.html</a></td>
 </tr>
 <tr>
 <th><strong>State of Requirement</strong></th>
 <td>Implemented</td>
 </tr>
-</tbody>
+<tr><th><strong>Author</strong></th><td><a href="http://renatostauffer.ch#i">Renato Stuaffer</a></td></tr></tbody>
 </table>
 
 
@@ -1849,13 +1713,13 @@ The author must have the ability to enable or disable local storage by clicking 
 </tr>
 <tr>
 <th><strong>Source of Requirement</strong></th>
-<td>http://linked-research.270a.info/linked-research.html</td>
+<td><a href="http://linked-research.270a.info/linked-research.html">http://linked-research.270a.info/linked-research.html</a></td>
 </tr>
 <tr>
 <th><strong>State of Requirement</strong></th>
 <td>Implemented</td>
 </tr>
-</tbody>
+<tr><th><strong>Author</strong></th><td><a href="http://renatostauffer.ch#i">Renato Stuaffer</a></td></tr></tbody>
 </table>
 
 
@@ -1899,13 +1763,13 @@ An author or consumer must have the ability to export the document to HTML by cl
 </tr>
 <tr>
 <th><strong>Source of Requirement</strong></th>
-<td>http://linked-research.270a.info/linked-research.html</td>
+<td><a href="http://linked-research.270a.info/linked-research.html">http://linked-research.270a.info/linked-research.html</a></td>
 </tr>
 <tr>
 <th><strong>State of Requirement</strong></th>
 <td>Implemented</td>
 </tr>
-</tbody>
+<tr><th><strong>Author</strong></th><td><a href="http://renatostauffer.ch#i">Renato Stuaffer</a></td></tr></tbody>
 </table>
 
 
@@ -1958,13 +1822,13 @@ Linked Research must provide an author or consumer the possibility to view the d
 </tr>
 <tr>
 <th><strong>Source of Requirement</strong></th>
-<td>http://linked-research.270a.info/linked-research.html</td>
+<td><a href="http://linked-research.270a.info/linked-research.html">http://linked-research.270a.info/linked-research.html</a></td>
 </tr>
 <tr>
 <th><strong>State of Requirement</strong></th>
 <td>Implemented</td>
 </tr>
-</tbody>
+<tr><th><strong>Author</strong></th><td><a href="http://renatostauffer.ch#i">Renato Stuaffer</a></td></tr></tbody>
 </table>
 
 <table id="f-24">
@@ -2006,13 +1870,13 @@ Linked Research must offer the functionality to authors and consumers, to identi
 </tr>
 <tr>
 <th><strong>Source of Requirement</strong></th>
-<td>http://linked-research.270a.info/linked-research.html</td>
+<td><a href="http://linked-research.270a.info/linked-research.html">http://linked-research.270a.info/linked-research.html</a></td>
 </tr>
 <tr>
 <th><strong>State of Requirement</strong></th>
 <td>Implemented</td>
 </tr>
-</tbody>
+<tr><th><strong>Author</strong></th><td><a href="http://renatostauffer.ch#i">Renato Stuaffer</a></td></tr></tbody>
 </table>
 
 <table id="f-25">
@@ -2054,13 +1918,13 @@ Linked Research must provide authors functionality to enable or disable autosave
 </tr>
 <tr>
 <th><strong>Source of Requirement</strong></th>
-<td>http://linked-research.270a.info/linked-research.html</td>
+<td><a href="http://linked-research.270a.info/linked-research.html">http://linked-research.270a.info/linked-research.html</a></td>
 </tr>
 <tr>
 <th><strong>State of Requirement</strong></th>
-<td>Implemented</td>
+<td>Not implemented yet</td>
 </tr>
-</tbody>
+<tr><th><strong>Author</strong></th><td><a href="http://renatostauffer.ch#i">Renato Stuaffer</a></td></tr></tbody>
 </table>
 
 
@@ -2103,14 +1967,36 @@ Linked Research must provide authors and consumers the possibility to print the 
 </tr>
 <tr>
 <th><strong>Source of Requirement</strong></th>
-<td>http://linked-research.270a.info/linked-research.html</td>
+<td><a href="http://linked-research.270a.info/linked-research.html">http://linked-research.270a.info/linked-research.html</a></td>
 </tr>
 <tr>
 <th><strong>State of Requirement</strong></th>
 <td>Implemented</td>
 </tr>
-</tbody>
+<tr><th><strong>Author</strong></th><td><a href="http://renatostauffer.ch#i">Renato Stuaffer</a></td></tr></tbody>
 </table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -2153,13 +2039,13 @@ Linked Research must provide authors and consumers functionality to embed Turtle
 </tr>
 <tr>
 <th><strong>Source of Requirement</strong></th>
-<td>http://linked-research.270a.info/linked-research.html</td>
+<td><a href="http://linked-research.270a.info/linked-research.html">http://linked-research.270a.info/linked-research.html</a></td>
 </tr>
 <tr>
 <th><strong>State of Requirement</strong></th>
 <td>Implemented</td>
 </tr>
-</tbody>
+<tr><th><strong>Author</strong></th><td><a href="http://renatostauffer.ch#i">Renato Stuaffer</a></td></tr></tbody>
 </table>
 
 
@@ -2207,13 +2093,13 @@ Linked Research should provide authors instructions for functionality. This incl
 </tr>
 <tr>
 <th><strong>Source of Requirement</strong></th>
-<td>http://linked-research.270a.info/linked-research.html</td>
+<td><a href="http://linked-research.270a.info/linked-research.html">http://linked-research.270a.info/linked-research.html</a></td>
 </tr>
 <tr>
 <th><strong>State of Requirement</strong></th>
 <td>Not implemented yet</td>
 </tr>
-</tbody>
+<tr><th><strong>Author</strong></th><td><a href="http://renatostauffer.ch#i">Renato Stuaffer</a></td></tr></tbody>
 </table>
 
 
@@ -2256,13 +2142,13 @@ The TripleEditor may provide suggestions for RDF predicates or RDF objects when 
 </tr>
 <tr>
 <th><strong>Source of Requirement</strong></th>
-<td>http://linked-research.270a.info/linked-research.html</td>
+<td><a href="http://linked-research.270a.info/linked-research.html">http://linked-research.270a.info/linked-research.html</a></td>
 </tr>
 <tr>
 <th><strong>State of Requirement</strong></th>
 <td>Not implemented yet</td>
 </tr>
-</tbody>
+<tr><th><strong>Author</strong></th><td><a href="http://renatostauffer.ch#i">Renato Stuaffer</a></td></tr></tbody>
 </table>
 
 
@@ -2305,72 +2191,16 @@ The TripleEditor should prevent the author from typing wrong spelled search term
 </tr>
 <tr>
 <th><strong>Source of Requirement</strong></th>
-<td>http://linked-research.270a.info/linked-research.html</td>
+<td><a href="http://linked-research.270a.info/linked-research.html">http://linked-research.270a.info/linked-research.html</a></td>
 </tr>
 <tr>
 <th><strong>State of Requirement</strong></th>
 <td>Implemented</td>
 </tr>
-</tbody>
+<tr><th><strong>Author</strong></th><td><a href="http://renatostauffer.ch#i">Renato Stuaffer</a></td></tr></tbody>
 </table>
 
-</div>
-</section>
 
-<section id="non-functional-requirements" about="[this:#requirements-goals]" rel="dcterms:hasPart" resource="[this:#non-functional-requirements]">
-<h4 about="[this:#non-functional-requirements]" property="dcterms:title">Non-Functional Requirements</h4>
-<div about="[this:#non-functional-requirements]" property="dcterms:description">
-<p>
-This chapter describes the non-functional requirements of Linked Research. Sarven Capadisli et al. state in their publication Enabling Accessible Knowledge the following: <q cite="">The overall properties of the system as a whole that we seek should inherit best accessibility and usability practices, devise ubiquitous user experience designs, and be subject to evolvability.</q> Thus the main focus concerning non-functional requirements for Linked Research lies on accessibility, usability (user experience) and evolvability.
-</p>
-<p>
-The non-functional requirements follow the pattern below:
-</p>
-<table>
-<caption>Pattern for non-functional requirements</caption>
-<tbody>
-<tr>
-<th>
-<strong>Name</strong>
-</th>
-<td>
-The name of the requirement
-</td>
-</tr>
-<tr>
-<th>
-<strong>ID</strong>
-</th>
-<td>
-A unique ID to avoid confusion when having similar named requirements.
-</td>
-</tr>
-<tr>
-<th>
-<strong>Description</strong>
-</th>
-<td>
-A description of the requirement
-</td>
-</tr>
-<tr>
-<th>
-<strong>Derived functional requirements</strong>
-</th>
-<td>
-A list of functional requirements, which were derived from the non-functional requirement.
-</td>
-</tr>
-<tr>
-<th>
-<strong>Source of the requirement</strong>
-</th>
-<td>
-States where the requirement comes from.
-</td>
-</tr>
-<tbody>
-</table>
 
 <table id="q-1">
 <caption>Accessibility</caption>
@@ -2393,16 +2223,15 @@ Linked Research should be available to as many people as possible, including peo
 <th><strong>Derived functional requirements</strong></th>
 <td>
 <ul>
-<li>Make functionality accessible through a keyboard interface (<a href="http://renatostauffer.ch/requirements-and-design-for-a-tool-to-author-triple-statements/#f-19">F-19</a>)</li>
 <li>View switching (<a href="http://renatostauffer.ch/requirements-and-design-for-a-tool-to-author-triple-statements/#f-20">F-20</a>)</li>
 </ul>
 </td>
 </tr>
 <tr>
 <th><strong>Source of Requirement</strong></th>
-<td>http://csarven.ca/enabling-accessible-knowledge#accessibility, http://www.w3.org/WAI/WCAG20/quickref/Overview.php#keyboard-operation</td>
+<td><a href="http://csarven.ca/enabling-accessible-knowledge#accessibility">http://csarven.ca/enabling-accessible-knowledge#accessibility</a>, <a href="http://csarven.ca/enabling-accessible-knowledge#accessibility">http://www.w3.org/WAI/WCAG20/quickref/Overview.php#keyboard-operation</a></td>
 </tr>
-</tbody>
+<tr><th><strong>Author</strong></th><td><a href="http://renatostauffer.ch#i">Renato Stuaffer</a></td></tr></tbody>
 </table>
 
 
@@ -2433,7 +2262,7 @@ Linked Research should be available for consumers with smart devices (smart phon
 <th><strong>Source of Requirement</strong></th>
 <td><a href="http://csarven.ca/enabling-accessible-knowledge#accessibility">Enabling Accessible Knowledge</a></td>
 </tr>
-</tbody>
+<tr><th><strong>Author</strong></th><td><a href="http://renatostauffer.ch#i">Renato Stuaffer</a></td></tr></tbody>
 </table>
 
 
@@ -2469,40 +2298,9 @@ Linked Research should provide help for authors to understand and learn how to u
 <th><strong>Source of Requirement</strong></th>
 <td><a href="http://csarven.ca/enabling-accessible-knowledge#user-experience">Enabling Accessible Knowledge</a></td>
 </tr>
-</tbody>
+<tr><th><strong>Author</strong></th><td><a href="http://renatostauffer.ch#i">Renato Stuaffer</a></td></tr></tbody>
 </table>
 
-
-
-<table id="q-4">
-<caption>Time for task completion</caption>
-<tbody>
-<tr>
-<th><strong>Name</strong></th>
-<td>Time for task completion</td>
-</tr>
-<tr>
-<th><strong>ID</strong></th>
-<td>Q-4</td>
-</tr>
-<tr>
-<th><strong>Description</strong></th>
-<td>
-Linked Research should provide an author or consumer infinite time to complete a task.
-</td>
-</tr>
-<tr>
-<th><strong>Derived functional requirements</strong></th>
-<td>
-&#8211;
-</td>
-</tr>
-<tr>
-<th><strong>Source of Requirement</strong></th>
-<td><a href="http://www.w3.org/WAI/WCAG20/quickref/Overview.php#time-limits">WCAG 2.0</a></td>
-</tr>
-</tbody>
-</table>
 
 
 <table id="q-5">
@@ -2519,14 +2317,14 @@ Linked Research should provide an author or consumer infinite time to complete a
 <tr>
 <th><strong>Description</strong></th>
 <td>
-Linked Research should run in Gecko browser engines (Firefox) (LINE based browsers&#8230;)<i>More here..?</i>
+Linked Research does not pursue the goal to run in every version of every browser. It should run in the latest versions of Firefox, Internet Explorer, Google Chrome and Safari. Linked Research should also run on LINE based browsers.
 </td>
 </tr>
 <tr>
 <th><strong>Source of Requirement</strong></th>
-<td>[<i>Determine...</i>]</td>
+<td><a href="http://linked-research.270a.info/linked-research.html">http://linked-research.270a.info/linked-research.html</a></td>
 </tr>
-</tbody>
+<tr><th><strong>Author</strong></th><td><a href="http://renatostauffer.ch#i">Renato Stuaffer</a></td></tr></tbody>
 </table>
 
 
@@ -2541,7 +2339,7 @@ Linked Research should run in Gecko browser engines (Firefox) (LINE based browse
 <div about="[this:#ui-proposal]" property="dcterms:description">
 <p>Based on the functional and non-functional requirements, a user interface is proposed:</p>
 <figure class="figure">
-<a href="http://renatostauffer.ch/wp-content/uploads/2015/02/finale-ui2.png"><img src="http://renatostauffer.ch/wp-content/uploads/2015/02/finale-ui2.png" alt="finale-ui" width="1079" height="474" class="alignnone size-full wp-image-862" /></a>
+<a href="http://renatostauffer.ch/wp-content/uploads/2015/02/finale-ui3.png"><img src="http://renatostauffer.ch/wp-content/uploads/2015/02/finale-ui3.png" alt="finale-ui" width="1079" height="474" class="alignnone size-full wp-image-1394" /></a>
 <figcaption>
 Possible user interface for the TripleEditor
 </figcaption>
@@ -2572,9 +2370,9 @@ Alice (author) would like to add a triple statement to the document, which state
 This would take the following steps:
 </p>
 <figure class="figure">
-<a href="http://renatostauffer.ch/wp-content/uploads/2015/02/add-triple.png"><img src="http://renatostauffer.ch/wp-content/uploads/2015/02/add-triple.png" alt="add-triple" width="1094" height="474" class="alignnone size-full wp-image-849" /></a>
+<a href="http://renatostauffer.ch/wp-content/uploads/2015/02/add-triple3.png"><img src="http://renatostauffer.ch/wp-content/uploads/2015/02/add-triple3.png" alt="add-triple" width="1094" height="479" class="alignnone size-full wp-image-1385" /></a>
 <figcaption>
-Depiction of scenario &#8220;Add triple statement&#8221;
+Depiction of scenario &#8220;Add triple statement&#8221;. Source: Author&#8217;s own work
 </figcaption>
 </figure>
 <table>
@@ -2629,9 +2427,10 @@ Depiction of scenario &#8220;Add triple statement&#8221;
 <td>
 <ol>
 <li>The TripleEditor toggles in.</li>
-<li>The label &#8220;Selected Word&#8221; will show up.</li>
+<li>The label &#8220;Selected Word: Bob&#8221; will show up.</li>
+<li>Alice enters the URL, that describes the &#8220;thing&#8221; Bob: http://bob.com#i</li>
 </ol>
-<strong>Alternative</strong>: If Alice selected a phrase or paragraph instead of a word, the corresponding label would be set as &#8220;Selected phrase&#8221; or &#8220;Selected paragraph&#8221;
+<strong>Alternative</strong>: If Alice selected a phrase or paragraph instead of a word, the corresponding label of step 2 would be set as &#8220;Selected phrase&#8221; or &#8220;Selected paragraph&#8221;
 </td>
 </tr>
 
@@ -2727,11 +2526,119 @@ Depiction of scenario &#8220;Add triple statement&#8221;
 </p>
 <p>
 Alice (author) would like to remove the following triple statement from the DOM and the triple store:
-
+<code> &lt;http://bob.com#i&gt; rdf:type foaf:Person;</code>
 </p>
 <p>
 This would take the following steps:
 </p>
+<a href="http://renatostauffer.ch/wp-content/uploads/2015/02/delete-triple.png">
+<figure>
+<a href="http://renatostauffer.ch/wp-content/uploads/2015/02/delete-triple2.png"><img src="http://renatostauffer.ch/wp-content/uploads/2015/02/delete-triple2.png" alt="delete-triple" width="1094" height="479" class="alignnone size-full wp-image-1392" /></a>
+<figcaption>
+Depiction of scenario &#8220;Remove triple statement&#8221;. Source: Author&#8217;s own work
+</figcaption>
+</figure>
+<table>
+<caption>Components and their interaction in the scenario &#8220;Delete triple statement&#8221;</caption>
+<tbody>
+<tr>
+<th>Step</th>
+<th>Involved components / Stakeholder</th>
+<th>Description</th>
+</tr>
+
+<tr>
+<td>1</td>
+<td>
+<ul>
+<li>Alice</li>
+</ul>
+</td>
+<td>
+<ol>
+<li>Alice hovers over the triple statement cell, which corresponds to the triple statement she would like to delete. The cell displays the corresponding subject, predicate and object.</li>
+</ol>
+</td>
+</tr>
+
+
+
+<tr>
+<td>2</td>
+<td>
+<ul>
+<li>TextEditor</li>
+<li>DOMManipulator</li>
+</ul>
+</td>
+<td>
+<ol>
+<li>The DOMManipulator searches for the corresponding text passage in the DOM.</li>
+<li>The TextEditor highlights the text &#8220;Bob&#8221; to show alice the affected passage</li>
+</ol>
+</td>
+</tr>
+
+
+
+
+<tr>
+<td>3</td>
+<td>
+<ul>
+<li>Alice</li>
+</ul>
+</td>
+<td>
+<ol>
+<li>Alice clicks on the cross of the cell to delete the annotation from the DOM</li>
+</ol>
+</td>
+</tr>
+
+
+
+<tr>
+<td>4</td>
+<td>
+<ul>
+<li>Dialogue Window</li>
+<li>TextEditor</li>
+</ul>
+</td>
+<td>
+<ol>
+<li>A dialogue window shows up</li>
+<li>The TextEditor passes the affected text passage to the dialogue window.</li>
+<li>The dialogue window displays the message: Would you like to remove the annotation &#8220;Bob&#8221; from the text?</li>
+</ol>
+</td>
+</tr>
+
+
+
+<tr>
+<td>5</td>
+<td>
+<ul>
+<li>Alice</li>
+<li>Dialogue Window</li>
+</ul>
+</td>
+<td>
+<ol>
+<li>Alice clicks on the button &#8220;Remove Annotation&#8221;.</li>
+<li>The TripleStore removes the triple <code> &lt;http://bob.com#i&gt; rdf:type foaf:Person;</code> from the triple store.</li>
+<li>The DOMManipulator removes the annotation from the corresponding DOM element.</li>
+<li>The TripleEditor removes the cell from the right side of the screen.</li>
+</ol>
+<strong>Alternative</strong>: Alice clicks on the button labeled &#8220;Cancel&#8221;. This would hide the dialogue window.  
+</td>
+</tr>
+
+
+</tbody>
+</table>
 </div>
 </section><!--End of #remove-triple-scenario-->
 
@@ -2751,26 +2658,43 @@ This would take the following steps:
 <h2 about="[this:#comparison-editor]" property="dcterms:title">Comparison Editor</h2>
 <div about="[this:#comparison-editor]" property="dcterms:description">
 <p>
-A search on Github for the term &#8220;WYSIWYG&#8221; resulted in over 1&#8217;200 repositories for WYSIWG-editors. This indicates, that the TextEditor component is a good candidate that can easily be reused from an existing project. As stated by ???, creating a WYSIWYG-editor on your own is time consuming and difficult[].
-</p>
-<p>
-The challenge is to find an editor that matches the established requirements from <a href="http://renatostauffer.ch/requirements-and-design-for-a-tool-to-author-triple-statements/#requirements-goals">chapter 5.3</a>. Especially the requirements Edit text (F-1), Text formatting (F-4), Enrich DOM (F-13), Add new Paragraph (F-16), Add new Section (F-17), The DOM needs to remain clean (F-18) and Make functionality accessible through a keyboard interface (F-19) need to be considerer when evaluating a possible editor.
-</p>
+This section describes, how different WYSIWYG editors got compared to build a basis for a later evaluation.</p>
 <section id="text-editing" about="[this:#comparison-editor]" rel="dcterms:hasPart" resource="[this:#text-editing]">
 <h3 about="[this:#text-editing]" property="dcterms:title">Text Editing on the Web</h3>
 <div about="[this:#text-editing]" property="dcterms:description">
 <p>
 Before considering a particular editor, known approaches to edit text within the browser need to be determined.
 </p>
-<p>A search for the terms &#8220;How to write a wysiwyg editor&#8221;, &#8220;text editor approaches in browsers&#8221;, &#8220;contentEditable&#8221; and &#8220;alternatives for contentEditable&#8221; on <a href="https://www.google.ch/?gws_rd=ssl">Google.com</a> resulted in three possible approaches on how an author is able to edit text in the browser.
+<p>A search for the terms <samp>approaches wysiwyg editors</samp> and <samp>text editing approaches on web</samp>, led to the following Wikipedia page: <a href="http://en.wikipedia.org/wiki/Online_rich-text_editor">http://en.wikipedia.org/wiki/Online_rich-text_editor</a>. This source is not scientific enough for the thesis, but offers new insights on what kind of search terms could be used to get more relevant material. The consultation of the page led to the following new search terms: <samp>contentEditable</samp>, <samp>alternatives for contentEditable</samp>, <samp>designMode</samp>, <samp>textarea</samp>, <samp>inline editing wysiwyg</samp>.  
+Searches on <a href="https://www.google.ch/?gws_rd=ssl">Google.com</a> for these terms resulted in the following approaches to edit text on the Web:
+</>
+<dl>
+<dt>Inline editing</dt>
+<dd>
+Inline editing is described as follows by [http://ux.stackexchange.com/tags/inline-edit/info]:
+<blockquote>
+Inline edit is a design pattern that enables the user to edit text directly in the page without requiring going to a separate page or opening a dialog overlay. It makes the interaction more direct and intuitive as the user can edit the text in the same place where it is shown.
+</blockquote>
+<p>
+The same definition is used in the documentation of the CKEditor, a well known WYSIWYG editor [http://docs.ckeditor.com/#!/guide/dev_inline].
+</p>
+</dd>
+<dt>Framed editing</dt>
+<dd>
+<p>
+Framed editing, also called <samp>classic editing</samp>, is described by [http://docs.ckeditor.com/#!/guide/dev_framed] as follows:
+</p>
+<blockquote>
+In this usage scenario the editor is most often represented by a toolbar and an editing area placed in a specific position on the page, usually as a part of a form that you use to submit some content to the server. Sometimes it is also called &#8220;framed editing&#8221;, because in this case the editor creates a temporary <code>iframe</code> element for itself.
+</blockquote>
+</dd>
+</dl>
+<p>
+From a more technical code level view, these two approaches are enabled through the use of the following techniques:
 </p>
 <dl>
-<dt id="text-editing-textarea">textarea</dt>
-<dd>
-In the early days of the Web, users were limited to text boxes when it came to online editing. Text boxes (expressed with the  <code>&lt;textarea&gt;</code>-element) do not support multiple fonts and styles.
-</dd>
 <dt id="text-editing-designmode">designMode</dt>
-<dd>The designMode attribute of the  <code>document</code>  object is able to make a whole HTML-page editable by just setting it to true [source http://www.w3.org/TR/html5/editing.html#editing-0].
+<dd>The designMode attribute of the <code>document</code> object is able to make a whole HTML-page editable by just setting it to true [source http://www.w3.org/TR/html5/editing.html#editing-0].
 </dd>
 
 <dt id="text-editing-contenteditable">contentEditable</dt>
@@ -2793,32 +2717,35 @@ The <code>&lt;div&gt;</code>-element down below is now editable due to setting t
 <div class="test-editable" contentEditable="true">
 You can edit this div element. Try it&#8230;
 </div>
-
-<section id="div-vs-iframe" about="[this:#comparison-editor]" rel="dcterms:hasPart" resource="[this:#div-vs-iframe]">
-<h4 about="[this:#div-vs-iframe]" property="dcterms:title">div vs iframe</h4>
-<div about="[this:#div-vs-iframe]" property="dcterms:description">
-<p>
-Beside having one of the mentioned approaches from above, it can be distinguished between two ways to include the editable content into an HTML-page.
-</p>
-<dl>
-<dt>iFrame</dt>
-<dd></dd>
-<dt>div</dt>
-<dd></dd>
-</dl>
-</div>
-</section><!--End of #div-vs-iframe-->
 </div>
 </section><!--End of #text-editing-->
 <p>
-After determining the different approaches, the following categories including different criteria for the comparison were established:
+
+<p>
+After determining different approaches, a Web research was made to see what kind of authoring on the Web (inline or framed) offers the best editing experience, with Linked Research&#8217;s established requirements in mind. Searches on <a href="http:google.com">Google.com</a> with the search terms <samp>in-place editing user experience wysiwyg</samp>, <samp>inline editing user experience wysiwyg</samp> and <samp>inplace editing user experience wysiwyg</samp> resulted in the following:
+</p>
+<p>
+As far as it comes to editing experience for WYSIWYG editors, inline editing (also called in-place editing or inline edit) is emerging. This is shown by [http://www.uxbooth.com/articles/wysiwyg-round/] as they compiled blog posts from different sources and show the discussion around this approach.
+</p>
+<p>
+Also, big Content Management Systems like Drupal picked up on this development. Their Drupal distribution Spark aimed to work out solutions for authoring experience problems. This included the implementation of an inline WYSIWYG editor [https://www.drupal.org/project/spark].
+</p>
+<p>
+Other services like <a href="http://medium.com">Medium.com</a> claim to be the best writing tool on the Web by applying the inline editing strategy and stripping out a lot of formatting features other editors offer [https://medium.com/about/writing-in-medium-df8eac9f4a5e]. Jeff Eaton, senior digital strategist at Lullabot, sees potential for focused web sites like Medium.com by applying this strategy [https://www.lullabot.com/blog/article/inline-editing-and-cost-leaky-abstractions].
+</p>
+<p>
+For Linked Research, the inline editing approach is a suitable option too, as its formatting is also very focused (see requirement XXX). This enables the author to concentrate on the actual content of his / her publication.
+<p>
+The challenge is to find an inline WYSIWYG editor that matches the established requirements from <a href="http://renatostauffer.ch/requirements-and-design-for-a-tool-to-author-triple-statements/#requirements-goals">section 5.3</a>. Especially the requirements Edit text (F-1), Text formatting (F-4), Enrich DOM (F-13), Add new Paragraph (F-16), Add new Section (F-17) and The DOM needs to keep it&#8217;s semantical representation (F-18) and need to be considerer when evaluating a possible editor.
+</p>
+The following categories including different criteria for the comparison were established:
 <dl>
 <dt>General information</dt>
-<dd>This category includes information about the editors.</dd>
+<dd>This category includes general information about the editors.</dd>
 <dt>Support</dt>
-<dd>&#8220;Support&#8221; looks if there is a community around the editor and if there is documentation available.</dd>
+<dd>&#8220;Support&#8221; looks if there is a community around the editor and if there is documentation available. As stated by [https://www.duo.uio.no/bitstream/handle/10852/9767/store.pdf?sequence=2&#038;isAllowed=y], open source projects often lack good documentation. Thus this is an important attribute, when considering the editor.</dd>
 <dt>Requirement Fulfillment</dt>
-<dd>This category determines if the editor fulfills the established requirements from chapter 5</dd>
+<dd>This category determines if the editor fulfills the established requirements from section 5</dd>
 <dt>Extensibility</dt>
 <dd>To make it possible for Linked Research to work, new functionality has to be added to the editor. This category looks if the editor can easily be extended with custom buttons and events attached to it.</dd>
 <dt>Compatibility</dt>
@@ -2827,7 +2754,6 @@ After determining the different approaches, the following categories including d
 <p>
 Table 45 &#8211; 49 compare all possible editors for Linked Research with its corresponding criteria. Those editors were determined by doing search on <a href="https://www.google.ch/?gws_rd=ssl">Google.com</a> (used search terms: <samp>wysiwyg</samp> <samp>clean html</samp>, <samp>wysiwyg comparison</samp>, <samp>inline HTML editors</samp>, <samp>rich text editors comparison</samp>, <samp>rte comparison</samp>, <samp>medium.com clone</samp>) and <a href="https://github.com/">Github.com</a> (used search terms: <samp>inline browser editor</samp>, <samp>html editor browser</samp>, <samp>inline html editor</samp>, <samp>medium.com clone</samp>, <samp>medium.com</samp>, <samp>wysiwyg</samp>, <samp>wysiwyg inline editor</samp>). 
 </p>
-
 <table id="editor-information">
 <caption>General information</caption>
 <thead>
@@ -2841,7 +2767,7 @@ Table 45 &#8211; 49 compare all possible editors for Linked Research with its co
 </thead>
 <tfoot>
 <tr>
-<td colspan="5">Table XXX provides general information about the editors. The attribute <samp>Approach</samp> indicates what kind of approach is used to turn the container element into editable mode. One of the established approaches in chapter XXX is assigned to each editor for this attribute.
+<td colspan="5">Table XXX provides general information about the editors. The attribute <samp>Approach</samp> indicates what kind of approach is used to turn the container element into editable mode. One of the established approaches in section XXX is assigned to each editor for this attribute.
 The column <samp>Container Element</samp> accepts either the value <samp>div</samp> or <samp>iframe</samp> and describes how the editable content is included in the HTML page.
 The column <samp>License</samp> indicates what kind of license is used with the corresponding editor
 <samp>External Dependencies</samp> takes a comma separated list for dependencies to external libraries or the value <samp>None</samp>, if no dependency exists.
@@ -3039,7 +2965,7 @@ The attribute <samp>Documentation</samp> takes either the value <samp>No</samp> 
 <tfoot>
 <tr>
 <td colspan="6">
-Table XXX shows how well each editor fulfills the requirements established in chapter XXX. If an editor fulfills a requirement the value <samp>Yes</samp> is inserted into the corresponding column. If the editor does not satisfy the requirement, the value <samp>No</samp> is used.
+Table XXX shows how well each editor fulfills the requirements established in section XXX. If an editor fulfills a requirement the value <samp>Yes</samp> is inserted into the corresponding column. If the editor does not satisfy the requirement, the value <samp>No</samp> is used.
 </td>
 </tr>
 </tfoot>
@@ -3320,7 +3246,7 @@ Table XXX shows how compatible the editors are with the browsers <samp>Internet 
 
 </tbody>
 </table>
-
+<p>The </p>
 </div>
 </section><!--End of #comparison-editor-->
 
@@ -3434,17 +3360,60 @@ Table XXX shows how compatible the editors are with the browsers <samp>Internet 
 <section id="summary-and-outlook" about="[this:]" rel="dcterms:hasPart" resource="[this:#summary-and-outlook]">
 <h2 about="[this:#summary-and-outlook]" property="dcterms:title">Summary and Outlook</h2>
 <div about="[this:#summary-and-outlook]" property="dcterms:description">
+<p>This section summaries the thesis and gives an outlook for future processing concerning Linked Research and the established results of this thesis.</p>
+
+
+<section id="summary" about="[this:#summary-and-outlook]" rel="dcterms:hasPart" resource="[this:#summary]">
+<h3 about="[this:#summary]" property="dcterms:title">Summary</h3>
+<div about="[this:#summary]" property="dcterms:description">
 <p>
 Through the study of the existing Linked Research documentation, meetings with Sarven Capadisli and research on requirements for SCA tools, suitable functional and non-functional requirements were established. Important objects for the implementation have been discovered and a possible user interface for Linked Research&#8217;s triple editor has been proposed using mockups. Thus the goals to design the triple editor as well as to record functional and non-functional requirements have been reached.
 </p>
 <p>
-Editors and RDFa parser libraries have been compared. The tables in section XXX show the result and can be used for a later evaluation of these components. The small code examples on github serve as showcases for the different libraries and can be used as a starter point when implementing the components.
-</p>
-<p>
-
+Editors and RDFa parser libraries have been compared. Tables XXX from section XXX show the result of this comparison. The code examples on github serve as showcases for the different libraries and can be used as a starting point when implementing the components.
 </p>
 </div>
 </section>
+
+<section id="outlook" about="[this:#summary-and-outlook]" rel="dcterms:hasPart" resource="[this:#outlook]">
+<h3 about="[this:#outlook]" property="dcterms:title">Outlook</h3>
+<div about="[this:#outlook]" property="dcterms:description">
+<p>
+The requirements are now open to be transformed to the repository or the documentation of Linked Research. Additionally Sarven Capadisli can now evaluate a suitable editor and RDFa parser component based on the established tables in section XXX.
+</p>
+<p>
+Although the focus concerning non-functional requirements lies on usability, accessibility and evolvability, Linked Research has not established requirements concerning other non-functional properties like efficiency or reliability yet. Those are open to be defined.
+</p>
+<p>
+The proposed user interface for the triple editor is open to be implemented. Also an interface to view the document as a graph of RDF triples has not been designed yet. Based on the requirements, in suitable tooling and best practices can be investigated to find a proper solution.
+</p>
+</div>
+</section>
+
+</div>
+</section>
+
+
+<section id="statement-of-authorship">
+<h2 style="page-break-after: always;">Statement of Authorship</h2>
+<div>
+<p>
+I herby confirm that this assignment is my own work. All content in the assignment that is not my original work is identified as such and is provided with a precise reference to its source. All sources (including sources of images and graphics etc.) are listed in the List of references.
+</p>
+<br />
+<br />
+<p>
+Bern, 22. May 2015
+</p>
+<p>
+<a href="http://renatostauffer.ch/wp-content/uploads/2015/02/sig-renato.png"><img src="http://renatostauffer.ch/wp-content/uploads/2015/02/sig-renato.png" alt="sig renato" width="150" height="47" class="alignnone size-full wp-image-1397" /></a>
+</p>
+<p>
+Renato Stauffer
+</p>
+</div>
+</section>
+
 
 <section id="references">
 <h2>References</h2>
@@ -3529,9 +3498,16 @@ Editors and RDFa parser libraries have been compared. The tables in section XXX 
 <li id="ref-33">Sommerville I., 2008. Software Engineering, 8. edition: Addison-Wesley</li>
 
 <li id="ref-1">Author, year. title, Online: <a href="link" rel="dcterms:references">Link</a> (date)</li>
+
 <li id="ref-4">Capadisli, S.: Linked Research, (2013), <a href="http://csarven.ca/linked-research" rel="dcterms:references">http://csarven.ca/linked-research</a></li>
 
-<li id="ref-31">Pohl, K., 2010. Requirements Engineering: Fundamentals, Principles, and Techniques, Berlin Heidelberg: Springer-Verlag</li>
+<li id="ref-34">Pohl, K., 2010. Requirements Engineering: Fundamentals, Principles, and Techniques, Berlin Heidelberg: Springer-Verlag</li>
+
+<li id="ref-35">Adobe, 2015. About Adobe PDF, Online: <a href="https://acrobat.adobe.com/us/en/products/about-adobe-pdf.html" rel="dcterms:references">https://acrobat.adobe.com/us/en/products/about-adobe-pdf.html</a> (2015-05-19)</li>
+
+<li id="ref-36">Duff Johnson, 2014. The 8 most popular document formats on the web, Online: <a href="http://duff-johnson.com/2014/02/17/the-8-most-popular-document-formats-on-the-web/" rel="dcterms:references">http://duff-johnson.com/2014/02/17/the-8-most-popular-document-formats-on-the-web/</a> (2015-05-19)</li>
+
+<li id="ref-37">Github, 2015. About GitHub, Online: <a href="https://github.com/about" rel="dcterms:references">https://github.com/about</a> (2015-05-19)</li>
 
 </ol>
 </section>
