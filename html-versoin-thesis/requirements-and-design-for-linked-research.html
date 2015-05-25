@@ -35,14 +35,9 @@
 </head>
 
 <body about="[this:]" typeof="foaf:Document sioc:Post biblio:Paper prov:Entity" class="hfeed" prefix="rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns# rdfs: http://www.w3.org/2000/01/rdf-schema# owl: http://www.w3.org/2002/07/owl# xsd: http://www.w3.org/2001/XMLSchema# dcterms: http://purl.org/dc/terms/ foaf: http://xmlns.com/foaf/0.1/ v: http://www.w3.org/2006/vcard/ns# pimspace: http://www.w3.org/ns/pim/space# cc: http://creativecommons.org/ns# skos: http://www.w3.org/2004/02/skos/core# prov: http://www.w3.org/ns/prov# schema: http://schema.org/ rsa: http://www.w3.org/ns/auth/rsa# cert: http://www.w3.org/ns/auth/cert# cal: http://www.w3.org/2002/12/cal/ical# wgs: http://www.w3.org/2003/01/geo/wgs84_pos# org: http://www.w3.org/ns/org# biblio: http://purl.org/net/biblio# bibo: http://purl.org/ontology/bibo/ book: http://purl.org/NET/book/vocab# ov: http://open.vocab.org/terms/ doap: http://usefulinc.com/ns/doap# dbr: http://dbpedia.org/resource/ dbp: http://dbpedia.org/property/ sio: http://semanticscience.org/resource/ opmw: http://www.opmw.org/ontology/ deo: http://purl.org/spar/deo/ doco: http://purl.org/spar/doco/ cito: http://purl.org/spar/cito/ sro: http://salt.semanticauthoring.org/ontologies/sro# this: http://renatostauffer.ch/requirements-engineering-for-linked-research/">
-<style type="text/css">
-h2{
-page-break-before: always;
-}
-</style>
 <article class="hentry editable">
 <div>
-<h1 class="entry-title">Requirements Engineering for Linked Research Bachelor Thesis</h1>
+<h1 class="entry-title">Requirements Engineering for Linked Research</h1>
 <div id="authors">
 <dl id="author-name">
 <dt>Authors</dt>
@@ -56,7 +51,7 @@ Author: <a href="http://renatostauffer.ch#i" rel="foaf:homepage">Renato Stauffer
 Supervisors: Prof. Dr. Eduard Klein<sup><a href="#author-org-1">1</a></sup><sup><a href="#supervisor-email-1">3</a></sup>
 </dd>
 <dt>Supervisor</dt>
-<dd>
+<dd id="supervisor-2">
 Prof. Reto Jud<sup><a href="#author-org-1">1</a></sup><sup><a href="#supervisor-email-2">4</a></sup>
 </dd>
 </dl>
@@ -65,8 +60,8 @@ Prof. Reto Jud<sup><a href="#author-org-1">1</a></sup><sup><a href="#supervisor-
 </ul>
 <ul id="author-email">
   <li id="author-email-1"><sup>2</sup><a href="mailto:renato.stauffer@students.bfh.ch" rel="foaf:mbox">renato.stauffer@students.bfh.ch</a></li>
-<li id="supervisor-1"><sup>3</sup><a href="mailto:eduard.klein@bfh.ch" rel="foaf:mbox">eduard.klein@bfh.ch</a></li>
-<li id="supervisor-2"><sup>4</sup><a href="mailto:reto.jud@bfh.ch" rel="foaf:mbox">reto.jud@bfh.ch</a></li>
+<li id="supervisor-1-email"><sup>3</sup><a href="mailto:eduard.klein@bfh.ch" rel="foaf:mbox">eduard.klein@bfh.ch</a></li>
+<li id="supervisor-2-email"><sup>4</sup><a href="mailto:reto.jud@bfh.ch" rel="foaf:mbox">reto.jud@bfh.ch</a></li>
 </ul>
 </div>
 <dl id="document-identifier"><dt>Document ID</dt><dd> <a href="http://renatostauffer.ch/requirements-engineering-for-linked-research/">http://renatostauffer.ch/requirements-engineering-for-linked-research</a></dd>
@@ -864,7 +859,6 @@ Important objects within Linked Research
 <td>An object responsible to create or remove triple statements has to be provided.</td>
 </tr>
 <tr>
-<tr>
 <td>DOMManipulator</td>
 <td>If a new triple statement gets created, this change needs to be reflected in the DOM with RDFa. The DOMManipulator is responsible to add or remove RDFa from elements within the DOM</td>
 </tr>
@@ -1288,7 +1282,6 @@ Alice (author) would like to remove the following triple statement from the DOM 
 <p>
 This would take the following steps:
 </p>
-<a href="http://renatostauffer.ch/wp-content/uploads/2015/02/delete-triple.png">
 <figure>
 <a href="http://renatostauffer.ch/wp-content/uploads/2015/02/delete-triple2.png"><img src="http://renatostauffer.ch/wp-content/uploads/2015/02/delete-triple2.png" alt="delete-triple" width="1094" height="479" class="alignnone size-full wp-image-1392" /></a>
 <figcaption>
@@ -1424,7 +1417,7 @@ Before considering a particular editor, known approaches to edit text within the
 </p>
 <p>A search for the terms <samp>approaches wysiwyg editors</samp> and <samp>text editing approaches on web</samp>, led to the following Wikipedia page: <a href="http://en.wikipedia.org/wiki/Online_rich-text_editor">http://en.wikipedia.org/wiki/Online_rich-text_editor</a>. This source is not scientific enough for the thesis, but offers new insights on what kind of search terms could be used to get more relevant material. The consultation of the page led to the following new search terms: <samp>contentEditable</samp>, <samp>alternatives for contentEditable</samp>, <samp>designMode</samp>, <samp>textarea</samp>, <samp>inline editing wysiwyg</samp>, <samp>iframe wysiwyg editor</samp>.  
 Searches on <a href="https://www.google.ch/?gws_rd=ssl">Google.com</a> for these terms resulted in the following approaches to edit text on the Web:
-</>
+</p>
 <dl>
 <dt>Inline editing</dt>
 <dd>
@@ -1479,7 +1472,7 @@ You can edit this div element. Try it&#8230;
 <p>
 
 <p>
-After determining different approaches, a Web research was made to see what kind of authoring on the Web (inline or framed) offers the best editing experience, with Linked Research&#8217;s established requirements in mind. Searches on <a href="http:google.com">Google.com</a> with the search terms <samp>in-place editing user experience wysiwyg</samp>, <samp>inline editing user experience wysiwyg</samp>, <samp>WYSIWYG inline vs framed editing</samp>, <samp>WYSIWYG framed editing user experience</samp> and <samp>inplace editing user experience wysiwyg</samp> resulted in the following:
+After determining different approaches, a Web research was made to see what kind of authoring on the Web (inline or framed) offers the best editing experience, with Linked Research&#8217;s established requirements in mind. Searches on <a href="http://google.com">Google.com</a> with the search terms <samp>in-place editing user experience wysiwyg</samp>, <samp>inline editing user experience wysiwyg</samp>, <samp>WYSIWYG inline vs framed editing</samp>, <samp>WYSIWYG framed editing user experience</samp> and <samp>inplace editing user experience wysiwyg</samp> resulted in the following:
 </p>
 <p>
 As far as it comes to editing experience for WYSIWYG editors, inline editing (also called in-place editing or inline edit) is emerging. This is shown by [<a class="ref" href="#ref-47">47</a>], as they compiled blog posts from different sources and show the discussion around this approach.
@@ -1998,7 +1991,7 @@ Table 11 shows how compatible the editors are with the browsers <samp>Internet E
 <section id="comparison-rdfa-library" about="[this:]" rel="dcterms:hasPart" resource="[this:#comparison-rdfa-library]">
 <h2 about="[this:#comparison-rdfa-library]" property="dcterms:title">Comparison RDFa Libraries</h2>
 <div about="[this:#comparison-rdfa-library]" property="dcterms:description">
-<p>To enable the annotation management for authors, a suitable JavaScript RDFa parser needs to be found. For this propose searches on <a href="http://google.com">Google.com</a> and <a href="http:github.com">Github</a> were performed using the following search terms: <samp>rdfa parser js</samp>, <samp>rdfa parser javascript</samp>, <samp>client side rdfa parser javascript</samp>, <samp>rdfa parser for browser</samp> and <samp>rdfa javascript</samp>.</p>
+<p>To enable the annotation management for authors, a suitable JavaScript RDFa parser needs to be found. For this propose searches on <a href="http://google.com">Google.com</a> and <a href="http://github.com">Github</a> were performed using the following search terms: <samp>rdfa parser js</samp>, <samp>rdfa parser javascript</samp>, <samp>client side rdfa parser javascript</samp>, <samp>rdfa parser for browser</samp> and <samp>rdfa javascript</samp>.</p>
 <p>
 This search resulted in the following relevant resources:
 </p>
@@ -2027,7 +2020,7 @@ The consultation of these resources revealed four possible RDFa parsers:
 </thead>
 <tfoot>
 <tr>
-<td colspan="4">
+<td colspan="3">
 Table 12 shows if the library supports SPARQL queries against a triple store (SPARQL Query Support) and if it was possible to parse RDFa in an example script (RDFa Parsing Succeeded). The example scripts can be found at: <a href="https://github.com/reni99/bachelor-thesis-2015">https://github.com/reni99/bachelor-thesis-2015</a>.
 </td>
 </tr>
@@ -2068,7 +2061,7 @@ Table 12 shows if the library supports SPARQL queries against a triple store (SP
 </thead>
 <tfoot>
 <tr>
-<td colspan="4">
+<td colspan="3">
 Table 13 shows what kind of licenses are used for the libraries and what kind of dependencies to external libraries exist.
 </td>
 </tr>
@@ -3176,7 +3169,8 @@ A consumer or author must have the ability to switch between different CSS views
 </tr>
 <tr>
 <th><strong>Source of Requirement</strong></th>
-<td><a href="<td><a href="http://linked-research.270a.info/linked-research.html">http://linked-research.270a.info/linked-research.html</a></td>&#8220;>http://linked-research.270a.info/linked-research.html</a></td>
+<td><a href="http://linked-research.270a.info/linked-research.html">http://linked-research.270a.info/linked-research.html</a>
+</td>
 </tr>
 <tr>
 <th><strong>State of Requirement</strong></th>
