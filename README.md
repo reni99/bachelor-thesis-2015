@@ -2,7 +2,7 @@
 This document contains links and code for my bachelor thesis.
 
 # Topic of the Thesis
-Requirements Engineering for <a href="https://github.com/csarven/linked-research">Linked Research</a>Research
+Requirements Engineering for <a href="https://github.com/csarven/linked-research">Linked Research</a>
 
 # Goal
 Establish requirements for <a href="https://github.com/csarven/linked-research">Linked Research</a>, compare RDFa libraries and WYSIWYG editors.
