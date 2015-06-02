@@ -303,7 +303,6 @@ PDF documents are familiar and easy to read for humans. But they are also <q cit
 <p>
 While there have been many efforts in making research publications more accessible and machine friendly through semantic publishing, scholarly communication is predominantly held in data silos like PDF documents or in conventional HTML Web pages with little semantical markup [<a class="ref" href="#ref-2">2</a>]. Here is a brief look at some points in history.</p>
 <p>
-<p>
 Tim Berners-Lee, working at CERN in 1989, needed an information system that would help scientists to create and discover each other&#8217;s documents across systems. In the same year he made a proposal for an information management system; todays World Wide Web [<a class="ref" href="#ref-3">3</a>].
 </p>
 <p>
@@ -835,8 +834,8 @@ Important objects within Linked Research
 </caption>
 <tbody>
 <tr>
-<th><strong>Object</strong></th>
-<th><strong>Description</strong></th>
+<th>Object</th>
+<th>Description</th>
 </tr>
 <tr>
 <td>RDF Subject</td>
@@ -973,39 +972,39 @@ The functional requirements follow the pattern stated below and can be found in 
 <caption>Pattern for functional requirements</caption>
 <tbody>
 <tr>
-<th><strong>Name</strong></th>
+<th>Name</th>
 <td>Name of the requirement</td>
 </tr>
 <tr>
-<th><strong>ID</strong></th>
+<th>ID</th>
 <td>Unique ID to avoid confusion when having similar sounding requirements</td>
 </tr>
 <tr>
-<th><strong>Description</strong></th>
+<th>Description</th>
 <td>Description of what the requirement is about.</td>
 </tr>
 <tr>
-<th><strong>Input</strong></th>
+<th>Input</th>
 <td>What kind of data is needed to fulfill the requirement</td>
 </tr>
 <tr>
-<th><strong>Output</strong></th>
+<th>Output</th>
 <td>What is the output data after the requirement has been fulfilled</td>
 </tr>
 <tr>
-<th><strong>Pre-condition</strong></th>
+<th>Pre-condition</th>
 <td>A condition, which must be given to fulfill the requirement</td>
 </tr>
 <tr>
-<th><strong>Post-condition</strong></th>
+<th>Post-condition</th>
 <td>A condition, which must be given after the requirement has been fulfilled.</td>
 </tr>
 <tr>
-<th><strong>Source of Requirement</strong></th>
+<th>Source of Requirement</th>
 <td>Where does the requirement come from?</td>
 </tr>
 <tr>
-<th><strong>State of Requirement</strong></th>
+<th>State of Requirement</th>
 <td>This attribute can obtain three values:
 <ul>
 <li>Implemented</li>
@@ -1015,7 +1014,7 @@ The functional requirements follow the pattern stated below and can be found in 
 This determines wether the requirement is already implemented (Implemented), is in progress to be developed (In progress) or is not yet implemented (Not implemented yet).</td>
 </tr>
 <tr>
-<th><strong>Author</strong></th>
+<th>Author</th>
 <td>Who wrote this requirement?</td>
 </tr>
 </tbody>
@@ -1075,7 +1074,7 @@ A list of functional requirements, which were derived from the non-functional re
 States where the requirement comes from.
 </td>
 </tr>
-<tbody>
+</tbody>
 </table>
 
 
@@ -1229,6 +1228,7 @@ Scenario &#8220;Add triple statement&#8221;. Source: Author&#8217;s own work
 <li>Alice selects the suggestion &#8220;foaf:Person&#8221;</li>
 </ol>
 <strong>Alternative</strong>: Alice may also check the checkbox &#8220;Object as literal&#8221;. In this case The SearchHandler does not send any request. Instead the author can type in casual text into the textinput &#8220;Object&#8221;. This would generate a text literal for the RDF object.
+</td>
 </tr>
 
 
@@ -1474,8 +1474,6 @@ You can edit this div element. Try it&#8230;
 </div>
 </section><!--End of #text-editing-->
 <p>
-
-<p>
 After determining different approaches, a Web research was made to see what kind of authoring on the Web (inline or framed) offers the best editing experience, with Linked Research&#8217;s established requirements in mind. Searches on <a href="http://google.com">Google.com</a> with the search terms <samp>in-place editing user experience wysiwyg</samp>, <samp>inline editing user experience wysiwyg</samp>, <samp>WYSIWYG inline vs framed editing</samp>, <samp>WYSIWYG framed editing user experience</samp> and <samp>inplace editing user experience wysiwyg</samp> resulted in the following:
 </p>
 <p>
@@ -1489,6 +1487,7 @@ Other services like <a href="http://medium.com">Medium.com</a> claim to be the b
 </p>
 <p>
 For Linked Research, the inline editing approach is a suitable option too, as its formatting is also very focused (see requirement <a href="http://renatostauffer.ch/requirements-engineering-for-linked-research#f-4"><samp>Text formatting F-4</samp></a> in the appendix). This enables the author to concentrate on the actual content of his / her publication.
+</p>
 <p>
 The challenge is to find an inline WYSIWYG editor that matches the established requirements. Especially the requirements Edit text (F-1), Text formatting (F-4), Enrich DOM (F-13), Add new Paragraph (F-16), Add new Section (F-17) and The DOM needs to keep its semantical representation (F-18) need to be considered when evaluating a possible editor (see <a href="http://renatostauffer.ch/requirements-engineering-for-linked-research#appendix"><samp>Appendix</samp></a>).
 </p>
@@ -1507,6 +1506,7 @@ The following categories including different criteria for the comparison were es
 </dl>
 <p>
 Table 7 &#8211; 11 compare all possible editors for Linked Research with its corresponding criteria. Those editors were determined by doing search on <a href="https://www.google.ch/?gws_rd=ssl">Google.com</a> (used search terms: <samp>wysiwyg</samp> <samp>clean html wysiwyg</samp>, <samp>wysiwyg comparison</samp>, <samp>inline HTML editors</samp>, <samp>rich text editors comparison</samp>, <samp>rte comparison</samp>, <samp>medium.com clone</samp>) and <a href="https://github.com/">Github.com</a> (used search terms: <samp>inline browser editor</samp>, <samp>html editor browser</samp>, <samp>inline html editor</samp>, <samp>medium.com clone</samp>, <samp>medium.com</samp>, <samp>wysiwyg</samp>, <samp>wysiwyg inline editor</samp>).
+</p>
 <p>The editors MediumEditor, editor, Medium.js, Dane Editor, Pen Editor, grande.js and ZenPen have been chosen because of their focus similar to Medium.com&#8217;s editor [<a class="ref" href="#ref-52">52</a>]. The other three editors (Tinymce, CKEditor and Aloha Editor) were on the top of the search results.</p>
 <table id="editor-information">
 <caption>General information</caption>
@@ -1612,7 +1612,7 @@ The column <samp>License</samp> indicates what kind of license is used for the c
 <tfoot>
 <tr>
 <td colspan="4">
-The attribute <samp>Documentation</samp> takes either the value <samp>No</samp> if no documentation for the editors API exists or <samp>Yes</samp> if API documentation is provided. To signify how much the community is involved in the development process of the editor, the attributes <samp>Closed Pull Requests</samp> and <samp>Contributors</samp> are used. Both attributes take a number as its value ranging from 0 &#8211; &infin;.
+The attribute <samp>Documentation</samp> takes either the value <samp>No</samp> if no documentation for the editors API exists or <samp>Yes</samp> if API documentation is provided. To signify how much the community is involved in the development process of the editor, the attributes <samp>Closed Pull Requests</samp> and <samp>Contributors</samp> are used. Both attributes take a number as its value ranging from 0 &#8211; &#8734;.
 </td>
 </tr>
 </tfoot>
@@ -2339,65 +2339,65 @@ Renato Stauffer
 <caption>Edit text</caption>
 <tbody>
 <tr>
-<th><strong>Name</strong></th>
+<th>Name</th>
 <td>Edit text</td>
 </tr>
 <tr>
-<th><strong>ID</strong></th>
+<th>ID</th>
 <td>F-1</td>
 </tr>
 <tr>
-<th><strong>Description</strong></th>
+<th>Description</th>
 <td>Linked Research must provide an author the possibility to edit text within the browser.</td>
 </tr>
 <tr>
-<th><strong>Components</strong></th>
+<th>Components</th>
 <td>TextEditor</td>
 </tr>
 <tr>
-<th><strong>Input</strong></th>
+<th>Input</th>
 <td>-</td>
 </tr>
 <tr>
-<th><strong>Output</strong></th>
+<th>Output</th>
 <td>Plain text</td>
 </tr>
 <tr>
-<th><strong>Pre-condition</strong></th>
+<th>Pre-condition</th>
 <td>An Editor instance must exist.</td>
 </tr>
 <tr>
-<th><strong>Post-condition</strong></th>
-<td>Requirement <a href="http://renatostauffer.ch/requirements-engineering-for-linked-research#f-14">F-14</a> must be fulfilled.</td>
+<th>Post-condition</th>
+<td>Requirement <a href="http://renatostauffer.ch/requirements-engineering-for-linked-research#f-18">F-18</a> must be fulfilled.</td>
 </tr>
 <tr>
-<th><strong>Source of Requirement</strong></th>
+<th>Source of Requirement</th>
 <td><a href="http://linked-research.270a.info/linked-research.html">http://linked-research.270a.info/linked-research.html</a></td>
 </tr>
 <tr>
-<th><strong>State of Requirement</strong></th>
+<th>State of Requirement</th>
 <td>Not implemented yet</td>
 </tr>
-<tr><th><strong>Author</strong></th><td><a href="http://renatostauffer.ch#i">Renato Stuaffer</a></td></tr></tbody>
+<tr><th>Author</th><td><a href="http://renatostauffer.ch#i">Renato Stuaffer</a></td></tr></tbody>
 </table>
 
 <table id="f-4">
 <caption>Text formatting</caption>
 <tbody>
 <tr>
-<th><strong>Name</strong></th>
+<th>Name</th>
 <td>Text formatting</td>
 </tr>
 <tr>
-<th><strong>ID</strong></th>
+<th>ID</th>
 <td>F-4</td>
 </tr>
 <tr>
-<th><strong>Components</strong></th>
+<th>Components</th>
 <td>TextEditor</td>
 </tr>
 <tr>
-<th><strong>Description</strong></th>
+<th>Description</th>
 <td>The editor of Linked Research must provide the author functionality to format text over one or multiple paragraphs. The following formatting should be possible:
 <ul>
 <li>Insertion of figures and media</li>
@@ -2409,76 +2409,76 @@ Renato Stauffer
 </td>
 </tr>
 <tr>
-<th><strong>Input</strong></th>
+<th>Input</th>
 <td>Text</td>
 </tr>
 <tr>
-<th><strong>Output</strong></th>
+<th>Output</th>
 <td>Formatted text</td>
 </tr>
 <tr>
-<th><strong>Pre-condition</strong></th>
+<th>Pre-condition</th>
 <td>An Editor instance must exist.</td>
 </tr>
 <tr>
-<th><strong>Post-condition</strong></th>
+<th>Post-condition</th>
 <td>Requirement <a href="http://renatostauffer.ch/requirements-engineering-for-linked-research#f-14">F-14</a> must be fulfilled.</td>
 </tr>
 <tr>
-<th><strong>Source of Requirement</strong></th>
+<th>Source of Requirement</th>
 <td><a href="http://linked-research.270a.info/linked-research.html">http://linked-research.270a.info/linked-research.html</a></td>
 </tr>
 <tr>
-<th><strong>State of Requirement</strong></th>
+<th>State of Requirement</th>
 <td>Not implemented yet</td>
 </tr>
-<tr><th><strong>Author</strong></th><td><a href="http://renatostauffer.ch#i">Renato Stuaffer</a></td></tr></tbody>
+<tr><th>Author</th><td><a href="http://renatostauffer.ch#i">Renato Stuaffer</a></td></tr></tbody>
 </table>
 
 <table id="f-5">
 <caption>Set Subject</caption>
 <tbody>
 <tr>
-<th><strong>Name</strong></th>
+<th>Name</th>
 <td>Set Subject</td>
 </tr>
 <tr>
-<th><strong>ID</strong></th>
+<th>ID</th>
 <td>F-5</td>
 </tr>
 <tr>
-<th><strong>Components</strong></th>
+<th>Components</th>
 <td>TripleEditor, Triple</td>
 </tr>
 <tr>
-<th><strong>Description</strong></th>
+<th>Description</th>
 <td>The TripleEditor of Linked Research must provide an author the possibility to set a word, phrase, paragraph or the document itself as the subject of an RDF triple statement.</td>
 </tr>
 <tr>
-<th><strong>Input</strong></th>
+<th>Input</th>
 <td>A word, phrase, paragraph of the text written by the author or the document itself.</td>
 </tr>
 <tr>
-<th><strong>Output</strong></th>
+<th>Output</th>
 <td>-</td>
 </tr>
 <tr>
-<th><strong>Pre-condition</strong></th>
+<th>Pre-condition</th>
 <td>The author must select a word, phrase, paragraph of the text or the document itself.</td>
 </tr>
 <tr>
-<th><strong>Post-condition</strong></th>
+<th>Post-condition</th>
 <td>Subject set</td>
 </tr>
 <tr>
-<th><strong>Source of Requirement</strong></th>
+<th>Source of Requirement</th>
 <td><a href="http://linked-research.270a.info/linked-research.html">http://linked-research.270a.info/linked-research.html</a></td>
 </tr>
 <tr>
-<th><strong>State of Requirement</strong></th>
+<th>State of Requirement</th>
 <td>Not implemented yet</td>
 </tr>
-<tr><th><strong>Author</strong></th><td><a href="http://renatostauffer.ch#i">Renato Stuaffer</a></td></tr></tbody>
+<tr><th>Author</th><td><a href="http://renatostauffer.ch#i">Renato Stuaffer</a></td></tr></tbody>
 </table>
 
 
@@ -2486,46 +2486,46 @@ Renato Stauffer
 <caption>Search predicate</caption>
 <tbody>
 <tr>
-<th><strong>Name</strong></th>
+<th>Name</th>
 <td>Search predicate</td>
 </tr>
 <tr>
-<th><strong>ID</strong></th>
+<th>ID</th>
 <td>F-6</td>
 </tr>
 <tr>
-<th><strong>Components</strong></th>
+<th>Components</th>
 <td>TripleEditor, SearchHandler</td>
 </tr>
 <tr>
-<th><strong>Description</strong></th>
+<th>Description</th>
 <td>The TripleEditor may provide the author the possibility to search for a predicate via an external service to set the predicate for an RDF triple statement.</td>
 </tr>
 <tr>
-<th><strong>Input</strong></th>
+<th>Input</th>
 <td>Search term</td>
 </tr>
 <tr>
-<th><strong>Output</strong></th>
+<th>Output</th>
 <td>Suggestions for predicates</td>
 </tr>
 <tr>
-<th><strong>Pre-condition</strong></th>
+<th>Pre-condition</th>
 <td>Access to the external service</td>
 </tr>
 <tr>
-<th><strong>Post-condition</strong></th>
+<th>Post-condition</th>
 <td>-</td>
 </tr>
 <tr>
-<th><strong>Source of Requirement</strong></th>
+<th>Source of Requirement</th>
 <td><a href="http://linked-research.270a.info/linked-research.html">http://linked-research.270a.info/linked-research.html</a></td>
 </tr>
 <tr>
-<th><strong>State of Requirement</strong></th>
+<th>State of Requirement</th>
 <td>Not implemented yet</td>
 </tr>
-<tr><th><strong>Author</strong></th><td><a href="http://renatostauffer.ch#i">Renato Stuaffer</a></td></tr></tbody>
+<tr><th>Author</th><td><a href="http://renatostauffer.ch#i">Renato Stuaffer</a></td></tr></tbody>
 </table>
 
 
@@ -2534,46 +2534,46 @@ Renato Stauffer
 <caption>Choose predicate</caption>
 <tbody>
 <tr>
-<th><strong>Name</strong></th>
+<th>Name</th>
 <td>Choose predicate</td>
 </tr>
 <tr>
-<th><strong>ID</strong></th>
+<th>ID</th>
 <td>F-7</td>
 </tr>
 <tr>
-<th><strong>Components</strong></th>
+<th>Components</th>
 <td>TripleEditor, Triple</td>
 </tr>
 <tr>
-<th><strong>Description</strong></th>
+<th>Description</th>
 <td>The TripleEditor should provide the author the possibility to choose one or more predicates after a search according to requirement <a href="http://renatostauffer.ch/requirements-engineering-for-linked-research#f-6">F-6</a> has been made.</td>
 </tr>
 <tr>
-<th><strong>Input</strong></th>
+<th>Input</th>
 <td>-</td>
 </tr>
 <tr>
-<th><strong>Output</strong></th>
+<th>Output</th>
 <td>-</td>
 </tr>
 <tr>
-<th><strong>Pre-condition</strong></th>
+<th>Pre-condition</th>
 <td>A search according to requirement <a href="http://renatostauffer.ch/requirements-engineering-for-linked-research#f-6">F-6</a></td>
 </tr>
 <tr>
-<th><strong>Post-condition</strong></th>
+<th>Post-condition</th>
 <td>RDF predicate is set</td>
 </tr>
 <tr>
-<th><strong>Source of Requirement</strong></th>
+<th>Source of Requirement</th>
 <td><a href="http://linked-research.270a.info/linked-research.html">http://linked-research.270a.info/linked-research.html</a></td>
 </tr>
 <tr>
-<th><strong>State of Requirement</strong></th>
+<th>State of Requirement</th>
 <td>Not implemented yet</td>
 </tr>
-<tr><th><strong>Author</strong></th><td><a href="http://renatostauffer.ch#i">Renato Stuaffer</a></td></tr></tbody>
+<tr><th>Author</th><td><a href="http://renatostauffer.ch#i">Renato Stuaffer</a></td></tr></tbody>
 </table>
 
 
@@ -2584,46 +2584,46 @@ Renato Stauffer
 <caption>Search object</caption>
 <tbody>
 <tr>
-<th><strong>Name</strong></th>
+<th>Name</th>
 <td>Search object</td>
 </tr>
 <tr>
-<th><strong>ID</strong></th>
+<th>ID</th>
 <td>F-8</td>
 </tr>
 <tr>
-<th><strong>Components</strong></th>
+<th>Components</th>
 <td>TripleEditor, SearchHandler</td>
 </tr>
 <tr>
-<th><strong>Description</strong></th>
+<th>Description</th>
 <td>The TripleEditor may provide the author the ability to search for an RDF object via an external service to set the object for an RDF triple statement.</td>
 </tr>
 <tr>
-<th><strong>Input</strong></th>
+<th>Input</th>
 <td>Search term</td>
 </tr>
 <tr>
-<th><strong>Output</strong></th>
+<th>Output</th>
 <td>Suggestions for an RDF object</td>
 </tr>
 <tr>
-<th><strong>Pre-condition</strong></th>
+<th>Pre-condition</th>
 <td>-</td>
 </tr>
 <tr>
-<th><strong>Post-condition</strong></th>
+<th>Post-condition</th>
 <td>-</td>
 </tr>
 <tr>
-<th><strong>Source of Requirement</strong></th>
+<th>Source of Requirement</th>
 <td><a href="http://linked-research.270a.info/linked-research.html">http://linked-research.270a.info/linked-research.html</a></td>
 </tr>
 <tr>
-<th><strong>State of Requirement</strong></th>
+<th>State of Requirement</th>
 <td>Not implemented yet</td>
 </tr>
-<tr><th><strong>Author</strong></th><td><a href="http://renatostauffer.ch#i">Renato Stuaffer</a></td></tr></tbody>
+<tr><th>Author</th><td><a href="http://renatostauffer.ch#i">Renato Stuaffer</a></td></tr></tbody>
 </table>
 
 
@@ -2631,46 +2631,46 @@ Renato Stauffer
 <caption>Choose RDF object</caption>
 <tbody>
 <tr>
-<th><strong>Name</strong></th>
+<th>Name</th>
 <td>Choose RDF object</td>
 </tr>
 <tr>
-<th><strong>ID</strong></th>
+<th>ID</th>
 <td>F-9</td>
 </tr>
 <tr>
-<th><strong>Components</strong></th>
+<th>Components</th>
 <td>TripleEditor, Triple</td>
 </tr>
 <tr>
-<th><strong>Description</strong></th>
+<th>Description</th>
 <td>The TripleEditor should provide the author the possibility to choose one ore more RDF object after a search for RDF objects has been made.</td>
 </tr>
 <tr>
-<th><strong>Input</strong></th>
+<th>Input</th>
 <td>-</td>
 </tr>
 <tr>
-<th><strong>Output</strong></th>
+<th>Output</th>
 <td>-</td>
 </tr>
 <tr>
-<th><strong>Pre-condition</strong></th>
+<th>Pre-condition</th>
 <td>A search according to requirement <a href="http://renatostauffer.ch/requirements-engineering-for-linked-research#f-8">F-8</a> must be made in advance.</td>
 </tr>
 <tr>
-<th><strong>Post-condition</strong></th>
+<th>Post-condition</th>
 <td>RDF Object set</td>
 </tr>
 <tr>
-<th><strong>Source of Requirement</strong></th>
+<th>Source of Requirement</th>
 <td><a href="http://linked-research.270a.info/linked-research.html">http://linked-research.270a.info/linked-research.html</a></td>
 </tr>
 <tr>
-<th><strong>State of Requirement</strong></th>
+<th>State of Requirement</th>
 <td>Not implemented yet</td>
 </tr>
-<tr><th><strong>Author</strong></th><td><a href="http://renatostauffer.ch#i">Renato Stuaffer</a></td></tr></tbody>
+<tr><th>Author</th><td><a href="http://renatostauffer.ch#i">Renato Stuaffer</a></td></tr></tbody>
 </table>
 
 
@@ -2678,141 +2678,142 @@ Renato Stauffer
 <caption>Set object as text literal</caption>
 <tbody>
 <tr>
-<th><strong>Name</strong></th>
+<th>Name</th>
 <td>Set object as text literal</td>
 </tr>
 <tr>
-<th><strong>ID</strong></th>
+<th>ID</th>
 <td>F-10</td>
 </tr>
 <tr>
-<th><strong>Components</strong></th>
+<th>Components</th>
 <td>TripleEditor, Triple</td>
 </tr>
 <tr>
-<th><strong>Description</strong></th>
+<th>Description</th>
 <td>The TripleEditor has to provide the ability to an author to set a word, passage, paragraph as the object literal of an RDF triple statement.</td>
 </tr>
 <tr>
-<th><strong>Input</strong></th>
+<th>Input</th>
 <td>Selected word, passage or paragraph</td>
 </tr>
 <tr>
-<th><strong>Output</strong></th>
+<th>Output</th>
 <td>-</td>
 </tr>
 <tr>
-<th><strong>Pre-condition</strong></th>
+<th>Pre-condition</th>
 <td>-</td>
 </tr>
 <tr>
-<th><strong>Post-condition</strong></th>
+<th>Post-condition</th>
 <td>RDF Object set</td>
 </tr>
 <tr>
-<th><strong>Source of Requirement</strong></th>
+<th>Source of Requirement</th>
 <td><a href="http://linked-research.270a.info/linked-research.html">http://linked-research.270a.info/linked-research.html</a></td>
 </tr>
 <tr>
-<th><strong>State of Requirement</strong></th>
+<th>State of Requirement</th>
 <td>Not implemented yet</td>
 </tr>
-<tr><th><strong>Author</strong></th><td><a href="http://renatostauffer.ch#i">Renato Stuaffer</a></td></tr></tbody>
+<tr><th>Author</th><td><a href="http://renatostauffer.ch#i">Renato Stuaffer</a></td></tr></tbody>
 </table>
 
 <table id="f-11">
 <caption>Rearrange Table of Content</caption>
 <tbody>
 <tr>
-<th><strong>Name</strong></th>
+<th>Name</th>
 <td>Rearrange Table of Content</td>
 </tr>
 <tr>
-<th><strong>ID</strong></th>
+<th>ID</th>
 <td>F-11</td>
 </tr>
 <tr>
-<th><strong>Components</strong></th>
+<th>Components</th>
 <td>LR, U</td>
 </tr>
 <tr>
-<th><strong>Description</strong></th>
+<th>Description</th>
 <td>
+A user needs to have the ability to rearrange the table of content by drag and dropping sections from their current position into another position.
 </td>
 </tr>
 <tr>
-<th><strong>Input</strong></th>
+<th>Input</th>
 <td>Table,table element to be moved</td>
 </tr>
 <tr>
-<th><strong>Output</strong></th>
+<th>Output</th>
 <td>Rearanged table</td>
 </tr>
 <tr>
-<th><strong>Pre-condition</strong></th>
+<th>Pre-condition</th>
 <td>Requirement <a href="http://renatostauffer.ch/requirements-engineering-for-linked-research#f-18">F-18</a> must be fulfilled.</td>
 </tr>
 <tr>
-<th><strong>Post-condition</strong></th>
+<th>Post-condition</th>
 <td>Requirement <a href="http://renatostauffer.ch/requirements-engineering-for-linked-research#f-18">F-18</a> must remain fulfilled</td>
 </tr>
 <tr>
-<th><strong>Source of Requirement</strong></th>
+<th>Source of Requirement</th>
 <td><a href="https://github.com/csarven/linked-research">https://github.com/csarven/linked-research</a></td>
 </tr>
 <tr>
-<th><strong>State of Requirement</strong></th>
+<th>State of Requirement</th>
 <td>Implemented yet</td>
 </tr>
-<tr><th><strong>Author</strong></th><td><a href="http://renatostauffer.ch#i">Renato Stuaffer</a></td></tr></tbody>
+<tr><th>Author</th><td><a href="http://renatostauffer.ch#i">Renato Stuaffer</a></td></tr></tbody>
 </table>
 
 <table id="f-12">
 <caption>Add triple statement</caption>
 <tbody>
 <tr>
-<th><strong>Name</strong></th>
+<th>Name</th>
 <td>Add triple statement</td>
 </tr>
 <tr>
-<th><strong>ID</strong></th>
+<th>ID</th>
 <td>F-12</td>
 </tr>
 <tr>
-<th><strong>Components</strong></th>
+<th>Components</th>
 <td>TripleEditor, Triple, TripleStore</td>
 </tr>
 <tr>
-<th><strong>Description</strong></th>
+<th>Description</th>
 <td>
 The TripleEditor must provide the author the ability to add triple statements to the local triple store.
 </td>
 </tr>
 <tr>
-<th><strong>Input</strong></th>
+<th>Input</th>
 <td>Triple statement</td>
 </tr>
 <tr>
-<th><strong>Output</strong></th>
+<th>Output</th>
 <td>-</td>
 </tr>
 <tr>
-<th><strong>Pre-condition</strong></th>
+<th>Pre-condition</th>
 <td>An RDF subject, predicate and object has to be set according to requirement: <a href="http://renatostauffer.ch/requirements-engineering-for-linked-research#f-5">subject (F-5)</a>, <a href="http://renatostauffer.ch/requirements-engineering-for-linked-research#f-7">predicate (F-7)</a> and object (<a href="http://renatostauffer.ch/requirements-engineering-for-linked-research#f-9">F-9</a> or <a href="http://renatostauffer.ch/requirements-engineering-for-linked-research#f-10">F-10</a>)</td>
 </tr>
 <tr>
-<th><strong>Post-condition</strong></th>
+<th>Post-condition</th>
 <td>Triple has to be persisted in the triple store and the triple has to be inserted into the DOM according to requirement <a href="http://renatostauffer.ch/requirements-engineering-for-linked-research#f-13">F-13</a>.</td>
 </tr>
 <tr>
-<th><strong>Source of Requirement</strong></th>
+<th>Source of Requirement</th>
 <td><a href="http://linked-research.270a.info/linked-research.html">http://linked-research.270a.info/linked-research.html</a></td>
 </tr>
 <tr>
-<th><strong>State of Requirement</strong></th>
+<th>State of Requirement</th>
 <td>Not implemented yet</td>
 </tr>
-<tr><th><strong>Author</strong></th><td><a href="http://renatostauffer.ch#i">Renato Stuaffer</a></td></tr></tbody>
+<tr><th>Author</th><td><a href="http://renatostauffer.ch#i">Renato Stuaffer</a></td></tr></tbody>
 </table>
 
 
@@ -2820,48 +2821,48 @@ The TripleEditor must provide the author the ability to add triple statements to
 <caption>Enrich DOM</caption>
 <tbody>
 <tr>
-<th><strong>Name</strong></th>
+<th>Name</th>
 <td>Enrich DOM</td>
 </tr>
 <tr>
-<th><strong>ID</strong></th>
+<th>ID</th>
 <td>F-13</td>
 </tr>
 <tr>
-<th><strong>Components</strong></th>
+<th>Components</th>
 <td>TextEditor, TripleStore, DOMManipulator</td>
 </tr>
 <tr>
-<th><strong>Description</strong></th>
+<th>Description</th>
 <td>
 After a triple statement has been added to the triple store the corresponding elements in the DOM need to be enriched with RDFa.
 </td>
 </tr>
 <tr>
-<th><strong>Input</strong></th>
+<th>Input</th>
 <td>Elements, which need to be enriched</td>
 </tr>
 <tr>
-<th><strong>Output</strong></th>
+<th>Output</th>
 <td>Enriched elements</td>
 </tr>
 <tr>
-<th><strong>Pre-condition</strong></th>
+<th>Pre-condition</th>
 <td>A tripple has to be saved to the tripple store according to requirement <a href="http://renatostauffer.ch/requirements-engineering-for-linked-research#f-12">F-12</a>.</td>
 </tr>
 <tr>
-<th><strong>Post-condition</strong></th>
+<th>Post-condition</th>
 <td>The DOM needs to keep its semantical representation according to requirement <a href="http://renatostauffer.ch/requirements-engineering-for-linked-research#f-18">F-18</a>.</td>
 </tr>
 <tr>
-<th><strong>Source of Requirement</strong></th>
+<th>Source of Requirement</th>
 <td><a href="http://linked-research.270a.info/linked-research.html">http://linked-research.270a.info/linked-research.html</a></td>
 </tr>
 <tr>
-<th><strong>State of Requirement</strong></th>
+<th>State of Requirement</th>
 <td>Not implemented yet</td>
 </tr>
-<tr><th><strong>Author</strong></th><td><a href="http://renatostauffer.ch#i">Renato Stuaffer</a></td></tr></tbody>
+<tr><th>Author</th><td><a href="http://renatostauffer.ch#i">Renato Stuaffer</a></td></tr></tbody>
 </table>
 
 
@@ -2870,48 +2871,48 @@ After a triple statement has been added to the triple store the corresponding el
 <caption>Remove triple statement</caption>
 <tbody>
 <tr>
-<th><strong>Name</strong></th>
+<th>Name</th>
 <td>Remove triple statement</td>
 </tr>
 <tr>
-<th><strong>ID</strong></th>
+<th>ID</th>
 <td>F-14</td>
 </tr>
 <tr>
-<th><strong>Components</strong></th>
+<th>Components</th>
 <td>TripleStore, Triple, TextEditor</td>
 </tr>
 <tr>
-<th><strong>Description</strong></th>
+<th>Description</th>
 <td>
 The TripleEditor must provide the author the ability to remove triple statements from the local triple store.
 </td>
 </tr>
 <tr>
-<th><strong>Input</strong></th>
+<th>Input</th>
 <td>Triple statement</td>
 </tr>
 <tr>
-<th><strong>Output</strong></th>
+<th>Output</th>
 <td>-</td>
 </tr>
 <tr>
-<th><strong>Pre-condition</strong></th>
+<th>Pre-condition</th>
 <td>Triple statement must exist in the triple store.</td>
 </tr>
 <tr>
-<th><strong>Post-condition</strong></th>
+<th>Post-condition</th>
 <td>Triple was removed from the triple store.</td>
 </tr>
 <tr>
-<th><strong>Source of Requirement</strong></th>
+<th>Source of Requirement</th>
 <td><a href="http://linked-research.270a.info/linked-research.html">http://linked-research.270a.info/linked-research.html</a></td>
 </tr>
 <tr>
-<th><strong>State of Requirement</strong></th>
+<th>State of Requirement</th>
 <td>Not implemented yet</td>
 </tr>
-<tr><th><strong>Author</strong></th><td><a href="http://renatostauffer.ch#i">Renato Stuaffer</a></td></tr></tbody>
+<tr><th>Author</th><td><a href="http://renatostauffer.ch#i">Renato Stuaffer</a></td></tr></tbody>
 </table>
 
 
@@ -2919,48 +2920,48 @@ The TripleEditor must provide the author the ability to remove triple statements
 <caption>Undo added triple statement</caption>
 <tbody>
 <tr>
-<th><strong>Name</strong></th>
+<th>Name</th>
 <td>Undo added triple statement</td>
 </tr>
 <tr>
-<th><strong>ID</strong></th>
+<th>ID</th>
 <td>F-15</td>
 </tr>
 <tr>
-<th><strong>Components</strong></th>
+<th>Components</th>
 <td>TripleStore, Triple, TripleEditor, TextEditor</td>
 </tr>
 <tr>
-<th><strong>Description</strong></th>
+<th>Description</th>
 <td>
 Linked Research should provide an author the ability to undo a added triple statement.
 </td>
 </tr>
 <tr>
-<th><strong>Input</strong></th>
+<th>Input</th>
 <td>Added triple statement</td>
 </tr>
 <tr>
-<th><strong>Output</strong></th>
+<th>Output</th>
 <td>-</td>
 </tr>
 <tr>
-<th><strong>Pre-condition</strong></th>
+<th>Pre-condition</th>
 <td>Triple statement must exist in the triple store.</td>
 </tr>
 <tr>
-<th><strong>Post-condition</strong></th>
+<th>Post-condition</th>
 <td>Triple was removed from the triple store.</td>
 </tr>
 <tr>
-<th><strong>Source of Requirement</strong></th>
+<th>Source of Requirement</th>
 <td><a href="http://linked-research.270a.info/linked-research.html">http://linked-research.270a.info/linked-research.html</a></td>
 </tr>
 <tr>
-<th><strong>State of Requirement</strong></th>
+<th>State of Requirement</th>
 <td>Not implemented yet</td>
 </tr>
-<tr><th><strong>Author</strong></th><td><a href="http://renatostauffer.ch#i">Renato Stuaffer</a></td></tr></tbody>
+<tr><th>Author</th><td><a href="http://renatostauffer.ch#i">Renato Stuaffer</a></td></tr></tbody>
 </table>
 
 
@@ -2968,48 +2969,48 @@ Linked Research should provide an author the ability to undo a added triple stat
 <caption>Add new paragraph</caption>
 <tbody>
 <tr>
-<th><strong>Name</strong></th>
+<th>Name</th>
 <td>Add new paragraph</td>
 </tr>
 <tr>
-<th><strong>ID</strong></th>
+<th>ID</th>
 <td>F-16</td>
 </tr>
 <tr>
-<th><strong>Components</strong></th>
+<th>Components</th>
 <td>TextEditor</td>
 </tr>
 <tr>
-<th><strong>Description</strong></th>
+<th>Description</th>
 <td>
 The Editor must insert  <code>&lt;p&gt;</code>-tags when the author hits the enter key while writing text.
 </td>
 </tr>
 <tr>
-<th><strong>Input</strong></th>
+<th>Input</th>
 <td>-</td>
 </tr>
 <tr>
-<th><strong>Output</strong></th>
+<th>Output</th>
 <td> <code>&lt;p&gt;</code>-tag</td>
 </tr>
 <tr>
-<th><strong>Pre-condition</strong></th>
+<th>Pre-condition</th>
 <td>-</td>
 </tr>
 <tr>
-<th><strong>Post-condition</strong></th>
+<th>Post-condition</th>
 <td>Requirement <a href="http://renatostauffer.ch/requirements-engineering-for-linked-research#f-18">F-18</a> must remain fulfilled.</td>
 </tr>
 <tr>
-<th><strong>Source of Requirement</strong></th>
+<th>Source of Requirement</th>
 <td><a href="http://linked-research.270a.info/linked-research.html">http://linked-research.270a.info/linked-research.html</a></td>
 </tr>
 <tr>
-<th><strong>State of Requirement</strong></th>
+<th>State of Requirement</th>
 <td>Not implemented yet</td>
 </tr>
-<tr><th><strong>Author</strong></th><td><a href="http://renatostauffer.ch#i">Renato Stuaffer</a></td></tr></tbody>
+<tr><th>Author</th><td><a href="http://renatostauffer.ch#i">Renato Stuaffer</a></td></tr></tbody>
 </table>
 
 
@@ -3017,19 +3018,19 @@ The Editor must insert  <code>&lt;p&gt;</code>-tags when the author hits the ent
 <caption>Add new section</caption>
 <tbody>
 <tr>
-<th><strong>Name</strong></th>
+<th>Name</th>
 <td>Add new section</td>
 </tr>
 <tr>
-<th><strong>ID</strong></th>
+<th>ID</th>
 <td>F-17</td>
 </tr>
 <tr>
-<th><strong>Components</strong></th>
+<th>Components</th>
 <td>TextEditor</td>
 </tr>
 <tr>
-<th><strong>Description</strong></th>
+<th>Description</th>
 <td>
 The Editor must insert the following pattern when an author is inserting a new title for a new or already existing paragraph:
  
@@ -3040,11 +3041,11 @@ The Editor must insert the following pattern when an author is inserting a new t
 </td>
 </tr>
 <tr>
-<th><strong>Input</strong></th>
+<th>Input</th>
 <td>All elements that follow the new added section in the document.</td>
 </tr>
 <tr>
-<th><strong>Output</strong></th>
+<th>Output</th>
 <td>
 <pre>&lt;section&gt;
     &lt;h1-4&gt;
@@ -3052,22 +3053,22 @@ The Editor must insert the following pattern when an author is inserting a new t
 </td>
 </tr>
 <tr>
-<th><strong>Pre-condition</strong></th>
+<th>Pre-condition</th>
 <td>-</td>
 </tr>
 <tr>
-<th><strong>Post-condition</strong></th>
+<th>Post-condition</th>
 <td>Requirement <a href="http://renatostauffer.ch/requirements-engineering-for-linked-research#f-14">F-14</a> must be fulfilled.</td>
 </tr>
 <tr>
-<th><strong>Source of Requirement</strong></th>
+<th>Source of Requirement</th>
 <td><a href="http://linked-research.270a.info/linked-research.html">http://linked-research.270a.info/linked-research.html</a></td>
 </tr>
 <tr>
-<th><strong>State of Requirement</strong></th>
+<th>State of Requirement</th>
 <td>Not implemented yet</td>
 </tr>
-<tr><th><strong>Author</strong></th><td><a href="http://renatostauffer.ch#i">Renato Stuaffer</a></td></tr></tbody>
+<tr><th>Author</th><td><a href="http://renatostauffer.ch#i">Renato Stuaffer</a></td></tr></tbody>
 </table>
 
 
@@ -3076,19 +3077,19 @@ The Editor must insert the following pattern when an author is inserting a new t
 <caption>The DOM needs to keep its semantical representation</caption>
 <tbody>
 <tr>
-<th><strong>Name</strong></th>
+<th>Name</th>
 <td>The DOM needs to keep its semantical representation</td>
 </tr>
 <tr>
-<th><strong>ID</strong></th>
+<th>ID</th>
 <td>F-18</td>
 </tr>
 <tr>
-<th><strong>Components</strong></th>
+<th>Components</th>
 <td>-</td>
 </tr>
 <tr>
-<th><strong>Description</strong></th>
+<th>Description</th>
 <td>
 The DOM of the document needs to remain in the following shape:
  
@@ -3100,30 +3101,30 @@ The DOM of the document needs to remain in the following shape:
 </td>
 </tr>
 <tr>
-<th><strong>Input</strong></th>
+<th>Input</th>
 <td>-</td>
 </tr>
 <tr>
-<th><strong>Output</strong></th>
+<th>Output</th>
 <td>-</td>
 </tr>
 <tr>
-<th><strong>Pre-condition</strong></th>
+<th>Pre-condition</th>
 <td>-</td>
 </tr>
 <tr>
-<th><strong>Post-condition</strong></th>
+<th>Post-condition</th>
 <td>-</td>
 </tr>
 <tr>
-<th><strong>Source of Requirement</strong></th>
+<th>Source of Requirement</th>
 <td><a href="http://linked-research.270a.info/linked-research.html">http://linked-research.270a.info/linked-research.html</a></td>
 </tr>
 <tr>
-<th><strong>State of Requirement</strong></th>
+<th>State of Requirement</th>
 <td>Not implemented yet</td>
 </tr>
-<tr><th><strong>Author</strong></th><td><a href="http://renatostauffer.ch#i">Renato Stuaffer</a></td></tr></tbody>
+<tr><th>Author</th><td><a href="http://renatostauffer.ch#i">Renato Stuaffer</a></td></tr></tbody>
 </table>
 
 
@@ -3131,19 +3132,19 @@ The DOM of the document needs to remain in the following shape:
 <caption>View switching</caption>
 <tbody>
 <tr>
-<th><strong>Name</strong></th>
+<th>Name</th>
 <td>View switching</td>
 </tr>
 <tr>
-<th><strong>ID</strong></th>
+<th>ID</th>
 <td>F-20</td>
 </tr>
 <tr>
-<th><strong>Components</strong></th>
+<th>Components</th>
 <td>U</td>
 </tr>
 <tr>
-<th><strong>Description</strong></th>
+<th>Description</th>
 <td>
 A consumer or author must have the ability to switch between different CSS views for their document. Those views are:
 <ul>
@@ -3156,31 +3157,31 @@ A consumer or author must have the ability to switch between different CSS views
 </td>
 </tr>
 <tr>
-<th><strong>Input</strong></th>
+<th>Input</th>
 <td>-</td>
 </tr>
 <tr>
-<th><strong>Output</strong></th>
+<th>Output</th>
 <td>-</td>
 </tr>
 <tr>
-<th><strong>Pre-condition</strong></th>
+<th>Pre-condition</th>
 <td>-</td>
 </tr>
 <tr>
-<th><strong>Post-condition</strong></th>
+<th>Post-condition</th>
 <td>-</td>
 </tr>
 <tr>
-<th><strong>Source of Requirement</strong></th>
+<th>Source of Requirement</th>
 <td><a href="http://linked-research.270a.info/linked-research.html">http://linked-research.270a.info/linked-research.html</a>
 </td>
 </tr>
 <tr>
-<th><strong>State of Requirement</strong></th>
+<th>State of Requirement</th>
 <td>Implemented</td>
 </tr>
-<tr><th><strong>Author</strong></th><td><a href="http://renatostauffer.ch#i">Renato Stuaffer</a></td></tr></tbody>
+<tr><th>Author</th><td><a href="http://renatostauffer.ch#i">Renato Stuaffer</a></td></tr></tbody>
 </table>
 
 
@@ -3188,48 +3189,48 @@ A consumer or author must have the ability to switch between different CSS views
 <caption>Local storage</caption>
 <tbody>
 <tr>
-<th><strong>Name</strong></th>
+<th>Name</th>
 <td>Local storage</td>
 </tr>
 <tr>
-<th><strong>ID</strong></th>
+<th>ID</th>
 <td>F-21</td>
 </tr>
 <tr>
-<th><strong>Components</strong></th>
+<th>Components</th>
 <td>U</td>
 </tr>
 <tr>
-<th><strong>Description</strong></th>
+<th>Description</th>
 <td>
 The author must have the ability to enable or disable local storage by clicking the enable-button in the menu.
 </td>
 </tr>
 <tr>
-<th><strong>Input</strong></th>
+<th>Input</th>
 <td>-</td>
 </tr>
 <tr>
-<th><strong>Output</strong></th>
+<th>Output</th>
 <td>-</td>
 </tr>
 <tr>
-<th><strong>Pre-condition</strong></th>
+<th>Pre-condition</th>
 <td>-</td>
 </tr>
 <tr>
-<th><strong>Post-condition</strong></th>
+<th>Post-condition</th>
 <td>-</td>
 </tr>
 <tr>
-<th><strong>Source of Requirement</strong></th>
+<th>Source of Requirement</th>
 <td><a href="http://linked-research.270a.info/linked-research.html">http://linked-research.270a.info/linked-research.html</a></td>
 </tr>
 <tr>
-<th><strong>State of Requirement</strong></th>
+<th>State of Requirement</th>
 <td>Implemented</td>
 </tr>
-<tr><th><strong>Author</strong></th><td><a href="http://renatostauffer.ch#i">Renato Stuaffer</a></td></tr></tbody>
+<tr><th>Author</th><td><a href="http://renatostauffer.ch#i">Renato Stuaffer</a></td></tr></tbody>
 </table>
 
 
@@ -3238,48 +3239,48 @@ The author must have the ability to enable or disable local storage by clicking 
 <caption>Export</caption>
 <tbody>
 <tr>
-<th><strong>Name</strong></th>
+<th>Name</th>
 <td>Export</td>
 </tr>
 <tr>
-<th><strong>ID</strong></th>
+<th>ID</th>
 <td>F-22</td>
 </tr>
 <tr>
-<th><strong>Components</strong></th>
+<th>Components</th>
 <td>U</td>
 </tr>
 <tr>
-<th><strong>Description</strong></th>
+<th>Description</th>
 <td>
 An author or consumer must have the ability to export the document to HTML by clicking the button &#8220;HTML&#8221; in the menu.
 </td>
 </tr>
 <tr>
-<th><strong>Input</strong></th>
+<th>Input</th>
 <td>-</td>
 </tr>
 <tr>
-<th><strong>Output</strong></th>
+<th>Output</th>
 <td>-</td>
 </tr>
 <tr>
-<th><strong>Pre-condition</strong></th>
+<th>Pre-condition</th>
 <td>-</td>
 </tr>
 <tr>
-<th><strong>Post-condition</strong></th>
+<th>Post-condition</th>
 <td>-</td>
 </tr>
 <tr>
-<th><strong>Source of Requirement</strong></th>
+<th>Source of Requirement</th>
 <td><a href="http://linked-research.270a.info/linked-research.html">http://linked-research.270a.info/linked-research.html</a></td>
 </tr>
 <tr>
-<th><strong>State of Requirement</strong></th>
+<th>State of Requirement</th>
 <td>Implemented</td>
 </tr>
-<tr><th><strong>Author</strong></th><td><a href="http://renatostauffer.ch#i">Renato Stuaffer</a></td></tr></tbody>
+<tr><th>Author</th><td><a href="http://renatostauffer.ch#i">Renato Stuaffer</a></td></tr></tbody>
 </table>
 
 
@@ -3288,19 +3289,19 @@ An author or consumer must have the ability to export the document to HTML by cl
 <caption>Document metadata</caption>
 <tbody>
 <tr>
-<th><strong>Name</strong></th>
+<th>Name</th>
 <td>Document metadata</td>
 </tr>
 <tr>
-<th><strong>ID</strong></th>
+<th>ID</th>
 <td>F-23</td>
 </tr>
 <tr>
-<th><strong>Components</strong></th>
+<th>Components</th>
 <td>U</td>
 </tr>
 <tr>
-<th><strong>Description</strong></th>
+<th>Description</th>
 <td>
 Linked Research must provide an author or consumer the possibility to view the documents metadata. Those are:
 <ul>
@@ -3315,126 +3316,126 @@ Linked Research must provide an author or consumer the possibility to view the d
 </td>
 </tr>
 <tr>
-<th><strong>Input</strong></th>
+<th>Input</th>
 <td>-</td>
 </tr>
 <tr>
-<th><strong>Output</strong></th>
+<th>Output</th>
 <td>-</td>
 </tr>
 <tr>
-<th><strong>Pre-condition</strong></th>
+<th>Pre-condition</th>
 <td>-</td>
 </tr>
 <tr>
-<th><strong>Post-condition</strong></th>
+<th>Post-condition</th>
 <td>-</td>
 </tr>
 <tr>
-<th><strong>Source of Requirement</strong></th>
+<th>Source of Requirement</th>
 <td><a href="http://linked-research.270a.info/linked-research.html">http://linked-research.270a.info/linked-research.html</a></td>
 </tr>
 <tr>
-<th><strong>State of Requirement</strong></th>
+<th>State of Requirement</th>
 <td>Implemented</td>
 </tr>
-<tr><th><strong>Author</strong></th><td><a href="http://renatostauffer.ch#i">Renato Stuaffer</a></td></tr></tbody>
+<tr><th>Author</th><td><a href="http://renatostauffer.ch#i">Renato Stuaffer</a></td></tr></tbody>
 </table>
 
 <table id="f-24">
 <caption>Section identification</caption>
 <tbody>
 <tr>
-<th><strong>Name</strong></th>
+<th>Name</th>
 <td>Section identification</td>
 </tr>
 <tr>
-<th><strong>ID</strong></th>
+<th>ID</th>
 <td>F-24</td>
 </tr>
 <tr>
-<th><strong>Components</strong></th>
+<th>Components</th>
 <td>U</td>
 </tr>
 <tr>
-<th><strong>Description</strong></th>
+<th>Description</th>
 <td>
 Linked Research must offer the functionality to authors and consumers, to identify sections within the document.
 </td>
 </tr>
 <tr>
-<th><strong>Input</strong></th>
+<th>Input</th>
 <td>-</td>
 </tr>
 <tr>
-<th><strong>Output</strong></th>
+<th>Output</th>
 <td>-</td>
 </tr>
 <tr>
-<th><strong>Pre-condition</strong></th>
+<th>Pre-condition</th>
 <td>-</td>
 </tr>
 <tr>
-<th><strong>Post-condition</strong></th>
+<th>Post-condition</th>
 <td>-</td>
 </tr>
 <tr>
-<th><strong>Source of Requirement</strong></th>
+<th>Source of Requirement</th>
 <td><a href="http://linked-research.270a.info/linked-research.html">http://linked-research.270a.info/linked-research.html</a></td>
 </tr>
 <tr>
-<th><strong>State of Requirement</strong></th>
+<th>State of Requirement</th>
 <td>Implemented</td>
 </tr>
-<tr><th><strong>Author</strong></th><td><a href="http://renatostauffer.ch#i">Renato Stuaffer</a></td></tr></tbody>
+<tr><th>Author</th><td><a href="http://renatostauffer.ch#i">Renato Stuaffer</a></td></tr></tbody>
 </table>
 
 <table id="f-25">
 <caption>Autosaving</caption>
 <tbody>
 <tr>
-<th><strong>Name</strong></th>
+<th>Name</th>
 <td>Autosaving</td>
 </tr>
 <tr>
-<th><strong>ID</strong></th>
+<th>ID</th>
 <td>F-25</td>
 </tr>
 <tr>
-<th><strong>Components</strong></th>
+<th>Components</th>
 <td>U</td>
 </tr>
 <tr>
-<th><strong>Description</strong></th>
+<th>Description</th>
 <td>
 Linked Research must provide authors functionality to enable or disable autosave for the current document.
 </td>
 </tr>
 <tr>
-<th><strong>Input</strong></th>
+<th>Input</th>
 <td>-</td>
 </tr>
 <tr>
-<th><strong>Output</strong></th>
+<th>Output</th>
 <td>-</td>
 </tr>
 <tr>
-<th><strong>Pre-condition</strong></th>
+<th>Pre-condition</th>
 <td>-</td>
 </tr>
 <tr>
-<th><strong>Post-condition</strong></th>
+<th>Post-condition</th>
 <td>-</td>
 </tr>
 <tr>
-<th><strong>Source of Requirement</strong></th>
+<th>Source of Requirement</th>
 <td><a href="http://linked-research.270a.info/linked-research.html">http://linked-research.270a.info/linked-research.html</a></td>
 </tr>
 <tr>
-<th><strong>State of Requirement</strong></th>
+<th>State of Requirement</th>
 <td>Not implemented yet</td>
 </tr>
-<tr><th><strong>Author</strong></th><td><a href="http://renatostauffer.ch#i">Renato Stuaffer</a></td></tr></tbody>
+<tr><th>Author</th><td><a href="http://renatostauffer.ch#i">Renato Stuaffer</a></td></tr></tbody>
 </table>
 
 
@@ -3442,48 +3443,48 @@ Linked Research must provide authors functionality to enable or disable autosave
 <caption>Print document</caption>
 <tbody>
 <tr>
-<th><strong>Name</strong></th>
+<th>Name</th>
 <td>Print document</td>
 </tr>
 <tr>
-<th><strong>ID</strong></th>
+<th>ID</th>
 <td>F-26</td>
 </tr>
 <tr>
-<th><strong>Components</strong></th>
+<th>Components</th>
 <td>U</td>
 </tr>
 <tr>
-<th><strong>Description</strong></th>
+<th>Description</th>
 <td>
 Linked Research must provide authors and consumers the possibility to print the document.
 </td>
 </tr>
 <tr>
-<th><strong>Input</strong></th>
+<th>Input</th>
 <td>-</td>
 </tr>
 <tr>
-<th><strong>Output</strong></th>
+<th>Output</th>
 <td>-</td>
 </tr>
 <tr>
-<th><strong>Pre-condition</strong></th>
+<th>Pre-condition</th>
 <td>-</td>
 </tr>
 <tr>
-<th><strong>Post-condition</strong></th>
+<th>Post-condition</th>
 <td>-</td>
 </tr>
 <tr>
-<th><strong>Source of Requirement</strong></th>
+<th>Source of Requirement</th>
 <td><a href="http://linked-research.270a.info/linked-research.html">http://linked-research.270a.info/linked-research.html</a></td>
 </tr>
 <tr>
-<th><strong>State of Requirement</strong></th>
+<th>State of Requirement</th>
 <td>Implemented</td>
 </tr>
-<tr><th><strong>Author</strong></th><td><a href="http://renatostauffer.ch#i">Renato Stuaffer</a></td></tr></tbody>
+<tr><th>Author</th><td><a href="http://renatostauffer.ch#i">Renato Stuaffer</a></td></tr></tbody>
 </table>
 
 
@@ -3514,48 +3515,48 @@ Linked Research must provide authors and consumers the possibility to print the 
 <caption>Embed Data</caption>
 <tbody>
 <tr>
-<th><strong>Name</strong></th>
+<th>Name</th>
 <td>Embed Data</td>
 </tr>
 <tr>
-<th><strong>ID</strong></th>
+<th>ID</th>
 <td>F-27</td>
 </tr>
 <tr>
-<th><strong>Components</strong></th>
+<th>Components</th>
 <td>U</td>
 </tr>
 <tr>
-<th><strong>Description</strong></th>
+<th>Description</th>
 <td>
 Linked Research must provide authors and consumers functionality to embed Turtle or JSON-LD data into the document.
 </td>
 </tr>
 <tr>
-<th><strong>Input</strong></th>
+<th>Input</th>
 <td>-</td>
 </tr>
 <tr>
-<th><strong>Output</strong></th>
+<th>Output</th>
 <td>-</td>
 </tr>
 <tr>
-<th><strong>Pre-condition</strong></th>
+<th>Pre-condition</th>
 <td>-</td>
 </tr>
 <tr>
-<th><strong>Post-condition</strong></th>
+<th>Post-condition</th>
 <td>-</td>
 </tr>
 <tr>
-<th><strong>Source of Requirement</strong></th>
+<th>Source of Requirement</th>
 <td><a href="http://linked-research.270a.info/linked-research.html">http://linked-research.270a.info/linked-research.html</a></td>
 </tr>
 <tr>
-<th><strong>State of Requirement</strong></th>
+<th>State of Requirement</th>
 <td>Implemented</td>
 </tr>
-<tr><th><strong>Author</strong></th><td><a href="http://renatostauffer.ch#i">Renato Stuaffer</a></td></tr></tbody>
+<tr><th>Author</th><td><a href="http://renatostauffer.ch#i">Renato Stuaffer</a></td></tr></tbody>
 </table>
 
 
@@ -3563,19 +3564,19 @@ Linked Research must provide authors and consumers functionality to embed Turtle
 <caption>Instructions</caption>
 <tbody>
 <tr>
-<th><strong>Name</strong></th>
+<th>Name</th>
 <td>Instructions</td>
 </tr>
 <tr>
-<th><strong>ID</strong></th>
+<th>ID</th>
 <td>F-28</td>
 </tr>
 <tr>
-<th><strong>Components</strong></th>
+<th>Components</th>
 <td>TripleEditor</td>
 </tr>
 <tr>
-<th><strong>Description</strong></th>
+<th>Description</th>
 <td>
 Linked Research should provide authors instructions for functionality. This includes:
 <ul>
@@ -3586,30 +3587,30 @@ Linked Research should provide authors instructions for functionality. This incl
 </td>
 </tr>
 <tr>
-<th><strong>Input</strong></th>
+<th>Input</th>
 <td>-</td>
 </tr>
 <tr>
-<th><strong>Output</strong></th>
+<th>Output</th>
 <td>-</td>
 </tr>
 <tr>
-<th><strong>Pre-condition</strong></th>
+<th>Pre-condition</th>
 <td>-</td>
 </tr>
 <tr>
-<th><strong>Post-condition</strong></th>
+<th>Post-condition</th>
 <td>-</td>
 </tr>
 <tr>
-<th><strong>Source of Requirement</strong></th>
+<th>Source of Requirement</th>
 <td><a href="http://linked-research.270a.info/linked-research.html">http://linked-research.270a.info/linked-research.html</a></td>
 </tr>
 <tr>
-<th><strong>State of Requirement</strong></th>
+<th>State of Requirement</th>
 <td>Not implemented yet</td>
 </tr>
-<tr><th><strong>Author</strong></th><td><a href="http://renatostauffer.ch#i">Renato Stuaffer</a></td></tr></tbody>
+<tr><th>Author</th><td><a href="http://renatostauffer.ch#i">Renato Stuaffer</a></td></tr></tbody>
 </table>
 
 
@@ -3617,48 +3618,48 @@ Linked Research should provide authors instructions for functionality. This incl
 <caption>Search Suggestions</caption>
 <tbody>
 <tr>
-<th><strong>Name</strong></th>
+<th>Name</th>
 <td>Search Suggestions</td>
 </tr>
 <tr>
-<th><strong>ID</strong></th>
+<th>ID</th>
 <td>F-29</td>
 </tr>
 <tr>
-<th><strong>Components</strong></th>
+<th>Components</th>
 <td>TripleEditor, SearchHandler</td>
 </tr>
 <tr>
-<th><strong>Description</strong></th>
+<th>Description</th>
 <td>
 The TripleEditor may provide suggestions for RDF predicates or RDF objects when the author is searching for them.
 </td>
 </tr>
 <tr>
-<th><strong>Input</strong></th>
+<th>Input</th>
 <td>-</td>
 </tr>
 <tr>
-<th><strong>Output</strong></th>
+<th>Output</th>
 <td>Search suggestions</td>
 </tr>
 <tr>
-<th><strong>Pre-condition</strong></th>
+<th>Pre-condition</th>
 <td>-</td>
 </tr>
 <tr>
-<th><strong>Post-condition</strong></th>
+<th>Post-condition</th>
 <td>-</td>
 </tr>
 <tr>
-<th><strong>Source of Requirement</strong></th>
+<th>Source of Requirement</th>
 <td><a href="http://linked-research.270a.info/linked-research.html">http://linked-research.270a.info/linked-research.html</a></td>
 </tr>
 <tr>
-<th><strong>State of Requirement</strong></th>
+<th>State of Requirement</th>
 <td>Not implemented yet</td>
 </tr>
-<tr><th><strong>Author</strong></th><td><a href="http://renatostauffer.ch#i">Renato Stuaffer</a></td></tr></tbody>
+<tr><th>Author</th><td><a href="http://renatostauffer.ch#i">Renato Stuaffer</a></td></tr></tbody>
 </table>
 
 
@@ -3666,69 +3667,69 @@ The TripleEditor may provide suggestions for RDF predicates or RDF objects when 
 <caption>Search typing error prevention</caption>
 <tbody>
 <tr>
-<th><strong>Name</strong></th>
+<th>Name</th>
 <td>Search typing error prevention</td>
 </tr>
 <tr>
-<th><strong>ID</strong></th>
+<th>ID</th>
 <td>F-30</td>
 </tr>
 <tr>
-<th><strong>Components</strong></th>
+<th>Components</th>
 <td>SearchHandler, TripleEditor</td>
 </tr>
 <tr>
-<th><strong>Description</strong></th>
+<th>Description</th>
 <td>
 The TripleEditor should prevent the author from typing wrong spelled search terms. For example: When the author types in &#8220;persnon&#8221;, the TripleEditor should recognize the typing error and suggest alternatives like &#8220;Person&#8221; in this example.
 </td>
 </tr>
 <tr>
-<th><strong>Input</strong></th>
+<th>Input</th>
 <td>Wrong spelled term</td>
 </tr>
 <tr>
-<th><strong>Output</strong></th>
+<th>Output</th>
 <td>Search term suggestions</td>
 </tr>
 <tr>
-<th><strong>Pre-condition</strong></th>
+<th>Pre-condition</th>
 <td>-</td>
 </tr>
 <tr>
-<th><strong>Post-condition</strong></th>
+<th>Post-condition</th>
 <td>-</td>
 </tr>
 <tr>
-<th><strong>Source of Requirement</strong></th>
+<th>Source of Requirement</th>
 <td><a href="http://linked-research.270a.info/linked-research.html">http://linked-research.270a.info/linked-research.html</a></td>
 </tr>
 <tr>
-<th><strong>State of Requirement</strong></th>
+<th>State of Requirement</th>
 <td>Implemented</td>
 </tr>
-<tr><th><strong>Author</strong></th><td><a href="http://renatostauffer.ch#i">Renato Stuaffer</a></td></tr></tbody>
+<tr><th>Author</th><td><a href="http://renatostauffer.ch#i">Renato Stuaffer</a></td></tr></tbody>
 </table>
 <h3>Non-functional Requirements</h3>
 <table id="q-1">
 <caption>Accessibility</caption>
 <tbody>
 <tr>
-<th><strong>Name</strong></th>
+<th>Name</th>
 <td>Accessibility</td>
 </tr>
 <tr>
-<th><strong>ID</strong></th>
+<th>ID</th>
 <td>Q-1</td>
 </tr>
 <tr>
-<th><strong>Description</strong></th>
+<th>Description</th>
 <td>
 Linked Research should be available to as many people as possible, including people with disabilities. Thus Linked Research should stick to WCAG 2.0 whenever possible.
 </td>
 </tr>
 <tr>
-<th><strong>Derived functional requirements</strong></th>
+<th>Derived functional requirements</th>
 <td>
 <ul>
 <li>View switching (<a href="http://renatostauffer.ch/requirements-engineering-for-linked-research#f-20">F-20</a>)</li>
@@ -3736,10 +3737,10 @@ Linked Research should be available to as many people as possible, including peo
 </td>
 </tr>
 <tr>
-<th><strong>Source of Requirement</strong></th>
+<th>Source of Requirement</th>
 <td><a href="http://csarven.ca/enabling-accessible-knowledge#accessibility">http://csarven.ca/enabling-accessible-knowledge#accessibility</a>, <a href="http://csarven.ca/enabling-accessible-knowledge#accessibility">http://www.w3.org/WAI/WCAG20/quickref/Overview.php#keyboard-operation</a></td>
 </tr>
-<tr><th><strong>Author</strong></th><td><a href="http://renatostauffer.ch#i">Renato Stuaffer</a></td></tr></tbody>
+<tr><th>Author</th><td><a href="http://renatostauffer.ch#i">Renato Stuaffer</a></td></tr></tbody>
 </table>
 
 
@@ -3747,30 +3748,30 @@ Linked Research should be available to as many people as possible, including peo
 <caption>Adaptive Design</caption>
 <tbody>
 <tr>
-<th><strong>Name</strong></th>
+<th>Name</th>
 <td>Adaptive Design</td>
 </tr>
 <tr>
-<th><strong>ID</strong></th>
+<th>ID</th>
 <td>Q-2</td>
 </tr>
 <tr>
-<th><strong>Description</strong></th>
+<th>Description</th>
 <td>
 Linked Research should be available for consumers with smart devices (smart phones and tablets) and desktop computers.
 </td>
 </tr>
 <tr>
-<th><strong>Derived functional requirements</strong></th>
+<th>Derived functional requirements</th>
 <td>
 &#8211;
 </td>
 </tr>
 <tr>
-<th><strong>Source of Requirement</strong></th>
+<th>Source of Requirement</th>
 <td><a href="http://csarven.ca/enabling-accessible-knowledge#accessibility">Enabling Accessible Knowledge</a></td>
 </tr>
-<tr><th><strong>Author</strong></th><td><a href="http://renatostauffer.ch#i">Renato Stuaffer</a></td></tr></tbody>
+<tr><th>Author</th><td><a href="http://renatostauffer.ch#i">Renato Stuaffer</a></td></tr></tbody>
 </table>
 
 
@@ -3779,21 +3780,21 @@ Linked Research should be available for consumers with smart devices (smart phon
 <caption>Usability &#8211; User assistance</caption>
 <tbody>
 <tr>
-<th><strong>Name</strong></th>
+<th>Name</th>
 <td>Usability &#8211; User assistance</td>
 </tr>
 <tr>
-<th><strong>ID</strong></th>
+<th>ID</th>
 <td>Q-3</td>
 </tr>
 <tr>
-<th><strong>Description</strong></th>
+<th>Description</th>
 <td>
 Linked Research should provide help for authors to understand and learn how to use the tool.
 </td>
 </tr>
 <tr>
-<th><strong>Derived functional requirements</strong></th>
+<th>Derived functional requirements</th>
 <td>
 <ul>
 <li>Search suggestions (<a href="http://renatostauffer.ch/requirements-engineering-for-linked-research#f-29">F-29</a>)</li>
@@ -3803,10 +3804,10 @@ Linked Research should provide help for authors to understand and learn how to u
 </td>
 </tr>
 <tr>
-<th><strong>Source of Requirement</strong></th>
+<th>Source of Requirement</th>
 <td><a href="http://csarven.ca/enabling-accessible-knowledge#user-experience">Enabling Accessible Knowledge</a></td>
 </tr>
-<tr><th><strong>Author</strong></th><td><a href="http://renatostauffer.ch#i">Renato Stuaffer</a></td></tr></tbody>
+<tr><th>Author</th><td><a href="http://renatostauffer.ch#i">Renato Stuaffer</a></td></tr></tbody>
 </table>
 
 
@@ -3815,24 +3816,24 @@ Linked Research should provide help for authors to understand and learn how to u
 <caption>Browser compatibility</caption>
 <tbody>
 <tr>
-<th><strong>Name</strong></th>
+<th>Name</th>
 <td>Browser compatibility</td>
 </tr>
 <tr>
-<th><strong>ID</strong></th>
+<th>ID</th>
 <td>Q-5</td>
 </tr>
 <tr>
-<th><strong>Description</strong></th>
+<th>Description</th>
 <td>
 Linked Research does not pursue the goal to run in every version of every browser. It should run in the latest versions of Firefox, Internet Explorer, Google Chrome and Safari. Linked Research should also run on LINE based browsers.
 </td>
 </tr>
 <tr>
-<th><strong>Source of Requirement</strong></th>
+<th>Source of Requirement</th>
 <td><a href="http://linked-research.270a.info/linked-research.html">http://linked-research.270a.info/linked-research.html</a></td>
 </tr>
-<tr><th><strong>Author</strong></th><td><a href="http://renatostauffer.ch#i">Renato Stuaffer</a></td></tr></tbody>
+<tr><th>Author</th><td><a href="http://renatostauffer.ch#i">Renato Stuaffer</a></td></tr></tbody>
 </table>
 </div>
 </section>
